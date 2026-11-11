@@ -1,0 +1,7 @@
+.vercel
+node_modules
+scratch/
+tools/targets.json
+tools/render_logo.html
+.DS_Store
+Thumbs.db

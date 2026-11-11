@@ -1,0 +1,116 @@
+<section class="page-head">
+  <div class="shell">
+    <nav aria-label="Breadcrumb">
+      <ol class="crumbs">
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page" data-crumb-current>Shop</li>
+      </ol>
+    </nav>
+    <div class="page-head__inner">
+      <span class="eyebrow" data-shop-eyebrow>The Full Catalogue</span>
+      <h1 data-shop-title>Shop All</h1>
+      <p class="lede" data-shop-blurb>Everything from the three SAiPH kitchens — everyday bakery, luxury pâtisserie and naturally made pantry. Filter by brand, occasion, diet, price and delivery date.</p>
+      <div class="page-head__stats">
+        <span><b data-shop-count>0</b> products</span>
+        <span>Free delivery above ₹999</span>
+        <span>Same-day slots in Dibrugarh</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="shell shop-layout">
+
+    <!-- ============================== FILTERS ============================= -->
+    <aside class="filters" data-filters aria-label="Product filters">
+      <div class="row row--between" style="padding-bottom:.5rem;border-bottom:1px solid var(--line)">
+        <span class="eyebrow eyebrow--muted">Refine</span>
+        <button class="link" type="button" data-clear-filters style="font-size:.6rem">Clear all</button>
+      </div>
+      <div data-accordion data-filter-groups></div>
+    </aside>
+
+    <!-- ============================== RESULTS ============================= -->
+    <div>
+      <div class="shop-toolbar">
+        <p class="shop-toolbar__count"><b data-result-count>0</b> <span data-result-word>products</span></p>
+        <span class="spacer"></span>
+        <label class="sr-only" for="sort">Sort by</label>
+        <select class="select" id="sort" data-sort>
+          <option value="featured">Sort: Featured</option>
+          <option value="bestselling">Bestselling</option>
+          <option value="rating">Highest rated</option>
+          <option value="price-asc">Price: low to high</option>
+          <option value="price-desc">Price: high to low</option>
+          <option value="newest">New arrivals</option>
+          <option value="az">Name: A–Z</option>
+        </select>
+        <div class="row row--tight" role="group" aria-label="Layout">
+          <button class="icon-btn" type="button" data-layout="grid" aria-pressed="true" aria-label="Grid view">{{ICON_GRID}}</button>
+          <button class="icon-btn" type="button" data-layout="dense" aria-pressed="false" aria-label="Compact grid view">{{ICON_LAYERS}}</button>
+        </div>
+      </div>
+
+      <div class="active-filters" data-active-filters></div>
+      <div class="product-grid" data-results aria-live="polite"></div>
+      <div style="margin-top:clamp(2rem,1.5rem+2vw,3rem)"><div class="pager" data-pager></div></div>
+    </div>
+  </div>
+</section>
+
+<button class="btn btn--accent filter-fab" type="button" data-filter-fab>{{ICON_FILTER}} Filters <span data-fab-count></span></button>
+
+<aside class="drawer drawer--left" data-filter-drawer role="dialog" aria-modal="true" aria-label="Filters" aria-hidden="true">
+  <div class="drawer__head">
+    <h2 class="drawer__title">Filters</h2>
+    <button class="icon-btn" type="button" data-overlay-close aria-label="Close filters">{{ICON_X}}</button>
+  </div>
+  <div class="drawer__body">
+    <div class="filters filters--drawer" data-accordion data-filter-groups-mobile></div>
+  </div>
+  <div class="drawer__foot">
+    <div class="row row--tight">
+      <button class="btn btn--outline" type="button" data-clear-filters style="flex:1">Clear all</button>
+      <button class="btn btn--accent" type="button" data-overlay-close style="flex:2">Show <span data-drawer-count>0</span> results</button>
+    </div>
+  </div>
+</aside>
+
+<section class="section section--tinted" data-recent-section hidden>
+  <div class="shell">
+    <div class="section-head section-head--split">
+      <div class="section-head__copy"><span class="eyebrow">Pick up where you left off</span><h2 style="font-size:var(--fs-h4)">Recently viewed</h2></div>
+    </div>
+    <div class="rv-rail" data-recent-rail></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell">
+    <div class="section-head section-head--center">
+      <span class="eyebrow">Not sure where to start?</span>
+      <h2 style="font-size:var(--fs-h3)">Three ways in</h2>
+    </div>
+    <div class="grid grid--3">
+      <a class="card card--pad card--lift" href="cakes.html">
+        <span class="value__icon">{{ICON_CAKE}}</span>
+        <h3 class="value__title">Build a custom cake</h3>
+        <p class="value__text">Occasion, size, flavour, message and delivery date in one flow. Studio confirms in four hours.</p>
+        <span class="link" style="margin-top:.75rem">Create your cake {{ICON_ARROWRIGHT}}</span>
+      </a>
+      <a class="card card--pad card--lift" href="gifting.html">
+        <span class="value__icon">{{ICON_GIFT}}</span>
+        <h3 class="value__title">Send a hamper</h3>
+        <p class="value__text">Curated boxes for birthdays, festivals, weddings and corporate gifting with per-address dispatch.</p>
+        <span class="link" style="margin-top:.75rem">Shop gifting {{ICON_ARROWRIGHT}}</span>
+      </a>
+      <a class="card card--pad card--lift" href="stores.html">
+        <span class="value__icon">{{ICON_STORE}}</span>
+        <h3 class="value__title">Collect from a store</h3>
+        <p class="value__text">Order online, skip the queue and pick up from any of our the counter, free of delivery charges.</p>
+        <span class="link" style="margin-top:.75rem">Find a store {{ICON_ARROWRIGHT}}</span>
+      </a>
+    </div>
+  </div>
+</section>

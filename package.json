@@ -1,0 +1,17 @@
+{
+  "name": "saiph-bakes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SAiPH Bakes — premium multi-brand bakery e-commerce front-end (DoughReMi, SAiPH Signature, Khowdy)",
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "test": "node tools/smoke.mjs",
+    "audit": "node tools/audit.mjs",
+    "check": "node tools/build.mjs && node tools/smoke.mjs && node tools/audit.mjs",
+    "start": "npx --yes serve ."
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

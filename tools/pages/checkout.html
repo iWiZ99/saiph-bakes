@@ -1,0 +1,183 @@
+<section class="page-head">
+  <div class="shell">
+    <nav aria-label="Breadcrumb">
+      <ol class="crumbs">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li aria-current="page">Checkout</li>
+      </ol>
+    </nav>
+    <div class="page-head__inner">
+      <span class="eyebrow">Step 2 of 3</span>
+      <h1>Secure Checkout</h1>
+    </div>
+    <div class="checkout-steps" aria-label="Checkout progress">
+      <span class="checkout-step is-done"><i>{{ICON_CHECK}}</i>Cart</span>
+      <span class="checkout-step is-current"><i>2</i>Delivery &amp; payment</span>
+      <span class="checkout-step"><i>3</i>Confirmation</span>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="shell cart-layout">
+    <form class="stack stack--lg" data-checkout novalidate>
+
+      <!-- ========================= GUEST OR ACCOUNT ======================== -->
+      <div class="checkout-block">
+        <h2 class="checkout-block__title"><i>1</i> Contact</h2>
+        <div class="row row--between" data-account-row></div>
+        <div class="field-grid">
+          <div class="field">
+            <label class="field__label" for="co-name">Full name <span class="req">*</span></label>
+            <input class="input" id="co-name" name="name" required autocomplete="name" placeholder="Ananya Barua">
+            <p class="field__error">Please tell us who the order is for.</p>
+          </div>
+          <div class="field">
+            <label class="field__label" for="co-phone">Mobile number <span class="req">*</span></label>
+            <input class="input" id="co-phone" name="phone" type="tel" required autocomplete="tel" inputmode="numeric" data-pattern="^[0-9+\\s-]{10,15}$" placeholder="98640 00000">
+            <p class="field__error">A 10-digit mobile number, please — the rider will call it.</p>
+          </div>
+          <div class="field field--full">
+            <label class="field__label" for="co-email">Email <span class="req">*</span></label>
+            <input class="input" id="co-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
+            <p class="field__error">We send the order confirmation and tracking link here.</p>
+          </div>
+        </div>
+        <label class="check"><input type="checkbox" data-create-account><span>Create an account to track orders, save addresses and earn points</span></label>
+      </div>
+
+      <!-- ============================ FULFILMENT =========================== -->
+      <div class="checkout-block">
+        <h2 class="checkout-block__title"><i>2</i> How would you like it?</h2>
+        <div class="option-grid" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,13rem),1fr))">
+          <label class="option">
+            <input type="radio" name="mode" value="delivery" checked>
+            <span class="option__mark" aria-hidden="true"></span>
+            <span class="option__body"><span class="option__title">Home delivery</span>
+            <span class="option__note">Two-hour slot · free above ₹999</span></span>
+          </label>
+          <label class="option">
+            <input type="radio" name="mode" value="pickup">
+            <span class="option__mark" aria-hidden="true"></span>
+            <span class="option__body"><span class="option__title">Store pickup</span>
+            <span class="option__note">No delivery charge · held 2 hours</span></span>
+          </label>
+        </div>
+
+        <div data-delivery-fields>
+          <div class="field-grid">
+            <div class="field field--full">
+              <label class="field__label" for="co-addr">Address line <span class="req">*</span></label>
+              <input class="input" id="co-addr" name="address" required autocomplete="street-address" placeholder="Flat / house, building, street">
+              <p class="field__error">We need a street address to deliver to.</p>
+            </div>
+            <div class="field">
+              <label class="field__label" for="co-landmark">Landmark</label>
+              <input class="input" id="co-landmark" placeholder="Near Ganeshguri flyover">
+            </div>
+            <div class="field">
+              <label class="field__label" for="co-city">City <span class="req">*</span></label>
+              <select class="select" id="co-city" name="city" required data-city></select>
+              <p class="field__error">Choose a city we deliver to.</p>
+            </div>
+            <div class="field">
+              <label class="field__label" for="co-pin">PIN code <span class="req">*</span></label>
+              <input class="input" id="co-pin" name="pin" required inputmode="numeric" data-pattern="^[0-9]{6}$" placeholder="781005">
+              <p class="field__error">Six digits, please.</p>
+            </div>
+            <div class="field">
+              <label class="field__label" for="co-type">Address type</label>
+              <select class="select" id="co-type">
+                <option>Home</option><option>Office</option><option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="note" style="margin-top:1rem">{{ICON_MAPPIN}}<span data-city-note>Same-day and scheduled slots available in Dibrugarh.</span></div>
+        </div>
+
+        <div data-pickup-fields hidden>
+          <div class="stack stack--sm">
+            <span class="field__label">Choose your store</span>
+            <div class="option-grid" style="grid-template-columns:1fr" data-pickup-stores></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========================== DATE AND SLOT ========================== -->
+      <div class="checkout-block">
+        <h2 class="checkout-block__title"><i>3</i> When?</h2>
+        <div class="stack stack--sm">
+          <div class="row row--between">
+            <span class="field__label" style="margin:0">Date</span>
+            <span class="badge badge--outline" data-lead-badge></span>
+          </div>
+          <div class="date-strip" data-checkout-dates></div>
+        </div>
+        <div class="stack stack--sm">
+          <span class="field__label">Time slot</span>
+          <div class="slot-grid" data-checkout-slots></div>
+        </div>
+        <div class="field">
+          <label class="field__label" for="co-instructions">Special instructions</label>
+          <textarea class="textarea" id="co-instructions" placeholder="Leave with the guard, call on arrival, surprise delivery — do not announce&hellip;"></textarea>
+        </div>
+        <div class="note" data-cutoff-note>{{ICON_CLOCK}}<span></span></div>
+      </div>
+
+      <!-- ============================= PAYMENT ============================= -->
+      <div class="checkout-block">
+        <h2 class="checkout-block__title"><i>4</i> Payment</h2>
+        <div class="option-grid" style="grid-template-columns:1fr">
+          <label class="option">
+            <input type="radio" name="payment" value="upi" checked>
+            <span class="option__mark" aria-hidden="true"></span>
+            <span class="option__body"><span class="option__title">UPI</span>
+            <span class="option__note">GPay, PhonePe, Paytm, BHIM — instant, no charges</span></span>
+          </label>
+          <label class="option">
+            <input type="radio" name="payment" value="card">
+            <span class="option__mark" aria-hidden="true"></span>
+            <span class="option__body"><span class="option__title">Credit / debit card</span>
+            <span class="option__note">Visa, Mastercard, RuPay, Amex — 3D Secure</span></span>
+          </label>
+          <label class="option">
+            <input type="radio" name="payment" value="netbanking">
+            <span class="option__mark" aria-hidden="true"></span>
+            <span class="option__body"><span class="option__title">Net banking</span>
+            <span class="option__note">All major Indian banks</span></span>
+          </label>
+          <label class="option">
+            <input type="radio" name="payment" value="cod">
+            <span class="option__mark" aria-hidden="true"></span>
+            <span class="option__body"><span class="option__title">Cash on delivery</span>
+            <span class="option__note">Dibrugarh only · not available on custom cakes</span></span>
+          </label>
+        </div>
+        <div class="field">
+          <label class="field__label" for="co-gstin">GSTIN for invoice (optional)</label>
+          <input class="input" id="co-gstin" placeholder="22AAAAA0000A1Z5" style="text-transform:uppercase">
+          <p class="field__hint">Add your GSTIN to receive a tax invoice for corporate claims.</p>
+        </div>
+        <div class="note note--ok">{{ICON_SHIELD}}<span>This is a front-end demonstration — no payment gateway is connected and no card data is collected or transmitted. Wire your PSP (Razorpay, Cashfree, PayU or Stripe) to the submit handler in <code>page-checkout.js</code>.</span></div>
+      </div>
+
+      <label class="check"><input type="checkbox" required id="co-terms"><span>I agree to the <a href="terms.html">Terms &amp; Conditions</a>, <a href="shipping.html">Shipping Policy</a> and <a href="returns.html">Returns Policy</a> <span class="req">*</span></span></label>
+
+      <button class="btn btn--accent btn--lg btn--block" type="submit" data-place-order>Place order · <span data-pay-total>₹0</span></button>
+    </form>
+
+    <!-- ============================== SUMMARY ============================== -->
+    <aside class="summary-panel" aria-label="Order summary">
+      <h2 class="summary-panel__title">Order Summary</h2>
+      <div class="stack stack--sm" data-summary-lines style="max-height:22rem;overflow-y:auto"></div>
+      <div class="stack stack--sm" data-coupon-area></div>
+      <div class="cart-summary" data-summary-totals></div>
+      <div class="stack stack--xs" style="font-size:var(--fs-xs);color:var(--text-faint);padding-top:.85rem;border-top:1px solid var(--line)">
+        <span class="row row--tight">{{ICON_THERMOMETER}} Cold-chain packed with gel packs</span>
+        <span class="row row--tight">{{ICON_PHONE}} Rider calls before arriving</span>
+        <span class="row row--tight">{{ICON_SHIELD}} Replace or refund within 4 hours</span>
+      </div>
+    </aside>
+  </div>
+</section>

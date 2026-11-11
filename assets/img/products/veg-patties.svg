@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#1a120e"/>
+      <stop offset="65%" stop-color="#0a0705"/>
+      <stop offset="100%" stop-color="#050302"/>
+    </radialGradient>
+    <radialGradient id="plate" cx="45%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#f0ece6"/>
+      <stop offset="70%" stop-color="#cec7bb"/>
+      <stop offset="100%" stop-color="#948d7d"/>
+    </radialGradient>
+    <radialGradient id="slate" cx="45%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#363d47"/>
+      <stop offset="70%" stop-color="#242931"/>
+      <stop offset="100%" stop-color="#14181d"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="28" stdDeviation="32" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+    <filter id="glow-filter" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="45"/>
+    </filter>
+    
+  <radialGradient id="pattyCrust" cx="45%" cy="30%" r="65%">
+    <stop offset="0%" stop-color="#fed7aa"/>
+    <stop offset="50%" stop-color="#f97316"/>
+    <stop offset="100%" stop-color="#9a3412"/>
+  </radialGradient>
+
+  </defs>
+
+  <!-- Luxury Dark Backdrop -->
+  <rect width="800" height="800" fill="url(#bg)"/>
+  
+  <!-- Ambient Culinary Spotlight -->
+  <circle cx="400" cy="380" r="300" fill="#d4af37" opacity="0.09" filter="url(#glow-filter)"/>
+
+  
+  <ellipse cx="400" cy="510" rx="290" ry="160" fill="url(#plate)" filter="url(#shadow)"/>
+  <!-- Two Golden Triangular Flaky Puff Patties -->
+  <!-- Patty 1 -->
+  <path d="M 230 480 L 370 330 L 490 490 Z" fill="url(#pattyCrust)" filter="url(#shadow)"/>
+  <!-- Laminated Flaky Puffs -->
+  <path d="M 250 470 L 370 345 L 470 475" stroke="#ea580c" stroke-width="5" fill="none"/>
+  <path d="M 270 460 L 370 360 L 450 465" stroke="#ea580c" stroke-width="4" fill="none"/>
+  <ellipse cx="370" cy="400" rx="60" ry="30" fill="#fff" opacity="0.18" filter="blur(8px)"/>
+
+</svg>

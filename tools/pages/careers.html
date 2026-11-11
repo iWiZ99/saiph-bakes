@@ -1,0 +1,158 @@
+<section class="page-head page-head--hero">
+  <div class="page-head__bg" aria-hidden="true">{{RAW:careers-hero:saiph:bread}}</div>
+  <div class="shell">
+    <nav aria-label="Breadcrumb">
+      <ol class="crumbs" style="color:rgba(251,246,236,.7)">
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">Careers</li>
+      </ol>
+    </nav>
+    <div class="page-head__inner">
+      <span class="eyebrow" style="color:var(--gold-300)">Careers</span>
+      <h1 class="display">Come and make something good</h1>
+      <p class="lede" style="color:rgba(251,246,236,.82)">A small team across the kitchen and the counter — most from Assam, many trained by us from scratch, with four weeks of paid training before anyone works a shift alone.</p>
+      <div class="row" style="padding-top:.5rem">
+        <a class="btn btn--accent" href="#roles" data-scroll-to="#roles">See open roles</a>
+        <a class="btn btn--light" href="#apply-role" data-scroll-to="#apply-role">Send a general application</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell">
+    <div class="section-head section-head--center">
+      <span class="eyebrow">Working here</span>
+      <h2>What we offer</h2>
+    </div>
+    <div class="value-grid">
+      <article class="value">
+        <span class="value__icon">{{ICON_CHEF}}</span>
+        <h3 class="value__title">Four weeks paid training</h3>
+        <p class="value__text">Everyone starts with structured training at the craft bakery — counter staff and freshers included.</p>
+      </article>
+      <article class="value">
+        <span class="value__icon">{{ICON_TRENDING}}</span>
+        <h3 class="value__title">Promotion from within</h3>
+        <p class="value__text">People move up here. Our counter lead and our head of production both started as trainees.</p>
+      </article>
+      <article class="value">
+        <span class="value__icon">{{ICON_SHIELD}}</span>
+        <h3 class="value__title">Insurance &amp; ESI</h3>
+        <p class="value__text">Group medical cover for you and one dependant, plus statutory PF and ESI from day one.</p>
+      </article>
+      <article class="value">
+        <span class="value__icon">{{ICON_CLOCK}}</span>
+        <h3 class="value__title">Real rosters</h3>
+        <p class="value__text">Published a fortnight ahead, one guaranteed weekly off, and overtime paid rather than assumed.</p>
+      </article>
+      <article class="value">
+        <span class="value__icon">{{ICON_USERS}}</span>
+        <h3 class="value__title">A kitchen that is 46% women</h3>
+        <p class="value__text">Unusual for this industry in India, deliberate on our part, and not something we intend to lose as we grow.</p>
+      </article>
+      <article class="value">
+        <span class="value__icon">{{ICON_SPARKLES}}</span>
+        <h3 class="value__title">Product development access</h3>
+        <p class="value__text">Eight trials a week, and anyone in the kitchen can put a recipe into the queue.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tinted" id="roles">
+  <div class="shell">
+    <div class="section-head section-head--split">
+      <div class="section-head__copy">
+        <span class="eyebrow">Open roles</span>
+        <h2>Open positions</h2>
+        <p class="lede">All roles are at our Dibrugarh shop and kitchen. Freshers welcome where the listing says so.</p>
+      </div>
+      <a class="link" href="mailto:careers@saiphbakes.com">careers@saiphbakes.com {{ICON_ARROWRIGHT}}</a>
+    </div>
+    <div class="stack stack--sm" data-roles></div>
+  </div>
+</section>
+
+<section class="section" id="apply-role">
+  <div class="shell enquiry-layout">
+    <form class="enquiry-form" data-form="careers" data-success="#careers-thanks" novalidate>
+      <div class="stack stack--xs">
+        <span class="eyebrow">Application</span>
+        <h2>Apply for a role</h2>
+        <p class="muted" style="font-size:var(--fs-sm)">We read every application. Shortlisted candidates hear back within a week, and everyone gets a reply either way.</p>
+      </div>
+      <div class="field-grid">
+        <div class="field">
+          <label class="field__label" for="cr-name">Full name <span class="req">*</span></label>
+          <input class="input" id="cr-name" required autocomplete="name">
+          <p class="field__error">Required.</p>
+        </div>
+        <div class="field">
+          <label class="field__label" for="cr-email">Email <span class="req">*</span></label>
+          <input class="input" id="cr-email" type="email" required autocomplete="email">
+          <p class="field__error">A valid email, please.</p>
+        </div>
+        <div class="field">
+          <label class="field__label" for="cr-phone">Mobile <span class="req">*</span></label>
+          <input class="input" id="cr-phone" type="tel" required autocomplete="tel">
+          <p class="field__error">Required.</p>
+        </div>
+        <div class="field">
+          <label class="field__label" for="cr-role">Role <span class="req">*</span></label>
+          <select class="select" id="cr-role" required data-role-select></select>
+          <p class="field__error">Pick a role, or choose general application.</p>
+        </div>
+        <div class="field">
+          <label class="field__label" for="cr-exp">Years of experience</label>
+          <select class="select" id="cr-exp">
+            <option>No experience — trainee</option><option>Under 2 years</option>
+            <option>2 – 5 years</option><option>5 – 10 years</option><option>10+ years</option>
+          </select>
+        </div>
+        <div class="field">
+          <label class="field__label" for="cr-city">Current city</label>
+          <input class="input" id="cr-city" autocomplete="address-level2">
+        </div>
+        <div class="field field--full">
+          <label class="field__label" for="cr-cv">Attach your CV</label>
+          <input class="input" type="file" id="cr-cv" accept=".pdf,.doc,.docx">
+          <p class="field__hint">PDF or Word, up to 5 MB. Optional for counter and trainee roles.</p>
+        </div>
+        <div class="field field--full">
+          <label class="field__label" for="cr-note">Why this role?</label>
+          <textarea class="textarea" id="cr-note" placeholder="A few honest lines beat a paragraph of adjectives."></textarea>
+        </div>
+      </div>
+      <label class="check"><input type="checkbox" required><span>I accept the <a href="privacy.html">Privacy Policy</a> and consent to my details being held for twelve months <span class="req">*</span></span></label>
+      <button class="btn btn--accent" type="submit">Submit application</button>
+    </form>
+
+    <div id="careers-thanks" hidden>
+      <div class="checkout-block">
+        <span class="order-success__tick" style="margin-bottom:.5rem">{{ICON_CHECK}}</span>
+        <h2 style="font-size:var(--fs-h3)">Application received</h2>
+        <p class="muted">Thank you for applying. We read everything that comes in — shortlisted candidates hear from us within a week, and we reply either way.</p>
+        <a class="btn btn--sm btn--outline" href="about.html">Read our story</a>
+      </div>
+    </div>
+
+    <aside class="enquiry-aside">
+      <div class="contact-block">
+        <span class="eyebrow">Hiring team</span>
+        <div class="contact-block__row">{{ICON_MAIL}}<span><b>careers@saiphbakes.com</b></span></div>
+        <div class="contact-block__row">{{ICON_MAPPIN}}<span>SAiPH Bakes, Chowkidinghee, RKB Path, Dibrugarh 786001</span></div>
+      </div>
+      <div class="contact-block">
+        <span class="eyebrow">How we hire</span>
+        <ul class="prose" style="font-size:var(--fs-sm)">
+          <li>Application read by a human, not a filter</li>
+          <li>One conversation about the work</li>
+          <li>A practical trial — paid, on site, half a day</li>
+          <li>Reference call, then an offer</li>
+          <li>No unpaid trials, ever</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>

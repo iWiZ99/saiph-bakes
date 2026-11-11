@@ -1,0 +1,250 @@
+/* ==========================================================================
+   SAiPH Bakes — Design Tokens
+   Master brand + three sub-brand themes. Scope a theme with data-brand="…"
+   on any element; every child inherits that brand's surface + accent set.
+   ========================================================================== */
+
+:root {
+  /* ---- Master palette: warm artisanal tones ---- */
+  --navy-900: #181616; /* Deep espresso charcoal */
+  --navy-800: #242020;
+  --navy-700: #332d2d;
+  --navy-600: #4a4242;
+  --navy-400: #786f6f;
+
+  --cream-50: #fcfbf9;  /* Clean warm ivory */
+  --cream-100: #f7f4ee; /* Warm oatmeal */
+  --cream-200: #efe9dd;
+  --beige-300: #e3d9c7;
+  --beige-400: #d6c8b0;
+  --sand-500: #bfb4aa;  /* Hazelnut taupe */
+
+  --gold-300: #f4dcd8;
+  --gold-400: #e8b8b0; /* Dusty rose blush */
+  --gold-500: #9e5655; /* Signature terracotta berry */
+  --gold-600: #844443;
+
+  --burgundy-500: #6b2d38;
+  --burgundy-400: #8c3b4a;
+
+  --ink-900: #181616;
+  --ink-700: #332d2d;
+  --ink-500: #67625e;
+  --ink-400: #8f8880;
+  --ink-300: #bfb8b0;
+
+  --white: #ffffff;
+  --success: #2f7d5d;
+  --warning: #b4711c;
+  --danger: #9e3636;
+
+  /* ---- Semantic surface roles (master brand default) ---- */
+  --bg: var(--cream-50);
+  --bg-alt: var(--cream-100);
+  --bg-sunken: var(--cream-200);
+  --surface: var(--white);
+  --surface-2: var(--cream-100);
+  --contrast: var(--navy-900);
+  --contrast-2: var(--navy-800);
+  --on-contrast: #ffffff;
+
+  --text: var(--ink-900);
+  --text-muted: var(--ink-500);
+  --text-faint: var(--ink-400);
+  --heading: var(--navy-900);
+
+  --accent: var(--gold-500);
+  --accent-soft: var(--gold-400);
+  --accent-ink: #ffffff;
+  --on-accent: #ffffff;
+
+  --line: rgba(24, 22, 22, 0.08);
+  --line-strong: rgba(24, 22, 22, 0.16);
+  --line-on-dark: rgba(255, 255, 255, 0.14);
+
+  /* ---- Typography ---- */
+  --font-display: "DM Sans", "Playfair Display", Georgia, serif;
+  --font-editorial: "DM Sans", "Playfair Display", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+
+  --fs-xs: 0.6875rem;   /* 11 */
+  --fs-sm: 0.8125rem;   /* 13 */
+  --fs-base: 0.9375rem; /* 15 */
+  --fs-md: 1.0625rem;   /* 17 */
+  --fs-lg: clamp(1.15rem, 0.9rem + 0.6vw, 1.375rem);
+  --fs-h4: clamp(1.25rem, 1rem + 0.8vw, 1.6rem);
+  --fs-h3: clamp(1.5rem, 1.15rem + 1.3vw, 2.1rem);
+  --fs-h2: clamp(1.9rem, 1.3rem + 2.2vw, 3rem);
+  --fs-h1: clamp(2.4rem, 1.4rem + 4vw, 4.6rem);
+
+  --tracking-label: 0.2em;
+  --tracking-wide: 0.09em;
+  --leading-tight: 1.08;
+  --leading-snug: 1.28;
+  --leading: 1.62;
+
+  /* ---- Space & shape ---- */
+  --gutter: clamp(1.15rem, 0.6rem + 2.4vw, 3.5rem);
+  --page-max: 1400px;
+  --prose-max: 68ch;
+  --section-y: clamp(3.5rem, 2rem + 6vw, 7.5rem);
+
+  --r-xs: 4px;
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 22px;
+  --r-xl: 32px;
+  --r-pill: 999px;
+
+  --shadow-xs: 0 1px 2px rgba(8, 16, 31, 0.05);
+  --shadow-sm: 0 2px 10px -4px rgba(8, 16, 31, 0.14);
+  --shadow-md: 0 12px 30px -14px rgba(8, 16, 31, 0.2), 0 2px 6px -3px rgba(8, 16, 31, 0.08);
+  --shadow-lg: 0 30px 70px -30px rgba(8, 16, 31, 0.34), 0 6px 18px -10px rgba(8, 16, 31, 0.14);
+  --shadow-gold: 0 14px 34px -16px rgba(193, 154, 76, 0.5);
+
+  /* ---- Motion ---- */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 160ms;
+  --dur: 280ms;
+  --dur-slow: 620ms;
+
+  --z-sticky: 60;
+  --z-header: 70;
+  --z-drawer: 90;
+  --z-modal: 100;
+  --z-toast: 120;
+
+  /* ---- Placeholder art tones (master) ---- */
+  --art-1: #21324f;
+  --art-2: #b99a5f;
+  --art-3: #f2e6d0;
+}
+
+/* =========================== DoughReMi ==================================
+   Warm chocolate · cream · caramel · soft earthy — everyday café warmth. */
+[data-brand="doughremi"] {
+  --bg: #fdf7ee;
+  --bg-alt: #f8eedf;
+  --bg-sunken: #f1e3ce;
+  --surface: #fffdf9;
+  --surface-2: #f8eedf;
+  --contrast: #33200f;
+  --contrast-2: #472e18;
+  --on-contrast: #f8eedf;
+
+  --text: #2c1d10;
+  --text-muted: #6d5540;
+  --text-faint: #8d7761;
+  --heading: #3a2415;
+
+  --accent: #b57334;
+  --accent-soft: #e0b183;
+  --accent-ink: #3a2415;
+  --on-accent: #fffdf9;
+
+  --line: color-mix(in srgb, #3a2415 12%, transparent);
+  --line-strong: color-mix(in srgb, #3a2415 22%, transparent);
+  --line-on-dark: color-mix(in srgb, #f8eedf 18%, transparent);
+
+  --shadow-md: 0 12px 30px -14px rgba(58, 36, 21, 0.24), 0 2px 6px -3px rgba(58, 36, 21, 0.1);
+  --shadow-lg: 0 30px 70px -30px rgba(58, 36, 21, 0.38), 0 6px 18px -10px rgba(58, 36, 21, 0.16);
+
+  --art-1: #6b4224;
+  --art-2: #c99055;
+  --art-3: #f6e7d2;
+}
+
+/* ======================== SAiPH Signature ===============================
+   Matte black · champagne gold · ivory · burgundy — jewellery-box luxury. */
+[data-brand="signature"] {
+  --bg: #0b0b0c;
+  --bg-alt: #121213;
+  --bg-sunken: #080809;
+  --surface: #151517;
+  --surface-2: #1c1c1f;
+  --contrast: #f4efe6;
+  --contrast-2: #e8e0d2;
+  --on-contrast: #0b0b0c;
+
+  --text: #ece6da;
+  --text-muted: #a49d90;
+  --text-faint: #837c70;
+  --heading: #f7f2e9;
+
+  --accent: #d8be85;
+  --accent-soft: #efdcb2;
+  --accent-ink: #f7f2e9;
+  --on-accent: #0b0b0c;
+
+  --line: color-mix(in srgb, #f4efe6 14%, transparent);
+  --line-strong: color-mix(in srgb, #f4efe6 26%, transparent);
+  --line-on-dark: color-mix(in srgb, #f4efe6 16%, transparent);
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.5);
+  --shadow-sm: 0 2px 12px -4px rgba(0, 0, 0, 0.7);
+  --shadow-md: 0 14px 34px -16px rgba(0, 0, 0, 0.8), 0 2px 8px -4px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 34px 80px -34px rgba(0, 0, 0, 0.92), 0 8px 22px -12px rgba(0, 0, 0, 0.7);
+  --shadow-gold: 0 16px 40px -18px rgba(216, 190, 133, 0.42);
+
+  --art-1: #1a1216;
+  --art-2: #d8be85;
+  --art-3: #5a1226;
+}
+
+/* ============================= Khowdy ==================================
+   Forest green · earth brown · cream · natural beige — Assam, tea, terroir. */
+[data-brand="khowdy"] {
+  --bg: #f8f5ea;
+  --bg-alt: #f0ecdb;
+  --bg-sunken: #e6e0c9;
+  --surface: #fdfbf3;
+  --surface-2: #f0ecdb;
+  --contrast: #17301f;
+  --contrast-2: #1f4029;
+  --on-contrast: #f0ecdb;
+
+  --text: #1d2a1f;
+  --text-muted: #56624f;
+  --text-faint: #74806c;
+  --heading: #17301f;
+
+  --accent: #2f6a45;
+  --accent-soft: #a8c3ac;
+  --accent-ink: #17301f;
+  --on-accent: #fdfbf3;
+
+  --line: color-mix(in srgb, #17301f 13%, transparent);
+  --line-strong: color-mix(in srgb, #17301f 24%, transparent);
+  --line-on-dark: color-mix(in srgb, #f0ecdb 18%, transparent);
+
+  --shadow-md: 0 12px 30px -14px rgba(23, 48, 31, 0.24), 0 2px 6px -3px rgba(23, 48, 31, 0.1);
+  --shadow-lg: 0 30px 70px -30px rgba(23, 48, 31, 0.4), 0 6px 18px -10px rgba(23, 48, 31, 0.16);
+  --shadow-gold: 0 14px 34px -16px rgba(90, 69, 48, 0.4);
+
+  --art-1: #26452f;
+  --art-2: #8a6b45;
+  --art-3: #e9e3cd;
+}
+
+/* Dark inversion utility for master-brand editorial blocks */
+[data-tone="dark"] {
+  --bg: var(--navy-900);
+  --bg-alt: var(--navy-800);
+  --bg-sunken: #060c17;
+  --surface: var(--navy-800);
+  --surface-2: var(--navy-700);
+  --contrast: var(--cream-100);
+  --on-contrast: var(--navy-900);
+  --text: var(--cream-200);
+  --text-muted: #9aa6bb;
+  --text-faint: #7b869a;
+  --heading: var(--cream-50);
+  --accent: var(--gold-400);
+  --accent-soft: var(--gold-300);
+  --accent-ink: var(--cream-50);
+  --on-accent: var(--navy-900);
+  --line: color-mix(in srgb, var(--cream-100) 14%, transparent);
+  --line-strong: color-mix(in srgb, var(--cream-100) 26%, transparent);
+}

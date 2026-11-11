@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#1a120e"/>
+      <stop offset="65%" stop-color="#0a0705"/>
+      <stop offset="100%" stop-color="#050302"/>
+    </radialGradient>
+    <radialGradient id="plate" cx="45%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#f0ece6"/>
+      <stop offset="70%" stop-color="#cec7bb"/>
+      <stop offset="100%" stop-color="#948d7d"/>
+    </radialGradient>
+    <radialGradient id="slate" cx="45%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#363d47"/>
+      <stop offset="70%" stop-color="#242931"/>
+      <stop offset="100%" stop-color="#14181d"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="28" stdDeviation="32" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+    <filter id="glow-filter" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="45"/>
+    </filter>
+    
+    <radialGradient id="mufDome" cx="45%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="60%" stop-color="#ca8a04"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </radialGradient>
+    <linearGradient id="mufCup" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="25%" stop-color="#64748b"/>
+      <stop offset="50%" stop-color="#334155"/>
+      <stop offset="75%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  
+  </defs>
+
+  <!-- Luxury Dark Backdrop -->
+  <rect width="800" height="800" fill="url(#bg)"/>
+  
+  <!-- Ambient Culinary Spotlight -->
+  <circle cx="400" cy="380" r="300" fill="#fef08a" opacity="0.09" filter="url(#glow-filter)"/>
+
+  
+    <!-- Serving Platter -->
+    <ellipse cx="400" cy="520" rx="280" ry="150" fill="url(#plate)" filter="url(#shadow)"/>
+
+    <!-- Fluted Baking Cup -->
+    <path d="M 290 420 L 320 530 L 480 530 L 510 420 Z" fill="url(#mufCup)" filter="url(#shadow)"/>
+    <!-- Pleats / Flutes in Paper Liner -->
+    <line x1="330" y1="420" x2="350" y2="530" stroke="#1e293b" stroke-width="3"/>
+    <line x1="370" y1="420" x2="385" y2="530" stroke="#1e293b" stroke-width="3"/>
+    <line x1="410" y1="420" x2="415" y2="530" stroke="#1e293b" stroke-width="3"/>
+    <line x1="440" y1="420" x2="445" y2="530" stroke="#1e293b" stroke-width="3"/>
+    <line x1="470" y1="420" x2="475" y2="530" stroke="#1e293b" stroke-width="3"/>
+
+    <!-- Overflowing Domed Muffin Top -->
+    <ellipse cx="400" cy="400" rx="145" ry="85" fill="url(#mufDome)" filter="url(#shadow)"/>
+    <!-- Crackled Mushroom Crown -->
+    <path d="M 270 410 C 270 280 530 280 530 410 C 530 450 270 450 270 410 Z" fill="url(#mufDome)"/>
+    <path d="M 330 360 Q 400 330 470 360" stroke="#fff" stroke-width="3" fill="none" opacity="0.25"/>
+
+    
+    <!-- Semi-Sweet Chocolate Chips Pointing Out -->
+    <polygon points="360,340 375,345 365,360" fill="#2d150b"/>
+    <polygon points="420,330 435,335 425,350" fill="#2d150b"/>
+    <polygon points="450,355 465,360 455,375" fill="#2d150b"/>
+    <polygon points="390,365 405,370 395,385" fill="#2d150b"/>
+  
+
+    <!-- High Crown Glow -->
+    <ellipse cx="400" cy="330" rx="90" ry="40" fill="#fff" opacity="0.16" filter="blur(10px)"/>
+  
+</svg>

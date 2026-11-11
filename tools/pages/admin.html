@@ -1,0 +1,139 @@
+<!-- Admin Security Gate (Rendered when unauthenticated or session expired) -->
+<div class="admin-auth-screen" data-admin-auth-gate style="display:none">
+  <div class="admin-auth-card">
+    <div class="admin-auth-header">
+      <div class="admin-auth-emblem">
+        {{LOGO}}
+      </div>
+      <div>
+        <h1 class="admin-auth-title"><span class="brandname">SAiPH Bakes</span></h1>
+        <div class="admin-auth-badge">{{ICON_SHIELD}} Restricted Operations Console</div>
+      </div>
+      <p class="admin-auth-desc">Dibrugarh Central Kitchen &amp; Pâtisserie Management. Cryptographically authenticated session required.</p>
+    </div>
+
+    <!-- Live Security Status Alert (Error / Lockout Countdown) -->
+    <div class="admin-auth-alert" data-auth-alert style="display:none"></div>
+
+    <form class="admin-auth-form" data-auth-form novalidate>
+      <div class="field">
+        <label for="adminEmail" class="field__label" style="color:var(--cream-200);font-size:var(--fs-xs)">Administrative ID / Email</label>
+        <div class="admin-input-wrap">
+          <input type="email" id="adminEmail" class="input input--dark" autocomplete="username" placeholder="admin@saiphbakes.com" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.25rem">
+          <label for="adminPassword" class="field__label" style="color:var(--cream-200);font-size:var(--fs-xs);margin-bottom:0">Access Password</label>
+          <button type="button" data-toggle-password style="font-size:0.75rem;color:var(--gold-400);background:none;border:none;cursor:pointer;padding:0">Show</button>
+        </div>
+        <div class="admin-input-wrap">
+          <input type="password" id="adminPassword" class="input input--dark" autocomplete="current-password" placeholder="••••••••••••" required>
+        </div>
+        <div class="caps-lock-warning" data-caps-warning style="display:none;font-size:0.72rem;color:var(--gold-400);margin-top:0.25rem">
+          ⚠️ Caps Lock is active
+        </div>
+      </div>
+
+      <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;color:#94a3b8">
+        <label style="display:flex;align-items:center;gap:0.45rem;cursor:pointer">
+          <input type="checkbox" id="adminRemember" checked>
+          <span>Keep session active</span>
+        </label>
+        <span style="font-size:0.72rem;color:#64748b">TLS 1.3 · PBKDF2/SHA-256</span>
+      </div>
+
+      <button type="submit" class="btn btn--gold btn--full admin-auth-submit" data-auth-submit>
+        {{ICON_LOCK}} Authenticate &amp; Enter Console
+      </button>
+    </form>
+
+    <!-- Quick Staff Demo Switcher -->
+    <div class="admin-demo-box">
+      <div class="admin-demo-title">
+        <span>Quick Test Access (Pre-configured Staff Accounts)</span>
+      </div>
+      <div class="admin-demo-pills">
+        <button type="button" class="admin-demo-pill" data-demo-role="super" title="Full System Authority">
+          <strong>Master Super Admin</strong>
+          <small>admin@saiphbakes.com</small>
+        </button>
+        <button type="button" class="admin-demo-pill" data-demo-role="store" title="Retail &amp; Store Orders">
+          <strong>Store Manager</strong>
+          <small>manager.dibrugarh@saiphbakes.com</small>
+        </button>
+        <button type="button" class="admin-demo-pill" data-demo-role="production" title="Kitchen &amp; Baking Queue">
+          <strong>Head Baker</strong>
+          <small>baker@saiphbakes.com</small>
+        </button>
+        <button type="button" class="admin-demo-pill" data-demo-role="orders" title="Fulfillment &amp; Dispatch">
+          <strong>Dispatch Lead</strong>
+          <small>dispatch@saiphbakes.com</small>
+        </button>
+      </div>
+    </div>
+
+    <div class="admin-auth-footer">
+      <span>{{ICON_SHIELD}} 256-Bit Salted Cryptographic Hashing · Session Idle Guard · Immutable Audit Logging</span>
+    </div>
+  </div>
+</div>
+
+<!-- Main Admin Console (Rendered when valid authenticated session exists) -->
+<div class="admin" data-admin-console style="display:none">
+  <div class="admin-scrim" data-admin-scrim></div>
+
+  <aside class="admin__side" data-admin-side>
+    <div class="admin__brand">
+      {{LOGO}}
+      <span class="brandmark__type">
+        <span class="brandmark__name">SA<em>i</em>PH Admin</span>
+        <span class="brandmark__tag" style="color:var(--gold-400)">Console</span>
+      </span>
+      <button class="btn btn--sm btn--ghost admin__side-close" type="button" data-admin-close aria-label="Close navigation">
+        {{ICON_X}}
+      </button>
+    </div>
+    <nav class="admin-nav" aria-label="Admin sections" data-admin-nav></nav>
+    <div style="border-top:1px solid rgba(251,246,236,.14);padding-top:0.9rem;margin-top:auto;display:grid;gap:0.4rem">
+      <a class="admin-nav" href="../index.html">
+        <span style="display:flex;align-items:center;gap:.65rem;padding:.5rem .7rem;font-size:var(--fs-sm);color:#b7c3d6">
+          {{ICON_EXTERNAL}} View storefront
+        </span>
+      </a>
+      <button class="btn btn--sm btn--outline" type="button" data-action="backup" style="width:100%;font-size:var(--fs-xs);border-color:rgba(255,255,255,0.2);color:#cad5e2">
+        Backup / Reset
+      </button>
+      <button class="btn btn--sm btn--ghost" type="button" data-action="logout" style="width:100%;font-size:var(--fs-xs);color:#fca5a5;border:1px solid rgba(239,68,68,0.3);margin-top:0.25rem">
+        {{ICON_LOGOUT}} Sign Out
+      </button>
+    </div>
+  </aside>
+
+  <main class="admin__main" id="main">
+    <div class="admin__bar">
+      <button class="btn btn--sm btn--outline admin__mobile-toggle" type="button" data-admin-toggle aria-label="Open menu">
+        {{ICON_LIST}} Menu
+      </button>
+      <div>
+        <span class="eyebrow eyebrow--muted" style="color:var(--ink-400)"><span class="brandname">SAiPH Bakes</span> · Dibrugarh Central Kitchen</span>
+        <h1 style="font-size:var(--fs-h3);color:var(--navy-900)" data-admin-title>Dashboard</h1>
+      </div>
+      <span class="spacer"></span>
+      <div class="admin__actions-bar" data-admin-quick-actions></div>
+
+      <!-- Authenticated Profile & Session Controls -->
+      <div class="admin__user-badge" data-admin-user-badge></div>
+
+      <label class="admin__role" data-role-selector-wrap>
+        <span>Simulate Role</span>
+        <select class="select" data-role-switch aria-label="Switch role"></select>
+      </label>
+    </div>
+
+    <div class="note" data-role-note>{{ICON_SHIELD}}<span></span></div>
+
+    <div data-admin-body></div>
+  </main>
+</div>

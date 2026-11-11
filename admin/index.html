@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en-IN" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SAiPH Bakes — Admin Console</title>
+<meta name="description" content="Role-based administration for products, orders, inventory, delivery slots, stores, coupons, content and enquiries.">
+<link rel="canonical" href="https://saiph-bakes.vercel.app/admin/index.html">
+<meta name="theme-color" content="#181616">
+<meta name="format-detection" content="telephone=no">
+<meta name="robots" content="noindex,nofollow">
+
+<meta property="og:site_name" content="SAiPH Bakes">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SAiPH Bakes — Admin Console">
+<meta property="og:description" content="Role-based administration for products, orders, inventory, delivery slots, stores, coupons, content and enquiries.">
+<meta property="og:url" content="https://saiph-bakes.vercel.app/admin/index.html">
+<meta property="og:image" content="https://saiph-bakes.vercel.app/assets/img/og-cover.svg">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SAiPH Bakes — Admin Console">
+<meta name="twitter:description" content="Role-based administration for products, orders, inventory, delivery slots, stores, coupons, content and enquiries.">
+<meta name="twitter:image" content="https://saiph-bakes.vercel.app/assets/img/og-cover.svg">
+
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/img/favicon.svg">
+<link rel="manifest" href="../manifest.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..800;1,9..40,300..800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap">
+
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://saiph-bakes.vercel.app/#organization",
+      "name": "SAiPH Bakes",
+      "legalName": "SAiPH Bakes Foods Pvt. Ltd.",
+      "url": "https://saiph-bakes.vercel.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://saiph-bakes.vercel.app/assets/img/logo.svg",
+        "width": 512,
+        "height": 512
+      },
+      "slogan": "Luxury In Every Bite",
+      "foundingDate": "2019",
+      "description": "SAiPH Bakes is a premium Indian bakery and food company, parent to DoughReMi everyday bakery, SAiPH Signature luxury patisserie and Khowdy Assam-inspired packaged foods.",
+      "email": "hello@saiphbakes.com",
+      "telephone": "+91-98640-00000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Chowkidinghee, RKB Path",
+        "addressLocality": "Dibrugarh",
+        "addressRegion": "Assam",
+        "postalCode": "786001",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://www.instagram.com/",
+        "https://www.facebook.com/",
+        "https://www.youtube.com/",
+        "https://www.linkedin.com/"
+      ],
+      "brand": {
+        "@type": "Brand",
+        "name": "SAiPH Bakes",
+        "url": "https://saiph-bakes.vercel.app/"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://saiph-bakes.vercel.app/#website",
+      "url": "https://saiph-bakes.vercel.app/",
+      "name": "SAiPH Bakes",
+      "publisher": { "@id": "https://saiph-bakes.vercel.app/#organization" },
+      "inLanguage": "en-IN",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": { "@type": "EntryPoint", "urlTemplate": "https://saiph-bakes.vercel.app/shop.html?q={search_term_string}" },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Bakery",
+      "@id": "https://saiph-bakes.vercel.app/#flagship",
+      "name": "SAiPH Bakes — Dibrugarh",
+      "parentOrganization": { "@id": "https://saiph-bakes.vercel.app/#organization" },
+      "image": "https://saiph-bakes.vercel.app/assets/img/og-cover.svg",
+      "url": "https://saiph-bakes.vercel.app/stores.html",
+      "telephone": "+91-98640-00001",
+      "priceRange": "₹₹",
+      "servesCuisine": ["Bakery", "Patisserie", "Desserts", "Assamese"],
+      "currenciesAccepted": "INR",
+      "paymentAccepted": "UPI, Credit Card, Debit Card, Net Banking, Cash",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Chowkidinghee, RKB Path",
+        "addressLocality": "Dibrugarh",
+        "addressRegion": "Assam",
+        "postalCode": "786001",
+        "addressCountry": "IN"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": 27.4728, "longitude": 94.9120 },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "08:00",
+        "closes": "22:30"
+      }],
+      "hasMap": "https://maps.google.com/?q=Chowkidinghee+RKB+Path+Dibrugarh",
+      "areaServed": ["Dibrugarh"]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="admin">
+<!-- Admin Security Gate (Rendered when unauthenticated or session expired) -->
+<div class="admin-auth-screen" data-admin-auth-gate style="display:none">
+  <div class="admin-auth-card">
+    <div class="admin-auth-header">
+      <div class="admin-auth-emblem">
+        <svg class="brandmark__glyph" viewBox="0 0 145 130" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="saiphGoldGlyph" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9F295"/>
+      <stop offset="45%" stop-color="#F3DE0A"/>
+      <stop offset="100%" stop-color="#E0AA3E"/>
+    </linearGradient>
+  </defs>
+  <path d="M 134 14 L 125 13 L 114 16 L 108 19 L 98 26 L 91 33 L 84 43 L 82 43 L 73 49 L 71 43 L 72 39 L 81 40 L 81 34 L 86 22 L 90 20 L 89 14 L 84 15 L 83 18 L 84 21 L 76 28 L 74 26 L 72 17 L 74 12 L 73 7 L 70 6 L 68 7 L 67 13 L 69 16 L 68 22 L 66 27 L 64 28 L 57 21 L 56 14 L 51 15 L 51 20 L 55 22 L 59 31 L 59 35 L 61 40 L 70 40 L 70 43 L 66 50 L 59 43 L 57 43 L 55 41 L 53 37 L 44 27 L 33 19 L 22 14 L 16 13 L 8 14 L 8 16 L 11 19 L 13 24 L 13 31 L 15 41 L 20 47 L 19 57 L 20 60 L 25 66 L 36 71 L 36 74 L 30 77 L 25 82 L 22 88 L 22 99 L 29 107 L 30 112 L 35 111 L 41 114 L 50 114 L 61 108 L 66 99 L 69 99 L 70 102 L 68 105 L 68 111 L 71 115 L 73 111 L 73 105 L 72 104 L 75 98 L 75 100 L 79 107 L 88 113 L 91 114 L 101 114 L 107 111 L 112 111 L 113 106 L 118 101 L 119 98 L 119 88 L 116 82 L 111 77 L 106 75 L 105 71 L 116 66 L 121 60 L 122 57 L 121 46 L 123 45 L 127 38 L 128 24 L 130 19 Z M 101 76 L 109 84 L 111 88 L 111 95 L 107 101 L 106 105 L 98 107 L 89 107 L 87 106 L 82 97 L 89 98 L 96 93 L 100 85 L 99 79 Z M 38 77 L 42 77 L 41 85 L 43 90 L 47 95 L 52 98 L 61 99 L 52 107 L 43 107 L 34 104 L 34 101 L 30 96 L 30 88 L 34 81 Z M 88 72 L 95 76 L 96 78 L 96 88 L 91 94 L 85 96 L 80 92 L 79 87 L 81 82 L 82 74 L 84 72 Z M 53 72 L 57 72 L 60 76 L 59 83 L 62 87 L 61 92 L 56 96 L 50 94 L 46 90 L 44 85 L 45 78 L 49 74 Z M 78 59 L 77 68 L 73 71 L 73 61 Z M 65 58 L 68 61 L 65 71 L 64 63 L 63 62 Z M 80 52 L 80 55 L 77 57 L 75 54 Z M 63 51 L 65 53 L 64 57 L 61 56 Z M 90 45 L 93 48 L 94 52 L 93 56 L 85 66 L 79 68 L 82 53 L 86 46 Z M 51 45 L 53 45 L 57 49 L 59 53 L 60 61 L 62 66 L 60 69 L 51 61 L 48 56 L 48 48 Z M 120 23 L 118 31 L 118 39 L 112 46 L 114 48 L 114 52 L 108 57 L 109 63 L 99 70 L 96 71 L 91 70 L 91 68 L 98 61 L 100 56 L 100 50 L 98 45 L 92 42 L 91 40 L 94 36 L 109 25 L 116 22 Z M 21 22 L 28 23 L 30 25 L 32 25 L 37 28 L 50 41 L 48 43 L 44 44 L 41 49 L 42 59 L 50 68 L 49 71 L 42 70 L 32 63 L 32 56 L 27 52 L 27 48 L 29 46 L 23 39 L 22 27 L 20 24 Z" fill="url(#saiphGoldGlyph)" fill-rule="evenodd"/>
+</svg>
+      </div>
+      <div>
+        <h1 class="admin-auth-title"><span class="brandname">SAiPH Bakes</span></h1>
+        <div class="admin-auth-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-3.4 8-10V5.5L12 2 4 5.5V12c0 6.6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg> Restricted Operations Console</div>
+      </div>
+      <p class="admin-auth-desc">Dibrugarh Central Kitchen &amp; Pâtisserie Management. Cryptographically authenticated session required.</p>
+    </div>
+
+    <!-- Live Security Status Alert (Error / Lockout Countdown) -->
+    <div class="admin-auth-alert" data-auth-alert style="display:none"></div>
+
+    <form class="admin-auth-form" data-auth-form novalidate>
+      <div class="field">
+        <label for="adminEmail" class="field__label" style="color:var(--cream-200);font-size:var(--fs-xs)">Administrative ID / Email</label>
+        <div class="admin-input-wrap">
+          <input type="email" id="adminEmail" class="input input--dark" autocomplete="username" placeholder="admin@saiphbakes.com" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.25rem">
+          <label for="adminPassword" class="field__label" style="color:var(--cream-200);font-size:var(--fs-xs);margin-bottom:0">Access Password</label>
+          <button type="button" data-toggle-password style="font-size:0.75rem;color:var(--gold-400);background:none;border:none;cursor:pointer;padding:0">Show</button>
+        </div>
+        <div class="admin-input-wrap">
+          <input type="password" id="adminPassword" class="input input--dark" autocomplete="current-password" placeholder="••••••••••••" required>
+        </div>
+        <div class="caps-lock-warning" data-caps-warning style="display:none;font-size:0.72rem;color:var(--gold-400);margin-top:0.25rem">
+          ⚠️ Caps Lock is active
+        </div>
+      </div>
+
+      <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;color:#94a3b8">
+        <label style="display:flex;align-items:center;gap:0.45rem;cursor:pointer">
+          <input type="checkbox" id="adminRemember" checked>
+          <span>Keep session active</span>
+        </label>
+        <span style="font-size:0.72rem;color:#64748b">TLS 1.3 · PBKDF2/SHA-256</span>
+      </div>
+
+      <button type="submit" class="btn btn--gold btn--full admin-auth-submit" data-auth-submit>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Authenticate &amp; Enter Console
+      </button>
+    </form>
+
+    <!-- Quick Staff Demo Switcher -->
+    <div class="admin-demo-box">
+      <div class="admin-demo-title">
+        <span>Quick Test Access (Pre-configured Staff Accounts)</span>
+      </div>
+      <div class="admin-demo-pills">
+        <button type="button" class="admin-demo-pill" data-demo-role="super" title="Full System Authority">
+          <strong>Master Super Admin</strong>
+          <small>admin@saiphbakes.com</small>
+        </button>
+        <button type="button" class="admin-demo-pill" data-demo-role="store" title="Retail &amp; Store Orders">
+          <strong>Store Manager</strong>
+          <small>manager.dibrugarh@saiphbakes.com</small>
+        </button>
+        <button type="button" class="admin-demo-pill" data-demo-role="production" title="Kitchen &amp; Baking Queue">
+          <strong>Head Baker</strong>
+          <small>baker@saiphbakes.com</small>
+        </button>
+        <button type="button" class="admin-demo-pill" data-demo-role="orders" title="Fulfillment &amp; Dispatch">
+          <strong>Dispatch Lead</strong>
+          <small>dispatch@saiphbakes.com</small>
+        </button>
+      </div>
+    </div>
+
+    <div class="admin-auth-footer">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-3.4 8-10V5.5L12 2 4 5.5V12c0 6.6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg> 256-Bit Salted Cryptographic Hashing · Session Idle Guard · Immutable Audit Logging</span>
+    </div>
+  </div>
+</div>
+
+<!-- Main Admin Console (Rendered when valid authenticated session exists) -->
+<div class="admin" data-admin-console style="display:none">
+  <div class="admin-scrim" data-admin-scrim></div>
+
+  <aside class="admin__side" data-admin-side>
+    <div class="admin__brand">
+      <svg class="brandmark__glyph" viewBox="0 0 145 130" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="saiphGoldGlyph" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9F295"/>
+      <stop offset="45%" stop-color="#F3DE0A"/>
+      <stop offset="100%" stop-color="#E0AA3E"/>
+    </linearGradient>
+  </defs>
+  <path d="M 134 14 L 125 13 L 114 16 L 108 19 L 98 26 L 91 33 L 84 43 L 82 43 L 73 49 L 71 43 L 72 39 L 81 40 L 81 34 L 86 22 L 90 20 L 89 14 L 84 15 L 83 18 L 84 21 L 76 28 L 74 26 L 72 17 L 74 12 L 73 7 L 70 6 L 68 7 L 67 13 L 69 16 L 68 22 L 66 27 L 64 28 L 57 21 L 56 14 L 51 15 L 51 20 L 55 22 L 59 31 L 59 35 L 61 40 L 70 40 L 70 43 L 66 50 L 59 43 L 57 43 L 55 41 L 53 37 L 44 27 L 33 19 L 22 14 L 16 13 L 8 14 L 8 16 L 11 19 L 13 24 L 13 31 L 15 41 L 20 47 L 19 57 L 20 60 L 25 66 L 36 71 L 36 74 L 30 77 L 25 82 L 22 88 L 22 99 L 29 107 L 30 112 L 35 111 L 41 114 L 50 114 L 61 108 L 66 99 L 69 99 L 70 102 L 68 105 L 68 111 L 71 115 L 73 111 L 73 105 L 72 104 L 75 98 L 75 100 L 79 107 L 88 113 L 91 114 L 101 114 L 107 111 L 112 111 L 113 106 L 118 101 L 119 98 L 119 88 L 116 82 L 111 77 L 106 75 L 105 71 L 116 66 L 121 60 L 122 57 L 121 46 L 123 45 L 127 38 L 128 24 L 130 19 Z M 101 76 L 109 84 L 111 88 L 111 95 L 107 101 L 106 105 L 98 107 L 89 107 L 87 106 L 82 97 L 89 98 L 96 93 L 100 85 L 99 79 Z M 38 77 L 42 77 L 41 85 L 43 90 L 47 95 L 52 98 L 61 99 L 52 107 L 43 107 L 34 104 L 34 101 L 30 96 L 30 88 L 34 81 Z M 88 72 L 95 76 L 96 78 L 96 88 L 91 94 L 85 96 L 80 92 L 79 87 L 81 82 L 82 74 L 84 72 Z M 53 72 L 57 72 L 60 76 L 59 83 L 62 87 L 61 92 L 56 96 L 50 94 L 46 90 L 44 85 L 45 78 L 49 74 Z M 78 59 L 77 68 L 73 71 L 73 61 Z M 65 58 L 68 61 L 65 71 L 64 63 L 63 62 Z M 80 52 L 80 55 L 77 57 L 75 54 Z M 63 51 L 65 53 L 64 57 L 61 56 Z M 90 45 L 93 48 L 94 52 L 93 56 L 85 66 L 79 68 L 82 53 L 86 46 Z M 51 45 L 53 45 L 57 49 L 59 53 L 60 61 L 62 66 L 60 69 L 51 61 L 48 56 L 48 48 Z M 120 23 L 118 31 L 118 39 L 112 46 L 114 48 L 114 52 L 108 57 L 109 63 L 99 70 L 96 71 L 91 70 L 91 68 L 98 61 L 100 56 L 100 50 L 98 45 L 92 42 L 91 40 L 94 36 L 109 25 L 116 22 Z M 21 22 L 28 23 L 30 25 L 32 25 L 37 28 L 50 41 L 48 43 L 44 44 L 41 49 L 42 59 L 50 68 L 49 71 L 42 70 L 32 63 L 32 56 L 27 52 L 27 48 L 29 46 L 23 39 L 22 27 L 20 24 Z" fill="url(#saiphGoldGlyph)" fill-rule="evenodd"/>
+</svg>
+      <span class="brandmark__type">
+        <span class="brandmark__name">SA<em>i</em>PH Admin</span>
+        <span class="brandmark__tag" style="color:var(--gold-400)">Console</span>
+      </span>
+      <button class="btn btn--sm btn--ghost admin__side-close" type="button" data-admin-close aria-label="Close navigation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <nav class="admin-nav" aria-label="Admin sections" data-admin-nav></nav>
+    <div style="border-top:1px solid rgba(251,246,236,.14);padding-top:0.9rem;margin-top:auto;display:grid;gap:0.4rem">
+      <a class="admin-nav" href="../index.html">
+        <span style="display:flex;align-items:center;gap:.65rem;padding:.5rem .7rem;font-size:var(--fs-sm);color:#b7c3d6">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4 11 13"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg> View storefront
+        </span>
+      </a>
+      <button class="btn btn--sm btn--outline" type="button" data-action="backup" style="width:100%;font-size:var(--fs-xs);border-color:rgba(255,255,255,0.2);color:#cad5e2">
+        Backup / Reset
+      </button>
+      <button class="btn btn--sm btn--ghost" type="button" data-action="logout" style="width:100%;font-size:var(--fs-xs);color:#fca5a5;border:1px solid rgba(239,68,68,0.3);margin-top:0.25rem">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg> Sign Out
+      </button>
+    </div>
+  </aside>
+
+  <main class="admin__main" id="main">
+    <div class="admin__bar">
+      <button class="btn btn--sm btn--outline admin__mobile-toggle" type="button" data-admin-toggle aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg> Menu
+      </button>
+      <div>
+        <span class="eyebrow eyebrow--muted" style="color:var(--ink-400)"><span class="brandname">SAiPH Bakes</span> · Dibrugarh Central Kitchen</span>
+        <h1 style="font-size:var(--fs-h3);color:var(--navy-900)" data-admin-title>Dashboard</h1>
+      </div>
+      <span class="spacer"></span>
+      <div class="admin__actions-bar" data-admin-quick-actions></div>
+
+      <!-- Authenticated Profile & Session Controls -->
+      <div class="admin__user-badge" data-admin-user-badge></div>
+
+      <label class="admin__role" data-role-selector-wrap>
+        <span>Simulate Role</span>
+        <select class="select" data-role-switch aria-label="Switch role"></select>
+      </label>
+    </div>
+
+    <div class="note" data-role-note><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-3.4 8-10V5.5L12 2 4 5.5V12c0 6.6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><span></span></div>
+
+    <div data-admin-body></div>
+  </main>
+</div>
+<script src="../assets/js/data.js"></script>
+<script src="../assets/js/store.js"></script>
+<script src="../assets/js/ui.js"></script>
+<script src="../assets/js/blocks.js"></script>
+<script src="../assets/js/page-admin.js"></script>
+<script src="../assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#1a120e"/>
+      <stop offset="65%" stop-color="#0a0705"/>
+      <stop offset="100%" stop-color="#050302"/>
+    </radialGradient>
+    <radialGradient id="plate" cx="45%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#f0ece6"/>
+      <stop offset="70%" stop-color="#cec7bb"/>
+      <stop offset="100%" stop-color="#948d7d"/>
+    </radialGradient>
+    <radialGradient id="slate" cx="45%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#363d47"/>
+      <stop offset="70%" stop-color="#242931"/>
+      <stop offset="100%" stop-color="#14181d"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="28" stdDeviation="32" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+    <filter id="glow-filter" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="45"/>
+    </filter>
+    
+    <radialGradient id="cakeCrust" cx="45%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#f5cb6c"/>
+      <stop offset="60%" stop-color="#d99d34"/>
+      <stop offset="100%" stop-color="#9e6611"/>
+    </radialGradient>
+    <radialGradient id="cakeCrumb" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#fff5db"/>
+      <stop offset="70%" stop-color="#fae3a7"/>
+      <stop offset="100%" stop-color="#e3c274"/>
+    </radialGradient>
+  
+  </defs>
+
+  <!-- Luxury Dark Backdrop -->
+  <rect width="800" height="800" fill="url(#bg)"/>
+  
+  <!-- Ambient Culinary Spotlight -->
+  <circle cx="400" cy="380" r="300" fill="#e6b800" opacity="0.09" filter="url(#glow-filter)"/>
+
+  
+    <!-- Serving Platter -->
+    <ellipse cx="400" cy="490" rx="290" ry="160" fill="url(#plate)" filter="url(#shadow)"/>
+    <ellipse cx="400" cy="485" rx="265" ry="140" fill="none" stroke="#baaf9c" stroke-width="2.5" opacity="0.5"/>
+
+    <!-- Loaf Shadow -->
+    <ellipse cx="400" cy="470" rx="190" ry="60" fill="#000" opacity="0.4" filter="blur(15px)"/>
+
+    <!-- Loaf Base/Crumb Body -->
+    <path d="M 240 440 Q 400 480 560 440 L 540 370 Q 400 390 260 370 Z" fill="url(#cakeCrumb)"/>
+
+    <!-- Loaf Golden Domed Top with Crack -->
+    <path d="M 240 380 Q 400 280 560 380 Q 570 410 560 440 Q 400 470 240 440 Q 230 410 240 380 Z" fill="url(#cakeCrust)"/>
+    
+    <!-- Signature Artisan Fissure / Split -->
+    <path d="M 280 375 Q 350 350 400 360 Q 450 345 520 375" stroke="#fce8a6" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.85"/>
+    <path d="M 290 375 Q 360 353 400 362 Q 440 348 510 375" stroke="#fff" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.3"/>
+
+    <!-- Cut Slice in Foreground -->
+    <g transform="translate(-40, 20)">
+      <ellipse cx="280" cy="490" rx="70" ry="30" fill="#000" opacity="0.3" filter="blur(8px)"/>
+      <path d="M 230 470 C 230 430 330 430 330 470 C 330 500 230 500 230 470 Z" fill="url(#cakeCrumb)" stroke="#d99d34" stroke-width="5"/>
+      <path d="M 235 450 C 250 435 310 435 325 450" stroke="#f5cb6c" stroke-width="7" fill="none"/>
+    </g>
+
+    
+
+    <!-- Powdered Sugar / Glaze Accent -->
+    <ellipse cx="400" cy="355" rx="140" ry="40" fill="#fff" opacity="0.12" filter="blur(10px)"/>
+  
+</svg>

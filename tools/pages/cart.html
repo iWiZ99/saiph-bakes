@@ -1,0 +1,66 @@
+<section class="page-head">
+  <div class="shell">
+    <nav aria-label="Breadcrumb">
+      <ol class="crumbs">
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">Cart</li>
+      </ol>
+    </nav>
+    <div class="page-head__inner">
+      <span class="eyebrow">Step 1 of 3</span>
+      <h1>Your Cart</h1>
+      <p class="lede" data-cart-lede>Review your order, apply a coupon, then choose delivery or store pickup at checkout.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="shell cart-layout" data-cart-page>
+    <div class="stack stack--lg">
+      <div class="card card--pad" data-cart-lines></div>
+      <div class="row row--between">
+        <a class="link" href="shop.html">{{ICON_ARROWLEFT}} Continue shopping</a>
+        <button class="link" type="button" data-clear-cart style="color:var(--text-faint)">Empty cart</button>
+      </div>
+      <div class="note">{{ICON_SHIELD}}<span><strong>Replace or refund, no argument.</strong> If an item arrives damaged, incorrect or below standard, report it within four hours with a photo and we make it right.</span></div>
+    </div>
+
+    <aside class="summary-panel" aria-label="Order summary">
+      <h2 class="summary-panel__title">Order Summary</h2>
+      <div class="stack stack--sm" data-coupon-area></div>
+      <div class="cart-summary" data-cart-totals></div>
+      <a class="btn btn--accent btn--block" href="checkout.html" data-checkout-btn>Proceed to checkout</a>
+      <div class="stack stack--xs" style="font-size:var(--fs-xs);color:var(--text-faint)">
+        <span class="row row--tight">{{ICON_TRUCK}} Free delivery above ₹999</span>
+        <span class="row row--tight">{{ICON_STORE}} Store pickup available, no delivery charge</span>
+        <span class="row row--tight">{{ICON_CARD}} UPI, cards, net banking, COD in Dibrugarh</span>
+      </div>
+      <div class="stack stack--xs" style="padding-top:.85rem;border-top:1px solid var(--line)">
+        <span class="eyebrow eyebrow--muted">Offers you can use</span>
+        <div class="stack stack--xs" data-offer-list></div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section section--tinted" data-suggest-section>
+  <div class="shell">
+    <div class="section-head section-head--split">
+      <div class="section-head__copy">
+        <span class="eyebrow">Complete the moment</span>
+        <h2 style="font-size:var(--fs-h3)">Frequently added together</h2>
+      </div>
+      <a class="link" href="shop.html">Shop all {{ICON_ARROWRIGHT}}</a>
+    </div>
+    <div class="product-grid" data-suggest></div>
+  </div>
+</section>
+
+<section class="section section--tight" data-recent-section hidden>
+  <div class="shell">
+    <div class="section-head section-head--split">
+      <div class="section-head__copy"><span class="eyebrow">Pick up where you left off</span><h2 style="font-size:var(--fs-h4)">Recently viewed</h2></div>
+    </div>
+    <div class="rv-rail" data-recent-rail></div>
+  </div>
+</section>

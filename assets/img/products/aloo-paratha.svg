@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#1a120e"/>
+      <stop offset="65%" stop-color="#0a0705"/>
+      <stop offset="100%" stop-color="#050302"/>
+    </radialGradient>
+    <radialGradient id="plate" cx="45%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#f0ece6"/>
+      <stop offset="70%" stop-color="#cec7bb"/>
+      <stop offset="100%" stop-color="#948d7d"/>
+    </radialGradient>
+    <radialGradient id="slate" cx="45%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#363d47"/>
+      <stop offset="70%" stop-color="#242931"/>
+      <stop offset="100%" stop-color="#14181d"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="28" stdDeviation="32" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+    <filter id="glow-filter" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="45"/>
+    </filter>
+    
+  <radialGradient id="parathaBase" cx="45%" cy="35%" r="60%">
+    <stop offset="0%" stop-color="#fed7aa"/>
+    <stop offset="60%" stop-color="#ea580c"/>
+    <stop offset="100%" stop-color="#7c2d12"/>
+  </radialGradient>
+
+  </defs>
+
+  <!-- Luxury Dark Backdrop -->
+  <rect width="800" height="800" fill="url(#bg)"/>
+  
+  <!-- Ambient Culinary Spotlight -->
+  <circle cx="400" cy="380" r="300" fill="#d4af37" opacity="0.09" filter="url(#glow-filter)"/>
+
+  
+  <ellipse cx="400" cy="500" rx="300" ry="165" fill="url(#plate)" filter="url(#shadow)"/>
+  <!-- Layered Round Paratha -->
+  <ellipse cx="400" cy="450" rx="220" ry="120" fill="url(#parathaBase)" filter="url(#shadow)"/>
+  <!-- Roasted Brown Spots / Char Marks -->
+  <ellipse cx="330" cy="420" rx="14" ry="8" fill="#581c0c" opacity="0.8"/>
+  <ellipse cx="460" cy="430" rx="16" ry="9" fill="#581c0c" opacity="0.8"/>
+  <ellipse cx="390" cy="470" rx="12" ry="7" fill="#581c0c" opacity="0.8"/>
+  <ellipse cx="440" cy="400" rx="10" ry="6" fill="#581c0c" opacity="0.8"/>
+  <ellipse cx="360" cy="460" rx="11" ry="6" fill="#581c0c" opacity="0.8"/>
+  <!-- Melting Dollop of White Butter (Makhan) -->
+  <ellipse cx="400" cy="425" rx="35" ry="20" fill="#ffffff" filter="url(#shadow)"/>
+  <path d="M 380 430 Q 400 450 420 435" fill="#fef9c3" opacity="0.8"/>
+  <!-- Fresh Coriander Garnish -->
+  <path d="M 405 400 Q 415 390 425 400" stroke="#16a34a" stroke-width="3" fill="none"/>
+
+</svg>

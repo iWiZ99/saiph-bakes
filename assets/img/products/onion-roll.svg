@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#1a120e"/>
+      <stop offset="65%" stop-color="#0a0705"/>
+      <stop offset="100%" stop-color="#050302"/>
+    </radialGradient>
+    <radialGradient id="plate" cx="45%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#f0ece6"/>
+      <stop offset="70%" stop-color="#cec7bb"/>
+      <stop offset="100%" stop-color="#948d7d"/>
+    </radialGradient>
+    <radialGradient id="slate" cx="45%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#363d47"/>
+      <stop offset="70%" stop-color="#242931"/>
+      <stop offset="100%" stop-color="#14181d"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="28" stdDeviation="32" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+    <filter id="glow-filter" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="45"/>
+    </filter>
+    
+  <radialGradient id="onRoll" cx="45%" cy="30%" r="65%">
+    <stop offset="0%" stop-color="#fef3c7"/>
+    <stop offset="60%" stop-color="#b45309"/>
+    <stop offset="100%" stop-color="#78350f"/>
+  </radialGradient>
+
+  </defs>
+
+  <!-- Luxury Dark Backdrop -->
+  <rect width="800" height="800" fill="url(#bg)"/>
+  
+  <!-- Ambient Culinary Spotlight -->
+  <circle cx="400" cy="380" r="300" fill="#d4af37" opacity="0.09" filter="url(#glow-filter)"/>
+
+  
+  <ellipse cx="400" cy="510" rx="290" ry="160" fill="url(#plate)" filter="url(#shadow)"/>
+  <g transform="translate(400, 420) rotate(10) translate(-400, -420)">
+    <rect x="240" y="380" width="320" height="90" rx="45" fill="url(#onRoll)" filter="url(#shadow)"/>
+    <!-- Caramelized Onion Strands & Nigella Seeds -->
+    <path d="M 280 410 Q 320 395 360 415" stroke="#701a75" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M 380 415 Q 430 400 480 415" stroke="#701a75" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <circle cx="310" cy="425" r="2.5" fill="#18181b"/>
+    <circle cx="410" cy="420" r="2.5" fill="#18181b"/>
+    <circle cx="450" cy="430" r="2.5" fill="#18181b"/>
+  </g>
+
+</svg>

@@ -1,0 +1,162 @@
+<section class="page-head">
+  <div class="shell">
+    <nav aria-label="Breadcrumb">
+      <ol class="crumbs">
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">Contact</li>
+      </ol>
+    </nav>
+    <div class="page-head__inner">
+      <span class="eyebrow">Get In Touch</span>
+      <h1>Talk to a person</h1>
+      <p class="lede">Order queries, delivery support, custom cakes, corporate gifting, wholesale supply or franchise — every route below reaches a human, usually the same day.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="shell">
+    <div class="grid grid--4">
+      <a class="card card--pad card--lift" href="tel:+919864000000">
+        <span class="value__icon">{{ICON_PHONE}}</span>
+        <h2 class="value__title">Call us</h2>
+        <p class="value__text">+91 98640 00000<br>8:00 AM – 10:00 PM, every day</p>
+        <span class="link" style="margin-top:.75rem">Call now {{ICON_ARROWRIGHT}}</span>
+      </a>
+      <a class="card card--pad card--lift" href="https://wa.me/919864000000" target="_blank" rel="noopener">
+        <span class="value__icon">{{ICON_WHATSAPP}}</span>
+        <h2 class="value__title">WhatsApp</h2>
+        <p class="value__text">Fastest for order status, photos of custom work and quick changes.</p>
+        <span class="link" style="margin-top:.75rem">Open WhatsApp {{ICON_ARROWRIGHT}}</span>
+      </a>
+      <a class="card card--pad card--lift" href="mailto:hello@saiphbakes.com">
+        <span class="value__icon">{{ICON_MAIL}}</span>
+        <h2 class="value__title">Email</h2>
+        <p class="value__text">hello@saiphbakes.com<br>Replies within one working day</p>
+        <span class="link" style="margin-top:.75rem">Send an email {{ICON_ARROWRIGHT}}</span>
+      </a>
+      <a class="card card--pad card--lift" href="track-order.html">
+        <span class="value__icon">{{ICON_PACKAGE}}</span>
+        <h2 class="value__title">Track an order</h2>
+        <p class="value__text">Live status from the kitchen to your doorstep, with your order ID.</p>
+        <span class="link" style="margin-top:.75rem">Track order {{ICON_ARROWRIGHT}}</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tinted">
+  <div class="shell enquiry-layout">
+    <form class="enquiry-form" data-form="contact" data-success="#contact-thanks" novalidate>
+      <div class="stack stack--xs">
+        <span class="eyebrow">Send a message</span>
+        <h2>How can we help?</h2>
+      </div>
+      <div class="field-grid">
+        <div class="field">
+          <label class="field__label" for="ct-name">Name <span class="req">*</span></label>
+          <input class="input" id="ct-name" required autocomplete="name">
+          <p class="field__error">Required.</p>
+        </div>
+        <div class="field">
+          <label class="field__label" for="ct-email">Email <span class="req">*</span></label>
+          <input class="input" id="ct-email" type="email" required autocomplete="email">
+          <p class="field__error">A valid email, please.</p>
+        </div>
+        <div class="field">
+          <label class="field__label" for="ct-phone">Mobile</label>
+          <input class="input" id="ct-phone" type="tel" autocomplete="tel">
+        </div>
+        <div class="field">
+          <label class="field__label" for="ct-topic">What is this about? <span class="req">*</span></label>
+          <select class="select" id="ct-topic" required>
+            <option value="">Select</option>
+            <option>An existing order</option>
+            <option>A custom cake enquiry</option>
+            <option>Corporate gifting</option>
+            <option>Wholesale supply</option>
+            <option>Franchise opportunity</option>
+            <option>Wedding commission</option>
+            <option>Feedback or complaint</option>
+            <option>Press &amp; media</option>
+            <option>Something else</option>
+          </select>
+          <p class="field__error">Pick the closest option.</p>
+        </div>
+        <div class="field">
+          <label class="field__label" for="ct-order">Order ID (if relevant)</label>
+          <input class="input" id="ct-order" placeholder="SB-24081" style="text-transform:uppercase">
+        </div>
+        <div class="field">
+          <label class="field__label" for="ct-city">City</label>
+          <input class="input" id="ct-city" autocomplete="address-level2">
+        </div>
+        <div class="field field--full">
+          <label class="field__label" for="ct-message">Message <span class="req">*</span></label>
+          <textarea class="textarea" id="ct-message" required placeholder="Tell us what you need — the more detail, the faster we can help."></textarea>
+          <p class="field__error">Please tell us how we can help.</p>
+        </div>
+      </div>
+      <label class="check"><input type="checkbox" required><span>I accept the <a href="privacy.html">Privacy Policy</a> <span class="req">*</span></span></label>
+      <button class="btn btn--accent" type="submit">Send message</button>
+    </form>
+
+    <div id="contact-thanks" hidden>
+      <div class="checkout-block">
+        <span class="order-success__tick" style="margin-bottom:.5rem">{{ICON_CHECK}}</span>
+        <h2 style="font-size:var(--fs-h3)">Message sent</h2>
+        <p class="muted">Thank you — we reply within one working day, usually much sooner. If it is about an order arriving today, please call <a href="tel:+919864000000">+91 98640 00000</a> instead so we can act on it immediately.</p>
+        <a class="btn btn--sm" href="index.html">Back to home</a>
+      </div>
+    </div>
+
+    <aside class="enquiry-aside">
+      <div class="contact-block">
+        <span class="eyebrow">Head office</span>
+        <div class="contact-block__row">{{ICON_MAPPIN}}<span><b>SAiPH Bakes</b><br>Chowkidinghee, RKB Path, Dibrugarh, Assam 786001</span></div>
+        <div class="contact-block__row">{{ICON_CLOCK}}<span>Mon–Sun, 8:00 AM – 10:30 PM</span></div>
+      </div>
+      <div class="contact-block">
+        <span class="eyebrow">Production unit</span>
+        <div class="contact-block__row">{{ICON_MAPPIN}}<span><b>SAiPH Craft Bakery</b><br>Chowkidinghee, RKB Path, Dibrugarh 786001</span></div>
+        <div class="contact-block__row">{{ICON_CLOCK}}<span>Mon–Sat, 9:00 AM – 6:00 PM · Kitchen tours by appointment</span></div>
+      </div>
+      <div class="contact-block">
+        <span class="eyebrow">Direct desks</span>
+        <div class="contact-block__row">{{ICON_BRIEFCASE}}<span><b>corporate@saiphbakes.com</b><br>Corporate &amp; gifting</span></div>
+        <div class="contact-block__row">{{ICON_PACKAGE}}<span><b>wholesale@saiphbakes.com</b><br>Wholesale &amp; distribution</span></div>
+        <div class="contact-block__row">{{ICON_STORE}}<span><b>franchise@saiphbakes.com</b><br>Franchise applications</span></div>
+      </div>
+      <div class="contact-block">
+        <span class="eyebrow">Compliance</span>
+        <p style="font-size:var(--fs-sm);color:var(--text-muted)">SAiPH Bakes Foods Pvt. Ltd.<span data-registrations-block></span></p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell">
+    <div class="section-head section-head--split">
+      <div class="section-head__copy">
+        <span class="eyebrow">Or come and see us</span>
+        <h2>Our stores</h2>
+      </div>
+      <a class="link" href="stores.html">Full store locator {{ICON_ARROWRIGHT}}</a>
+    </div>
+    <div class="store-grid" data-contact-stores></div>
+  </div>
+</section>
+
+<section class="section section--tinted">
+  <div class="shell shell--narrow">
+    <div class="section-head section-head--center">
+      <span class="eyebrow">Quick answers</span>
+      <h2>Before you write to us</h2>
+    </div>
+    <div class="accordion" data-accordion="single" data-contact-faq></div>
+    <div class="row row--center" style="margin-top:2rem">
+      <a class="btn btn--outline" href="faq.html">See all FAQs</a>
+    </div>
+  </div>
+</section>

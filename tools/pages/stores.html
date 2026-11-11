@@ -1,0 +1,109 @@
+<section class="page-head">
+  <div class="shell">
+    <nav aria-label="Breadcrumb">
+      <ol class="crumbs">
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">Stores</li>
+      </ol>
+    </nav>
+    <div class="page-head__inner">
+      <span class="eyebrow">Store Locator</span>
+      <h1>Find Us</h1>
+      <p class="lede">One shop on RKB Path, Chowkidinghee — the counter, the cake studio and the kitchen behind it, all under one roof.</p>
+      <div class="page-head__stats">
+        <span><b>1</b> shop</span>
+        <span><b>Free</b> store pickup</span>
+        <span><b>1</b> kitchen, same premises</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="shell">
+    <div class="shop-toolbar">
+      <div class="field" style="flex:1 1 16rem;max-width:22rem">
+        <label class="sr-only" for="store-search">Search stores</label>
+        <input class="input" id="store-search" type="search" placeholder="Search by city, area or PIN&hellip;" data-store-search>
+      </div>
+      <span class="spacer"></span>
+      <div class="row row--tight" data-store-filters hidden></div>
+    </div>
+    <div class="store-grid" data-store-grid data-limit="0"></div>
+    <div class="empty-state" data-store-empty hidden>
+      {{ICON_MAPPIN}}
+      <h2 style="font-size:var(--fs-h4)">No stores match that search</h2>
+      <p class="muted" style="font-size:var(--fs-sm);max-width:44ch">We deliver to Dibrugarh even where we do not have a counter yet — and we are actively looking for franchise partners in new territories.</p>
+      <div class="row row--center">
+        <a class="btn btn--sm" href="shop.html">Order for delivery</a>
+        <a class="btn btn--sm btn--outline" href="franchise.html">Open one with us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tinted">
+  <div class="shell">
+    <div class="split">
+      <div class="split__copy">
+        <span class="eyebrow">Delivery coverage</span>
+        <h2>Where we deliver</h2>
+        <p class="lede">Same-day and scheduled slots in Dibrugarh. Khowdy packaged products ship pan-India in three to six working days.</p>
+        <div class="row row--tight" data-city-chips></div>
+        <div class="note">{{ICON_TRUCK}}<span><strong>Midnight slots</strong> (11:30 PM – 12:30 AM) are available in Dibrugarh with a ₹199 surcharge — the birthday-at-midnight option.</span></div>
+        <div class="note">{{ICON_STORE}}<span><strong>Store pickup is free</strong> at every counter. Your order is held for two hours past your chosen slot.</span></div>
+        <a class="btn btn--outline" href="shipping.html" style="justify-self:start">Read the shipping policy</a>
+      </div>
+      <div class="split__media">{{ART:delivery-map:saiph:hamper:landscape}}</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell">
+    <div class="section-head section-head--split">
+      <div class="section-head__copy">
+        <span class="eyebrow">The craft bakery</span>
+        <h2>Where all of it is made</h2>
+        <p class="lede">Every cake, croissant, bonbon and cookie jar comes out of one production unit in Dibrugarh — which is how three brands hold one standard.</p>
+      </div>
+      <a class="link" href="about.html#craft">Inside the bakery {{ICON_ARROWRIGHT}}</a>
+    </div>
+    <div class="store-grid" data-unit-grid></div>
+  </div>
+</section>
+
+<section class="section section--dark">
+  <div class="shell">
+    <div class="section-head section-head--center">
+      <span class="eyebrow">Coming soon</span>
+      <h2 style="color:var(--cream-50)">Territories we are opening next</h2>
+      <p class="lede" style="text-align:center;color:#9aa6bb">Franchise partners wanted in these catchments. Territory rights are granted on a first-qualified basis.</p>
+    </div>
+    <div class="grid grid--4">
+      <div class="card card--pad" style="background:color-mix(in srgb,#fbf6ec 5%,transparent);border-color:var(--line)">
+        <span class="eyebrow" style="color:var(--gold-300)">Assam</span>
+        <h3 style="color:var(--cream-50);font-size:var(--fs-md);margin:.3rem 0 .4rem">Tezpur · Nagaon · Silchar</h3>
+        <p style="font-size:var(--fs-sm);color:#9aa6bb">Café and express kiosk formats</p>
+      </div>
+      <div class="card card--pad" style="background:color-mix(in srgb,#fbf6ec 5%,transparent);border-color:var(--line)">
+        <span class="eyebrow" style="color:var(--gold-300)">Northeast</span>
+        <h3 style="color:var(--cream-50);font-size:var(--fs-md);margin:.3rem 0 .4rem">Imphal · Agartala · Aizawl</h3>
+        <p style="font-size:var(--fs-sm);color:#9aa6bb">Flagship and café formats</p>
+      </div>
+      <div class="card card--pad" style="background:color-mix(in srgb,#fbf6ec 5%,transparent);border-color:var(--line)">
+        <span class="eyebrow" style="color:var(--gold-300)">East</span>
+        <h3 style="color:var(--cream-50);font-size:var(--fs-md);margin:.3rem 0 .4rem">Siliguri · Durgapur · Patna</h3>
+        <p style="font-size:var(--fs-sm);color:#9aa6bb">Signature boutique and café</p>
+      </div>
+      <div class="card card--pad" style="background:color-mix(in srgb,#fbf6ec 5%,transparent);border-color:var(--line)">
+        <span class="eyebrow" style="color:var(--gold-300)">Metro</span>
+        <h3 style="color:var(--cream-50);font-size:var(--fs-md);margin:.3rem 0 .4rem">Bengaluru · Delhi NCR</h3>
+        <p style="font-size:var(--fs-sm);color:#9aa6bb">Signature boutique, 2027 pipeline</p>
+      </div>
+    </div>
+    <div class="row row--center" style="margin-top:2rem">
+      <a class="btn btn--light" href="franchise.html">Apply for a territory</a>
+    </div>
+  </div>
+</section>

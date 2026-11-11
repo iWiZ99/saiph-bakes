@@ -1,0 +1,27 @@
+<section class="page-head">
+  <div class="shell">
+    <h1 class="sr-only">Order confirmation</h1>
+    <div class="checkout-steps" aria-label="Checkout progress">
+      <span class="checkout-step is-done"><i>{{ICON_CHECK}}</i>Cart</span>
+      <span class="checkout-step is-done"><i>{{ICON_CHECK}}</i>Delivery &amp; payment</span>
+      <span class="checkout-step is-current"><i>3</i>Confirmation</span>
+    </div>
+  </div>
+</section>
+
+<section class="section section--flush-top" style="padding-top:1rem">
+  <div class="shell" data-confirmation></div>
+</section>
+
+<section class="section section--tinted" data-next-section hidden>
+  <div class="shell">
+    <div class="section-head section-head--split">
+      <div class="section-head__copy">
+        <span class="eyebrow">While you wait</span>
+        <h2 style="font-size:var(--fs-h3)">You might like these too</h2>
+      </div>
+      <a class="link" href="shop.html">Shop all {{ICON_ARROWRIGHT}}</a>
+    </div>
+    <div class="product-grid" data-next-products></div>
+  </div>
+</section>

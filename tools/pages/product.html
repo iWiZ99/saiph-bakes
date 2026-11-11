@@ -1,0 +1,93 @@
+<div class="shell">
+  <nav aria-label="Breadcrumb">
+    <ol class="crumbs" data-crumbs>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li aria-current="page">Product</li>
+    </ol>
+  </nav>
+</div>
+
+<section class="section section--flush-top" style="padding-top:.5rem">
+  <div class="shell pdp" data-pdp>
+    <div class="skeleton" style="aspect-ratio:1"></div>
+    <div class="stack">
+      <div class="skeleton" style="height:1.5rem;width:9rem"></div>
+      <h1 class="sr-only">Loading product details</h1>
+      <div class="skeleton" style="height:3rem"></div>
+      <div class="skeleton" style="height:1.25rem;width:12rem"></div>
+      <div class="skeleton" style="height:8rem"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tinted" data-pdp-tabs hidden>
+  <div class="shell">
+    <div data-tabs>
+      <div class="tabs" role="tablist" aria-label="Product information">
+        <button class="tab" role="tab" id="tab-detail" aria-controls="panel-detail" aria-selected="true">Details</button>
+        <button class="tab" role="tab" id="tab-ingredients" aria-controls="panel-ingredients" aria-selected="false" tabindex="-1">Nutrition &amp; Ingredients</button>
+        <button class="tab" role="tab" id="tab-storage" aria-controls="panel-storage" aria-selected="false" tabindex="-1">Storage &amp; Shelf Life</button>
+        <button class="tab" role="tab" id="tab-delivery" aria-controls="panel-delivery" aria-selected="false" tabindex="-1">Delivery</button>
+      </div>
+      <div class="tab-panel" role="tabpanel" id="panel-detail" aria-labelledby="tab-detail">
+        <div class="prose" data-tab-detail></div>
+      </div>
+      <div class="tab-panel" role="tabpanel" id="panel-ingredients" aria-labelledby="tab-ingredients" hidden>
+        <div class="stack stack--lg" data-tab-ingredients></div>
+      </div>
+      <div class="tab-panel" role="tabpanel" id="panel-storage" aria-labelledby="tab-storage" hidden>
+        <div class="stack stack--lg" data-tab-storage></div>
+      </div>
+      <div class="tab-panel" role="tabpanel" id="panel-delivery" aria-labelledby="tab-delivery" hidden>
+        <div class="stack stack--lg" data-tab-delivery></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" data-reviews-section hidden aria-labelledby="reviews-title">
+  <div class="shell">
+    <div class="section-head section-head--split">
+      <div class="section-head__copy">
+        <span class="eyebrow">Reviews</span>
+        <h2 id="reviews-title">What customers say</h2>
+      </div>
+      <button class="btn btn--outline btn--sm" type="button" data-write-review>Write a review</button>
+    </div>
+    <div class="grid" style="grid-template-columns:minmax(min(100%,18rem),.8fr) minmax(0,1.6fr);align-items:start">
+      <div data-review-summary></div>
+      <div data-review-list></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tinted" data-related-section hidden>
+  <div class="shell">
+    <div class="section-head section-head--split">
+      <div class="section-head__copy">
+        <span class="eyebrow">You may also like</span>
+        <h2 style="font-size:var(--fs-h3)">Related creations</h2>
+      </div>
+      <a class="link" href="shop.html">Shop all {{ICON_ARROWRIGHT}}</a>
+    </div>
+    <div class="product-grid" data-related></div>
+  </div>
+</section>
+
+<section class="section section--tight" data-recent-section hidden>
+  <div class="shell">
+    <div class="section-head section-head--split">
+      <div class="section-head__copy"><span class="eyebrow">Pick up where you left off</span><h2 style="font-size:var(--fs-h4)">Recently viewed</h2></div>
+    </div>
+    <div class="rv-rail" data-recent-rail></div>
+  </div>
+</section>
+
+<div class="sticky-buy" data-sticky-buy>
+  <div class="sticky-buy__info">
+    <span class="sticky-buy__name" data-sticky-name></span>
+    <span class="sticky-buy__price" data-sticky-price></span>
+  </div>
+  <button class="btn btn--accent" type="button" data-sticky-add>Add to cart</button>
+</div>

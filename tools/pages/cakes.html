@@ -1,0 +1,247 @@
+<section class="page-head page-head--hero">
+  <div class="page-head__bg" aria-hidden="true">{{RAW:cake-studio-hero:doughremi:cake}}</div>
+  <div class="shell">
+    <nav aria-label="Breadcrumb">
+      <ol class="crumbs" style="color:rgba(251,246,236,.7)">
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">Create Your Cake</li>
+      </ol>
+    </nav>
+    <div class="page-head__inner">
+      <span class="eyebrow" style="color:var(--gold-300)">Personalised Cakes</span>
+      <h1 class="display">Made For Your Moment</h1>
+      <p class="lede" style="color:rgba(251,246,236,.82)">Choose the occasion, size and flavour, write the message, upload a reference and pick your date. Our cake studio confirms feasibility and final pricing within four working hours.</p>
+      <div class="page-head__stats" style="color:rgba(251,246,236,.7)">
+        <span><b style="color:var(--gold-300)">French T45</b> pastry flour</span>
+        <span><b style="color:var(--gold-300)">Zero</b> bleached maida</span>
+        <span><b style="color:var(--gold-300)">Eggless</b> at no extra cost</span>
+        <span><b style="color:var(--gold-300)">Free</b> hand-piped message</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell cake-builder">
+
+    <!-- ============================== BUILDER ============================= -->
+    <form class="cake-builder__panel" data-builder novalidate>
+      <div class="builder-step">
+        <div class="builder-step__head">
+          <span class="builder-step__n">1</span>
+          <h2 class="builder-step__title">What are we celebrating?</h2>
+        </div>
+        <div class="option-grid" data-occasions></div>
+      </div>
+
+      <div class="builder-step">
+        <div class="builder-step__head">
+          <span class="builder-step__n">2</span>
+          <h2 class="builder-step__title">Choose your cake</h2>
+          <span class="builder-step__note">Customisable range</span>
+        </div>
+        <div class="swatches" data-bases></div>
+        <p class="field__hint" data-base-note></p>
+      </div>
+
+      <div class="builder-step">
+        <div class="builder-step__head">
+          <span class="builder-step__n">3</span>
+          <h2 class="builder-step__title">Size &amp; servings</h2>
+        </div>
+        <div class="swatches" data-sizes></div>
+      </div>
+
+      <div class="builder-step">
+        <div class="builder-step__head">
+          <span class="builder-step__n">4</span>
+          <h2 class="builder-step__title">Flavour</h2>
+        </div>
+        <div class="swatches" data-flavours></div>
+        <label class="check"><input type="checkbox" data-eggless><span><strong>Make it eggless</strong> — no extra charge, same crumb, same finish</span></label>
+      </div>
+
+      <div class="builder-step">
+        <div class="builder-step__head">
+          <span class="builder-step__n">5</span>
+          <h2 class="builder-step__title">Message on the cake</h2>
+          <span class="builder-step__note">Piped free</span>
+        </div>
+        <div class="field">
+          <label class="sr-only" for="cake-message">Message</label>
+          <input class="input" id="cake-message" maxlength="32" placeholder="Happy 30th, Ananya" data-message>
+          <p class="field__hint"><span data-msg-count>0</span>/32 characters</p>
+        </div>
+        <div class="msg-preview" data-msg-preview data-empty="Your message appears here"></div>
+      </div>
+
+      <div class="builder-step">
+        <div class="builder-step__head">
+          <span class="builder-step__n">6</span>
+          <h2 class="builder-step__title">Add personalisation</h2>
+        </div>
+        <div class="option-grid" data-addons></div>
+      </div>
+
+      <div class="builder-step">
+        <div class="builder-step__head">
+          <span class="builder-step__n">7</span>
+          <h2 class="builder-step__title">Reference image</h2>
+          <span class="builder-step__note">Optional</span>
+        </div>
+        <div class="field">
+          <label class="field__label" for="cake-ref">Upload a design you like</label>
+          <input class="input" type="file" id="cake-ref" accept="image/*" data-reference>
+          <p class="field__hint">JPG or PNG, up to 8 MB. We match the spirit of a reference, not the exact copy of another bakery's work.</p>
+        </div>
+        <div data-ref-preview></div>
+      </div>
+
+      <div class="builder-step">
+        <div class="builder-step__head">
+          <span class="builder-step__n">8</span>
+          <h2 class="builder-step__title">Delivery date &amp; slot</h2>
+        </div>
+        <div class="date-strip" data-dates></div>
+        <div class="option-grid" data-slots></div>
+        <div class="note" data-lead-note>{{ICON_CLOCK}}<span></span></div>
+      </div>
+
+      <div class="builder-step">
+        <div class="builder-step__head">
+          <span class="builder-step__n">9</span>
+          <h2 class="builder-step__title">Anything else?</h2>
+        </div>
+        <div class="field">
+          <label class="sr-only" for="cake-notes">Special instructions</label>
+          <textarea class="textarea" id="cake-notes" placeholder="Allergies, colour palette, a photo print of the birthday girl, please call before arriving&hellip;" data-instructions></textarea>
+        </div>
+      </div>
+    </form>
+
+    <!-- ============================== PREVIEW ============================= -->
+    <aside class="cake-preview" data-brand="signature" aria-label="Your cake summary">
+      <div class="cake-preview__art" data-preview-art></div>
+      <h3 style="font-size:var(--fs-lg)" data-preview-name>Your cake</h3>
+      <dl class="cake-preview__spec" data-preview-spec></dl>
+      <div class="cake-preview__total">
+        <span>Total <small>incl. taxes</small></span>
+        <span data-preview-total>₹0</span>
+      </div>
+      <div class="stack stack--sm">
+        <button class="btn btn--accent btn--block" type="button" data-add-cake>Add to cart</button>
+        <button class="btn btn--outline btn--block" type="button" data-checkout-cake style="--btn-fg:var(--cream-100);--btn-bd:rgba(251,246,236,.3)">Add &amp; checkout</button>
+      </div>
+      <p style="font-size:var(--fs-xs);opacity:.6;line-height:1.5">Our cake studio reviews every custom build. If a design is not feasible for your date, we call you within four working hours with alternatives — before any charge is captured.</p>
+    </aside>
+  </div>
+</section>
+
+<!-- ======================= PREMIUM CAKE MENU SHOWCASE ====================== -->
+<section class="section section--dark" style="background:linear-gradient(140deg, #2a0e14 0%, #150609 100%);color:var(--cream-100);padding:4.5rem 0;border-top:1px solid rgba(212,175,55,0.25);border-bottom:1px solid rgba(212,175,55,0.25);">
+  <div class="shell">
+    <div class="split" style="align-items:center;gap:3.5rem;">
+      <div class="split__copy">
+        <span class="eyebrow" style="color:var(--gold-300);letter-spacing:0.18em;font-weight:600;">Official Signature Menu</span>
+        <h2 style="color:var(--cream-100);font-family:var(--font-serif);font-size:clamp(1.9rem,3.2vw,2.75rem);line-height:1.2;margin:0.5rem 0 1rem;">SAiPH Bakes Premium Cake Menu</h2>
+        <p class="lede" style="color:rgba(251,246,236,0.85);font-size:1.05rem;line-height:1.65;">
+          Luxury in every bite. Discover all 22 artisanal celebration cakes handcrafted fresh in our Dibrugarh bakehouse. Mindfully created with pure wholesome ingredients, zero compromises, and irresistible gourmet flavours.
+        </p>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(130px, 1fr));gap:0.85rem;margin:1.8rem 0;">
+          <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,175,55,0.3);border-radius:8px;padding:0.75rem;text-align:center;">
+            <div style="font-weight:700;color:var(--gold-300);font-size:0.9rem;letter-spacing:0.04em;">FRENCH T45 FLOUR</div>
+            <div style="font-size:0.72rem;opacity:0.75;margin-top:2px;">Zero bleached maida</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,175,55,0.3);border-radius:8px;padding:0.75rem;text-align:center;">
+            <div style="font-weight:700;color:var(--gold-300);font-size:0.9rem;letter-spacing:0.04em;">NO REFINED SUGAR</div>
+            <div style="font-size:0.72rem;opacity:0.75;margin-top:2px;">Raw unrefined sweet</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,175,55,0.3);border-radius:8px;padding:0.75rem;text-align:center;">
+            <div style="font-weight:700;color:var(--gold-300);font-size:0.9rem;letter-spacing:0.04em;">GLUTEN FREE</div>
+            <div style="font-size:0.72rem;opacity:0.75;margin-top:2px;">Gentle & digestive</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,175,55,0.3);border-radius:8px;padding:0.75rem;text-align:center;">
+            <div style="font-weight:700;color:var(--gold-300);font-size:0.9rem;letter-spacing:0.04em;">100% EGG FREE</div>
+            <div style="font-size:0.72rem;opacity:0.75;margin-top:2px;">Pure vegetarian crumb</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,175,55,0.3);border-radius:8px;padding:0.75rem;text-align:center;">
+            <div style="font-weight:700;color:var(--gold-300);font-size:0.9rem;letter-spacing:0.04em;">NO PRESERVATIVES</div>
+            <div style="font-size:0.72rem;opacity:0.75;margin-top:2px;">Baked fresh to order</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,175,55,0.3);border-radius:8px;padding:0.75rem;text-align:center;">
+            <div style="font-weight:700;color:var(--gold-300);font-size:0.9rem;letter-spacing:0.04em;">PREMIUM QUALITY</div>
+            <div style="font-size:0.72rem;opacity:0.75;margin-top:2px;">Real nuts & couverture</div>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:1.5rem;gap:1rem;">
+          <a class="btn btn--accent" href="shop.html?cat=celebration-cakes">Order Menu Cakes Online</a>
+          <a class="btn btn--outline" href="assets/img/menu/saiph-premium-cake-menu.jpg" target="_blank" rel="noopener" style="--btn-fg:var(--cream-100);--btn-bd:rgba(212,175,55,0.5);">Open High-Res Menu Card</a>
+        </div>
+      </div>
+
+      <div class="split__media" style="text-align:center;">
+        <a href="assets/img/menu/saiph-premium-cake-menu.jpg" target="_blank" rel="noopener" style="display:inline-block;border-radius:12px;overflow:hidden;box-shadow:0 16px 40px rgba(0,0,0,0.5);border:2px solid rgba(212,175,55,0.45);max-width:380px;background:#1b0a0e;transition:transform 0.25s ease;" title="Click to view full-size menu flyer">
+          <img src="assets/img/menu/saiph-premium-cake-menu.jpg" alt="Official SAiPH Bakes Premium Cake Menu Card" loading="lazy" style="width:100%;height:auto;display:block;">
+        </a>
+        <p style="font-size:0.8rem;margin-top:0.7rem;color:rgba(251,246,236,0.65);">Tap to view official flyer &bull; Available in 1 lb, 2 lb, 3 lb &amp; 4 lb</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tinted">
+  <div class="shell">
+    <div class="section-head section-head--center">
+      <span class="eyebrow">How a custom cake happens</span>
+      <h2>From your idea to the doorstep</h2>
+    </div>
+    <div class="timeline-h">
+      <div class="timeline-h__item">
+        <span class="timeline-h__when">Step one</span>
+        <p class="timeline-h__what">You build it here</p>
+        <p class="timeline-h__note">Occasion, size, flavour, message, add-ons and reference image — all in one form.</p>
+      </div>
+      <div class="timeline-h__item">
+        <span class="timeline-h__when">Within 4 hours</span>
+        <p class="timeline-h__what">Studio review</p>
+        <p class="timeline-h__note">A pastry chef confirms feasibility for your date and flags anything that needs a change.</p>
+      </div>
+      <div class="timeline-h__item">
+        <span class="timeline-h__when">Day before</span>
+        <p class="timeline-h__what">Production slot</p>
+        <p class="timeline-h__note">Your cake enters the queue with the message and personalisation printed on the docket.</p>
+      </div>
+      <div class="timeline-h__item">
+        <span class="timeline-h__when">Delivery day</span>
+        <p class="timeline-h__what">Chef sign-off</p>
+        <p class="timeline-h__note">Photographed, boxed cold and dispatched inside your two-hour slot with a call before arrival.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell">
+    <div class="section-head section-head--split">
+      <div class="section-head__copy">
+        <span class="eyebrow">Or start from a favourite</span>
+        <h2>Ready cakes you can still personalise</h2>
+        <p class="lede">Every cake below takes a hand-piped message, an eggless base and add-ons at checkout.</p>
+      </div>
+      <a class="link" href="shop.html?cat=celebration-cakes">All cakes {{ICON_ARROWRIGHT}}</a>
+    </div>
+    <div class="product-grid" data-cake-grid></div>
+  </div>
+</section>
+
+<section class="section section--tinted">
+  <div class="shell shell--narrow">
+    <div class="section-head section-head--center">
+      <span class="eyebrow">Good to know</span>
+      <h2>Custom cake questions</h2>
+    </div>
+    <div class="accordion" data-accordion="single" data-cake-faq></div>
+  </div>
+</section>

@@ -1,0 +1,121 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESC}}">
+<link rel="canonical" href="{{SITE}}/{{FILE}}">
+<meta name="theme-color" content="#181616">
+<meta name="format-detection" content="telephone=no">
+<meta name="robots" content="{{ROBOTS}}">
+
+<meta property="og:site_name" content="SAiPH Bakes">
+<meta property="og:type" content="{{OGTYPE}}">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESC}}">
+<meta property="og:url" content="{{SITE}}/{{FILE}}">
+<meta property="og:image" content="{{SITE}}/assets/img/og-cover.svg">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{TITLE}}">
+<meta name="twitter:description" content="{{DESC}}">
+<meta name="twitter:image" content="{{SITE}}/assets/img/og-cover.svg">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/favicon.svg">
+<link rel="manifest" href="manifest.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..800;1,9..40,300..800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap">
+
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "{{SITE}}/#organization",
+      "name": "SAiPH Bakes",
+      "legalName": "SAiPH Bakes Foods Pvt. Ltd.",
+      "url": "{{SITE}}/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{SITE}}/assets/img/logo.svg",
+        "width": 512,
+        "height": 512
+      },
+      "slogan": "Luxury In Every Bite",
+      "foundingDate": "2019",
+      "description": "SAiPH Bakes is a premium Indian bakery and food company, parent to DoughReMi everyday bakery, SAiPH Signature luxury patisserie and Khowdy Assam-inspired packaged foods.",
+      "email": "hello@saiphbakes.com",
+      "telephone": "+91-98640-00000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Chowkidinghee, RKB Path",
+        "addressLocality": "Dibrugarh",
+        "addressRegion": "Assam",
+        "postalCode": "786001",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://www.instagram.com/",
+        "https://www.facebook.com/",
+        "https://www.youtube.com/",
+        "https://www.linkedin.com/"
+      ],
+      "brand": {
+        "@type": "Brand",
+        "name": "SAiPH Bakes",
+        "url": "{{SITE}}/"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{SITE}}/#website",
+      "url": "{{SITE}}/",
+      "name": "SAiPH Bakes",
+      "publisher": { "@id": "{{SITE}}/#organization" },
+      "inLanguage": "en-IN",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": { "@type": "EntryPoint", "urlTemplate": "{{SITE}}/shop.html?q={search_term_string}" },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Bakery",
+      "@id": "{{SITE}}/#flagship",
+      "name": "SAiPH Bakes — Dibrugarh",
+      "parentOrganization": { "@id": "{{SITE}}/#organization" },
+      "image": "{{SITE}}/assets/img/og-cover.svg",
+      "url": "{{SITE}}/stores.html",
+      "telephone": "+91-98640-00001",
+      "priceRange": "₹₹",
+      "servesCuisine": ["Bakery", "Patisserie", "Desserts", "Assamese"],
+      "currenciesAccepted": "INR",
+      "paymentAccepted": "UPI, Credit Card, Debit Card, Net Banking, Cash",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Chowkidinghee, RKB Path",
+        "addressLocality": "Dibrugarh",
+        "addressRegion": "Assam",
+        "postalCode": "786001",
+        "addressCountry": "IN"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": 27.4728, "longitude": 94.9120 },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "08:00",
+        "closes": "22:30"
+      }],
+      "hasMap": "https://maps.google.com/?q=Chowkidinghee+RKB+Path+Dibrugarh",
+      "areaServed": ["Dibrugarh"]
+    }{{JSONLD}}
+  ]
+}
+</script>

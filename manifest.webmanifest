@@ -1,0 +1,17 @@
+{
+  "name": "SAiPH Bakes",
+  "short_name": "SAiPH",
+  "description": "Premium bakery, luxury pâtisserie and Assam-inspired foods.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fdfaf4",
+  "theme_color": "#08101f",
+  "icons": [
+    {
+      "src": "/assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

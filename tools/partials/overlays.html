@@ -1,0 +1,113 @@
+<div class="scrim" data-scrim aria-hidden="true"></div>
+
+<!-- ============================== Cart drawer ============================== -->
+<aside class="drawer" data-cart-drawer role="dialog" aria-modal="true" aria-label="Shopping cart" aria-hidden="true">
+  <div class="drawer__head">
+    <h2 class="drawer__title">Your Cart <small data-cart-title-count></small></h2>
+    <button class="icon-btn" type="button" data-overlay-close aria-label="Close cart">{{ICON_X}}</button>
+  </div>
+  <div class="drawer__body" data-cart-body></div>
+  <div class="drawer__foot" data-cart-foot></div>
+</aside>
+
+<!-- ============================== Mobile nav =============================== -->
+<aside class="drawer drawer--left mobile-nav" id="mobile-nav" data-mobile-nav role="dialog" aria-modal="true" aria-label="Menu" aria-hidden="true">
+  <div class="drawer__head">
+    <a class="brandmark" href="index.html">
+      {{LOGO}}
+      <span class="brandmark__type">
+        <span class="brandmark__name">SA<em>i</em>PH Bakes</span>
+        <span class="brandmark__tag">Luxury in every bite</span>
+      </span>
+    </a>
+    <button class="icon-btn" type="button" data-overlay-close aria-label="Close menu">{{ICON_X}}</button>
+  </div>
+  <div class="drawer__body" data-accordion>
+    <div class="mobile-nav__group">
+      <button class="mobile-nav__link" type="button" aria-expanded="false">Shop {{ICON_CARET}}</button>
+      <div class="mobile-nav__panel">
+        <a class="mobile-nav__sub" href="shop.html">Everything</a>
+        <a class="mobile-nav__sub" href="shop.html?cat=birthday-cakes">Birthday Cakes</a>
+        <a class="mobile-nav__sub" href="shop.html?cat=celebration-cakes">Celebration Cakes</a>
+        <a class="mobile-nav__sub" href="shop.html?cat=pastries">Pastries</a>
+        <a class="mobile-nav__sub" href="shop.html?cat=croissants">Croissants</a>
+        <a class="mobile-nav__sub" href="shop.html?cat=brownies">Brownies</a>
+        <a class="mobile-nav__sub" href="shop.html?cat=chocolates">Chocolates</a>
+        <a class="mobile-nav__sub" href="shop.html?cat=cookies">Cookies</a>
+        <a class="mobile-nav__sub" href="shop.html?cat=breads">Breads</a>
+        <a class="mobile-nav__sub" href="shop.html?cat=healthy-snacks">Healthy Snacks</a>
+        <a class="mobile-nav__sub" href="shop.html?cat=assamese">Assamese Specialities</a>
+      </div>
+    </div>
+    <div class="mobile-nav__group">
+      <a class="mobile-nav__link" href="cakes.html">Create Your Cake</a>
+    </div>
+    <div class="mobile-nav__group">
+      <a class="mobile-nav__link" href="gifting.html">Gifting &amp; Hampers</a>
+    </div>
+    <div class="mobile-nav__group">
+      <button class="mobile-nav__link" type="button" aria-expanded="false">Business {{ICON_CARET}}</button>
+      <div class="mobile-nav__panel">
+        <a class="mobile-nav__sub" href="corporate.html">Corporate Orders</a>
+        <a class="mobile-nav__sub" href="wholesale.html">Wholesale &amp; Distribution</a>
+        <a class="mobile-nav__sub" href="franchise.html">Franchise</a>
+      </div>
+    </div>
+    <div class="mobile-nav__group">
+      <button class="mobile-nav__link" type="button" aria-expanded="false">Company {{ICON_CARET}}</button>
+      <div class="mobile-nav__panel">
+        <a class="mobile-nav__sub" href="about.html">About SAiPH</a>
+        <a class="mobile-nav__sub" href="stores.html">Store Locator</a>
+        <a class="mobile-nav__sub" href="blog.html">Journal</a>
+        <a class="mobile-nav__sub" href="careers.html">Careers</a>
+        <a class="mobile-nav__sub" href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="mobile-nav__group">
+      <button class="mobile-nav__link" type="button" aria-expanded="false">Customer Care {{ICON_CARET}}</button>
+      <div class="mobile-nav__panel">
+        <a class="mobile-nav__sub" href="account.html">My Account</a>
+        <a class="mobile-nav__sub" href="track-order.html">Track Order</a>
+        <a class="mobile-nav__sub" href="wishlist.html">Wishlist</a>
+        <a class="mobile-nav__sub" href="faq.html">FAQs</a>
+        <a class="mobile-nav__sub" href="shipping.html">Shipping &amp; Delivery</a>
+        <a class="mobile-nav__sub" href="returns.html">Returns &amp; Refunds</a>
+      </div>
+    </div>
+  </div>
+  <div class="drawer__foot">
+    <a class="btn btn--accent btn--block" href="cakes.html">Create your cake</a>
+    <a class="row row--center row--tight" href="tel:+919864000000" style="font-size:var(--fs-sm);color:var(--text-muted);justify-content:center">
+      {{ICON_PHONE}} +91 98640 00000
+    </a>
+  </div>
+</aside>
+
+<!-- ============================ Search overlay ============================= -->
+<div class="search-overlay" data-search-overlay role="dialog" aria-modal="true" aria-label="Search" aria-hidden="true">
+  <div class="search-overlay__panel">
+    <div class="shell">
+      <div class="search-bar">
+        {{ICON_SEARCH}}
+        <input type="search" placeholder="Search cakes, croissants, hampers, Assam tea&hellip;" aria-label="Search products" data-search-input data-autofocus>
+        <button class="icon-btn" type="button" data-overlay-close aria-label="Close search">{{ICON_X}}</button>
+      </div>
+      <div class="search-suggest" data-search-results></div>
+    </div>
+  </div>
+</div>
+
+<!-- ========================== Mobile bottom nav ============================ -->
+<nav class="bottom-nav" aria-label="Quick navigation">
+  <div class="bottom-nav__inner">
+    <a class="bottom-nav__item" href="index.html" data-nav-match="index.html,">{{ICON_HOME}}<span>Home</span></a>
+    <a class="bottom-nav__item" href="shop.html" data-nav-match="shop.html,product.html">{{ICON_GRID}}<span>Shop</span></a>
+    <a class="bottom-nav__item" href="cakes.html" data-nav-match="cakes.html">{{ICON_CAKE}}<span>Cakes</span></a>
+    <a class="bottom-nav__item" href="wishlist.html" data-nav-match="wishlist.html">
+      {{ICON_HEART}}<span>Saved</span><span class="bottom-nav__pip" data-wish-count>0</span>
+    </a>
+    <button class="bottom-nav__item" type="button" data-cart-open>
+      {{ICON_BAG}}<span>Cart</span><span class="bottom-nav__pip" data-cart-count>0</span>
+    </button>
+  </div>
+</nav>

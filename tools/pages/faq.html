@@ -1,0 +1,57 @@
+<section class="page-head">
+  <div class="shell">
+    <nav aria-label="Breadcrumb">
+      <ol class="crumbs">
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">FAQs</li>
+      </ol>
+    </nav>
+    <div class="page-head__inner">
+      <span class="eyebrow">Help Centre</span>
+      <h1>Frequently Asked Questions</h1>
+      <p class="lede">Lead times, delivery slots, eggless options, custom cakes, GST invoices, allergens, subscriptions and gift cards — answered properly.</p>
+      <div class="field faq-search">
+        <label class="sr-only" for="faq-search">Search FAQs</label>
+        <input class="input" id="faq-search" type="search" placeholder="Search — try eggless, midnight, GST&hellip;" data-faq-search>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="shell shell--narrow">
+    <div class="row row--tight" style="margin-bottom:1.5rem" data-faq-topics></div>
+    <div class="accordion" data-accordion data-faq-list></div>
+    <div class="empty-state" data-faq-empty hidden style="margin-top:1.5rem">
+      {{ICON_SEARCH}}
+      <h2 style="font-size:var(--fs-h4)">No answers matched that</h2>
+      <p class="muted" style="font-size:var(--fs-sm);max-width:44ch">Try a different word, or just ask us — we would rather answer than have you guess.</p>
+      <a class="btn btn--sm" href="contact.html">Ask a question</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tinted">
+  <div class="shell">
+    <div class="grid grid--3">
+      <a class="card card--pad card--lift" href="shipping.html">
+        <span class="value__icon">{{ICON_TRUCK}}</span>
+        <h2 class="value__title">Shipping &amp; delivery</h2>
+        <p class="value__text">Cities, slots, cutoffs, charges and how we keep the cold chain intact.</p>
+        <span class="link" style="margin-top:.75rem">Read the policy {{ICON_ARROWRIGHT}}</span>
+      </a>
+      <a class="card card--pad card--lift" href="returns.html">
+        <span class="value__icon">{{ICON_REFRESH}}</span>
+        <h2 class="value__title">Returns &amp; refunds</h2>
+        <p class="value__text">What we replace, what we refund, and the four-hour reporting window.</p>
+        <span class="link" style="margin-top:.75rem">Read the policy {{ICON_ARROWRIGHT}}</span>
+      </a>
+      <a class="card card--pad card--lift" href="contact.html">
+        <span class="value__icon">{{ICON_HEADPHONES}}</span>
+        <h2 class="value__title">Still stuck?</h2>
+        <p class="value__text">Call, WhatsApp or email — someone real answers, usually the same day.</p>
+        <span class="link" style="margin-top:.75rem">Contact us {{ICON_ARROWRIGHT}}</span>
+      </a>
+    </div>
+  </div>
+</section>

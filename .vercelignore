@@ -1,0 +1,5 @@
+# Build inputs and tooling — the site ships as pre-built static HTML
+tools/
+scratch/
+node_modules
+.git

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#2d1e18"/>
+      <stop offset="60%" stop-color="#19110d"/>
+      <stop offset="100%" stop-color="#0a0705"/>
+    </radialGradient>
+    <radialGradient id="plate" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#eae6df"/>
+      <stop offset="70%" stop-color="#cbc5b9"/>
+      <stop offset="100%" stop-color="#9d9585"/>
+    </radialGradient>
+    <radialGradient id="crust" cx="45%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#f5c270"/>
+      <stop offset="50%" stop-color="#d49339"/>
+      <stop offset="100%" stop-color="#9e5c14"/>
+    </radialGradient>
+    <radialGradient id="filling" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d97724"/>
+      <stop offset="70%" stop-color="#a3470b"/>
+      <stop offset="100%" stop-color="#6b2a04"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="25" stdDeviation="30" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bg)"/>
+  
+  <!-- Ambient Gold Halo -->
+  <circle cx="400" cy="380" r="280" fill="#d4af37" opacity="0.08" filter="blur(40px)"/>
+
+  <!-- Ceramic Plate with Drop Shadow -->
+  <ellipse cx="400" cy="460" rx="310" ry="190" fill="url(#plate)" filter="url(#shadow)"/>
+  <ellipse cx="400" cy="455" rx="285" ry="170" fill="none" stroke="#b0a898" stroke-width="3" opacity="0.6"/>
+
+  <!-- Pie Crust Base / Dish -->
+  <ellipse cx="400" cy="430" rx="240" ry="140" fill="#87470c"/>
+  <!-- Apple Cinnamon Filling Layer -->
+  <ellipse cx="400" cy="415" rx="230" ry="130" fill="url(#filling)"/>
+
+  <!-- Flaky Lattice Strips -->
+  <!-- Diagonal group 1 -->
+  <path d="M220 380 Q400 480 580 440" stroke="url(#crust)" stroke-width="26" fill="none" stroke-linecap="round"/>
+  <path d="M250 340 Q400 440 550 480" stroke="url(#crust)" stroke-width="24" fill="none" stroke-linecap="round"/>
+  <path d="M280 300 Q400 400 520 500" stroke="url(#crust)" stroke-width="22" fill="none" stroke-linecap="round"/>
+  
+  <!-- Diagonal group 2 -->
+  <path d="M580 380 Q400 480 220 440" stroke="url(#crust)" stroke-width="26" fill="none" stroke-linecap="round"/>
+  <path d="M550 340 Q400 440 250 480" stroke="url(#crust)" stroke-width="24" fill="none" stroke-linecap="round"/>
+  <path d="M520 300 Q400 400 280 500" stroke="url(#crust)" stroke-width="22" fill="none" stroke-linecap="round"/>
+
+  <!-- Fluted Pie Rim / Crimped Edge -->
+  <ellipse cx="400" cy="410" rx="245" ry="140" fill="none" stroke="url(#crust)" stroke-width="28" stroke-dasharray="14 10" stroke-linecap="round"/>
+  
+  <!-- Cinnamon Sugar Dust & Glaze Highlight -->
+  <ellipse cx="380" cy="380" rx="180" ry="80" fill="#fff" opacity="0.12" filter="blur(15px)"/>
+  <circle cx="370" cy="390" r="2.5" fill="#fff" opacity="0.7"/>
+  <circle cx="440" cy="420" r="3" fill="#fff" opacity="0.7"/>
+  <circle cx="320" cy="410" r="2" fill="#fff" opacity="0.6"/>
+  <circle cx="480" cy="370" r="2.5" fill="#fff" opacity="0.7"/>
+  <circle cx="410" cy="460" r="3" fill="#fff" opacity="0.6"/>
+
+  <!-- Fresh Mint / Bay Leaf Garnish -->
+  <path d="M560 480 C580 450 610 445 630 455 C625 480 600 500 560 480 Z" fill="#4d7c0f"/>
+  <path d="M565 480 C590 470 615 460 625 455" stroke="#a3e635" stroke-width="2" fill="none"/>
+
+  <!-- Steam Whisps -->
+  <path d="M370 280 Q360 230 380 180" stroke="#fff" stroke-width="4" fill="none" opacity="0.25" stroke-linecap="round" filter="blur(3px)"/>
+  <path d="M430 260 Q440 210 420 160" stroke="#fff" stroke-width="5" fill="none" opacity="0.2" stroke-linecap="round" filter="blur(4px)"/>
+</svg>
