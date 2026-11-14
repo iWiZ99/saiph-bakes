@@ -8,3 +8,5 @@ tools/render_logo.html
 Thumbs.db
 __pycache__/
 *.pyc
+
+.env*

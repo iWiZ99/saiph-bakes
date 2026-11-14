@@ -296,6 +296,38 @@
           gstin: $("#co-gstin").value.trim()
         });
 
+        /* Sync to Vercel Postgres Database */
+        if (typeof fetch === "function") {
+          try {
+            fetch("/api/orders", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                orderNumber: order.id,
+                name: contact.name,
+                email: contact.email,
+                phone: contact.phone,
+                address: address ? (address.line + ", " + (address.landmark ? address.landmark + ", " : "") + address.city + " - " + address.pin) : "Store Pickup",
+                city: address ? address.city : "Mumbai",
+                pincode: address ? address.pin : "",
+                date: form.date,
+                slot: slotRec ? slotRec.label : form.slot,
+                cakeMessage: $("#co-instructions").value.trim(),
+                items: order.lines || order.items || [],
+                subtotal: order.subtotal || 0,
+                discount: order.discount || 0,
+                shipping: order.shipping || 0,
+                total: order.total || order.grand || 0,
+                paymentMethod: form.payment || "cod",
+                paymentStatus: "paid",
+                notes: $("#co-instructions").value.trim()
+              })
+            }).catch(function (err) {
+              console.warn("Postgres order sync notice:", err);
+            });
+          } catch (e) {}
+        }
+
         global.location.href = "order-confirmation.html?order=" + order.id;
       }, 1100);
     });

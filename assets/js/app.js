@@ -536,12 +536,38 @@
           } catch (e) {}
 
           if (kind === "newsletter") {
+            var nEmail = (form.querySelector('[name="email"], #email, [type="email"]') || {}).value || "";
+            if (nEmail && typeof fetch === "function") {
+              fetch("/api/subscribe", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ email: nEmail })
+              }).catch(function () {});
+            }
             ui.toast({ title: "Welcome to the list", note: "Your 10% welcome code is on its way.", variant: "success" });
             form.reset();
           } else if (kind === "review") {
             ui.toast({ title: "Review submitted", note: "Thank you — it appears after moderation in Admin.", variant: "success" });
             form.reset();
           } else {
+            var eWho = (form.querySelector('[name="name"], #name, [id*="name"]') || {}).value || "Customer";
+            var eEmail = (form.querySelector('[name="email"], #email, [type="email"]') || {}).value || "";
+            var ePhone = (form.querySelector('[name="phone"], #phone, [type="tel"]') || {}).value || "";
+            var eMsg = (form.querySelector('textarea, [name="message"], #message, [name="requirement"]') || {}).value || (kind + " inquiry");
+            if (eEmail && typeof fetch === "function") {
+              fetch("/api/inquiry", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                  name: eWho,
+                  email: eEmail,
+                  phone: ePhone,
+                  subject: kind + " inquiry",
+                  type: kind,
+                  message: eMsg
+                })
+              }).catch(function () {});
+            }
             ui.toast({
               title: "Enquiry received",
               note: "Our team replies within one working day. Tracked in Admin.",

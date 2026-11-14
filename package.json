@@ -13,5 +13,9 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.2.1",
+    "@vercel/blob": "^2.9.0"
   }
 }
