@@ -19,13 +19,27 @@
   --beige-400: #d6c8b0;
   --sand-500: #bfb4aa;  /* Hazelnut taupe */
 
-  --gold-300: #f4dcd8;
-  --gold-400: #e8b8b0; /* Dusty rose blush */
-  --gold-500: #9e5655; /* Signature terracotta berry */
-  --gold-600: #844443;
+  --gold-300: #f9f295; /* Official brand light gold */
+  --gold-400: #f3de0a; /* Official brand vivid gold */
+  --gold-500: #e0aa3e; /* Official brand warm rich gold */
+  --gold-600: #c18a24;
 
-  --burgundy-500: #6b2d38;
-  --burgundy-400: #8c3b4a;
+  --burgundy-500: #670e10; /* Official brand signature background */
+  --burgundy-400: #841518;
+  --burgundy-300: #a72327;
+
+  /* ---- Official SAiPH Bakes Brand Assets Palette ---- */
+  --brand-burgundy: #670e10;       /* Official CMYK/Hex Background Color */
+  --brand-burgundy-dark: #4b090b;  /* Deep wine shadow */
+  --brand-burgundy-light: #841518; /* Warm wine highlight */
+
+  --gold-light: #f9f295;           /* Official CMYK/Hex Light Gold */
+  --gold-bright: #f3de0a;          /* Official CMYK/Hex Vivid Gold */
+  --gold-deep: #e0aa3e;            /* Official CMYK/Hex Warm Gold */
+
+  --gold-gradient: linear-gradient(135deg, #f9f295 0%, #f3de0a 50%, #e0aa3e 100%);
+  --gold-gradient-h: linear-gradient(90deg, #f9f295 0%, #f3de0a 50%, #e0aa3e 100%);
+  --gold-gradient-text: linear-gradient(135deg, #f9f295 0%, #f3de0a 45%, #e0aa3e 100%);
 
   --ink-900: #181616;
   --ink-700: #332d2d;
@@ -157,40 +171,40 @@
 }
 
 /* ======================== SAiPH Signature ===============================
-   Matte black · champagne gold · ivory · burgundy — jewellery-box luxury. */
+   Royal burgundy · luminous gold · ivory — jewellery-box luxury. */
 [data-brand="signature"] {
-  --bg: #0b0b0c;
-  --bg-alt: #121213;
-  --bg-sunken: #080809;
-  --surface: #151517;
-  --surface-2: #1c1c1f;
-  --contrast: #f4efe6;
-  --contrast-2: #e8e0d2;
-  --on-contrast: #0b0b0c;
+  --bg: #670e10;
+  --bg-alt: #540b0d;
+  --bg-sunken: #3d0708;
+  --surface: #751417;
+  --surface-2: #84181b;
+  --contrast: #ffffff;
+  --contrast-2: #f9f295;
+  --on-contrast: #670e10;
 
-  --text: #ece6da;
-  --text-muted: #a49d90;
-  --text-faint: #837c70;
-  --heading: #f7f2e9;
+  --text: #fdfbf7;
+  --text-muted: #f2e2cf;
+  --text-faint: #d4c0ab;
+  --heading: #ffffff;
 
-  --accent: #d8be85;
-  --accent-soft: #efdcb2;
-  --accent-ink: #f7f2e9;
-  --on-accent: #0b0b0c;
+  --accent: #f3de0a;
+  --accent-soft: #f9f295;
+  --accent-ink: #ffffff;
+  --on-accent: #670e10;
 
-  --line: color-mix(in srgb, #f4efe6 14%, transparent);
-  --line-strong: color-mix(in srgb, #f4efe6 26%, transparent);
-  --line-on-dark: color-mix(in srgb, #f4efe6 16%, transparent);
+  --line: rgba(249, 242, 149, 0.22);
+  --line-strong: rgba(249, 242, 149, 0.4);
+  --line-on-dark: rgba(249, 242, 149, 0.25);
 
   --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.5);
   --shadow-sm: 0 2px 12px -4px rgba(0, 0, 0, 0.7);
   --shadow-md: 0 14px 34px -16px rgba(0, 0, 0, 0.8), 0 2px 8px -4px rgba(0, 0, 0, 0.6);
   --shadow-lg: 0 34px 80px -34px rgba(0, 0, 0, 0.92), 0 8px 22px -12px rgba(0, 0, 0, 0.7);
-  --shadow-gold: 0 16px 40px -18px rgba(216, 190, 133, 0.42);
+  --shadow-gold: 0 16px 40px -18px rgba(243, 222, 10, 0.45);
 
-  --art-1: #1a1216;
-  --art-2: #d8be85;
-  --art-3: #5a1226;
+  --art-1: #670e10;
+  --art-2: #e0aa3e;
+  --art-3: #f9f295;
 }
 
 /* ============================= Khowdy ==================================

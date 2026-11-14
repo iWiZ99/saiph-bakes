@@ -6,3 +6,5 @@ tools/targets.json
 tools/render_logo.html
 .DS_Store
 Thumbs.db
+__pycache__/
+*.pyc

@@ -674,8 +674,8 @@ writeFileSync(P("manifest.webmanifest"), JSON.stringify({
   description: "Premium bakery, luxury pâtisserie and Assam-inspired foods.",
   start_url: "/index.html",
   display: "standalone",
-  background_color: "#fdfaf4",
-  theme_color: "#08101f",
+  background_color: "#670E10",
+  theme_color: "#670E10",
   icons: [{ src: "/assets/img/favicon.svg", sizes: "any", type: "image/svg+xml", purpose: "any maskable" }]
 }, null, 2) + "\n", "utf8");
 

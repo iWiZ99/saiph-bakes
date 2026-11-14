@@ -228,6 +228,16 @@ a:not([class]):hover { color: var(--accent); }
 .ornament::after { background: linear-gradient(270deg, transparent, currentColor); }
 .ornament span { font-size: 0.7rem; letter-spacing: 0.3em; text-transform: uppercase; }
 
+/* Gold brand accent bar echoing Brand Assets Guide */
+.gold-bar {
+  display: block;
+  width: 5rem;
+  height: 4px;
+  border-radius: 99px;
+  background: var(--gold-gradient-h);
+  margin: 0.85rem auto;
+}
+
 /* ------------------------------ Utilities ------------------------------- */
 .sr-only {
   position: absolute !important;

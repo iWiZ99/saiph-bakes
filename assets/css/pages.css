@@ -11,7 +11,7 @@
   align-items: end;
   color: var(--cream-50);
   overflow: hidden;
-  background: var(--navy-900);
+  background: var(--brand-burgundy, #670e10);
 }
 .hero__bg {
   position: absolute;
@@ -30,8 +30,8 @@
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(115% 85% at 12% 105%, rgba(6, 11, 22, 0.9) 0%, rgba(6, 11, 22, 0.35) 55%, transparent 78%),
-    linear-gradient(180deg, rgba(6, 11, 22, 0.55) 0%, rgba(6, 11, 22, 0.1) 38%, rgba(6, 11, 22, 0.82) 100%);
+    radial-gradient(115% 85% at 12% 105%, rgba(103, 14, 16, 0.88) 0%, rgba(103, 14, 16, 0.35) 55%, transparent 78%),
+    linear-gradient(180deg, rgba(103, 14, 16, 0.5) 0%, rgba(24, 22, 22, 0.15) 38%, rgba(24, 22, 22, 0.85) 100%);
 }
 .hero__inner {
   position: relative;
@@ -145,7 +145,7 @@
   display: grid;
   align-items: center;
   color: var(--cream-50);
-  background: var(--navy-900);
+  background: var(--brand-burgundy, #670e10);
 }
 .page-head--hero h1 { color: var(--cream-50); }
 .page-head--hero .page-head__bg { position: absolute; inset: 0; z-index: -2; }
@@ -154,7 +154,7 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(100deg, rgba(6, 11, 22, 0.88) 0%, rgba(6, 11, 22, 0.5) 55%, rgba(6, 11, 22, 0.22) 100%);
+  background: linear-gradient(100deg, rgba(103, 14, 16, 0.92) 0%, rgba(103, 14, 16, 0.6) 55%, rgba(103, 14, 16, 0.3) 100%);
 }
 .page-head__ornament {
   position: absolute;
@@ -727,7 +727,7 @@
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  background: var(--navy-900);
+  background: var(--brand-burgundy, #670e10);
   color: var(--cream-100);
 }
 .newsletter__glow {
@@ -735,8 +735,8 @@
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(45% 70% at 88% 12%, rgba(193, 154, 76, 0.24), transparent 68%),
-    radial-gradient(40% 60% at 6% 96%, rgba(92, 17, 34, 0.36), transparent 70%);
+    radial-gradient(45% 70% at 88% 12%, rgba(243, 222, 10, 0.25), transparent 68%),
+    radial-gradient(40% 60% at 6% 96%, rgba(75, 9, 11, 0.55), transparent 70%);
 }
 .newsletter__inner {
   display: grid;
@@ -2688,9 +2688,11 @@
 
 /* Locations & Delivery Band */
 .locations-band {
-  background: var(--navy-900);
+  background: var(--brand-burgundy, #670e10);
   color: #ffffff;
   padding: 3rem 0;
+  border-top: 1px solid rgba(243, 222, 10, 0.2);
+  border-bottom: 1px solid rgba(243, 222, 10, 0.2);
 }
 .locations-grid {
   display: grid;

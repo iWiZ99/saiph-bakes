@@ -678,11 +678,12 @@ a:hover .media > img, a:hover .media__art,
 
 /* ------------------------------- Header --------------------------------- */
 .announce {
-  background: var(--navy-900);
-  color: var(--cream-200);
+  background: var(--brand-burgundy, #670e10);
+  color: #ffffff;
   font-size: var(--fs-xs);
   letter-spacing: 0.16em;
   text-transform: uppercase;
+  border-bottom: 1px solid rgba(243, 222, 10, 0.22);
 }
 .announce__inner {
   display: flex;
@@ -697,11 +698,11 @@ a:hover .media > img, a:hover .media__art,
   display: flex;
   align-items: center;
   gap: 0.9rem;
-  color: color-mix(in srgb, var(--cream-200) 88%, transparent);
+  color: rgba(255, 255, 255, 0.9);
 }
-.announce__track b { color: var(--gold-300); font-weight: 500; }
-.announce__dot { color: var(--gold-500); }
-.announce__link { color: var(--gold-300); text-decoration: underline; text-underline-offset: 3px; }
+.announce__track b { color: var(--gold-light, #f9f295); font-weight: 600; }
+.announce__dot { color: var(--gold-bright, #f3de0a); }
+.announce__link { color: var(--gold-light, #f9f295); text-decoration: underline; text-underline-offset: 3px; }
 
 .site-header {
   position: sticky;
@@ -1352,15 +1353,15 @@ a:hover .media > img, a:hover .media__art,
 
 /* ------------------------------- Footer --------------------------------- */
 .site-footer {
-  background: var(--navy-900);
-  color: var(--cream-200);
-  --line: color-mix(in srgb, #fbf6ec 14%, transparent);
-  --text-muted: #9dabc2;
-  --text-faint: #7c89a0;
-  --heading: var(--cream-50);
-  --accent: var(--gold-400);
-  --accent-ink: var(--cream-50);
-  --surface: var(--navy-800);
+  background: var(--brand-burgundy, #670e10);
+  color: var(--cream-100);
+  --line: rgba(249, 242, 149, 0.16);
+  --text-muted: rgba(255, 255, 255, 0.82);
+  --text-faint: rgba(255, 255, 255, 0.6);
+  --heading: #ffffff;
+  --accent: var(--gold-bright, #f3de0a);
+  --accent-ink: #ffffff;
+  --surface: #52090b;
 }
 .site-footer__top {
   display: grid;
@@ -1387,7 +1388,15 @@ a:hover .media > img, a:hover .media__art,
   }
 }
 .footer-brand { display: grid; gap: 1.1rem; align-content: start; max-width: 24rem; }
-.footer-brand .brandmark__name { color: var(--cream-50); }
+.footer-brand .brandmark__name {
+  color: var(--gold-light, #f9f295);
+  background: var(--gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer-brand .brandmark__tag {
+  color: var(--gold-bright, #f3de0a);
+}
 .footer-brand p { font-size: var(--fs-sm); color: var(--text-muted); line-height: 1.65; }
 .footer-col { display: grid; gap: 0.6rem; align-content: start; }
 .footer-col__title {

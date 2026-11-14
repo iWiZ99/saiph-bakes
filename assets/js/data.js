@@ -283,1986 +283,6784 @@
   /* ------------------------------ Products ------------------------------ */
   /* price = base price for the default size; mrp optional (shows strikethrough) */
   var rawProducts = [
-    /* ========================= ARTISANAL SUGAR-FREE CATALOGUE ========================= */
-    /* ===== SAiPH BAKES PREMIUM CAKE MENU (22 FLAVOURS) ===== */
-    {
-      id: "vanilla-cake", name: "Vanilla Cake", brand: "signature",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 800, mrp: 920, rating: 4.9, reviews: 142,
-      badges: ["MENU-FEATURE", "EGGLESS", "GLUTEN-FREE", "NO-MAIDA", "SUGAR-FREE"], sizes: "poundCake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "eggless", "no-maida"],
-      desc: "Freshly baked artisan vanilla sponge made with fragrant pure Madagascar vanilla beans, whipped cream, and zero refined sugar. 100% eggless and gluten-free.",
-      long: "Freshly baked artisan vanilla sponge made with fragrant pure Madagascar vanilla beans, whipped cream, and zero refined sugar. Crafted with no maida, no artificial preservatives, and premium pure ingredients for mindful celebration. 100% Egg-Free and Gluten-Free.",
-      ingredients: "French T45 pastry flour, almond flour, oat flour, pure Madagascar vanilla bean, natural erythritol & stevia blend, dairy cream, cold-pressed oils.",
-      allergens: ["Milk / Dairy", "Tree nuts (almond)"],
-      customisable: true, image: "assets/img/products/vanilla-cake.jpg", images: ["assets/img/products/vanilla-cake.jpg"],
-      tags: ["cake", "vanilla", "eggless", "gluten-free", "signature"]
-    },
-    {
-      id: "chocolate-cake", name: "Chocolate Cake", brand: "signature",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 800, mrp: 920, rating: 5.0, reviews: 218,
-      badges: ["BESTSELLER", "EGGLESS", "GLUTEN-FREE", "NO-MAIDA", "SUGAR-FREE"], sizes: "poundCake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "eggless", "no-maida"],
-      desc: "Decadent dark chocolate layers enveloped in silky smooth Belgian chocolate ganache. Refined sugar-free, gluten-free, and maida-free indulgence.",
-      long: "Decadent dark chocolate layers enveloped in silky smooth Belgian chocolate ganache. Handcrafted using single-origin cocoa with zero maida and zero refined sugar. 100% Eggless and Gluten-Free.",
-      ingredients: "French T45 pastry flour, almond flour, single-origin cacao, dark chocolate 70%, natural plant sweetener, fresh cream, grass-fed butter.",
-      allergens: ["Milk / Dairy", "Tree nuts (almond)"],
-      customisable: true, image: "assets/img/products/chocolate-cake.jpg", images: ["assets/img/products/chocolate-cake.jpg"],
-      tags: ["cake", "chocolate", "eggless", "gluten-free", "signature"]
-    },
-    {
-      id: "butter-scotch-cake", name: "Butter Scotch Cake", brand: "signature",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 850, mrp: 980, rating: 4.9, reviews: 96,
-      badges: ["MENU-FEATURE", "EGGLESS", "GLUTEN-FREE", "NO-MAIDA", "SUGAR-FREE"], sizes: "poundCake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "eggless", "no-maida"],
-      desc: "Layers of moist golden sponge filled with rich handcrafted butterscotch cream and crunchy sugar-free praline crisps. 100% eggless and guilt-free.",
-      long: "Layers of moist golden sponge filled with rich handcrafted butterscotch cream and crunchy sugar-free praline crisps. Made with pure brown butter and zero artificial essences. 100% Eggless and Gluten-Free.",
-      ingredients: "French T45 pastry flour, almond flour, brown butter, handcrafted sugar-free butterscotch caramel, natural erythritol blend, fresh cream.",
-      allergens: ["Milk / Dairy", "Tree nuts (almond)"],
-      customisable: true, image: "assets/img/products/butterscotch-cake.jpg", images: ["assets/img/products/butterscotch-cake.jpg"],
-      tags: ["cake", "butterscotch", "eggless", "gluten-free", "signature"]
-    },
-    {
-      id: "nutella-cake", name: "Nutella Cake", brand: "signature",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1200, mrp: 1380, rating: 5.0, reviews: 164,
-      badges: ["BESTSELLER", "EGGLESS", "GLUTEN-FREE", "NO-MAIDA", "SUGAR-FREE"], sizes: "poundCake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "eggless", "no-maida"],
-      desc: "Velvety chocolate hazelnut sponge filled with luscious artisanal sugar-free Nutella spread and toasted roasted hazelnuts.",
-      long: "Velvety chocolate hazelnut sponge filled with luscious artisanal sugar-free Nutella spread and toasted roasted hazelnuts. Decadent, rich, and guilt-free. 100% Eggless and Gluten-Free.",
-      ingredients: "French T45 pastry flour, almond flour, pure hazelnut butter, Belgian cocoa, natural stevia sweetener, fresh cream, roasted hazelnuts.",
-      allergens: ["Milk / Dairy", "Tree nuts (hazelnut, almond)"],
-      customisable: true, image: "assets/img/products/pistachio-nutella-cake-2.jpg", images: ["assets/img/products/pistachio-nutella-cake-2.jpg"],
-      tags: ["cake", "nutella", "hazelnut", "eggless", "gluten-free", "signature"]
-    },
-    {
-      id: "marble-cake", name: "Marble Cake", brand: "signature",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 900, mrp: 1035, rating: 4.8, reviews: 88,
-      badges: ["MENU-FEATURE", "EGGLESS", "GLUTEN-FREE", "NO-MAIDA", "SUGAR-FREE"], sizes: "poundCake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "eggless", "no-maida"],
-      desc: "Artistic swirls of rich dark chocolate and fragrant vanilla bean sponge, finished with a smooth marbled ganache. Wholesome, gluten-free, and eggless.",
-      long: "Artistic swirls of rich dark chocolate and fragrant vanilla bean sponge, finished with a smooth marbled ganache. Wholesome, gluten-free, and eggless with zero refined sugar.",
-      ingredients: "French T45 pastry flour, almond flour, Madagascar vanilla, dark cocoa, erythritol blend, grass-fed butter, fresh cream.",
-      allergens: ["Milk / Dairy", "Tree nuts (almond)"],
-      customisable: true, image: "assets/img/products/marble-opulence-cake.jpg", images: ["assets/img/products/marble-opulence-cake.jpg"],
-      tags: ["cake", "marble", "eggless", "gluten-free", "signature"]
-    },
-    {
-      id: "oreo-cake", name: "Oreo Cake", brand: "signature",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1000, mrp: 1150, rating: 4.9, reviews: 110,
-      badges: ["MENU-FEATURE", "EGGLESS", "GLUTEN-FREE", "NO-MAIDA", "SUGAR-FREE"], sizes: "poundCake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "eggless", "no-maida"],
-      desc: "Cookies-and-cream perfection featuring crushed artisan chocolate biscuit crumbs folded into vanilla cream cheese frosting between moist chocolate layers.",
-      long: "Cookies-and-cream perfection featuring crushed artisan gluten-free chocolate biscuit crumbs folded into vanilla cream cheese frosting between moist chocolate layers. 100% Eggless and refined sugar-free.",
-      ingredients: "French T45 pastry flour, almond flour, gluten-free dark cacao biscuit crumble, cream cheese, natural plant sweetener, vanilla bean.",
-      allergens: ["Milk / Dairy", "Tree nuts (almond)"],
-      customisable: true, image: "assets/img/products/oreo-cake.jpg", images: ["assets/img/products/oreo-cake.jpg"],
-      tags: ["cake", "oreo", "cookies-and-cream", "eggless", "gluten-free", "signature"]
-    },
-    {
-      id: "black-forest-cake", name: "Black Forest Cake", brand: "signature",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 800, mrp: 920, rating: 4.9, reviews: 178,
-      badges: ["BESTSELLER", "EGGLESS", "GLUTEN-FREE", "NO-MAIDA", "SUGAR-FREE"], sizes: "poundCake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "eggless", "no-maida"],
-      desc: "Airy chocolate sponge layered with tart cherry compote, fresh vanilla chantilly cream, and dark chocolate shavings. A mindful classic.",
-      long: "Airy chocolate sponge layered with tart cherry compote, fresh vanilla chantilly cream, and dark chocolate shavings. Baked without refined sugar or maida. 100% Eggless and Gluten-Free.",
-      ingredients: "French T45 pastry flour, almond flour, dark cocoa, red sour cherries, Madagascar vanilla, dairy cream, natural erythritol.",
-      allergens: ["Milk / Dairy", "Tree nuts (almond)"],
-      customisable: true, image: "assets/img/products/black-forest-cake.jpg", images: ["assets/img/products/black-forest-cake.jpg"],
-      tags: ["cake", "black-forest", "eggless", "gluten-free", "signature"]
-    },
-    {
-      id: "white-forest-cake", name: "White Forest Cake", brand: "signature",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 800, mrp: 920, rating: 4.8, reviews: 92,
-      badges: ["MENU-FEATURE", "EGGLESS", "GLUTEN-FREE", "NO-MAIDA", "SUGAR-FREE"], sizes: "poundCake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "eggless", "no-maida"],
-      desc: "Delicate vanilla sponge filled with juicy cherries, white chocolate curls, and light whipped cream. 100% eggless, gluten-free, and zero refined sugar.",
-      long: "Delicate vanilla sponge filled with juicy cherries, white chocolate curls, and light whipped cream. 100% eggless, gluten-free, and zero refined sugar.",
-      ingredients: "French T45 pastry flour, almond flour, sugar-free white chocolate, sweet cherries, fresh dairy cream, natural stevia blend.",
-      allergens: ["Milk / Dairy", "Tree nuts (almond)"],
-      customisable: true, image: "assets/img/products/white-forest-cake.jpg", images: ["assets/img/products/white-forest-cake.jpg"],
-      tags: ["cake", "white-forest", "eggless", "gluten-free", "signature"]
-    },
-    {
-      id: "plum-cake-non-alcoholic", name: "Plum Cake (Non Alcoholic)", brand: "signature",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1250, mrp: 1435, rating: 5.0, reviews: 135,
-      badges: ["SIGNATURE", "EGGLESS", "GLUTEN-FREE", "NO-MAIDA", "SUGAR-FREE"], sizes: "poundCake", occasions: ["festival", "birthday", "corporate"],
-      diet: ["sugar-free", "gluten-free", "eggless", "no-maida"],
-      desc: "Traditional rich festive fruit cake loaded with spiced black currants, raisins, dates, figs, and toasted nuts steeped in spiced citrus reduction. 100% non-alcoholic.",
-      long: "Traditional rich festive fruit cake loaded with spiced black currants, raisins, dates, figs, and toasted nuts steeped in spiced citrus reduction. 100% non-alcoholic, egg-free, and refined sugar-free.",
-      ingredients: "French T45 pastry flour, almond flour, black raisins, dates, figs, candied orange peel, cinnamon, nutmeg, ginger, walnuts, cold-pressed oils.",
-      allergens: ["Tree nuts (walnut, almond)"],
-      customisable: true, image: "assets/img/products/plum-cake-non-alcoholic.jpg", images: ["assets/img/products/plum-cake-non-alcoholic.jpg"],
-      tags: ["cake", "plum-cake", "festive", "eggless", "gluten-free", "signature"]
-    },
-    {
-      id: "raspberry-velvet-cake", name: "Raspberry Velvet Cake", brand: "signature",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1200, mrp: 1380, rating: 4.9, reviews: 84,
-      badges: ["MENU-FEATURE", "EGGLESS", "GLUTEN-FREE", "NO-MAIDA", "SUGAR-FREE"], sizes: "poundCake", occasions: ["birthday", "anniversary", "festival"],
-      diet: ["sugar-free", "gluten-free", "eggless", "no-maida"],
-      desc: "Sumptuous pink velvet sponge layered with tangy wild raspberry coulis and delicate cream frosting. Bright, refreshing, and sugar-free.",
-      long: "Sumptuous pink velvet sponge layered with tangy wild raspberry coulis and delicate cream frosting. Bright, refreshing, and sugar-free. 100% Eggless and Gluten-Free.",
-      ingredients: "French T45 pastry flour, almond flour, fresh raspberry reduction, vanilla cream, natural erythritol blend, cold-pressed oils.",
-      allergens: ["Milk / Dairy", "Tree nuts (almond)"],
-      customisable: true, image: "assets/img/products/pistachio-raspberry-cake.jpg", images: ["assets/img/products/pistachio-raspberry-cake.jpg"],
-      tags: ["cake", "raspberry", "velvet", "eggless", "gluten-free", "signature"]
-    },
-    {
-      id: "lavender-berry-cake", name: "Lavender Berry Cake", brand: "signature",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1200, mrp: 1380, rating: 5.0, reviews: 76,
-      badges: ["SIGNATURE", "EGGLESS", "GLUTEN-FREE", "NO-MAIDA", "SUGAR-FREE"], sizes: "poundCake", occasions: ["birthday", "anniversary", "festival"],
-      diet: ["sugar-free", "gluten-free", "eggless", "no-maida"],
-      desc: "An ethereal floral and fruit pairing: culinary French lavender-infused sponge layered with mixed berry compote and whipped chantilly frosting.",
-      long: "An ethereal floral and fruit pairing: culinary French lavender-infused sponge layered with mixed berry compote and whipped chantilly frosting. 100% Eggless and Gluten-Free.",
-      ingredients: "French T45 pastry flour, almond flour, organic culinary lavender, blueberries, blackberries, fresh dairy cream, natural plant sweetener.",
-      allergens: ["Milk / Dairy", "Tree nuts (almond)"],
-      customisable: true, image: "assets/img/products/berry-chantilly-cake.jpg", images: ["assets/img/products/berry-chantilly-cake.jpg"],
-      tags: ["cake", "lavender", "berry", "eggless", "gluten-free", "signature"]
-    },
-    {
-      id: "pineapple-cake", name: "Pineapple Cake", brand: "signature",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 800, mrp: 920, rating: 4.9, reviews: 150,
-      badges: ["BESTSELLER", "EGGLESS", "GLUTEN-FREE", "NO-MAIDA", "SUGAR-FREE"], sizes: "poundCake", occasions: ["birthday", "anniversary", "festival"],
-      diet: ["sugar-free", "gluten-free", "eggless", "no-maida"],
-      desc: "Classic tropical celebration cake: tender vanilla sponge soaked in real pineapple nectar, layered with slow-simmered pineapple compote and fresh cream.",
-      long: "Classic tropical celebration cake: tender vanilla sponge soaked in real pineapple nectar, layered with slow-simmered pineapple compote and fresh cream. 100% Eggless and Gluten-Free.",
-      ingredients: "French T45 pastry flour, almond flour, fresh Queen pineapple, dairy cream, Madagascar vanilla, natural erythritol blend.",
-      allergens: ["Milk / Dairy", "Tree nuts (almond)"],
-      customisable: true, image: "assets/img/products/pineapple-cream-cake.jpg", images: ["assets/img/products/pineapple-cream-cake.jpg"],
-      tags: ["cake", "pineapple", "eggless", "gluten-free", "signature"]
-    },
-    {
-      id: "mango-cake", name: "Mango Cake", brand: "signature",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 800, mrp: 920, rating: 4.9, reviews: 114,
-      badges: ["MENU-FEATURE", "EGGLESS", "GLUTEN-FREE", "NO-MAIDA", "SUGAR-FREE"], sizes: "poundCake", occasions: ["birthday", "anniversary", "festival"],
-      diet: ["sugar-free", "gluten-free", "eggless", "no-maida"],
-      desc: "Sun-ripened Alphonso mango pulp layered with light sponge and mango-infused mascarpone cream. Pure tropical delight with zero added sugar.",
-      long: "Sun-ripened Alphonso mango pulp layered with light sponge and mango-infused mascarpone cream. Pure tropical delight with zero added sugar. 100% Eggless and Gluten-Free.",
-      ingredients: "French T45 pastry flour, almond flour, Alphonso mango puree, mascarpone cream, natural stevia sweetener, fresh cream.",
-      allergens: ["Milk / Dairy", "Tree nuts (almond)"],
-      customisable: true, image: "assets/img/products/mango-cake.jpg", images: ["assets/img/products/mango-cake.jpg"],
-      tags: ["cake", "mango", "eggless", "gluten-free", "signature"]
-    },
-    {
-      id: "strawberry-cake", name: "Strawberry Cake", brand: "signature",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 800, mrp: 920, rating: 4.9, reviews: 128,
-      badges: ["MENU-FEATURE", "EGGLESS", "GLUTEN-FREE", "NO-MAIDA", "SUGAR-FREE"], sizes: "poundCake", occasions: ["birthday", "anniversary", "festival"],
-      diet: ["sugar-free", "gluten-free", "eggless", "no-maida"],
-      desc: "Juicy handpicked strawberries cooked into a velvety compote between light sponge layers and whipped vanilla cream.",
-      long: "Juicy handpicked strawberries cooked into a velvety compote between light sponge layers and whipped vanilla cream. 100% Eggless and Gluten-Free.",
-      ingredients: "French T45 pastry flour, almond flour, fresh strawberries, dairy cream, Madagascar vanilla, natural erythritol blend.",
-      allergens: ["Milk / Dairy", "Tree nuts (almond)"],
-      customisable: true, image: "assets/img/products/strawberry-cake.jpg", images: ["assets/img/products/strawberry-cake.jpg"],
-      tags: ["cake", "strawberry", "eggless", "gluten-free", "signature"]
-    },
-    {
-      id: "fresh-fruit-cake", name: "Fruit Cake", brand: "signature",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 800, mrp: 920, rating: 4.8, reviews: 102,
-      badges: ["MENU-FEATURE", "EGGLESS", "GLUTEN-FREE", "NO-MAIDA", "SUGAR-FREE"], sizes: "poundCake", occasions: ["birthday", "anniversary", "festival"],
-      diet: ["sugar-free", "gluten-free", "eggless", "no-maida"],
-      desc: "A colourful festival of fresh seasonal exotic fruits over a luscious cream-covered vanilla sponge.",
-      long: "A colourful festival of fresh seasonal exotic fruits (kiwi, pomegranate, orange, berries) over a luscious cream-covered vanilla sponge. 100% Eggless and Gluten-Free.",
-      ingredients: "French T45 pastry flour, almond flour, fresh seasonal fruits, vanilla cream, natural plant sweetener, cold-pressed oils.",
-      allergens: ["Milk / Dairy", "Tree nuts (almond)"],
-      customisable: true, image: "assets/img/products/tropical-delight-cake.jpg", images: ["assets/img/products/tropical-delight-cake.jpg"],
-      tags: ["cake", "fruit-cake", "fresh-fruit", "eggless", "gluten-free", "signature"]
-    },
-    {
-      id: "biscoff-cake", name: "Biscoff Cake", brand: "signature",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 900, mrp: 1035, rating: 5.0, reviews: 140,
-      badges: ["BESTSELLER", "EGGLESS", "GLUTEN-FREE", "NO-MAIDA", "SUGAR-FREE"], sizes: "poundCake", occasions: ["birthday", "anniversary", "festival"],
-      diet: ["sugar-free", "gluten-free", "eggless", "no-maida"],
-      desc: "Warmly spiced speculoos cookie butter folded into smooth cream frosting with spiced biscuit crumbs over tender cinnamon-infused sponge.",
-      long: "Warmly spiced speculoos cookie butter folded into smooth cream frosting with spiced biscuit crumbs over tender cinnamon-infused sponge. 100% Eggless and Gluten-Free.",
-      ingredients: "French T45 pastry flour, almond flour, sugar-free spiced speculoos butter, cinnamon, dairy cream, natural erythritol blend.",
-      allergens: ["Milk / Dairy", "Tree nuts (almond)"],
-      customisable: true, image: "assets/img/products/biscoff-cake.jpg", images: ["assets/img/products/biscoff-cake.jpg"],
-      tags: ["cake", "biscoff", "speculoos", "eggless", "gluten-free", "signature"]
-    },
-    {
-      id: "bee-cake-honey", name: "Bee Cake Honey", brand: "signature",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 800, mrp: 920, rating: 4.9, reviews: 89,
-      badges: ["SIGNATURE", "EGGLESS", "GLUTEN-FREE", "NO-MAIDA"], sizes: "poundCake", occasions: ["birthday", "anniversary", "festival"],
-      diet: ["gluten-free", "eggless", "no-maida"],
-      desc: "Inspired by the classic Medovik: delicate multi-layered honey biscuits caramelized to perfection and filled with tangy sour cream honey frosting.",
-      long: "Inspired by the classic Medovik: delicate multi-layered honey biscuits caramelized to perfection and filled with tangy sour cream honey frosting. 100% Eggless and Gluten-Free.",
-      ingredients: "French T45 pastry flour, almond flour, pure organic raw wild honey, sour cream, grass-fed butter, natural erythritol.",
-      allergens: ["Milk / Dairy", "Tree nuts (almond)"],
-      customisable: true, image: "assets/img/products/bee-cake-honey.jpg", images: ["assets/img/products/bee-cake-honey.jpg"],
-      tags: ["cake", "honey-cake", "medovik", "eggless", "gluten-free", "signature"]
-    },
-    {
-      id: "toffee-caramel-cake", name: "Toffee Caramel Cake", brand: "signature",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 950, mrp: 1090, rating: 4.9, reviews: 118,
-      badges: ["MENU-FEATURE", "EGGLESS", "GLUTEN-FREE", "NO-MAIDA", "SUGAR-FREE"], sizes: "poundCake", occasions: ["birthday", "anniversary", "festival"],
-      diet: ["sugar-free", "gluten-free", "eggless", "no-maida"],
-      desc: "Deep golden English toffee sauce swirled into fluffy sponge with sea-salted caramel buttercream and sugar-free toffee brittle.",
-      long: "Deep golden English toffee sauce swirled into fluffy sponge with sea-salted caramel buttercream and sugar-free toffee brittle. 100% Eggless and Gluten-Free.",
-      ingredients: "French T45 pastry flour, almond flour, browned grass-fed butter, handcrafted sugar-free toffee caramel, Himalayan pink salt, fresh cream.",
-      allergens: ["Milk / Dairy", "Tree nuts (almond)"],
-      customisable: true, image: "assets/img/products/chocolate-caramel-noir-cake.jpg", images: ["assets/img/products/chocolate-caramel-noir-cake.jpg"],
-      tags: ["cake", "toffee", "caramel", "eggless", "gluten-free", "signature"]
-    },
-    {
-      id: "caramel-hazelnut-chocolate-cake", name: "Caramel Hazelnut Chocolate", brand: "signature",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1200, mrp: 1380, rating: 5.0, reviews: 172,
-      badges: ["BESTSELLER", "EGGLESS", "GLUTEN-FREE", "NO-MAIDA", "SUGAR-FREE"], sizes: "poundCake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "eggless", "no-maida"],
-      desc: "The ultimate trio: rich chocolate sponge, slow-cooked caramel drizzle, and roasted hazelnut praline crunch draped in dark chocolate ganache.",
-      long: "The ultimate trio: rich chocolate sponge, slow-cooked caramel drizzle, and roasted hazelnut praline crunch draped in dark chocolate ganache. 100% Eggless and Gluten-Free.",
-      ingredients: "French T45 pastry flour, almond flour, roasted hazelnuts, dark chocolate 70%, sea salt caramel, natural plant sweetener, fresh cream.",
-      allergens: ["Milk / Dairy", "Tree nuts (hazelnut, almond)"],
-      customisable: true, image: "assets/img/products/triple-chocolate-crunch-cake-1.jpg", images: ["assets/img/products/triple-chocolate-crunch-cake-1.jpg"],
-      tags: ["cake", "caramel", "hazelnut", "chocolate", "eggless", "gluten-free", "signature"]
-    },
-    {
-      id: "nutella-hazelnut-cake", name: "Nutella Hazelnut Cake", brand: "signature",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1250, mrp: 1435, rating: 5.0, reviews: 230,
-      badges: ["SIGNATURE", "BESTSELLER", "EGGLESS", "GLUTEN-FREE", "NO-MAIDA", "SUGAR-FREE"], sizes: "poundCake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "eggless", "no-maida"],
-      desc: "Our flagship celebration cake featured on the SAiPH Bakes menu: decadent chocolate hazelnut sponge crowned with hazelnut truffles and chocolate drip.",
-      long: "Our flagship celebration cake featured on the official SAiPH Bakes menu: decadent chocolate hazelnut sponge crowned with hazelnut truffles and signature chocolate drip. Handcrafted with zero maida and zero refined sugar. 100% Eggless and Gluten-Free.",
-      ingredients: "French T45 pastry flour, almond flour, pure roasted hazelnuts, artisanal sugar-free Nutella, Belgian cacao, dairy cream, stevia.",
-      allergens: ["Milk / Dairy", "Tree nuts (hazelnut, almond)"],
-      customisable: true, image: "assets/img/products/nutella-hazelnut-cake.jpg", images: ["assets/img/products/nutella-hazelnut-cake.jpg"],
-      tags: ["cake", "nutella", "hazelnut", "signature-menu", "eggless", "gluten-free", "signature"]
-    },
-    {
-      id: "sugar-free-almond-butter", name: "Sugar Free Almond Butter", brand: "khowdy",
-      cats: ["healthy-snacks"], price: 750, mrp: 862, rating: 4.9, reviews: 160,
-      badges: ["SUGAR-FREE"], sizes: "jar", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "vegan"],
-      desc: "Made with 100% pure roasted almonds, our signature Almond Butter celebrates the natural richness and goodness of almonds in their simplest f...",
-      long: "Made with 100% pure roasted almonds, our signature Almond Butter celebrates the natural richness and goodness of almonds in their simplest form. Smooth, creamy, and naturally nutty, it delivers a deliciously wholesome flavour without the need for added sugar, oils, or preservatives. Thoughtfully crafted to let the natural taste of roasted almonds shine through, this versatile spread is perfect for spreading over toast, blending into smoothies, pairing with fresh fruit, or adding to your favourite breakfast bowls and recipes. Whether enjoyed as part of your daily routine or straight from the jar, it\u2019s a simple, delicious way to bring the goodness of almonds into your everyday indulgence. Refined Sugar-Free | Gluten-Free | Vegan | No Added Oils or Preservatives",
-      ingredients: "Dry-roasted California almonds, organic vanilla bean, stevia leaf extract, Himalayan pink salt.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/sugar-free-almond-butter.jpg", images: ["assets/img/products/sugar-free-almond-butter.jpg"],
-      tags: ["sugar-free", "gluten-free", "khowdy"]
-    },
-    {
-      id: "sugar-free-tiramisu-spread", name: "Sugar Free Tiramisu Spread", brand: "khowdy",
-      cats: ["healthy-snacks"], price: 550, mrp: 632, rating: 4.9, reviews: 161,
-      badges: ["SUGAR-FREE"], sizes: "jar", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "vegan"],
-      desc: "Inspired by the timeless indulgence of classic tiramisu, our Sugar-Free Tiramisu Spread brings together the rich notes of coffee and cocoa i...",
-      long: "Inspired by the timeless indulgence of classic tiramisu, our Sugar-Free Tiramisu Spread brings together the rich notes of coffee and cocoa in a smooth, creamy blend. Sweetened with stevia and thoughtfully crafted without refined sugar, it delivers a beautifully balanced flavour with the perfect touch of coffee-inspired indulgence. Spread it over toast, drizzle it over pancakes, pair it with fresh fruit, or use it to add a delicious twist to your favourite desserts. Whether enjoyed as part of your breakfast or as a little afternoon treat, this versatile spread brings a touch of indulgence to every moment. Refined Sugar-Free | Gluten-Free | Vegan",
-      ingredients: "Dry-roasted California almonds, organic vanilla bean, stevia leaf extract, Himalayan pink salt.",
-      allergens: ["Processed in a facility handling tree nuts and dairy"],
-      customisable: false, image: "assets/img/products/sugar-free-tiramisu-spread.jpg", images: ["assets/img/products/sugar-free-tiramisu-spread.jpg"],
-      tags: ["sugar-free", "gluten-free", "khowdy"]
-    },
-    {
-      id: "sugar-free-hazelnut-spread", name: "Sugar Free Hazelnut Spread", brand: "khowdy",
-      cats: ["healthy-snacks"], price: 650, mrp: 747, rating: 4.8, reviews: 221,
-      badges: ["SUGAR-FREE"], sizes: "jar", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "vegan"],
-      desc: "Indulge in the rich, irresistible combination of chocolate and hazelnuts with our signature Sugar-Free Hazelnut Spread. Crafted with 100% na...",
-      long: "Indulge in the rich, irresistible combination of chocolate and hazelnuts with our signature Sugar-Free Hazelnut Spread. Crafted with 100% natural hazelnut butter, roasted hazelnuts, and cocoa solids, this smooth and creamy spread delivers a deep chocolatey flavour complemented by the natural nuttiness of hazelnuts. Sweetened with stevia and made without refined sugar, it offers a deliciously indulgent experience with a mindful twist. Spread it over toast, drizzle it over pancakes, pair it with fresh fruit, or enjoy a spoonful straight from the jar whenever a chocolate craving strikes. Versatile, decadent, and thoughtfully crafted, it's an everyday favourite for those who believe mindful indulgence should never compromise on flavour. Refined Sugar-Free | Gluten-Free | Vegan",
-      ingredients: "Dry-roasted California almonds, organic vanilla bean, stevia leaf extract, Himalayan pink salt.",
-      allergens: ["Tree nuts (hazelnut)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/sugar-free-hazelnut-spread.jpg", images: ["assets/img/products/sugar-free-hazelnut-spread.jpg"],
-      tags: ["sugar-free", "gluten-free", "khowdy"]
-    },
-    {
-      id: "assorted-diwali-mithai-barks-hamper", name: "Assorted Diwali Mithai & Barks Hamper", brand: "signature",
-      cats: ["hampers", "corporate-gifting"], price: 1800, mrp: 2070, rating: 4.9, reviews: 116,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "single", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "vegan"],
-      desc: "A thoughtfully curated festive assortment that brings together the timeless charm of Indian mithai and the indulgence of handcrafted chocola...",
-      long: "A thoughtfully curated festive assortment that brings together the timeless charm of Indian mithai and the indulgence of handcrafted chocolate barks. Featuring two pieces each of our signature sugar-free Motichoor Laddoos, Pistachio Praline Laddoos, and Rose Kaju Katlis, this box offers a delightful blend of traditional flavours and contemporary indulgence. Complete your festive selection with your choice of our Motichoor Bark or Chocolate Praline Bark, adding a delicious finishing touch to this thoughtfully crafted assortment. Perfect for festive gifting or sharing with loved ones, it\u2019s a beautiful way to celebrate the season with mindful indulgence. Refined Sugar-Free | Gluten-Free | Vegan",
-      ingredients: "Almond flour, natural erythritol blend, dairy cream, grass-fed butter, cold-pressed oils.",
-      allergens: ["Tree nuts (pistachio)"],
-      customisable: false, image: "assets/img/products/assorted-diwali-mithai-barks-hamper.png", images: ["assets/img/products/assorted-diwali-mithai-barks-hamper.png"],
-      tags: ["sugar-free", "gluten-free", "signature"]
-    },
-    {
-      id: "basque-cheesecake-hamper", name: "Basque Cheesecake Hamper", brand: "signature",
-      cats: ["celebration-cakes", "desserts"], price: 1500, mrp: 1724, rating: 4.8, reviews: 270,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free"],
-      desc: "Choose between our two signature Basque cheesecakes, each crafted to bring a touch of indulgence to your festive celebrations. Enjoy the ric...",
-      long: "Choose between our two signature Basque cheesecakes, each crafted to bring a touch of indulgence to your festive celebrations. Enjoy the rich, creamy Pistachio Basque Cheesecake, infused with pistachio cream cheese and topped with sugar-free pistachio butter and crushed pistachios, or savour our Kesar Rabdi Basque Cheesecake, featuring kesar-infused cheesecake finished with a luscious layer of sugar-free rabdi sweetened with stevia. Both offer a delicious fusion of rich flavours and festive indulgence, making them a perfect addition to your celebrations. Refined Sugar-Free | Gluten-Free | Contains Dairy",
-      ingredients: "Almond flour, natural erythritol blend, dairy cream, grass-fed butter, cold-pressed oils.",
-      allergens: ["Tree nuts (pistachio)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/basque-cheesecake-hamper.png", images: ["assets/img/products/basque-cheesecake-hamper.png"],
-      tags: ["sugar-free", "gluten-free", "signature"]
-    },
-    {
-      id: "mini-diwali-gift-hamper", name: "Mini Diwali Gift Hamper", brand: "signature",
-      cats: ["hampers", "corporate-gifting"], price: 3500, mrp: 4024, rating: 4.8, reviews: 58,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "single", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free"],
-      desc: "A thoughtfully curated festive assortment featuring the perfect balance of indulgent desserts and savoury bites. Enjoy your choice of a rich...",
-      long: "A thoughtfully curated festive assortment featuring the perfect balance of indulgent desserts and savoury bites. Enjoy your choice of a rich Pistachio Basque Cheesecake or Kesar Rabdi Basque Cheesecake, paired with a selection of our signature fudge bites and crisp, flavourful crackers. From creamy cheesecakes and melt-in-your-mouth fudge to deliciously savoury crackers, every element is thoughtfully chosen to make festive gifting extra special. Refined Sugar-Free | Gluten-Free",
-      ingredients: "Almond flour, natural erythritol blend, dairy cream, grass-fed butter, cold-pressed oils.",
-      allergens: ["Tree nuts (pistachio)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/mini-diwali-gift-hamper.jpg", images: ["assets/img/products/mini-diwali-gift-hamper.jpg"],
-      tags: ["sugar-free", "gluten-free", "signature"]
-    },
-    {
-      id: "assorted-mithai-box-of-6", name: "Assorted Mithai Box of 6", brand: "signature",
-      cats: ["hampers", "corporate-gifting"], price: 800, mrp: 919, rating: 5.0, reviews: 228,
-      badges: ["SUGAR-FREE"], sizes: "box", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "vegan"],
-      desc: "A thoughtfully curated assortment of festive favourites, bringing together the timeless charm of Indian mithai with a mindful twist. Featuri...",
-      long: "A thoughtfully curated assortment of festive favourites, bringing together the timeless charm of Indian mithai with a mindful twist. Featuring six pieces, with two each of our signature sugar-free motichoor laddoos, pistachio praline laddoos, and rose kaju katlis, this box offers a delightful blend of traditional flavours and contemporary indulgence. From the delicate sweetness of motichoor to the nutty richness of pistachio praline and the subtle floral notes of rose, every bite is crafted to make your festive moments a little more special. Perfect for thoughtful gifting or sharing a little sweetness with loved ones, this assortment is a beautiful addition to your celebrations. Refined Sugar-Free | Gluten-Free | Vegan",
-      ingredients: "Almond flour, natural erythritol blend, dairy cream, grass-fed butter, cold-pressed oils.",
-      allergens: ["Tree nuts (pistachio)"],
-      customisable: false, image: "assets/img/products/assorted-mithai-box-of-6.jpg", images: ["assets/img/products/assorted-mithai-box-of-6.jpg"],
-      tags: ["sugar-free", "gluten-free", "signature"]
-    },
-    {
-      id: "assorted-vegan-mithai-box-of-15", name: "Assorted Vegan Mithai Box of 15", brand: "signature",
-      cats: ["hampers", "corporate-gifting"], price: 1800, mrp: 2070, rating: 4.9, reviews: 223,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "box", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "vegan"],
-      desc: "A thoughtfully curated assortment of festive favourites, bringing together the timeless charm of Indian mithai with a mindful twist. Featuri...",
-      long: "A thoughtfully curated assortment of festive favourites, bringing together the timeless charm of Indian mithai with a mindful twist. Featuring 15 pieces, with five each of our signature sugar-free motichoor laddoos, pistachio praline laddoos, and rose kaju katlis, this box offers a delightful blend of traditional flavours and contemporary indulgence. From the delicate sweetness of motichoor to the nutty richness of pistachio praline and the subtle floral notes of rose, every bite is crafted to make your festive celebrations a little more special. Perfect for gifting loved ones or sharing with family, this assortment is a beautiful way to celebrate the season with thoughtfully made treats. Refined Sugar-Free | Gluten-Free | Vegan",
-      ingredients: "Almond flour, natural erythritol blend, dairy cream, grass-fed butter, cold-pressed oils.",
-      allergens: ["Tree nuts (pistachio)"],
-      customisable: false, image: "assets/img/products/assorted-vegan-mithai-box-of-15.jpg", images: ["assets/img/products/assorted-vegan-mithai-box-of-15.jpg"],
-      tags: ["sugar-free", "gluten-free", "signature"]
-    },
-    {
-      id: "assorted-mithai-box-of-15", name: "Assorted Mithai Box of 15", brand: "signature",
-      cats: ["hampers", "corporate-gifting"], price: 1800, mrp: 2070, rating: 4.9, reviews: 99,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "box", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free"],
-      desc: "A thoughtfully curated assortment of festive favourites, bringing together the richness of traditional Indian mithai with a mindful twist. F...",
-      long: "A thoughtfully curated assortment of festive favourites, bringing together the richness of traditional Indian mithai with a mindful twist. Featuring 15 pieces, with three each of our signature sugar-free Mysore Pak, pistachio praline laddoo, motichoor laddoo, rose kaju katli, and malai chocolate peda, this box celebrates a beautiful blend of classic flavours and contemporary indulgence. From the nutty richness of pistachio praline to the delicate floral notes of rose and the indulgent touch of malai chocolate, every sweet is crafted to make your festive moments extra special. Perfect for gifting loved ones or sharing with family, this assortment brings a thoughtful touch to every celebration. Refined Sugar-Free | Gluten-Free | Contains Dairy",
-      ingredients: "Almond flour, natural erythritol blend, dairy cream, grass-fed butter, cold-pressed oils.",
-      allergens: ["Tree nuts (pistachio)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/assorted-mithai-box-of-15.jpg", images: ["assets/img/products/assorted-mithai-box-of-15.jpg"],
-      tags: ["sugar-free", "gluten-free", "signature"]
-    },
-    {
-      id: "paprika-and-garlic-crackers", name: "Paprika and Garlic Crackers", brand: "khowdy",
-      cats: ["healthy-snacks"], price: 400, mrp: 459, rating: 4.9, reviews: 157,
-      badges: ["SUGAR-FREE"], sizes: "jar", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "vegan"],
-      desc: "(120 gms) Crisp, golden-baked crackers infused with the bold, aromatic flavours of smoky garlic and blended with vegan butter for a deliciou...",
-      long: "(120 gms) Crisp, golden-baked crackers infused with the bold, aromatic flavours of smoky garlic and blended with vegan butter for a deliciously savoury finish. Each bite delivers a satisfying crunch, complemented by the rich, smoky notes of garlic, creating a beautifully balanced flavour that keeps you coming back for more. Thoughtfully crafted for those who enjoy savoury snacking, these crackers are perfect for pairing with your favourite dips, adding to a festive grazing platter, or enjoying straight out of the pack whenever a craving strikes. Gluten-Free | Vegan",
-      ingredients: "Almond flour, natural erythritol blend, dairy cream, grass-fed butter, cold-pressed oils.",
-      allergens: ["Milk / Dairy"],
-      customisable: false, image: "assets/img/products/paprika-and-garlic-crackers.jpg", images: ["assets/img/products/paprika-and-garlic-crackers.jpg"],
-      tags: ["sugar-free", "gluten-free", "khowdy"]
-    },
-    {
-      id: "herb-and-cheese-crackers", name: "Herb and Cheese Crackers", brand: "khowdy",
-      cats: ["healthy-snacks"], price: 450, mrp: 517, rating: 5.0, reviews: 116,
-      badges: ["SUGAR-FREE"], sizes: "jar", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "vegan"],
-      desc: "(120 gms) Crisp, golden-baked crackers crafted with a delicious blend of aromatic herbs, garlic powder, and rich white cheddar, brought toge...",
-      long: "(120 gms) Crisp, golden-baked crackers crafted with a delicious blend of aromatic herbs, garlic powder, and rich white cheddar, brought together with vegan butter for a perfectly savoury bite. Each cracker offers a satisfying crunch, complemented by the earthy notes of herbs, the subtle warmth of garlic, and the creamy, cheesy flavour of white cheddar. Thoughtfully crafted to make everyday snacking a little more indulgent, these crackers are perfect for pairing with your favourite dips, serving on a festive grazing platter, or enjoying on their own whenever a savoury craving strikes. Gluten-Free | Contains Dairy",
-      ingredients: "Almond flour, natural erythritol blend, dairy cream, grass-fed butter, cold-pressed oils.",
-      allergens: ["Milk / Dairy"],
-      customisable: false, image: "assets/img/products/herb-and-cheese-crackers.jpg", images: ["assets/img/products/herb-and-cheese-crackers.jpg"],
-      tags: ["sugar-free", "gluten-free", "khowdy"]
-    },
-    {
-      id: "chocolate-kaju-katli-tart", name: "Chocolate Kaju Katli Tart", brand: "doughremi",
-      cats: ["desserts", "pastries"], price: 600, mrp: 690, rating: 4.9, reviews: 231,
-      badges: ["SUGAR-FREE"], sizes: "single", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "vegan"],
-      desc: "(110 gms) A festive creation that brings together the richness of decadent chocolate and the timeless charm of Indian mithai. Crafted with a...",
-      long: "(110 gms) A festive creation that brings together the richness of decadent chocolate and the timeless charm of Indian mithai. Crafted with a delicate almond flour tart shell, this indulgent treat features a smooth, rich dark chocolate ganache filling, finished with a layer of kaju katli for a traditional touch. Each bite offers a beautiful contrast of textures and flavours, from the delicate crunch of the tart shell to the velvety chocolate ganache and the familiar, nutty sweetness of kaju katli. A contemporary take on festive favourites, thoughtfully crafted to make every celebration a little more special. Perfect for festive gifting or savouring as an indulgent treat, this tart celebrates the best of Indian tradition and modern patisserie. Refined Sugar-Free | Gluten-Free | Vegan",
-      ingredients: "Almond flour, Belgian couverture chocolate, erythritol, grass-fed butter, fresh cream, vanilla.",
-      allergens: ["Tree nuts (almond)"],
-      customisable: false, image: "assets/img/products/chocolate-kaju-katli-tart.jpg", images: ["assets/img/products/chocolate-kaju-katli-tart.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "kesar-rabdi-basque-cheesecake", name: "Kesar Rabdi Basque Cheesecake", brand: "signature",
-      cats: ["celebration-cakes", "desserts"], price: 1100, mrp: 1265, rating: 4.9, reviews: 175,
-      badges: ["SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free"],
-      desc: "(300 gms) A festive indulgence that brings together the richness of a classic Basque cheesecake and the timeless flavours of Indian mithai. ...",
-      long: "(300 gms) A festive indulgence that brings together the richness of a classic Basque cheesecake and the timeless flavours of Indian mithai. Infused with the delicate aroma of kesar, this creamy cheesecake features a beautifully caramelised top and a luscious, melt-in-your-mouth texture. Finished with a generous layer of our house-made rabdi, sweetened with stevia and crafted without refined sugar, every bite brings together the warmth of saffron and the rich, creamy notes of traditional rabdi. This thoughtful fusion of Indian flavours and contemporary indulgence makes it a delightful addition to your festive celebrations. Perfect for sharing with loved ones or savouring as a special treat, it offers a mindful twist on a beloved festive favourite Refined Sugar-Free | Gluten-Free | Contains Dairy",
-      ingredients: "Almond flour, natural erythritol blend, dairy cream, grass-fed butter, cold-pressed oils.",
-      allergens: ["Milk / Dairy"],
-      customisable: true, image: "assets/img/products/kesar-rabdi-basque-cheesecake.jpg", images: ["assets/img/products/kesar-rabdi-basque-cheesecake.jpg"],
-      tags: ["sugar-free", "gluten-free", "signature"]
-    },
-    {
-      id: "pistachio-basque-cheesecake", name: "Pistachio Basque Cheesecake", brand: "signature",
-      cats: ["celebration-cakes", "desserts"], price: 1300, mrp: 1494, rating: 4.8, reviews: 229,
-      badges: ["SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free"],
-      desc: "(300 gms) A decadent assortment of 12 rich dark chocolate fudge bites, topped with a delicate feuilletine crunch and our house-made sugar-fr...",
-      long: "(300 gms) A decadent assortment of 12 rich dark chocolate fudge bites, topped with a delicate feuilletine crunch and our house-made sugar-free pistachio butter. Each bite brings together the deep, indulgent notes of dark chocolate, the nutty richness of pistachio, and a light, irresistible crunch for a beautifully balanced flavour experience. Thoughtfully crafted to combine indulgence with texture, these bite-sized treats are perfect for festive gifting, sharing with loved ones, or adding a touch of luxury to your celebrations. A modern take on festive indulgence, made to be savoured one bite at a time. Refined Sugar-Free | Gluten-Free | Contains Dairy",
-      ingredients: "Almond flour, natural erythritol blend, dairy cream, grass-fed butter, cold-pressed oils.",
-      allergens: ["Tree nuts (pistachio)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/pistachio-basque-cheesecake.jpg", images: ["assets/img/products/pistachio-basque-cheesecake.jpg"],
-      tags: ["sugar-free", "gluten-free", "signature"]
-    },
-    {
-      id: "pistachio-chocolate-fudge-bites", name: "Pistachio Chocolate Fudge Bites", brand: "doughremi",
-      cats: ["chocolates", "desserts"], price: 1100, mrp: 1265, rating: 4.8, reviews: 116,
-      badges: ["SUGAR-FREE"], sizes: "single", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "vegan"],
-      desc: "(200 gms) A decadent assortment of 12 rich dark chocolate fudge bites, topped with a delicate feuilletine crunch and our house-made sugar-fr...",
-      long: "(200 gms) A decadent assortment of 12 rich dark chocolate fudge bites, topped with a delicate feuilletine crunch and our house-made sugar-free pistachio butter. Each bite brings together the deep, indulgent notes of dark chocolate, the nutty richness of pistachio, and a light, irresistible crunch for a beautifully balanced flavour experience. Thoughtfully crafted to combine indulgence with texture, these bite-sized treats are perfect for festive gifting, sharing with loved ones, or adding a touch of luxury to your celebrations. A modern take on festive indulgence, made to be savoured one bite at a time. Refined Sugar-Free | Gluten-Free | Vegan",
-      ingredients: "Almond flour, Belgian couverture chocolate, erythritol, grass-fed butter, fresh cream, vanilla.",
-      allergens: ["Tree nuts (pistachio)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/pistachio-chocolate-fudge-bites.jpg", images: ["assets/img/products/pistachio-chocolate-fudge-bites.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "rasmalai-fudge-bites", name: "Rasmalai Fudge Bites", brand: "doughremi",
-      cats: ["chocolates", "desserts"], price: 1000, mrp: 1150, rating: 5.0, reviews: 216,
-      badges: ["SUGAR-FREE"], sizes: "single", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "vegan"],
-      desc: "(200 gms) Inspired by the timeless indulgence of traditional rasmalai, these creamy, melt-in-your-mouth fudge bites bring together the nosta...",
-      long: "(200 gms) Inspired by the timeless indulgence of traditional rasmalai, these creamy, melt-in-your-mouth fudge bites bring together the nostalgic flavours of a beloved Indian dessert in a delightful, contemporary form. Each bite is thoughtfully crafted to deliver a rich, smooth texture and a delicate sweetness, making it a festive treat to savour and share. Featuring 12 bite-sized pieces, this indulgent assortment is perfect for adding a touch of Indian tradition to your festive celebrations. Whether enjoyed after a festive meal, shared with loved ones, or presented as a thoughtful gift, these fudge bites make every occasion feel a little more special. Refined Sugar-Free | Gluten-Free | Vegan",
-      ingredients: "Almond flour, natural erythritol blend, dairy cream, grass-fed butter, cold-pressed oils.",
-      allergens: ["Processed in a facility handling tree nuts and dairy"],
-      customisable: false, image: "assets/img/products/rasmalai-fudge-bites.jpg", images: ["assets/img/products/rasmalai-fudge-bites.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "chocolate-praline-barks", name: "Chocolate Praline Barks", brand: "doughremi",
-      cats: ["healthy-snacks", "desserts"], price: 550, mrp: 632, rating: 5.0, reviews: 98,
-      badges: ["SUGAR-FREE"], sizes: "single", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "vegan"],
-      desc: "(175 gms) A decadent chocolate indulgence topped with our house made sugar free cashew praline, sweetened with stevia for the perfect balanc...",
-      long: "(175 gms) A decadent chocolate indulgence topped with our house made sugar free cashew praline, sweetened with stevia for the perfect balance of rich chocolate and nutty crunch. Crafted to bring together irresistible textures and deep, indulgent flavours, this festive bark is a thoughtful twist on a classic treat. Perfect for festive gifting or sharing with loved ones, it\u2019s a little moment of indulgence made for mindful celebrations. Refined Sugar-Free | Gluten-Free | Vegan",
-      ingredients: "Almond flour, Belgian couverture chocolate, erythritol, grass-fed butter, fresh cream, vanilla.",
-      allergens: ["Processed in a facility handling tree nuts and dairy"],
-      customisable: false, image: "assets/img/products/chocolate-praline-barks.jpg", images: ["assets/img/products/chocolate-praline-barks.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "motichoor-barks", name: "Motichoor Barks", brand: "doughremi",
-      cats: ["healthy-snacks", "desserts"], price: 500, mrp: 575, rating: 4.8, reviews: 212,
-      badges: ["SUGAR-FREE"], sizes: "single", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "vegan"],
-      desc: "(175 gms) A festive indulgence that brings together the charm of traditional Indian mithai and the delight of modern chocolate. Featuring a ...",
-      long: "(175 gms) A festive indulgence that brings together the charm of traditional Indian mithai and the delight of modern chocolate. Featuring a smooth, creamy white chocolate base topped with delicate, sugar-free motichoor made from chickpea flour, this thoughtfully crafted bark offers a beautiful blend of creamy textures and nostalgic festive flavours. Perfect for festive gifting or sharing with loved ones, it\u2019s a contemporary twist on a classic favourite, crafted to make every celebration a little more special. Refined Sugar Free | Gluten Free | Vegan",
-      ingredients: "Almond flour, natural erythritol blend, dairy cream, grass-fed butter, cold-pressed oils.",
-      allergens: ["Processed in a facility handling tree nuts and dairy"],
-      customisable: false, image: "assets/img/products/motichoor-barks.jpg", images: ["assets/img/products/motichoor-barks.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "hazelnut-mocha-opera-pastry", name: "Hazelnut Mocha Opera Pastry", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 540, mrp: 621, rating: 4.7, reviews: 248,
-      badges: ["SUGAR-FREE"], sizes: "single", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "(300 gms) A decadent combination of sugar-free hazelnut mousse, dark chocolate cream, cashew praline and tiramisu cream,...",
-      long: "(300 gms) A decadent combination of sugar-free hazelnut mousse, dark chocolate cream, cashew praline and tiramisu cream, layered together for the perfect balance of chocolate, hazelnut and coffee.",
-      ingredients: "Almond flour, vegan butter, almond chocolate sponge, dairy free cream, tiramisu cream, dark chocolate cream, dark chocolate ganache, cocoa powder, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Tree nuts (hazelnut)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/hazelnut-mocha-opera-pastry.jpg", images: ["assets/img/products/hazelnut-mocha-opera-pastry.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "mocha-caramel-crunch-mini-cake", name: "Mocha Caramel Crunch Mini Cake", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 690, mrp: 793, rating: 4.8, reviews: 83,
-      badges: ["SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "(350 gms) Decadent almond chocolate sponge layered with airy mocha mousse, house-made sugar-free caramel and delicate ca...",
-      long: "(350 gms) Decadent almond chocolate sponge layered with airy mocha mousse, house-made sugar-free caramel and delicate cashew praline, all enrobed in a rich dark chocolate ganache",
-      ingredients: "Almond flour, vegan butter, almond chocolate sponge, dairy free cream, mocha mousse, in house sugar free caramel sauce, sugar free cashew praline, dark chocolate ganache sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/mocha-caramel-crunch-mini-cake.jpg", images: ["assets/img/products/mocha-caramel-crunch-mini-cake.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "vanilla-basque-cheesecake", name: "Vanilla Basque Cheesecake", brand: "signature",
-      cats: ["celebration-cakes", "desserts"], price: 1700, mrp: 1954, rating: 5.0, reviews: 66,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto"],
-      desc: "Creamy almond flour sugar free cream cheesecake with the signature burnt top and a perfectly caramelized finish. Enjoy i...",
-      long: "Creamy almond flour sugar free cream cheesecake with the signature burnt top and a perfectly caramelized finish. Enjoy it as is or add our in house sugar free blueberry compote for a fruity, tangy finish (Contains Dairy)",
-      ingredients: "Almond flour, butter, cream cheese, vanilla, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/vanilla-basque-cheesecake.jpg", images: ["assets/img/products/vanilla-basque-cheesecake.jpg"],
-      tags: ["sugar-free", "gluten-free", "signature"]
-    },
-    {
-      id: "chocolate-basque-cheesecake", name: "Chocolate Basque Cheesecake", brand: "signature",
-      cats: ["celebration-cakes", "desserts"], price: 1600, mrp: 1839, rating: 4.9, reviews: 52,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto"],
-      desc: "Creamy almond chocolate cheesecake baked to create the classic caramelised Basque finish. (Contains Dairy) Ingredients A...",
-      long: "Creamy almond chocolate cheesecake baked to create the classic caramelised Basque finish. (Contains Dairy)",
-      ingredients: "Almond flour, butter, cream cheese, dark chocolate, chocolate ganache, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/chocolate-basque-cheesecake.jpg", images: ["assets/img/products/chocolate-basque-cheesecake.jpg"],
-      tags: ["sugar-free", "gluten-free", "signature"]
-    },
-    {
-      id: "multi-grain-loaf", name: "Multi Grain Loaf", brand: "khowdy",
-      cats: ["breads"], price: 315, mrp: 362, rating: 5.0, reviews: 177,
-      badges: ["SUGAR-FREE"], sizes: "loaf", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto"],
-      desc: "(480 gms) A soft multigrain loaf packed with the goodness of grains - perfect for everyday sandwiches and toast. (Contai...",
-      long: "(480 gms) A soft multigrain loaf packed with the goodness of grains - perfect for everyday sandwiches and toast. (Contains Dairy) Shelf life and Storage Store in the fridge and consume within 10 days upon receiving. Dietary preference Refined sugar free | Gluten Free | Diabetic Friendly",
-      ingredients: "Almond flour, natural erythritol blend, dairy cream, grass-fed butter, cold-pressed oils.",
-      allergens: ["Milk / Dairy"],
-      customisable: false, image: "assets/img/products/multi-grain-loaf.png", images: ["assets/img/products/multi-grain-loaf.png"],
-      tags: ["sugar-free", "gluten-free", "khowdy"]
-    },
-    {
-      id: "triple-chocolate-crunch-mini-cake", name: "Triple Chocolate Crunch Mini Cake", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 765, mrp: 879, rating: 4.9, reviews: 237,
-      badges: ["SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "A decadent trio of dark chocolate, milk chocolate and almond chocolate sponge, layered with rich cashew praline for a nu...",
-      long: "A decadent trio of dark chocolate, milk chocolate and almond chocolate sponge, layered with rich cashew praline for a nutty crunch and finished with our signature cocoa biscuits. Deeply chocolatey, creamy and delightfully crunchy.",
-      ingredients: "Almond flour, vegan butter, almond chocolate sponge, dark chocolate, milk chocolate, in house sugar free cashew praline, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/triple-chocolate-crunch-mini-cake.jpg", images: ["assets/img/products/triple-chocolate-crunch-mini-cake.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "blueberry-cream-mini-cake", name: "Blueberry Cream Mini Cake", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 650, mrp: 747, rating: 4.8, reviews: 129,
-      badges: ["SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "(300 gms) Delicate vanilla almond sponge layered with smooth dairy free cream and juicy blueberries, creating a light, c...",
-      long: "(300 gms) Delicate vanilla almond sponge layered with smooth dairy free cream and juicy blueberries, creating a light, creamy and refreshingly fruity dessert.",
-      ingredients: "Almond flour, vegan butter, almond vanilla sponge, dairy free cream, fresh blueberries, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/blueberry-cream-mini-cake.jpg", images: ["assets/img/products/blueberry-cream-mini-cake.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "chocolate-blueberry-mini-cake", name: "Chocolate Blueberry Mini Cake", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 765, mrp: 879, rating: 4.8, reviews: 276,
-      badges: ["SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "(300 gms) Rich almond chocolate sponge layered with indulgent dark chocolate ganache and bursts of juicy blueberries for...",
-      long: "(300 gms) Rich almond chocolate sponge layered with indulgent dark chocolate ganache and bursts of juicy blueberries for the perfect balance of intense chocolate and refreshing berry flavour",
-      ingredients: "Almond flour, vegan butter, almond chocolate sponge, dairy free cream, fresh blueberries, chocolate ganache, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/chocolate-blueberry-mini-cake.jpg", images: ["assets/img/products/chocolate-blueberry-mini-cake.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "mix-fruit-mini-cake", name: "Mix Fruit Mini Cake", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 765, mrp: 879, rating: 4.8, reviews: 170,
-      badges: ["SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "(320 gms) Delicate almond flour sponge with a hints of dairy free cream, layered with juicy berries, bright citrus and t...",
-      long: "(320 gms) Delicate almond flour sponge with a hints of dairy free cream, layered with juicy berries, bright citrus and tropical pineapple - light, creamy and refreshingly fruity.",
-      ingredients: "Almond flour, vegan butter, almond vanilla sponge, dairy free cream, blueberries, oranges, pineapples, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/mix-fruit-mini-cake.jpg", images: ["assets/img/products/mix-fruit-mini-cake.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "hazelnut-crunch-mini-cake", name: "Hazelnut Crunch Mini Cake", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 670, mrp: 770, rating: 5.0, reviews: 69,
-      badges: ["SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "(300 gms) Layers of our almond chocolate sponge, centre - filled with creamy sugar free hazelnut butter, dark chocolate ...",
-      long: "(300 gms) Layers of our almond chocolate sponge, centre - filled with creamy sugar free hazelnut butter, dark chocolate ganache and our in house hazelnut praline.",
-      ingredients: "Almond flour, vegan butter, dark chocolate, dairy free cream, sugar free hazelnut praline, roasted hazelnuts, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Tree nuts (hazelnut)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/hazelnut-crunch-mini-cake.jpg", images: ["assets/img/products/hazelnut-crunch-mini-cake.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "pineapple-cream-mini-cake", name: "Pineapple Cream Mini Cake", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 530, mrp: 609, rating: 4.7, reviews: 52,
-      badges: ["SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "(300 gms) Layers of vanilla almond sponge layered with smooth dairy free cream and juicy fresh pineapple, topped with cr...",
-      long: "(300 gms) Layers of vanilla almond sponge layered with smooth dairy free cream and juicy fresh pineapple, topped with crisp dehydrated pineapple for a refreshing burst of tropical flavour.",
-      ingredients: "Almond flour, vegan butter, almond vanilla sponge, dairy free cream, fresh pineapples, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/pineapple-cream-mini-cake.jpg", images: ["assets/img/products/pineapple-cream-mini-cake.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "belgian-chocolate-mini-cake", name: "Belgian Chocolate Mini Cake", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 620, mrp: 713, rating: 4.8, reviews: 244,
-      badges: ["SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "(300 gms) Layers of almond chocolate sponge enveloped in Belgian dark chocolate ganache for an irresistibly decadent fin...",
-      long: "(300 gms) Layers of almond chocolate sponge enveloped in Belgian dark chocolate ganache for an irresistibly decadent finish",
-      ingredients: "Almond flour, vegan butter, dark chocolate, dairy free cream, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/belgian-chocolate-mini-cake.jpg", images: ["assets/img/products/belgian-chocolate-mini-cake.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "tiramisu-brownies", name: "Tiramisu Brownies", brand: "doughremi",
-      cats: ["brownies", "pastries"], price: 1530, mrp: 1759, rating: 4.8, reviews: 66,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "box", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "8 pcs of fudgy almond flour brownies loaded with dark chocolate and layered with delicate tiramisu biscuits, bold espres...",
-      long: "8 pcs of fudgy almond flour brownies loaded with dark chocolate and layered with delicate tiramisu biscuits, bold espresso and sugar free tiramisu cream. Rich, gooey and irresistibly indulgent.",
-      ingredients: "Almond flour, vegan butter, dark chocolate, cookie dough, chocolate chips, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/tiramisu-brownies.jpg", images: ["assets/img/products/tiramisu-brownies.jpg", "assets/img/products/tiramisu-brownies-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "triple-chocolate-crunch-cake-1", name: "Triple Chocolate Crunch Cake", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1710, mrp: 1966, rating: 4.8, reviews: 231,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "A decadent trio of dark chocolate, milk chocolate and almond chocolate sponge, layered with rich cashew praline for a nu...",
-      long: "A decadent trio of dark chocolate, milk chocolate and almond chocolate sponge, layered with rich cashew praline for a nutty crunch and finished with our signature cocoa biscuits. Deeply chocolatey, creamy and delightfully crunchy.",
-      ingredients: "Almond flour, vegan butter, almond chocolate sponge, dark chocolate, milk chocolate, in house sugar free cashew praline, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/triple-chocolate-crunch-cake-1.jpg", images: ["assets/img/products/triple-chocolate-crunch-cake-1.jpg", "assets/img/products/triple-chocolate-crunch-cake-1-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "chocolate-caramel-noir-mini-cake", name: "Chocolate Caramel Noir Mini Cake", brand: "signature",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1200, mrp: 1380, rating: 4.9, reviews: 90,
-      badges: ["SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Moist chocolate almond sponge meets dark chocolate ganache and light, creamy caramel, topped with caramel popcorn and cr...",
-      long: "Moist chocolate almond sponge meets dark chocolate ganache and light, creamy caramel, topped with caramel popcorn and crisp sugar-free honeycomb for the perfect play of rich, creamy and crunchy.",
-      ingredients: "Chocolate almond sponge, dark chocolate ganache, whipped sugar free caramel topped with caramel popcorn and sugar free honeycomb, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)"],
-      customisable: true, image: "assets/img/products/chocolate-caramel-noir-mini-cake.jpg", images: ["assets/img/products/chocolate-caramel-noir-mini-cake.jpg", "assets/img/products/chocolate-caramel-noir-mini-cake-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "signature"]
-    },
-    {
-      id: "berry-chantilly-mini-cake", name: "Berry Chantilly Mini Cake", brand: "signature",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1500, mrp: 1724, rating: 4.9, reviews: 274,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "(500 gms) Soft vanilla almond sponge meets dairy free chantilly cream and vibrant mixed berry jam, layered with fresh be...",
-      long: "(500 gms) Soft vanilla almond sponge meets dairy free chantilly cream and vibrant mixed berry jam, layered with fresh berries and finished with delicate sugar-free meringue. Light, creamy and bursting with berry goodness.",
-      ingredients: "Vanilla almond sponge, dairy free chantilly, sugar free mixed berry jam, fresh berries, sugar free meringue, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/berry-chantilly-mini-cake.jpg", images: ["assets/img/products/berry-chantilly-mini-cake.jpg", "assets/img/products/berry-chantilly-mini-cake-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "signature"]
-    },
-    {
-      id: "marble-opulence-mini-cake", name: "Marble Opulence Mini Cake", brand: "signature",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1350, mrp: 1552, rating: 4.7, reviews: 155,
-      badges: ["SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto"],
-      desc: "(500 gms) Layers of delicate marble almond sponge, rich dark chocolate ganache and creamy baked cheesecake, finished wit...",
-      long: "(500 gms) Layers of delicate marble almond sponge, rich dark chocolate ganache and creamy baked cheesecake, finished with our housemade white chocolate mousse and sugar free almond praline. Topped with more white chocolate mousse and crunchy almond praline for the perfect balance of creamy, nutty and chocolatey. (Contains Dairy)",
-      ingredients: "Marble almond sponge, sugar free baked cheesecake, dark chocolate ganache, white chocolate mousse, almond praline, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/marble-opulence-mini-cake.jpg", images: ["assets/img/products/marble-opulence-mini-cake.jpg", "assets/img/products/marble-opulence-mini-cake-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "signature"]
-    },
-    {
-      id: "chocolate-caramel-noir-cake", name: "Chocolate Caramel Noir Cake", brand: "signature",
-      cats: ["muffins"], price: 4000, mrp: 4600, rating: 4.7, reviews: 168,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto"],
-      desc: "(1500 gms) Moist chocolate almond sponge meets luscious dark chocolate ganache and light, creamy caramel, topped with ca...",
-      long: "(1500 gms) Moist chocolate almond sponge meets luscious dark chocolate ganache and light, creamy caramel, topped with caramel popcorn and crisp sugar-free honeycomb for the perfect play of rich, creamy and crunchy. (Contains Dairy)",
-      ingredients: "Chocolate almond sponge, dark chocolate ganache, whipped sugar free caramel topped with caramel popcorn and sugar free honeycomb, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/chocolate-caramel-noir-cake.jpg", images: ["assets/img/products/chocolate-caramel-noir-cake.jpg", "assets/img/products/chocolate-caramel-noir-cake-2.jpg", "assets/img/products/chocolate-caramel-noir-cake-3.jpg", "assets/img/products/chocolate-caramel-noir-cake-4.jpg"],
-      tags: ["sugar-free", "gluten-free", "signature"]
-    },
-    {
-      id: "berry-chantilly-cake", name: "Berry Chantilly Cake", brand: "signature",
-      cats: ["muffins"], price: 5000, mrp: 5750, rating: 4.7, reviews: 192,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "(1500 gms) Soft vanilla almond sponge meets dairy free chantilly cream and vibrant mixed berry jam, layered with fresh b...",
-      long: "(1500 gms) Soft vanilla almond sponge meets dairy free chantilly cream and vibrant mixed berry jam, layered with fresh berries and finished with delicate sugar-free meringue. Light, creamy and bursting with berry goodness.",
-      ingredients: "Vanilla almond sponge, dairy free chantilly, sugar free mixed berry jam, fresh berries, sugar free meringue, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/berry-chantilly-cake.jpg", images: ["assets/img/products/berry-chantilly-cake.jpg", "assets/img/products/berry-chantilly-cake-2.jpg", "assets/img/products/berry-chantilly-cake-3.jpg", "assets/img/products/berry-chantilly-cake-4.jpg"],
-      tags: ["sugar-free", "gluten-free", "signature"]
-    },
-    {
-      id: "marble-opulence-cake", name: "Marble Opulence Cake", brand: "signature",
-      cats: ["muffins"], price: 4500, mrp: 5175, rating: 5.0, reviews: 226,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto"],
-      desc: "(1500 gms) Layers of delicate marble almond sponge, rich dark chocolate ganache and creamy baked cheesecake, finished wi...",
-      long: "(1500 gms) Layers of delicate marble almond sponge, rich dark chocolate ganache and creamy baked cheesecake, finished with our housemade white chocolate mousse and sugar free almond praline. Topped with more white chocolate mousse and crunchy almond praline for the perfect balance of creamy, nutty and chocolatey. (Contains Dairy)",
-      ingredients: "Marble almond sponge, sugar free baked cheesecake, dark chocolate ganache, white chocolate mousse, almond praline, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/marble-opulence-cake.jpg", images: ["assets/img/products/marble-opulence-cake.jpg", "assets/img/products/marble-opulence-cake-2.jpg", "assets/img/products/marble-opulence-cake-3.jpg", "assets/img/products/marble-opulence-cake-4.jpg"],
-      tags: ["sugar-free", "gluten-free", "signature"]
-    },
-    {
-      id: "brown-butter-cookie-box", name: "Brown Butter Cookie Box", brand: "khowdy",
-      cats: ["cookies"], price: 765, mrp: 879, rating: 4.9, reviews: 89,
-      badges: ["SUGAR-FREE"], sizes: "box", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Box of 6 baked almond flour cookies made with vegan brown butter and loaded with chocolate chunks, bringing rich, nutty ...",
-      long: "Box of 6 baked almond flour cookies made with vegan brown butter and loaded with chocolate chunks, bringing rich, nutty flavour and delicate caramel-like notes in every bite. (75 gms each)",
-      ingredients: "Almond flour, vegan brown butter, dark chocolate chunks, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/brown-butter-cookie-box.jpg", images: ["assets/img/products/brown-butter-cookie-box.jpg"],
-      tags: ["sugar-free", "gluten-free", "khowdy"]
-    },
-    {
-      id: "gooey-chocolate-muffins", name: "Gooey Chocolate Muffins", brand: "doughremi",
-      cats: ["muffins"], price: 1260, mrp: 1449, rating: 4.7, reviews: 64,
-      badges: ["SUGAR-FREE"], sizes: "box", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Box of 8 healthy chocolate muffins are incredibly rich and loaded with chocolate chips in every single bite (50 gms each...",
-      long: "Box of 8 healthy chocolate muffins are incredibly rich and loaded with chocolate chips in every single bite (50 gms each)",
-      ingredients: "Almond flour, vegan butter, dark chocolate, cacao, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/gooey-chocolate-muffins.jpg", images: ["assets/img/products/gooey-chocolate-muffins.jpg", "assets/img/products/gooey-chocolate-muffins-2.jpg", "assets/img/products/gooey-chocolate-muffins-3.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "classic-cinnamon-roll", name: "Classic Cinnamon Roll", brand: "doughremi",
-      cats: ["healthy-snacks", "desserts"], price: 270, mrp: 310, rating: 4.9, reviews: 62,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "single", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto"],
-      desc: "(180 gms) Tender almond flour roll with generous layers of warm cinnamon and finished with a cream cheese frosting. The ...",
-      long: "(180 gms) Tender almond flour roll with generous layers of warm cinnamon and finished with a cream cheese frosting. The kind of comfort you\u2019ll want on repeat. (Contains Dairy)",
-      ingredients: "Almond flour, butter, cinnamon, cream cheese, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/classic-cinnamon-roll.jpg", images: ["assets/img/products/classic-cinnamon-roll.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "hazelnut-cinnamon-roll", name: "Hazelnut Cinnamon Roll", brand: "doughremi",
-      cats: ["healthy-snacks", "desserts"], price: 315, mrp: 362, rating: 4.9, reviews: 243,
-      badges: ["SUGAR-FREE"], sizes: "single", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto"],
-      desc: "(190 gms) A soft-baked almond flour cinnamon roll layered with warm cinnamon and sugar free hazelnut butter, finished wi...",
-      long: "(190 gms) A soft-baked almond flour cinnamon roll layered with warm cinnamon and sugar free hazelnut butter, finished with a rich, indulgent hazelnut praline and roasted hazelnuts. (Contains Dairy)",
-      ingredients: "Almond flour, butter, cinnamon, sugar free hazelnut butter, sugar free hazelnut praline, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Tree nuts (hazelnut)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/hazelnut-cinnamon-roll.jpg", images: ["assets/img/products/hazelnut-cinnamon-roll.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "tiramisu-cinnamon-roll", name: "Tiramisu Cinnamon Roll", brand: "doughremi",
-      cats: ["healthy-snacks", "desserts"], price: 360, mrp: 413, rating: 4.8, reviews: 200,
-      badges: ["SUGAR-FREE"], sizes: "single", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto"],
-      desc: "(190 gms) A soft-baked almond flour cinnamon roll infused with rich espresso and finished with a cream cheese frosting, ...",
-      long: "(190 gms) A soft-baked almond flour cinnamon roll infused with rich espresso and finished with a cream cheese frosting, generously dusted with cocoa powder. Tiramisu meets cinnamon roll in the most delicious way. (Contains Dairy)",
-      ingredients: "Almond flour, butter, cinnamon, sugar free tiramisu cream, cream cheese, dusted cocoa powder, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/tiramisu-cinnamon-roll.jpg", images: ["assets/img/products/tiramisu-cinnamon-roll.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "pistachio-cinnamon-roll", name: "Pistachio Cinnamon Roll", brand: "doughremi",
-      cats: ["healthy-snacks", "desserts"], price: 360, mrp: 413, rating: 4.8, reviews: 139,
-      badges: ["SUGAR-FREE"], sizes: "single", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto"],
-      desc: "(185 gms) An almond flour cinnamon roll layered with cinnamon and sugar free pistachio butter, in house sugar free pista...",
-      long: "(185 gms) An almond flour cinnamon roll layered with cinnamon and sugar free pistachio butter, in house sugar free pistachio praline and topped with crunchy crushed pistachios. (Contains Dairy)",
-      ingredients: "Almond flour, butter, cinnamon, sugar free pistachio praline, sugar free pistachio butter, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Tree nuts (pistachio)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/pistachio-cinnamon-roll.jpg", images: ["assets/img/products/pistachio-cinnamon-roll.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "brookie-box", name: "Brookie Box", brand: "doughremi",
-      cats: ["brownies", "pastries"], price: 1350, mrp: 1552, rating: 4.8, reviews: 104,
-      badges: ["SUGAR-FREE"], sizes: "box", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Cookie or brownie? Why choose? 8 pcs of our almond flour brookies that give you the best of both worlds Ingredients Almo...",
-      long: "Cookie or brownie? Why choose? 8 pcs of our almond flour brookies that give you the best of both worlds",
-      ingredients: "Almond flour, vegan butter, dark chocolate, cookie dough, chocolate chips, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/brookie-box.png", images: ["assets/img/products/brookie-box.png"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "hazelnut-melt-cookie-box", name: "Hazelnut Melt Cookie Box", brand: "doughremi",
-      cats: ["cookies"], price: 855, mrp: 983, rating: 5.0, reviews: 246,
-      badges: ["SUGAR-FREE"], sizes: "box", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Box of 6 soft baked almond flour cookies with a creamy hazelnut butter centre - made to melt in your mouth. (75 gms each...",
-      long: "Box of 6 soft baked almond flour cookies with a creamy hazelnut butter centre - made to melt in your mouth. (75 gms each)",
-      ingredients: "Almond flour, vegan butter, sugar free hazelnut butter, roasted hazelnuts, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Tree nuts (hazelnut)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/hazelnut-melt-cookie-box.png", images: ["assets/img/products/hazelnut-melt-cookie-box.png", "assets/img/products/hazelnut-melt-cookie-box-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "pistachio-chocolate-cookie-box", name: "Pistachio Chocolate Cookie Box", brand: "doughremi",
-      cats: ["cookies"], price: 810, mrp: 931, rating: 4.9, reviews: 250,
-      badges: ["SUGAR-FREE"], sizes: "box", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Soft baked almond flour cookies with chocolate and roasted pistachios, sugar free pistachio butter for the perfect balan...",
-      long: "Soft baked almond flour cookies with chocolate and roasted pistachios, sugar free pistachio butter for the perfect balance of chocolate and nutty crunch. (75 gms each)",
-      ingredients: "Almond flour, vegan butter, sugar free pistachio butter, sugar free pistachio praline, dark chocolate chips, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Tree nuts (pistachio)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/pistachio-chocolate-cookie-box.jpg", images: ["assets/img/products/pistachio-chocolate-cookie-box.jpg", "assets/img/products/pistachio-chocolate-cookie-box-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "double-chocolate-cookie-box", name: "Double Chocolate Cookie Box", brand: "doughremi",
-      cats: ["cookies"], price: 765, mrp: 879, rating: 5.0, reviews: 185,
-      badges: ["SUGAR-FREE"], sizes: "box", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Box of 6 soft baked almond flour chocolate cookies loaded with rich chocolate chunks for a double dose of chocolate in e...",
-      long: "Box of 6 soft baked almond flour chocolate cookies loaded with rich chocolate chunks for a double dose of chocolate in every bite. (75 gms each)",
-      ingredients: "Almond flour, vegan butter, dark chocolate, chocolate chips, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/double-chocolate-cookie-box.jpg", images: ["assets/img/products/double-chocolate-cookie-box.jpg", "assets/img/products/double-chocolate-cookie-box-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "cacao-butter-cake", name: "Cacao Butter Cake", brand: "khowdy",
-      cats: ["muffins"], price: 1395, mrp: 1604, rating: 4.9, reviews: 278,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "For those who like their desserts simple, with just the right touch of chocolate a soft almond flour cake made with rich...",
-      long: "For those who like their desserts simple, with just the right touch of chocolate a soft almond flour cake made with rich cacao for a naturally chocolatey flavour and finished with chocolate chips",
-      ingredients: "Almond flour, vegan butter, unsweetened cocoa powder, chocolate chips, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/cacao-butter-cake.jpg", images: ["assets/img/products/cacao-butter-cake.jpg", "assets/img/products/cacao-butter-cake-2.png"],
-      tags: ["sugar-free", "gluten-free", "khowdy"]
-    },
-    {
-      id: "filter-coffee-fudge-bites", name: "Filter Coffee Fudge Bites", brand: "khowdy",
-      cats: ["chocolates", "desserts"], price: 900, mrp: 1035, rating: 5.0, reviews: 149,
-      badges: ["SUGAR-FREE"], sizes: "single", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "vegan"],
-      desc: "For the sibling who takes their coffee seriously. Sugar free fudge bites infused with the comforting flavour of classic filter coffee. A sin...",
-      long: "For the sibling who takes their coffee seriously. Sugar free fudge bites infused with the comforting flavour of classic filter coffee. A single coffee-flavoured variety in bite-sized pieces. Sugar free, Gluten free & Vegan.",
-      ingredients: "Almond flour, natural erythritol blend, dairy cream, grass-fed butter, cold-pressed oils.",
-      allergens: ["Processed in a facility handling tree nuts and dairy"],
-      customisable: false, image: "assets/img/products/filter-coffee-fudge-bites.jpg", images: ["assets/img/products/filter-coffee-fudge-bites.jpg", "assets/img/products/filter-coffee-fudge-bites-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "khowdy"]
-    },
-    {
-      id: "dark-chocolate-praline-fudge-bites", name: "Dark Chocolate Praline Fudge Bites", brand: "khowdy",
-      cats: ["chocolates", "desserts"], price: 1000, mrp: 1150, rating: 4.8, reviews: 187,
-      badges: ["SUGAR-FREE"], sizes: "single", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "vegan"],
-      desc: "A festive Rakhi indulgence made of dark chocolate fudge, topped with our housemade sugar-free cashew praline. A single rich variety, crafted...",
-      long: "A festive Rakhi indulgence made of dark chocolate fudge, topped with our housemade sugar-free cashew praline. A single rich variety, crafted for moments worth sharing. Sugar free, Gluten free & Vegan.",
-      ingredients: "Almond flour, Belgian couverture chocolate, erythritol, grass-fed butter, fresh cream, vanilla.",
-      allergens: ["Processed in a facility handling tree nuts and dairy"],
-      customisable: false, image: "assets/img/products/dark-chocolate-praline-fudge-bites.jpg", images: ["assets/img/products/dark-chocolate-praline-fudge-bites.jpg", "assets/img/products/dark-chocolate-praline-fudge-bites-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "khowdy"]
-    },
-    {
-      id: "dark-chocolate-babka", name: "Dark Chocolate Babka", brand: "khowdy",
-      cats: ["breads"], price: 1400, mrp: 1609, rating: 4.8, reviews: 164,
-      badges: ["SUGAR-FREE"], sizes: "loaf", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "(580 gms) Our take on the classic babka - a soft almond flour dough, decadent dark chocolate and endless chocolatey swir...",
-      long: "(580 gms) Our take on the classic babka - a soft almond flour dough, decadent dark chocolate and endless chocolatey swirls in every slice",
-      ingredients: "Almond flour, vegan butter, dark chocolate ganache, cacao, milk, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/dark-chocolate-babka.png", images: ["assets/img/products/dark-chocolate-babka.png", "assets/img/products/dark-chocolate-babka-2.png"],
-      tags: ["sugar-free", "gluten-free", "khowdy"]
-    },
-    {
-      id: "pistachio-babka", name: "Pistachio Babka", brand: "khowdy",
-      cats: ["breads"], price: 1600, mrp: 1839, rating: 5.0, reviews: 264,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "loaf", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "(520 gms) A soft baked almond flour babka layered with our in house sugar free pistachio butter in every swirl. Nutty, b...",
-      long: "(520 gms) A soft baked almond flour babka layered with our in house sugar free pistachio butter in every swirl. Nutty, buttery and decadent, without the added sugar.",
-      ingredients: "Almond flour, vegan butter, sugar free pistachio butter, milk, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Tree nuts (pistachio)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/pistachio-babka.png", images: ["assets/img/products/pistachio-babka.png", "assets/img/products/pistachio-babka-2.png"],
-      tags: ["sugar-free", "gluten-free", "khowdy"]
-    },
-    {
-      id: "ragi-loaf", name: "Ragi Loaf", brand: "khowdy",
-      cats: ["breads"], price: 350, mrp: 402, rating: 4.8, reviews: 208,
-      badges: ["SUGAR-FREE"], sizes: "loaf", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto"],
-      desc: "(350 gms) A soft, wholesome ragi loaf made for everyday eating \u2013 perfect for your sandwiches, tost and more, the healthi...",
-      long: "(350 gms) A soft, wholesome ragi loaf made for everyday eating \u2013 perfect for your sandwiches, tost and more, the healthier way Shelf life and Storage Store in the fridge and consume within 10 days upon receiving. Dietary preference Refined sugar free | Gluten Free | Diabetic Friendly",
-      ingredients: "Almond flour, natural erythritol blend, dairy cream, grass-fed butter, cold-pressed oils.",
-      allergens: ["Processed in a facility handling tree nuts and dairy"],
-      customisable: false, image: "assets/img/products/ragi-loaf.png", images: ["assets/img/products/ragi-loaf.png"],
-      tags: ["sugar-free", "gluten-free", "khowdy"]
-    },
-    {
-      id: "mixed-seed-loaf", name: "Mixed Seed Loaf", brand: "khowdy",
-      cats: ["breads"], price: 500, mrp: 575, rating: 5.0, reviews: 98,
-      badges: ["SUGAR-FREE"], sizes: "loaf", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto"],
-      desc: "(550 gms) A soft, wholesome loaf packed with a mix of seeds for a nutritious crunch - perfect for everyday sandwiches an...",
-      long: "(550 gms) A soft, wholesome loaf packed with a mix of seeds for a nutritious crunch - perfect for everyday sandwiches and toast. Shelf life and Storage Store in the fridge and consume within 10 days upon receiving. Dietary preference Refined sugar free | Gluten Free | Diabetic Friendly",
-      ingredients: "Almond flour, natural erythritol blend, dairy cream, grass-fed butter, cold-pressed oils.",
-      allergens: ["Processed in a facility handling tree nuts and dairy"],
-      customisable: false, image: "assets/img/products/mixed-seed-loaf.png", images: ["assets/img/products/mixed-seed-loaf.png"],
-      tags: ["sugar-free", "gluten-free", "khowdy"]
-    },
-    {
-      id: "almond-loaf", name: "Almond Loaf", brand: "khowdy",
-      cats: ["breads"], price: 800, mrp: 919, rating: 4.8, reviews: 263,
-      badges: ["SUGAR-FREE"], sizes: "loaf", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto"],
-      desc: "(480 gms) Our OG ingredient, now in a loaf. Soft, tender and naturally nutty, this wholesome almond flour bread brings t...",
-      long: "(480 gms) Our OG ingredient, now in a loaf. Soft, tender and naturally nutty, this wholesome almond flour bread brings the signature artisanal goodness to your everyday slice. Shelf life and Storage Store in the fridge and consume within 10 days upon receiving. Dietary preference Refined sugar free | Gluten Free | Diabetic Friendly Suitable for a Keto Friendly Diet",
-      ingredients: "now in a loaf. Soft, tender and naturally nutty, this wholesome almond flour bread brings the signature artisanal goodness to your everyday slice.",
-      allergens: ["Tree nuts (almond)"],
-      customisable: false, image: "assets/img/products/almond-loaf.png", images: ["assets/img/products/almond-loaf.png"],
-      tags: ["sugar-free", "gluten-free", "khowdy"]
-    },
-    {
-      id: "brown-butter-cake", name: "Brown Butter Cake", brand: "khowdy",
-      cats: ["muffins"], price: 1395, mrp: 1604, rating: 4.7, reviews: 179,
-      badges: ["SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Almond flour cake with a rich, nutty flavour, subtle caramel-like notes and generous chocolate chips throughout Ingredie...",
-      long: "Almond flour cake with a rich, nutty flavour, subtle caramel-like notes and generous chocolate chips throughout",
-      ingredients: "Almond flour, vegan brown butter, chocolate chips, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/brown-butter-cake.png", images: ["assets/img/products/brown-butter-cake.png"],
-      tags: ["sugar-free", "gluten-free", "khowdy"]
-    },
-    {
-      id: "triple-chocolate-cheesecake-brownie", name: "Triple Chocolate Cheesecake Brownie", brand: "signature",
-      cats: ["celebration-cakes", "desserts"], price: 1600, mrp: 1839, rating: 4.8, reviews: 132,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free"],
-      desc: "An almond flour\u2013based, sugar-free triple chocolate brownie layered with a smooth cheesecake center. Rich cocoa depth meets fudgy texture in ...",
-      long: "An almond flour\u2013based, sugar-free triple chocolate brownie layered with a smooth cheesecake center. Rich cocoa depth meets fudgy texture in every bite, balanced by a creamy contrast that melts seamlessly into the brownie beneath. Completely gluten-free and made without refined sugar, this decadent dessert delivers bold chocolate flavour and elegant indulgence- crafted for those who crave something deeply satisfying yet thoughtfully made. Sugar & Gluten Free",
-      ingredients: "Almond flour, Belgian couverture chocolate, erythritol, grass-fed butter, fresh cream, vanilla.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/triple-chocolate-cheesecake-brownie.jpg", images: ["assets/img/products/triple-chocolate-cheesecake-brownie.jpg", "assets/img/products/triple-chocolate-cheesecake-brownie-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "signature"]
-    },
-    {
-      id: "chocolate-flourless-cake", name: "Chocolate Flourless Cake", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1530, mrp: 1759, rating: 4.8, reviews: 282,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "A rich and gooey dark chocolate cake with a molten chocolate centre Ingredients Almond flour, vegan butter, flaxseeds, d...",
-      long: "A rich and gooey dark chocolate cake with a molten chocolate centre",
-      ingredients: "Almond flour, vegan butter, flaxseeds, dark chocolate, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/chocolate-flourless-cake.jpg", images: ["assets/img/products/chocolate-flourless-cake.jpg", "assets/img/products/chocolate-flourless-cake-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "chocolate-banana-walnut-teacake", name: "Banana Walnut Teacake", brand: "doughremi",
-      cats: ["muffins"], price: 1500, mrp: 1724, rating: 4.8, reviews: 116,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Our signature teacake and our forever bestseller, made with the wholesome goodness of almond flour, ripe bananas, r...",
-      long: "Our signature teacake and our forever bestseller, made with the wholesome goodness of almond flour, ripe bananas, rich dark chocolate and crunchy walnuts. Moist, comforting and deeply indulgent, this is the one to choose if you\u2019re trying just one of our teacakes.",
-      ingredients: "Almond flour, vegan butter, ripe bananas, dark chocolate, walnuts, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/chocolate-banana-walnut-teacake.jpg", images: ["assets/img/products/chocolate-banana-walnut-teacake.jpg", "assets/img/products/chocolate-banana-walnut-teacake-2.jpg", "assets/img/products/chocolate-banana-walnut-teacake-3.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "rakhi-cake", name: "Chocolate Mousse Cake", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1700, mrp: 1954, rating: 4.7, reviews: 245,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free"],
-      desc: "Three layers of milk, white and dark chocolate with a crisp praline center on a soft gluten free sponge base. Sugar & gluten free. Celebrate...",
-      long: "Three layers of milk, white and dark chocolate with a crisp praline center on a soft gluten free sponge base. Sugar & gluten free. Celebrate the special bond of Rakhi with our expertly crafted Rakhi Cake.",
-      ingredients: "Almond flour, Belgian couverture chocolate, erythritol, grass-fed butter, fresh cream, vanilla.",
-      allergens: ["Milk / Dairy"],
-      customisable: true, image: "assets/img/products/rakhi-cake.jpg", images: ["assets/img/products/rakhi-cake.jpg", "assets/img/products/rakhi-cake-2.jpg", "assets/img/products/rakhi-cake-3.jpg", "assets/img/products/rakhi-cake-4.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "opera-cake", name: "Hazelnut Mocha Opera Cake", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1530, mrp: 1759, rating: 5.0, reviews: 48,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "A decadent combination of sugar-free hazelnut mousse, dark chocolate cream, cashew praline and tiramisu cream, layered t...",
-      long: "A decadent combination of sugar-free hazelnut mousse, dark chocolate cream, cashew praline and tiramisu cream, layered together for the perfect balance of chocolate, hazelnut and coffee.",
-      ingredients: "Almond flour, vegan butter, almond chocolate sponge, dairy free cream, tiramisu cream, dark chocolate cream, dark chocolate ganache, cocoa powder, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Tree nuts (hazelnut)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/opera-cake.jpg", images: ["assets/img/products/opera-cake.jpg", "assets/img/products/opera-cake-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "mocha-caramel-crunch-cake", name: "Mocha Caramel Crunch Cake", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1700, mrp: 1954, rating: 5.0, reviews: 198,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Decadent almond chocolate sponge layered with airy mocha mousse, house-made sugar-free caramel and delicate cashew prali...",
-      long: "Decadent almond chocolate sponge layered with airy mocha mousse, house-made sugar-free caramel and delicate cashew praline, all enrobed in a rich dark chocolate ganache",
-      ingredients: "Almond flour, vegan butter, almond chocolate sponge, dairy free cream, mocha mousse, in house sugar free caramel sauce, sugar free cashew praline, dark chocolate ganache sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/mocha-caramel-crunch-cake.png", images: ["assets/img/products/mocha-caramel-crunch-cake.png"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "apple-cinnamon-teacake", name: "Apple Cinnamon Teacake", brand: "doughremi",
-      cats: ["muffins"], price: 1500, mrp: 1724, rating: 5.0, reviews: 137,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Almond flour based moist sponge with our in house sugar free apple sauce filling, topped with a cinnamon and apple crumb...",
-      long: "Almond flour based moist sponge with our in house sugar free apple sauce filling, topped with a cinnamon and apple crumble",
-      ingredients: "Almond flour, vegan butter, sugar free apple sauce, apples, cinnamon.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/apple-cinnamon-teacake.jpg", images: ["assets/img/products/apple-cinnamon-teacake.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "dessert-table", name: "Grazing Table", brand: "doughremi",
-      cats: ["healthy-snacks", "desserts"], price: 18000, mrp: 20700, rating: 4.7, reviews: 112,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "single", occasions: ["festival", "corporate"],
-      diet: ["sugar-free"],
-      desc: "This grazing table inlcudes: Mini dense triple chocolate brownies Short glasses -Rose pistachio rabbi mousse, Blueberry cheesecake, Chocolat...",
-      long: "This grazing table inlcudes: Mini dense triple chocolate brownies Short glasses -Rose pistachio rabbi mousse, Blueberry cheesecake, Chocolate pistachio mousse and Triple chocolate (12 no. - 3 each flavour) Mini chocolate bundt cake (12 no.) Donuts - Milk & Dark chocolate and Hazelnut rocher (10 no. - 5 each flavour) Mini Teacakes - Masala chai, Orange pistachio and Chocolate banana walnut (12 no. - 4 each flavour) Cheese Platter (This includes 25 cheese crackers, 25 mix seed chilli crackers, Chives & chilli cheese block (100g), Truffle pepper cheese block (100g), Roasted bell pepper hummus (200g), Pesto (200g), Grapes, Blueberries Kiwi and Roasted almonds",
-      ingredients: "Almond flour, natural erythritol blend, dairy cream, grass-fed butter, cold-pressed oils.",
-      allergens: ["Tree nuts (almond)", "Tree nuts (pistachio)", "Tree nuts (hazelnut)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/dessert-table.jpg", images: ["assets/img/products/dessert-table.jpg", "assets/img/products/dessert-table-2.jpg", "assets/img/products/dessert-table-3.png"],
-      tags: ["sugar-free", "doughremi"]
-    },
-    {
-      id: "vanilla-roasted-almond-muffins", name: "Vanilla Roasted Almond Muffins", brand: "doughremi",
-      cats: ["muffins"], price: 1260, mrp: 1449, rating: 4.7, reviews: 184,
-      badges: ["SUGAR-FREE"], sizes: "box", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Box of 8 almond based muffins with a soft milk chocolate centre along with an almond crunch (50 gms each) Ingredients Al...",
-      long: "Box of 8 almond based muffins with a soft milk chocolate centre along with an almond crunch (50 gms each)",
-      ingredients: "Almond flour, vegan butter, milk chocolate, roasted almond flakes, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/vanilla-roasted-almond-muffins.jpg", images: ["assets/img/products/vanilla-roasted-almond-muffins.jpg", "assets/img/products/vanilla-roasted-almond-muffins-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "chocolate-sinner-cake", name: "Chocolate Sinner Cake", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1800, mrp: 2070, rating: 4.7, reviews: 112,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto"],
-      desc: "Dense chocolate mousse | Hazelnut cheesecake | Hazelnut praline | Milk chocolate ganache | Dark chocolate ganache...",
-      long: "Dense chocolate mousse | Hazelnut cheesecake | Hazelnut praline | Milk chocolate ganache | Dark chocolate ganache",
-      ingredients: "Almond flour, hazelnuts, dark chocolate, cacao, coconut oil, sugar free milk chocolate, hazelnut butter, sweetner, cashew, and coconut cream.",
-      allergens: ["Tree nuts (almond)", "Tree nuts (hazelnut)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/chocolate-sinner-cake.jpg", images: ["assets/img/products/chocolate-sinner-cake.jpg", "assets/img/products/chocolate-sinner-cake-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "chocolate-blueberry-tart", name: "Chocolate Blueberry Tart", brand: "signature",
-      cats: ["desserts", "pastries"], price: 2600, mrp: 2989, rating: 4.9, reviews: 67,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "single", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "(750 gms) Almond crust filled with rich belgian chocolate ganache, topped with fresh blueberries and raspberries. (Raspb...",
-      long: "(750 gms) Almond crust filled with rich belgian chocolate ganache, topped with fresh blueberries and raspberries. (Raspberries only on availability)",
-      ingredients: "Almond flour, vegan butter, dark chocolate ganache, fresh blueberries, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/chocolate-blueberry-tart.jpg", images: ["assets/img/products/chocolate-blueberry-tart.jpg", "assets/img/products/chocolate-blueberry-tart-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "signature"]
-    },
-    {
-      id: "dark-chocolate-hazelnut-tart", name: "Dark Chocolate Hazelnut Tart", brand: "signature",
-      cats: ["desserts", "pastries"], price: 2300, mrp: 2645, rating: 4.8, reviews: 128,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "single", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "(750 gms) Almond flour crust, filled with dark chocolate ganache, sugar free hazelnut butter, sugar free hazelnut pralin...",
-      long: "(750 gms) Almond flour crust, filled with dark chocolate ganache, sugar free hazelnut butter, sugar free hazelnut praline and roasted hazelnuts",
-      ingredients: "Almond flour, vegan butter, dark chocolate ganache, sugar free hazelnut butter, sugar free hazelnut praline, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Tree nuts (hazelnut)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/dark-chocolate-hazelnut-tart.jpg", images: ["assets/img/products/dark-chocolate-hazelnut-tart.jpg"],
-      tags: ["sugar-free", "gluten-free", "signature"]
-    },
-    {
-      id: "pistachio-raspberry-cake", name: "Pistachio Raspberry Cake", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1800, mrp: 2070, rating: 4.9, reviews: 217,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Layers of moist almond pistachio-infused sponge paired with our housemade sugar free raspberry compote, bringing togethe...",
-      long: "Layers of moist almond pistachio-infused sponge paired with our housemade sugar free raspberry compote, bringing together the delicate nuttiness of pistachio with the vibrant sweet tart freshness of raspberries.",
-      ingredients: "Almond flour, vegan butter, almond pistachio sponge, dairy free cream, raspberries, sugar free raspberry compote, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Tree nuts (pistachio)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/pistachio-raspberry-cake.jpg", images: ["assets/img/products/pistachio-raspberry-cake.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "gooey-double-chocolate-cookies", name: "Gooey Chocolate Cookie Box", brand: "doughremi",
-      cats: ["cookies"], price: 810, mrp: 931, rating: 4.8, reviews: 106,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "box", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Box of 6 almond flour cookies loaded with chocolate chunks (75 gms each) Ingredients Almond flour, vegan butter, dark ch...",
-      long: "Box of 6 almond flour cookies loaded with chocolate chunks (75 gms each)",
-      ingredients: "Almond flour, vegan butter, dark chocolate chips, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/gooey-double-chocolate-cookies.png", images: ["assets/img/products/gooey-double-chocolate-cookies.png", "assets/img/products/gooey-double-chocolate-cookies-2.jpg", "assets/img/products/gooey-double-chocolate-cookies-3.jpg", "assets/img/products/gooey-double-chocolate-cookies-4.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "hazelnut-butter-brownies", name: "Hazelnut Butter Brownies", brand: "khowdy",
-      cats: ["brownies", "pastries"], price: 1350, mrp: 1552, rating: 5.0, reviews: 85,
-      badges: ["SUGAR-FREE"], sizes: "box", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Box of 8 gooey almond chocolate brownies finished with toasted almond flakes for a delicious crunch in every bite...",
-      long: "Box of 8 gooey almond chocolate brownies finished with toasted almond flakes for a delicious crunch in every bite",
-      ingredients: "Almond flour, vegan butter, dark chocolate, roasted almonds, roasted almond flakes, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/hazelnut-butter-brownies.jpg", images: ["assets/img/products/hazelnut-butter-brownies.jpg", "assets/img/products/hazelnut-butter-brownies-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "khowdy"]
-    },
-    {
-      id: "choco-almond-crunch-brownies", name: "Choco Almond Crunch Brownies", brand: "doughremi",
-      cats: ["brownies", "pastries"], price: 1300, mrp: 1494, rating: 4.8, reviews: 81,
-      badges: ["SUGAR-FREE"], sizes: "box", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Box of 8 gooey almond chocolate brownies finished with toasted almond flakes for a delicious crunch in every bite...",
-      long: "Box of 8 gooey almond chocolate brownies finished with toasted almond flakes for a delicious crunch in every bite",
-      ingredients: "Almond flour, vegan butter, dark chocolate, roasted almonds, roasted almond flakes, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/choco-almond-crunch-brownies.jpg", images: ["assets/img/products/choco-almond-crunch-brownies.jpg", "assets/img/products/choco-almond-crunch-brownies-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "dark-chocolate-orange-brownies", name: "Dark Chocolate Orange Brownies", brand: "doughremi",
-      cats: ["brownies", "pastries"], price: 1400, mrp: 1609, rating: 4.8, reviews: 96,
-      badges: ["SUGAR-FREE"], sizes: "box", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Box of 8 fudgy dark chocolate almond flour based brownies with fresh orange juice and zest topped with dark chocolate ch...",
-      long: "Box of 8 fudgy dark chocolate almond flour based brownies with fresh orange juice and zest topped with dark chocolate chunks",
-      ingredients: "Almond flour, vegan butter, dark chocolate, fresh orange zest, chocolate chips, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/dark-chocolate-orange-brownies.jpg", images: ["assets/img/products/dark-chocolate-orange-brownies.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "fudgy-walnut-brownies", name: "Fudgy Walnut Brownies", brand: "doughremi",
-      cats: ["brownies", "pastries"], price: 1400, mrp: 1609, rating: 4.9, reviews: 192,
-      badges: ["SUGAR-FREE"], sizes: "box", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Box of 8 almond flour chocolate brownies loaded with roasted walnuts for a fudgy centre and a satisfying crunch in every...",
-      long: "Box of 8 almond flour chocolate brownies loaded with roasted walnuts for a fudgy centre and a satisfying crunch in every bite",
-      ingredients: "Almond flour, vegan butter, dark chocolate, roasted walnuts, chocolate chips, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/fudgy-walnut-brownies.jpg", images: ["assets/img/products/fudgy-walnut-brownies.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "date-and-walnut-teacake", name: "Date and Walnut Teacake", brand: "doughremi",
-      cats: ["muffins"], price: 1450, mrp: 1667, rating: 4.9, reviews: 82,
-      badges: ["SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Naturally sweet dates and roasted walnuts come together in this moist, tender cake finished with a delicious crunch in e...",
-      long: "Naturally sweet dates and roasted walnuts come together in this moist, tender cake finished with a delicious crunch in every bite.",
-      ingredients: "Almond flour, vegan butter, dates, walnuts, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/date-and-walnut-teacake.jpg", images: ["assets/img/products/date-and-walnut-teacake.jpg", "assets/img/products/date-and-walnut-teacake-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "carrot-teacake", name: "Carrot Teacake", brand: "doughremi",
-      cats: ["muffins"], price: 1400, mrp: 1609, rating: 4.9, reviews: 230,
-      badges: ["SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "A classic moist almond flour sponge infused with shredded carrots and walnuts Ingredients Almond flour, vegan butter, ca...",
-      long: "A classic moist almond flour sponge infused with shredded carrots and walnuts",
-      ingredients: "Almond flour, vegan butter, carrots, walnuts, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/carrot-teacake.jpg", images: ["assets/img/products/carrot-teacake.jpg", "assets/img/products/carrot-teacake-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "drak-chocolate-orange-teacake", name: "Dark Chocolate Orange Teacake", brand: "doughremi",
-      cats: ["muffins"], price: 1400, mrp: 1609, rating: 4.7, reviews: 60,
-      badges: ["SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "A gooey chocolate teacake infused with candied oranges, fresh orange juice and zest, topped with dark chocolate chunks I...",
-      long: "A gooey chocolate teacake infused with candied oranges, fresh orange juice and zest, topped with dark chocolate chunks",
-      ingredients: "Almond flour, vegan butter, candied oranges, fresh orange juice, orange zest, dark chocolate, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/drak-chocolate-orange-teacake.jpg", images: ["assets/img/products/drak-chocolate-orange-teacake.jpg", "assets/img/products/drak-chocolate-orange-teacake-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "gooey-choco-chips-teacake", name: "Gooey Chocolate Teacake", brand: "doughremi",
-      cats: ["muffins"], price: 1450, mrp: 1667, rating: 4.9, reviews: 74,
-      badges: ["SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Almond flour based gooey chocolate teacake with dark chocolate chunks Ingredients Almond flour, vegan butter, unsweetene...",
-      long: "Almond flour based gooey chocolate teacake with dark chocolate chunks",
-      ingredients: "Almond flour, vegan butter, unsweetened cacao powder, dark chocolate, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/gooey-choco-chips-teacake.jpg", images: ["assets/img/products/gooey-choco-chips-teacake.jpg", "assets/img/products/gooey-choco-chips-teacake-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "choco-nutty-tea-loaf", name: "Choco Nutty Tea Loaf", brand: "khowdy",
-      cats: ["muffins"], price: 1400, mrp: 1609, rating: 4.7, reviews: 155,
-      badges: ["SUGAR-FREE"], sizes: "loaf", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "A soft chocolate almond teacake loaded with roasted nuts and chocolate chips for a deliciously nutty, chocolatey bite. I...",
-      long: "A soft chocolate almond teacake loaded with roasted nuts and chocolate chips for a deliciously nutty, chocolatey bite.",
-      ingredients: "Almond flour, vegan butter, roasted nuts, chocolate chips, roasted almond flakes, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/choco-nutty-tea-loaf.jpg", images: ["assets/img/products/choco-nutty-tea-loaf.jpg", "assets/img/products/choco-nutty-tea-loaf-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "khowdy"]
-    },
-    {
-      id: "choco-latte-tea-loaf", name: "Choco Latte Tea Loaf", brand: "khowdy",
-      cats: ["muffins"], price: 1450, mrp: 1667, rating: 4.7, reviews: 191,
-      badges: ["SUGAR-FREE"], sizes: "loaf", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "A soft chocolate almond teacake infused with coffee for the perfect chocolate-coffee combination Ingredients Almond flou...",
-      long: "A soft chocolate almond teacake infused with coffee for the perfect chocolate-coffee combination",
-      ingredients: "Almond flour, vegan butter, espresso, chocolate chips, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/choco-latte-tea-loaf.jpg", images: ["assets/img/products/choco-latte-tea-loaf.jpg"],
-      tags: ["sugar-free", "gluten-free", "khowdy"]
-    },
-    {
-      id: "pineapple-coconut-tea-loaf", name: "Pineapple Coconut Tea Loaf", brand: "khowdy",
-      cats: ["muffins"], price: 1350, mrp: 1552, rating: 4.8, reviews: 248,
-      badges: ["SUGAR-FREE"], sizes: "loaf", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "An almond flour teacake infused with coconut and juicy pineapple for a light, tropical flavour in every bite Ingredients...",
-      long: "An almond flour teacake infused with coconut and juicy pineapple for a light, tropical flavour in every bite",
-      ingredients: "Almond flour, vegan butter, coconut cream, coconut milk, pineapples, dehydrated pineapples, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/pineapple-coconut-tea-loaf.jpg", images: ["assets/img/products/pineapple-coconut-tea-loaf.jpg", "assets/img/products/pineapple-coconut-tea-loaf-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "khowdy"]
-    },
-    {
-      id: "lemon-blueberry-teaccake", name: "Lemon Blueberry Teacake", brand: "doughremi",
-      cats: ["muffins"], price: 1500, mrp: 1724, rating: 4.9, reviews: 245,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Zesty lemon and juicy blueberries come together in this moist, tender sponge - a bright and refreshing match made in hea...",
-      long: "Zesty lemon and juicy blueberries come together in this moist, tender sponge - a bright and refreshing match made in heaven.",
-      ingredients: "Almond flour, vegan butter, lemon zest, blueberries, topped with dairy free cream sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/lemon-blueberry-teaccake.jpg", images: ["assets/img/products/lemon-blueberry-teaccake.jpg", "assets/img/products/lemon-blueberry-teaccake-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "vanilla-roasted-almond-teacake", name: "Vanilla Roasted Almond Tea Loaf", brand: "khowdy",
-      cats: ["muffins"], price: 1350, mrp: 1552, rating: 4.8, reviews: 66,
-      badges: ["SUGAR-FREE"], sizes: "loaf", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "A soft vanilla almond tea loaf with chocolate chips and roasted almond flakes - a favourite ever since we launched it. I...",
-      long: "A soft vanilla almond tea loaf with chocolate chips and roasted almond flakes - a favourite ever since we launched it.",
-      ingredients: "Almond flour, vegan butter, vanilla, chocolate chips, roasted almond flakes, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/vanilla-roasted-almond-teacake.jpg", images: ["assets/img/products/vanilla-roasted-almond-teacake.jpg"],
-      tags: ["sugar-free", "gluten-free", "khowdy"]
-    },
-    {
-      id: "pistachio-nutella-cake", name: "Pistachio Nutella Melt Cake", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 3200, mrp: 3679, rating: 4.8, reviews: 122,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "vegan"],
-      desc: "Super moist cake with layers of pistachio brownie soaked in nut milk, vegan nutella, dark chocolate ganache, pistachio mousse and butter and...",
-      long: "Super moist cake with layers of pistachio brownie soaked in nut milk, vegan nutella, dark chocolate ganache, pistachio mousse and butter and almond crunch served with chocolate ganache and pistachio spread in a jar. Sugar & Gluten Free.",
-      ingredients: "Almond flour, natural erythritol blend, dairy cream, grass-fed butter, cold-pressed oils.",
-      allergens: ["Tree nuts (almond)", "Tree nuts (pistachio)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/pistachio-nutella-cake.jpg", images: ["assets/img/products/pistachio-nutella-cake.jpg", "assets/img/products/pistachio-nutella-cake-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "tropical-delight-cake", name: "Mix Fruit Cake", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1530, mrp: 1759, rating: 4.7, reviews: 290,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Delicate almond flour sponge with a hints of dairy free cream, layered with juicy berries, bright citrus and tropical pi...",
-      long: "Delicate almond flour sponge with a hints of dairy free cream, layered with juicy berries, bright citrus and tropical pineapple - light, creamy and refreshingly fruity.",
-      ingredients: "Almond flour, vegan butter, almond vanilla sponge, dairy free cream, blueberries, oranges, pineapples, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/tropical-delight-cake.jpg", images: ["assets/img/products/tropical-delight-cake.jpg", "assets/img/products/tropical-delight-cake-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "classic-tiramisu-cake", name: "Classic Tiramisu Cake", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1440, mrp: 1655, rating: 4.9, reviews: 99,
-      badges: ["SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "A classic almond vanilla sponge layered with sugar free coffee cream, tiramisu biscuits and dusted with cocoa powder Ing...",
-      long: "A classic almond vanilla sponge layered with sugar free coffee cream, tiramisu biscuits and dusted with cocoa powder",
-      ingredients: "Almond flour, vegan butter, almond vanilla sponge, dairy free cream, coffee cream, tiramisu biscuits, cocoa powder, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/classic-tiramisu-cake.jpg", images: ["assets/img/products/classic-tiramisu-cake.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "chocolate-tiramisu", name: "Hot Chocolate Tiramisu", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 2700, mrp: 3104, rating: 4.9, reviews: 245,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "single", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "(750 gms) Our bestseller for years - soft almond vanilla sponge soaked in espresso, layered with sugar free tiramisu cre...",
-      long: "(750 gms) Our bestseller for years - soft almond vanilla sponge soaked in espresso, layered with sugar free tiramisu cream, tiramisu biscuits, smooth dairy-free cream and rich dark chocolate ganache. Truly, a decadent take on the classic tiramisu.",
-      ingredients: "Almond flour, vegan butter, almond vanilla sponge, dairy free cream, espresso, sugar free tiramisu cream, tiramisu biscuits, chocolate ganache, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/chocolate-tiramisu.jpg", images: ["assets/img/products/chocolate-tiramisu.jpg", "assets/img/products/chocolate-tiramisu-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "french-opera", name: "French Opera", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1650, mrp: 1897, rating: 4.9, reviews: 200,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "single", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Delicate almond vanilla sponge layered with tiramisu cream, chocolate cream, rich dark chocolate ganache and coffee - a ...",
-      long: "Delicate almond vanilla sponge layered with tiramisu cream, chocolate cream, rich dark chocolate ganache and coffee - a decadent blend of chocolate and coffee in every layer",
-      ingredients: "Almond flour, vegan butter, almond vanilla sponge, dairy free cream, tiramisu cream, chocolate cream, dark chocolate ganache, cocoa powder, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/french-opera.jpg", images: ["assets/img/products/french-opera.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "mix-cream-cake", name: "Blueberry Cream Cake", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1530, mrp: 1759, rating: 4.9, reviews: 255,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Delicate vanilla almond sponge layered with smooth dairy free cream and juicy blueberries, creating a light, creamy and ...",
-      long: "Delicate vanilla almond sponge layered with smooth dairy free cream and juicy blueberries, creating a light, creamy and refreshingly fruity dessert.",
-      ingredients: "Almond flour, vegan butter, almond vanilla sponge, dairy free cream, fresh blueberries, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/mix-cream-cake.jpg", images: ["assets/img/products/mix-cream-cake.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "chocolate-mix-berry-cake", name: "Chocolate Blueberry Cake", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1800, mrp: 2070, rating: 4.8, reviews: 221,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Rich almond chocolate sponge layered with indulgent dark chocolate ganache and bursts of juicy blueberries for the perfe...",
-      long: "Rich almond chocolate sponge layered with indulgent dark chocolate ganache and bursts of juicy blueberries for the perfect balance of intense chocolate and refreshing berry flavour",
-      ingredients: "Almond flour, vegan butter, almond chocolate sponge, dairy free cream, fresh blueberries, chocolate ganache, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/chocolate-mix-berry-cake.jpg", images: ["assets/img/products/chocolate-mix-berry-cake.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "salted-caramel-brownie", name: "Salted Caramel Brownie", brand: "doughremi",
-      cats: ["brownies", "pastries"], price: 1600, mrp: 1839, rating: 5.0, reviews: 155,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "box", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Box of 8 rich almond flour brownies layered with our signature sugar free salted caramel for the perfect balance of swee...",
-      long: "Box of 8 rich almond flour brownies layered with our signature sugar free salted caramel for the perfect balance of sweet-salty indulgence that too guilt-free",
-      ingredients: "Almond flour, vegan butter, in house sugar free caramel sauce, milk chocolate chips, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/salted-caramel-brownie.jpg", images: ["assets/img/products/salted-caramel-brownie.jpg", "assets/img/products/salted-caramel-brownie-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "chocolate-overload-brownie", name: "Chocolate Overload Brownie", brand: "doughremi",
-      cats: ["brownies", "pastries"], price: 1530, mrp: 1759, rating: 4.7, reviews: 192,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "box", occasions: ["festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Box of 8 almond flour double chocolate gooey brownies, loaded with dark chocolate chunks for a rich, fudgy centre and ch...",
-      long: "Box of 8 almond flour double chocolate gooey brownies, loaded with dark chocolate chunks for a rich, fudgy centre and chocolate in every bite",
-      ingredients: "Almond flour, vegan butter, unsweetened cocoa powder, dark chocolate, chocolate chips, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: false, image: "assets/img/products/chocolate-overload-brownie.jpg", images: ["assets/img/products/chocolate-overload-brownie.jpg", "assets/img/products/chocolate-overload-brownie-2.jpg", "assets/img/products/chocolate-overload-brownie-3.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "pineapple-cream-cake", name: "Pineapple Cream Cake", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1440, mrp: 1655, rating: 4.7, reviews: 108,
-      badges: ["SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Layers of vanilla almond sponge layered with smooth dairy free cream and juicy fresh pineapple, topped with crisp dehydr...",
-      long: "Layers of vanilla almond sponge layered with smooth dairy free cream and juicy fresh pineapple, topped with crisp dehydrated pineapple for a refreshing burst of tropical flavour.",
-      ingredients: "Almond flour, vegan butter, almond vanilla sponge, dairy free cream, fresh pineapples, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/pineapple-cream-cake.jpg", images: ["assets/img/products/pineapple-cream-cake.jpg", "assets/img/products/pineapple-cream-cake-2.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "belgian-chocolate-cake-1", name: "Belgian Chocolate Cake", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1440, mrp: 1655, rating: 4.8, reviews: 165,
-      badges: ["SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Layers of almond chocolate sponge enveloped in Belgian dark chocolate ganache for an irresistibly decadent finish...",
-      long: "Layers of almond chocolate sponge enveloped in Belgian dark chocolate ganache for an irresistibly decadent finish",
-      ingredients: "Almond flour, vegan butter, dark chocolate, dairy free cream, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/belgian-chocolate-cake-1.jpg", images: ["assets/img/products/belgian-chocolate-cake-1.jpg", "assets/img/products/belgian-chocolate-cake-1-2.png"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-    {
-      id: "belgian-chocolate-cake", name: "Hazelnut Crunch Cake", brand: "doughremi",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1660, mrp: 1908, rating: 4.9, reviews: 59,
-      badges: ["BESTSELLER", "SUGAR-FREE"], sizes: "cake", occasions: ["birthday", "anniversary", "festival", "corporate"],
-      diet: ["sugar-free", "gluten-free", "keto", "vegan"],
-      desc: "Layers of our almond chocolate sponge, centre - filled with creamy sugar free hazelnut butter, dark chocolate ganache an...",
-      long: "Layers of our almond chocolate sponge, centre - filled with creamy sugar free hazelnut butter, dark chocolate ganache and our in house hazelnut praline.",
-      ingredients: "Almond flour, vegan butter, dark chocolate, dairy free cream, sugar free hazelnut praline, roasted hazelnuts, sweetened with stevia.",
-      allergens: ["Tree nuts (almond)", "Tree nuts (hazelnut)", "Milk / Dairy"],
-      customisable: true, image: "assets/img/products/belgian-chocolate-cake.jpg", images: ["assets/img/products/belgian-chocolate-cake.jpg", "assets/img/products/belgian-chocolate-cake-1.jpg", "assets/img/products/belgian-chocolate-cake-2.jpg", "assets/img/products/belgian-chocolate-cake-3.jpg"],
-      tags: ["sugar-free", "gluten-free", "doughremi"]
-    },
-
-    /* ========================= CORE ARCHIVE PRODUCTS ========================= */
-    /* ------------------------- SAiPH Signature ------------------------- */
-    {
-      id: "gold-leaf-saffron-cheesecake", name: "Gold Leaf Saffron Cheesecake", brand: "signature",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 3250, mrp: 3650, rating: 4.9, reviews: 214,
-      badges: ["SIGNATURE", "BESTSELLER"], sizes: "cake", occasions: ["anniversary", "wedding", "corporate", "festival"],
-      diet: ["eggless"],
-      desc: "Kashmiri saffron custard over a pistachio sablé base, finished with 24k edible gold leaf.",
-      long: "Our most requested Signature centrepiece. Kashmiri saffron is bloomed in warm cream overnight, folded through a Philadelphia-style baked custard and set over a hand-pressed pistachio sablé. The top is mirror-glazed, dressed with candied rose petals and finished with a single sheet of 24k edible gold leaf applied by hand in our chocolate room.",
-      ingredients: "Cream cheese, fresh cream, cane sugar, pasteurised eggs, French T45 pastry flour, clarified butter, Kashmiri saffron, pistachio, white couverture chocolate, gelatine (bovine-free), edible 24k gold leaf, rose petals.",
-      allergens: ["Milk", "Wheat", "Eggs", "Tree nuts (pistachio)"],
-      customisable: true, image: "assets/img/products/kesar-rabdi-basque-cheesecake.jpg", tags: ["mirror glaze", "gold leaf", "saffron"]
-    },
-    {
-      id: "assam-tea-opera", name: "Assam Tea Opera", brand: "signature",
-      cats: ["celebration-cakes", "pastries"], price: 2450, rating: 4.8, reviews: 168,
-      badges: ["SIGNATURE"], sizes: "cake", occasions: ["anniversary", "corporate", "festival"],
-      desc: "Seven layers of joconde soaked in second-flush Assam, tea buttercream and dark ganache.",
-      long: "A tribute to the valley we come from. Almond joconde is brushed with a strong second-flush Assam infusion, layered with tea-infused French buttercream and 64% ganache, then glazed to a mirror finish and marked with our monogram in tempered chocolate. Seven layers, cut to the millimetre.",
-      ingredients: "Almond flour, pasteurised eggs, cane sugar, butter, second-flush Assam tea, dark couverture 64%, fresh cream, glucose, French T45 pastry flour.",
-      allergens: ["Milk", "Wheat", "Eggs", "Tree nuts (almond)"],
-      customisable: true, image: "assets/img/products/opera-cake.jpg", tags: ["opera", "assam tea", "layered"]
-    },
-    {
-      id: "pistachio-kunafa-croissant", name: "Pistachio Kunafa Croissant", brand: "signature",
-      cats: ["croissants", "pastries"], price: 420, rating: 4.9, reviews: 402,
-      badges: ["BESTSELLER", "LIMITED EDITION"], sizes: "box", occasions: [],
-      desc: "Three-day laminated croissant filled with pistachio cream and toasted kunafa.",
-      long: "Seventy-two hours of lamination, then split and filled with our Sicilian pistachio cream, packed with butter-toasted kunafa threads and finished with a pistachio glaze and crushed nut. Baked in small batches twice daily — it sells out most afternoons.",
-      ingredients: "Wheat flour, cultured French butter (82%), pistachio paste, kunafa (shredded phyllo), cane sugar, milk, sea salt, yeast.",
-      allergens: ["Milk", "Wheat", "Tree nuts (pistachio)"],
-      leadHours: 24, image: "assets/img/products/pistachio-kunafa-croissant.jpg", tags: ["viral", "kunafa", "laminated"]
-    },
-    {
-      id: "dark-chocolate-entremet", name: "Dark Chocolate Entremet", brand: "signature",
-      cats: ["celebration-cakes", "chocolates"], price: 2950, rating: 4.9, reviews: 141,
-      badges: ["SIGNATURE"], sizes: "cake", occasions: ["birthday", "anniversary", "corporate"],
-      desc: "Nine components of single-origin 70% Ghana chocolate under a hand-poured mirror glaze.",
-      long: "Our pastry team's benchmark. Flourless chocolate biscuit, cocoa nib feuilletine, salted caramel insert, 70% Ghana crémeux and a chocolate chantilly — nine components built over three days and sealed under a hand-poured mirror glaze at exactly 32°C.",
-      ingredients: "Single-origin 70% Ghana couverture, fresh cream, butter, pasteurised eggs, cane sugar, cocoa nibs, glucose, gelatine (bovine-free), sea salt.",
-      allergens: ["Milk", "Eggs", "Soy"],
-      customisable: true, image: "assets/img/products/chocolate-cake.jpg", tags: ["entremet", "single origin", "mirror glaze"]
-    },
-    {
-      id: "raspberry-entremet", name: "Raspberry Entremet", brand: "signature",
-      cats: ["celebration-cakes"], price: 2850, rating: 4.8, reviews: 96,
-      badges: ["NEW", "SIGNATURE"], sizes: "cake", occasions: ["birthday", "anniversary", "baby-shower", "wedding"],
-      diet: ["eggless"],
-      desc: "Raspberry confit, white chocolate rose mousse and a velvet spray finish.",
-      long: "A pale rose dome of Valrhona Ivoire mousse over sharp raspberry confit and a lychee-rose insert, on an almond dacquoise. Finished with a velvet cocoa-butter spray and fresh berries. Naturally eggless.",
-      ingredients: "White couverture, fresh cream, raspberry purée, lychee, rose water, almond flour, cane sugar, cocoa butter, gelatine (bovine-free).",
-      allergens: ["Milk", "Tree nuts (almond)"],
-      customisable: true, image: "assets/img/products/pistachio-raspberry-cake.jpg", tags: ["velvet finish", "raspberry", "eggless"]
-    },
-    {
-      id: "signature-chocolate-bonbons", name: "Signature Chocolate Bonbons", brand: "signature",
-      cats: ["chocolates", "hampers", "corporate-gifting"], price: 1450, mrp: 1650, rating: 4.9, reviews: 287,
-      badges: ["BESTSELLER"], sizes: "box", occasions: ["corporate", "festival", "anniversary"],
-      desc: "Hand-painted couverture shells, twelve fillings, tempered to a glass snap.",
-      long: "Twelve bonbons, twelve fillings — Assam tea ganache, salted jaggery caramel, passionfruit, hazelnut praline, black sesame and more. Each shell is airbrushed with coloured cocoa butter and tempered to a clean snap. Presented in a magnetic keepsake box.",
-      ingredients: "Couverture chocolate (dark 64%, milk 38%, white 33%), fresh cream, butter, jaggery, fruit purées, hazelnut, sesame, Assam tea, cocoa butter colours.",
-      allergens: ["Milk", "Soy", "Tree nuts", "Sesame"],
-      tags: ["gifting", "bonbons", "hand painted"],
-      image: "assets/img/products/signature-chocolate-bonbons.jpg", images: ["assets/img/products/signature-chocolate-bonbons.jpg"]
-    },
-    {
-      id: "wedding-tier-couture", name: "Couture Wedding Tier", brand: "signature",
-      cats: ["celebration-cakes", "hampers"], price: 18500, rating: 5.0, reviews: 38,
-      badges: ["SIGNATURE", "LIMITED EDITION"], sizes: "single", occasions: ["wedding"],
-      desc: "Three-tier commission with hand-piped lace, sugar florals and gold detailing.",
-      long: "A commissioned piece designed with you over a tasting consultation: three tiers, your choice of Signature flavours per tier, hand-piped royal lace, sugar florals sculpted to your bouquet and 24k gold detailing. Price shown is the starting point for a three-tier build serving 60–80.",
-      ingredients: "Varies by chosen flavour profile — confirmed at tasting.",
-      allergens: ["Milk", "Wheat", "Eggs", "Tree nuts"],
-      customisable: true, leadHours: 336, image: "assets/img/products/signature-chocolate-bonbons.jpg", tags: ["wedding", "commission", "tiered"]
-    },
-    {
-      id: "passionfruit-mango-tart", name: "Passionfruit Mango Tart", brand: "signature",
-      cats: ["pastries"], price: 380, rating: 4.7, reviews: 122,
-      badges: ["NEW"], sizes: "box", occasions: [],
-      desc: "Crisp sablé shell, Alphonso mango cremeux and torched passionfruit meringue.",
-      long: "Sweet sablé blind-baked to a snap, filled with Alphonso mango cremeux and a sharp passionfruit curd, crowned with Italian meringue torched to order. Bright, sharp and deliberately not too sweet.",
-      ingredients: "Wheat flour, butter, pasteurised eggs, Alphonso mango, passionfruit, cane sugar, white couverture, vanilla.",
-      allergens: ["Milk", "Wheat", "Eggs"],
-      image: "assets/img/products/passionfruit-mango-tart.jpg", tags: ["tart", "seasonal", "meringue"]
-    },
-    {
-      id: "hazelnut-paris-brest", name: "Hazelnut Paris-Brest", brand: "signature",
-      cats: ["pastries"], price: 395, rating: 4.8, reviews: 88,
-      badges: [], sizes: "box", occasions: [],
-      desc: "Craquelin choux ring piped with Piedmont hazelnut praline mousseline.",
-      long: "A choux ring baked under crisp craquelin, split and piped generously with hazelnut praline mousseline made from Piedmont IGP hazelnuts we roast and grind in-house. Dusted, halved and finished with caramelised nibs.",
-      ingredients: "Wheat flour, butter, pasteurised eggs, milk, Piedmont hazelnut, cane sugar, vanilla, sea salt.",
-      allergens: ["Milk", "Wheat", "Eggs", "Tree nuts (hazelnut)"],
-      image: "assets/img/products/hazelnut-paris-brest.jpg", tags: ["choux", "praline"]
-    },
-    {
-      id: "signature-tasting-hamper", name: "Signature Tasting Hamper", brand: "signature",
-      cats: ["hampers", "corporate-gifting", "chocolates"], price: 4850, mrp: 5400, rating: 4.9, reviews: 74,
-      badges: ["BESTSELLER"], sizes: "single", occasions: ["corporate", "festival", "wedding", "anniversary"],
-      desc: "Bonbons, chocolate bars, tea and a Signature entremet in a keepsake presentation box.",
-      long: "Our flagship gift: a 12-piece bonbon box, two single-origin bars, a tin of second-flush Assam, salted caramel spread and a 500g Signature entremet, nested in a linen-lined keepsake box with a hand-written card. Corporate branding available from 25 units.",
-      ingredients: "See individual components; full declaration enclosed.",
-      allergens: ["Milk", "Wheat", "Eggs", "Soy", "Tree nuts", "Sesame"],
-      leadHours: 72, image: "assets/img/products/mini-diwali-gift-hamper.jpg", tags: ["hamper", "keepsake", "corporate"]
-    },
-
-    /* --------------------------- DoughReMi ---------------------------- */
-    {
-      id: "fresh-croissant", name: "Fresh Croissant", brand: "doughremi",
-      cats: ["croissants", "breads"], price: 145, rating: 4.7, reviews: 631,
-      badges: ["BESTSELLER"], sizes: "box", occasions: [],
-      desc: "Cultured French butter, 27 layers, baked every morning at six.",
-      long: "The one we judge ourselves by. A three-day process — poolish, overnight cold ferment, then lamination with cultured French butter to twenty-seven layers. Baked at 6am, on the counter by 7, and honestly best before ten.",
-      ingredients: "Wheat flour, cultured French butter (82% fat), milk, cane sugar, sea salt, fresh yeast.",
-      allergens: ["Milk", "Wheat"],
-      leadHours: 12, image: "assets/img/products/fresh-croissant.jpg", tags: ["laminated", "breakfast", "butter"]
-    },
-    {
-      id: "belgian-chocolate-brownie", name: "Belgian Chocolate Brownie", brand: "doughremi",
-      cats: ["brownies"], price: 165, mrp: 195, rating: 4.8, reviews: 918,
-      badges: ["BESTSELLER"], sizes: "box", occasions: ["birthday"],
-      desc: "Fudge centre, crackled top, 54% Belgian couverture and toasted walnut.",
-      long: "No cocoa powder shortcuts — melted 54% Belgian couverture, brown butter and just enough flour to hold it together. Baked to a crackled top with a deliberately underbaked fudge centre, studded with toasted walnuts. Warm it for eleven seconds. Trust us.",
-      ingredients: "Belgian couverture 54%, butter, cane sugar, pasteurised eggs, wheat flour, walnut, cocoa, sea salt, vanilla.",
-      allergens: ["Milk", "Wheat", "Eggs", "Tree nuts (walnut)"],
-      image: "assets/img/products/chocolate-overload-brownie.jpg", tags: ["fudgy", "walnut", "teatime"]
-    },
-    {
-      id: "red-velvet-cake", name: "Red Velvet Cake", brand: "signature",
-      cats: ["celebration-cakes", "birthday-cakes"], price: 1000, mrp: 1150, rating: 5.0, reviews: 145,
-      badges: ["MENU-FEATURE", "EGGLESS", "GLUTEN-FREE", "NO-MAIDA", "SUGAR-FREE"], sizes: "poundCake", occasions: ["birthday", "anniversary", "festival"],
-      diet: ["sugar-free", "gluten-free", "eggless", "no-maida"],
-      desc: "Crimson-hued cocoa sponge paired with tangy Philadelphia-style cream cheese frosting. Naturally colored with beetroot, 100% eggless, and free from maida.",
-      long: "Crimson-hued cocoa sponge paired with tangy Philadelphia-style cream cheese frosting. Naturally colored with beetroot, 100% eggless, and free from maida with zero refined sugar.",
-      ingredients: "French T45 pastry flour, almond flour, raw beetroot extract, cacao, cream cheese, pure vanilla bean, natural plant sweetener.",
-      allergens: ["Milk / Dairy", "Tree nuts (almond)"],
-      customisable: true, image: "assets/img/products/red-velvet-cake.jpg", images: ["assets/img/products/signature-chocolate-bonbons.jpg"],
-      tags: ["cake", "red-velvet", "eggless", "gluten-free", "signature"]
-    },
-    {
-      id: "fresh-cream-pastry", name: "Fresh Cream Pastry", brand: "doughremi",
-      cats: ["pastries"], price: 95, rating: 4.6, reviews: 774,
-      badges: [], sizes: "box", occasions: [],
-      desc: "The after-school classic — vanilla sponge, whipped cream, seasonal fruit.",
-      long: "Soft vanilla sponge soaked in light sugar syrup, layered with cold-whipped dairy cream and whatever fruit is best that week. Nostalgic on purpose, made properly with real dairy — no vegetable cream, ever.",
-      ingredients: "Wheat flour, fresh dairy cream, cane sugar, pasteurised eggs, seasonal fruit, vanilla.",
-      allergens: ["Milk", "Wheat", "Eggs"],
-      tags: ["nostalgic", "dairy cream"],
-      image: "assets/img/products/mix-cream-cake.jpg", images: ["assets/img/products/mix-cream-cake.jpg"]
-    },
-    {
-      id: "artisan-sourdough", name: "Artisan Sourdough Loaf", brand: "doughremi",
-      cats: ["breads"], price: 285, rating: 4.8, reviews: 389,
-      badges: ["NEW"], sizes: "single", occasions: [],
-      diet: ["vegan"],
-      desc: "36-hour levain, blistered crust, open crumb. Three ingredients only.",
-      long: "Flour, water, salt and time — thirty-six hours of it. Our levain has been running since 2019. Baked directly on stone for a blistered, deeply caramelised crust and an open, chewy crumb. Naturally vegan.",
-      ingredients: "Stoneground wheat flour, water, sea salt, wild levain.",
-      allergens: ["Wheat"],
-      image: "assets/img/products/mix-cream-cake.jpg", tags: ["sourdough", "vegan", "stone baked"]
-    },
-    {
-      id: "celebration-cupcakes", name: "Celebration Cupcakes", brand: "doughremi",
-      cats: ["cupcakes", "birthday-cakes"], price: 480, rating: 4.7, reviews: 296,
-      badges: [], sizes: "box", occasions: ["birthday", "baby-shower", "graduation", "corporate"],
-      diet: ["eggless"],
-      desc: "Party-ready boxes with piped buttercream, sprinkles and toppers.",
-      long: "Six or twelve cupcakes in your choice of up to three flavours, piped with Swiss meringue buttercream and finished with sprinkles, edible glitter or custom toppers. Add a personalised message card at checkout.",
-      ingredients: "French T45 pastry flour, butter, cane sugar, pasteurised eggs (or eggless base), milk, chocolate, vanilla, food-safe colours.",
-      allergens: ["Milk", "Wheat", "Eggs"],
-      customisable: true, image: "assets/img/products/vanilla-roasted-almond-muffins-2.jpg", tags: ["party", "buttercream", "mix flavours"]
-    },
-    {
-      id: "butter-croissant-almond", name: "Almond Croissant", brand: "doughremi",
-      cats: ["croissants", "pastries"], price: 175, rating: 4.8, reviews: 244,
-      badges: [], sizes: "box", occasions: [],
-      desc: "Day-old croissant reborn with frangipane and flaked almonds.",
-      long: "The classic French thrift: yesterday's croissant, split and soaked in orange-blossom syrup, filled with almond frangipane, re-baked with flaked almonds until the edges caramelise. Better than the original and we will argue about it.",
-      ingredients: "Wheat flour, cultured butter, almond flour, pasteurised eggs, cane sugar, orange blossom water, milk.",
-      allergens: ["Milk", "Wheat", "Eggs", "Tree nuts (almond)"],
-      leadHours: 12, tags: ["frangipane", "breakfast"],
-      image: "assets/img/products/butter-croissant-almond.jpg", images: ["assets/img/products/butter-croissant-almond.jpg"]
-    },
-    {
-      id: "chocolate-truffle-cake", name: "Chocolate Truffle Cake", brand: "doughremi",
-      cats: ["birthday-cakes", "celebration-cakes"], price: 849, mrp: 999, rating: 4.8, reviews: 1102,
-      badges: ["BESTSELLER"], sizes: "cake", occasions: ["birthday", "anniversary", "graduation"],
-      diet: ["eggless"],
-      desc: "The most-ordered cake in the house. Dark ganache, soft crumb, name piped free.",
-      long: "Three layers of moist chocolate sponge, a generous 54% dark ganache between and around, finished with chocolate curls and a ganache drip. Your message piped by hand at no charge. Eggless on request.",
-      ingredients: "French T45 pastry flour, dark couverture 54%, fresh cream, butter, cane sugar, cocoa, pasteurised eggs (optional), milk.",
-      allergens: ["Milk", "Wheat", "Eggs"],
-      customisable: true, tags: ["ganache", "most ordered", "eggless option"],
-      image: "assets/img/products/belgian-chocolate-cake.jpg", images: ["assets/img/products/belgian-chocolate-cake.jpg"]
-    },
-    {
-      id: "cinnamon-swirl-bun", name: "Cinnamon Swirl Bun", brand: "doughremi",
-      cats: ["breads", "pastries"], price: 135, rating: 4.7, reviews: 318,
-      badges: [], sizes: "box", occasions: [],
-      desc: "Enriched dough, Ceylon cinnamon, cream cheese glaze that melts in.",
-      long: "Soft enriched dough rolled with brown butter and Ceylon cinnamon, proofed slowly for a pull-apart crumb, and glazed with cream cheese while still warm so it soaks into the spiral.",
-      ingredients: "Wheat flour, butter, milk, cane sugar, Ceylon cinnamon, cream cheese, pasteurised eggs, yeast, salt.",
-      allergens: ["Milk", "Wheat", "Eggs"],
-      leadHours: 12, tags: ["breakfast", "cinnamon"],
-      image: "assets/img/products/classic-cinnamon-roll.jpg", images: ["assets/img/products/classic-cinnamon-roll.jpg"]
-    },
-    {
-      id: "multigrain-seed-loaf", name: "Multigrain Seed Loaf", brand: "doughremi",
-      cats: ["breads", "healthy-snacks"], price: 245, rating: 4.6, reviews: 187,
-      badges: [], sizes: "single", occasions: [],
-      diet: ["vegan", "high-protein"],
-      desc: "Five grains, four seeds, no maida, no sugar, no improvers.",
-      long: "Whole wheat, ragi, oats, barley and jowar with sunflower, flax, pumpkin and sesame seeds. Long ferment for digestibility, zero refined flour, zero added sugar. Slices beautifully for toast.",
-      ingredients: "Whole wheat, ragi, oats, barley, jowar, sunflower seed, flaxseed, pumpkin seed, sesame, sea salt, levain.",
-      allergens: ["Wheat", "Sesame"],
-      image: "assets/img/products/classic-cinnamon-roll.jpg", tags: ["wholegrain", "no maida", "vegan"]
-    },
-    {
-      id: "coffee-walnut-loaf", name: "Coffee Walnut Loaf", brand: "doughremi",
-      cats: ["pastries", "coffee"], price: 425, rating: 4.6, reviews: 141,
-      badges: [], sizes: "single", occasions: [],
-      desc: "Single-origin Coorg espresso in the crumb, candied walnuts on top.",
-      long: "A proper tea-loaf: brown-butter batter spiked with a double shot of single-origin Coorg espresso, folded with candied walnuts and finished with a coffee glaze. Keeps for four days and gets better on the second.",
-      ingredients: "Wheat flour, butter, cane sugar, pasteurised eggs, Coorg espresso, walnut, milk, baking powder.",
-      allergens: ["Milk", "Wheat", "Eggs", "Tree nuts (walnut)"],
-      image: "assets/img/products/date-and-walnut-teacake.jpg", tags: ["loaf", "coffee", "keeps well"]
-    },
-
-    /* ----------------------------- Khowdy ----------------------------- */
-    {
-      id: "assam-tea-cookies", name: "Assam Tea Cookies", brand: "khowdy",
-      cats: ["cookies", "assamese", "healthy-snacks"], price: 395, mrp: 449, rating: 4.8, reviews: 512,
-      badges: ["BESTSELLER"], sizes: "jar", occasions: ["festival", "corporate"],
-      diet: ["eggless", "nut-free"],
-      desc: "Second-flush Assam leaf ground into a buttery shortbread. Eggless.",
-      long: "We grind whole second-flush Assam leaf from partner estates in Jorhat into a cold-butter shortbread, so the tea is in the crumb rather than sprinkled on it. Malty, floral and just sweet enough. Eggless, no palm oil, no preservatives.",
-      ingredients: "Wheat flour, butter, cane sugar, second-flush Assam tea leaf, milk solids, sea salt.",
-      allergens: ["Milk", "Wheat"],
-      tags: ["assam", "shortbread", "eggless"],
-      image: "assets/img/products/brown-butter-cookie-box.jpg", images: ["assets/img/products/brown-butter-cookie-box.jpg"]
-    },
-    {
-      id: "black-rice-cookies", name: "Black Rice Cookies", brand: "khowdy",
-      cats: ["cookies", "assamese", "healthy-snacks"], price: 425, rating: 4.7, reviews: 288,
-      badges: ["NEW"], sizes: "jar", occasions: ["festival"],
-      diet: ["eggless", "gluten-free"],
-      desc: "Assam's heirloom Chakhao black rice, jaggery and cold-pressed coconut oil.",
-      long: "Chakhao — the aromatic black rice of the Northeast — stone-milled and baked with jaggery and cold-pressed coconut oil. Naturally gluten free, deep purple, faintly nutty, and rich in anthocyanins. Sourced directly from growers in Majuli.",
-      ingredients: "Chakhao black rice flour, jaggery, cold-pressed coconut oil, coconut milk, cardamom, sea salt.",
-      allergens: [],
-      image: "assets/img/products/double-chocolate-cookie-box.jpg", tags: ["gluten free", "heirloom rice", "majuli"]
-    },
-    {
-      id: "millet-cookies", name: "Millet Cookies", brand: "khowdy",
-      cats: ["cookies", "healthy-snacks"], price: 375, rating: 4.6, reviews: 341,
-      badges: [], sizes: "jar", occasions: [],
-      diet: ["eggless", "high-protein", "sugar-free"],
-      desc: "Ragi, jowar and bajra with date paste — no refined sugar, no maida.",
-      long: "Built for the 4pm slump: three millets, date paste instead of sugar, a little ghee for shortness and roasted sesame for crunch. Nine grams of protein per serving and genuinely good with tea.",
-      ingredients: "Ragi flour, jowar flour, bajra flour, date paste, ghee, sesame seed, cardamom, sea salt.",
-      allergens: ["Milk", "Sesame"],
-      image: "assets/img/products/pistachio-chocolate-cookie-box.jpg", tags: ["no refined sugar", "millet", "protein"]
-    },
-    {
-      id: "premium-tea-time-box", name: "Premium Tea-Time Box", brand: "khowdy",
-      cats: ["hampers", "corporate-gifting", "cookies"], price: 1250, mrp: 1450, rating: 4.8, reviews: 176,
-      badges: ["BESTSELLER"], sizes: "single", occasions: ["festival", "corporate", "custom"],
-      diet: ["eggless"],
-      desc: "Three cookie jars and a tin of single-estate Assam in a jute-bound box.",
-      long: "Assam tea cookies, black rice cookies and millet cookies with a 100g tin of single-estate second-flush Assam, presented in a jute-bound box with a hand-stamped card. Our most-gifted Khowdy box for Bihu and Diwali.",
-      ingredients: "See individual components; full declaration enclosed.",
-      allergens: ["Milk", "Wheat", "Sesame"],
-      image: "assets/img/products/brookie-box.png", tags: ["gifting", "assam tea", "jute box"]
-    },
-    {
-      id: "assamese-snack-box", name: "Assamese Snack Box", brand: "khowdy",
-      cats: ["assamese", "healthy-snacks", "hampers"], price: 1450, rating: 4.7, reviews: 132,
-      badges: [], sizes: "single", occasions: ["festival", "corporate"],
-      diet: ["eggless"],
-      desc: "Pitha, til laru, komal chira granola and bhoot jolokia cashews.",
-      long: "A guided tour of the Assamese pantry: coconut til pitha, sesame-jaggery laru, komal chira granola clusters and cashews tossed in a controlled amount of bhoot jolokia. Regional recipes, cleaner methods, no palm oil.",
-      ingredients: "Rice flour, coconut, jaggery, sesame, komal chira (soft flattened rice), cashew, bhoot jolokia, mustard oil, sea salt.",
-      allergens: ["Sesame", "Tree nuts (cashew)", "Mustard"],
-      image: "assets/img/products/herb-and-cheese-crackers.jpg", tags: ["regional", "bihu", "pitha"]
-    },
-    {
-      id: "single-estate-assam-tea", name: "Single-Estate Assam Tea", brand: "khowdy",
-      cats: ["coffee", "assamese", "hampers"], price: 550, rating: 4.9, reviews: 264,
-      badges: [], sizes: "jar", occasions: ["corporate", "festival"],
-      diet: ["vegan"],
-      desc: "Second-flush golden-tipped orthodox leaf from a single Jorhat garden.",
-      long: "One garden, one flush, one picking window. Golden-tipped orthodox leaf with the malt and honey character second-flush Assam is famous for. Whole leaf, never dust, packed within ten days of plucking in a nitrogen-flushed tin.",
-      ingredients: "100% orthodox second-flush Assam tea leaf.",
-      allergens: [],
-      image: "assets/img/products/single-estate-assam-tea.jpg", tags: ["single estate", "orthodox", "second flush"]
-    },
-    {
-      id: "jaggery-granola", name: "Komal Chira Granola", brand: "khowdy",
-      cats: ["healthy-snacks", "assamese"], price: 465, rating: 4.6, reviews: 158,
-      badges: ["NEW"], sizes: "jar", occasions: [],
-      diet: ["vegan", "high-protein"],
-      desc: "Soft flattened rice, oats, jaggery and pumpkin seed. No palm oil.",
-      long: "Komal chira — Assam's soft flattened rice — clustered with rolled oats, jaggery syrup, cold-pressed coconut oil and four seeds. Baked low and slow for clusters that survive the milk. Vegan, no palm oil, no refined sugar.",
-      ingredients: "Komal chira, rolled oats, jaggery, cold-pressed coconut oil, pumpkin seed, sunflower seed, flaxseed, coconut flakes, cinnamon.",
-      allergens: [],
-      image: "assets/img/products/jaggery-granola.jpg", tags: ["breakfast", "vegan", "clusters"]
-    },
-    {
-      id: "bhoot-jolokia-cashews", name: "Bhoot Jolokia Cashews", brand: "khowdy",
-      cats: ["healthy-snacks", "assamese"], price: 495, rating: 4.7, reviews: 203,
-      badges: [], sizes: "jar", occasions: ["corporate"],
-      diet: ["vegan", "gluten-free"],
-      desc: "W240 cashews, mustard oil roast, a measured hit of the world's fiercest chilli.",
-      long: "Whole W240 cashews slow-roasted in cold-pressed mustard oil, then tossed with bhoot jolokia, black salt and curry leaf. Hot, but engineered to stop just before it ruins your tea.",
-      ingredients: "Cashew W240, cold-pressed mustard oil, bhoot jolokia, black salt, curry leaf, turmeric.",
-      allergens: ["Tree nuts (cashew)", "Mustard"],
-      image: "assets/img/products/paprika-and-garlic-crackers.jpg", tags: ["spicy", "roasted", "bar snack"]
-    },
-    {
-      id: "til-pitha-box", name: "Til Pitha Box", brand: "khowdy",
-      cats: ["assamese", "hampers"], price: 385, rating: 4.8, reviews: 149,
-      badges: [], sizes: "box", occasions: ["festival"],
-      diet: ["vegan", "gluten-free"],
-      desc: "Bora rice crepes rolled with black sesame and jaggery, made the Bihu way.",
-      long: "Sticky bora rice, ground and griddled thin, rolled around roasted black sesame and jaggery while still warm. The Bihu classic, made by hand in small batches by the same three women who taught us the recipe.",
-      ingredients: "Bora sticky rice, black sesame, jaggery, coconut, sea salt.",
-      allergens: ["Sesame"],
-      tags: ["bihu", "handmade", "gluten free"],
-      image: "assets/img/products/motichoor-barks.jpg", images: ["assets/img/products/motichoor-barks.jpg"]
-    },
-
-    /* ---------------------------- Hampers ------------------------------ */
-    {
-      id: "birthday-celebration-hamper", name: "Birthday Celebration Hamper", brand: "doughremi",
-      cats: ["hampers", "birthday-cakes"], price: 2250, mrp: 2600, rating: 4.8, reviews: 187,
-      badges: ["BESTSELLER"], sizes: "single", occasions: ["birthday"],
-      desc: "500g truffle cake, brownies, cupcakes, candles and a hand-written card.",
-      long: "Everything a doorstep birthday needs: a 500g chocolate truffle cake, four brownies, six cupcakes, candles, a party knife and a hand-written card in your words. Choose a delivery slot and we handle the surprise.",
-      ingredients: "See individual components; full declaration enclosed.",
-      allergens: ["Milk", "Wheat", "Eggs", "Tree nuts"],
-      leadHours: 24, image: "assets/img/products/motichoor-barks.jpg", tags: ["surprise", "hamper", "birthday"]
-    },
-    {
-      id: "corporate-diwali-hamper", name: "Corporate Festival Hamper", brand: "khowdy",
-      cats: ["hampers", "corporate-gifting"], price: 1850, rating: 4.8, reviews: 214,
-      badges: [], sizes: "single", occasions: ["festival", "corporate"],
-      diet: ["eggless"],
-      desc: "Co-branded festival gifting from 25 units, GST invoiced, pan-India dispatch.",
-      long: "Built for gifting at scale: Khowdy cookies, Assam tea, laru, dry fruit and a Signature chocolate bar in a co-branded box with your logo foiled on the lid. Minimum 25 units, GST invoice, pan-India dispatch with per-address delivery.",
-      ingredients: "See individual components; full declaration enclosed.",
-      allergens: ["Milk", "Wheat", "Sesame", "Tree nuts"],
-      leadHours: 168, image: "assets/img/products/assorted-mithai-box-of-15.jpg", tags: ["b2b", "co-branded", "bulk"]
-    },
-    {
-      id: "wedding-favour-box", name: "Wedding Favour Box", brand: "signature",
-      cats: ["hampers", "corporate-gifting", "chocolates"], price: 650, rating: 4.9, reviews: 96,
-      badges: ["SIGNATURE"], sizes: "single", occasions: ["wedding", "custom"],
-      desc: "Four bonbons in a foiled box with your names, monogram and date.",
-      long: "Four hand-painted bonbons in a rigid box foiled with your monogram, names and wedding date, tied with silk ribbon in your palette. Minimum 50 boxes, three weeks' notice, tasting box sent before you commit.",
-      ingredients: "Couverture chocolate, fresh cream, butter, fruit purées, nuts, cocoa butter colours.",
-      allergens: ["Milk", "Soy", "Tree nuts"],
-      leadHours: 504, image: "assets/img/products/assorted-mithai-box-of-6.jpg", tags: ["favours", "monogram", "wedding"]
-    },
-    {
-      id: "saiph-gift-card", name: "SAiPH Gift Card", brand: "saiph",
-      cats: ["gift-cards", "hampers", "corporate-gifting"], price: 1000, rating: 4.9, reviews: 421,
-      badges: [], sizes: "single", occasions: ["birthday", "corporate", "festival", "custom"],
-      desc: "Any amount from ₹500. Delivered by email instantly, valid 12 months.",
-      long: "Redeemable across DoughReMi, SAiPH Signature and Khowdy — online and in every store. Choose an amount, add a message, schedule the send. Valid twelve months, never expires mid-order, and the balance carries across visits.",
-      ingredients: "Not applicable.",
-      allergens: [],
-      leadHours: 0, tags: ["instant", "digital", "flexible"],
-      image: "assets/img/products/saiph-gift-card.jpg", images: ["assets/img/products/saiph-gift-card.jpg"]
-    },
-    /* ------------------------- Live Fresh Catalogue (Google Sheet) ------------------------- */
-    {
-     
+    {
+      "id": "vanilla-cake",
+      "name": "Vanilla Cake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 800,
+      "mrp": 920,
+      "rating": 4.9,
+      "reviews": 142,
+      "badges": [
+        "MENU-FEATURE",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
+      ],
+      "sizes": "poundCake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
+      ],
+      "desc": "Freshly baked artisan vanilla sponge made with fragrant pure Madagascar vanilla beans, whipped cream, and zero refined sugar. 100% eggless and gluten-free.",
+      "long": "Freshly baked artisan vanilla sponge made with fragrant pure Madagascar vanilla beans, whipped cream, and zero refined sugar. Crafted with no maida, no artificial preservatives, and premium pure ingredients for mindful celebration. 100% Egg-Free and Gluten-Free. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, almond flour, oat flour, pure Madagascar vanilla bean, natural erythritol & stevia blend, dairy cream, cold-pressed oils.",
+      "allergens": [
+        "Milk / Dairy",
+        "Tree nuts (almond)"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/vanilla-cake.jpg",
+      "images": [
+        "assets/img/products/vanilla-cake.jpg"
+      ],
+      "tags": [
+        "cake",
+        "vanilla",
+        "eggless",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "chocolate-cake",
+      "name": "Chocolate Cake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 800,
+      "mrp": 920,
+      "rating": 5,
+      "reviews": 218,
+      "badges": [
+        "BESTSELLER",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
+      ],
+      "sizes": "poundCake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
+      ],
+      "desc": "Decadent dark chocolate layers enveloped in silky smooth Belgian chocolate ganache. Refined sugar-free, gluten-free, and maida-free indulgence.",
+      "long": "Decadent dark chocolate layers enveloped in silky smooth Belgian chocolate ganache. Handcrafted using single-origin cocoa with zero maida and zero refined sugar. 100% Eggless and Gluten-Free. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, almond flour, single-origin cacao, dark chocolate 70%, natural plant sweetener, fresh cream, grass-fed butter.",
+      "allergens": [
+        "Milk / Dairy",
+        "Tree nuts (almond)"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/chocolate-cake.jpg",
+      "images": [
+        "assets/img/products/chocolate-cake.jpg"
+      ],
+      "tags": [
+        "cake",
+        "chocolate",
+        "eggless",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "butter-scotch-cake",
+      "name": "Butter Scotch Cake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 850,
+      "mrp": 980,
+      "rating": 4.9,
+      "reviews": 96,
+      "badges": [
+        "MENU-FEATURE",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
+      ],
+      "sizes": "poundCake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
+      ],
+      "desc": "Layers of moist golden sponge filled with rich handcrafted butterscotch cream and crunchy sugar-free praline crisps. 100% eggless and guilt-free.",
+      "long": "Layers of moist golden sponge filled with rich handcrafted butterscotch cream and crunchy sugar-free praline crisps. Made with pure brown butter and zero artificial essences. 100% Eggless and Gluten-Free. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, almond flour, brown butter, handcrafted sugar-free butterscotch caramel, natural erythritol blend, fresh cream.",
+      "allergens": [
+        "Milk / Dairy",
+        "Tree nuts (almond)"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/butterscotch-cake.jpg",
+      "images": [
+        "assets/img/products/butterscotch-cake.jpg"
+      ],
+      "tags": [
+        "cake",
+        "butterscotch",
+        "eggless",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "nutella-cake",
+      "name": "Nutella Cake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1200,
+      "mrp": 1380,
+      "rating": 5,
+      "reviews": 164,
+      "badges": [
+        "BESTSELLER",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
+      ],
+      "sizes": "poundCake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
+      ],
+      "desc": "Velvety chocolate hazelnut sponge filled with luscious artisanal sugar-free Nutella spread and toasted roasted hazelnuts.",
+      "long": "Velvety chocolate hazelnut sponge filled with luscious artisanal sugar-free Nutella spread and toasted roasted hazelnuts. Decadent, rich, and guilt-free. 100% Eggless and Gluten-Free. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, almond flour, pure hazelnut butter, Belgian cocoa, natural stevia sweetener, fresh cream, roasted hazelnuts.",
+      "allergens": [
+        "Milk / Dairy",
+        "Tree nuts (hazelnut, almond)"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/pistachio-nutella-cake-2.jpg",
+      "images": [
+        "assets/img/products/pistachio-nutella-cake-2.jpg"
+      ],
+      "tags": [
+        "cake",
+        "nutella",
+        "hazelnut",
+        "eggless",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "marble-cake",
+      "name": "Marble Cake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 900,
+      "mrp": 1035,
+      "rating": 4.8,
+      "reviews": 88,
+      "badges": [
+        "MENU-FEATURE",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
+      ],
+      "sizes": "poundCake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
+      ],
+      "desc": "Artistic swirls of rich dark chocolate and fragrant vanilla bean sponge, finished with a smooth marbled ganache. Wholesome, gluten-free, and eggless.",
+      "long": "Artistic swirls of rich dark chocolate and fragrant vanilla bean sponge, finished with a smooth marbled ganache. Wholesome, gluten-free, and eggless with zero refined sugar. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, almond flour, Madagascar vanilla, dark cocoa, erythritol blend, grass-fed butter, fresh cream.",
+      "allergens": [
+        "Milk / Dairy",
+        "Tree nuts (almond)"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/marble-opulence-cake.jpg",
+      "images": [
+        "assets/img/products/marble-opulence-cake.jpg"
+      ],
+      "tags": [
+        "cake",
+        "marble",
+        "eggless",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "oreo-cake",
+      "name": "Oreo Cake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1000,
+      "mrp": 1150,
+      "rating": 4.9,
+      "reviews": 110,
+      "badges": [
+        "MENU-FEATURE",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
+      ],
+      "sizes": "poundCake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
+      ],
+      "desc": "Cookies-and-cream perfection featuring crushed artisan chocolate biscuit crumbs folded into vanilla cream cheese frosting between moist chocolate layers.",
+      "long": "Cookies-and-cream perfection featuring crushed artisan gluten-free chocolate biscuit crumbs folded into vanilla cream cheese frosting between moist chocolate layers. 100% Eggless and refined sugar-free. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, almond flour, gluten-free dark cacao biscuit crumble, cream cheese, natural plant sweetener, vanilla bean.",
+      "allergens": [
+        "Milk / Dairy",
+        "Tree nuts (almond)"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/oreo-cake.jpg",
+      "images": [
+        "assets/img/products/oreo-cake.jpg"
+      ],
+      "tags": [
+        "cake",
+        "oreo",
+        "cookies-and-cream",
+        "eggless",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "black-forest-cake",
+      "name": "Black Forest Cake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 800,
+      "mrp": 920,
+      "rating": 4.9,
+      "reviews": 178,
+      "badges": [
+        "BESTSELLER",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
+      ],
+      "sizes": "poundCake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
+      ],
+      "desc": "Airy chocolate sponge layered with tart cherry compote, fresh vanilla chantilly cream, and dark chocolate shavings. A mindful classic.",
+      "long": "Airy chocolate sponge layered with tart cherry compote, fresh vanilla chantilly cream, and dark chocolate shavings. Baked without refined sugar or maida. 100% Eggless and Gluten-Free. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, almond flour, dark cocoa, red sour cherries, Madagascar vanilla, dairy cream, natural erythritol.",
+      "allergens": [
+        "Milk / Dairy",
+        "Tree nuts (almond)"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/black-forest-cake.jpg",
+      "images": [
+        "assets/img/products/black-forest-cake.jpg"
+      ],
+      "tags": [
+        "cake",
+        "black-forest",
+        "eggless",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "white-forest-cake",
+      "name": "White Forest Cake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 800,
+      "mrp": 920,
+      "rating": 4.8,
+      "reviews": 92,
+      "badges": [
+        "MENU-FEATURE",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
+      ],
+      "sizes": "poundCake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
+      ],
+      "desc": "Delicate vanilla sponge filled with juicy cherries, white chocolate curls, and light whipped cream. 100% eggless, gluten-free, and zero refined sugar.",
+      "long": "Delicate vanilla sponge filled with juicy cherries, white chocolate curls, and light whipped cream. 100% eggless, gluten-free, and zero refined sugar. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, almond flour, sugar-free white chocolate, sweet cherries, fresh dairy cream, natural stevia blend.",
+      "allergens": [
+        "Milk / Dairy",
+        "Tree nuts (almond)"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/white-forest-cake.jpg",
+      "images": [
+        "assets/img/products/white-forest-cake.jpg"
+      ],
+      "tags": [
+        "cake",
+        "white-forest",
+        "eggless",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "plum-cake-non-alcoholic",
+      "name": "Plum Cake (Non Alcoholic)",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1250,
+      "mrp": 1435,
+      "rating": 5,
+      "reviews": 135,
+      "badges": [
+        "SIGNATURE",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
+      ],
+      "sizes": "poundCake",
+      "occasions": [
+        "festival",
+        "birthday",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
+      ],
+      "desc": "Traditional rich festive fruit cake loaded with spiced black currants, raisins, dates, figs, and toasted nuts steeped in spiced citrus reduction. 100% non-alcoholic.",
+      "long": "Traditional rich festive fruit cake loaded with spiced black currants, raisins, dates, figs, and toasted nuts steeped in spiced citrus reduction. 100% non-alcoholic, egg-free, and refined sugar-free. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, almond flour, black raisins, dates, figs, candied orange peel, cinnamon, nutmeg, ginger, walnuts, cold-pressed oils.",
+      "allergens": [
+        "Tree nuts (walnut, almond)"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/plum-cake-non-alcoholic.jpg",
+      "images": [
+        "assets/img/products/plum-cake-non-alcoholic.jpg"
+      ],
+      "tags": [
+        "cake",
+        "plum-cake",
+        "festive",
+        "eggless",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "raspberry-velvet-cake",
+      "name": "Raspberry Velvet Cake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1200,
+      "mrp": 1380,
+      "rating": 4.9,
+      "reviews": 84,
+      "badges": [
+        "MENU-FEATURE",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
+      ],
+      "sizes": "poundCake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
+      ],
+      "desc": "Sumptuous pink velvet sponge layered with tangy wild raspberry coulis and delicate cream frosting. Bright, refreshing, and sugar-free.",
+      "long": "Sumptuous pink velvet sponge layered with tangy wild raspberry coulis and delicate cream frosting. Bright, refreshing, and sugar-free. 100% Eggless and Gluten-Free. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, almond flour, fresh raspberry reduction, vanilla cream, natural erythritol blend, cold-pressed oils.",
+      "allergens": [
+        "Milk / Dairy",
+        "Tree nuts (almond)"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/pistachio-raspberry-cake.jpg",
+      "images": [
+        "assets/img/products/pistachio-raspberry-cake.jpg"
+      ],
+      "tags": [
+        "cake",
+        "raspberry",
+        "velvet",
+        "eggless",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "lavender-berry-cake",
+      "name": "Lavender Berry Cake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1200,
+      "mrp": 1380,
+      "rating": 5,
+      "reviews": 76,
+      "badges": [
+        "SIGNATURE",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
+      ],
+      "sizes": "poundCake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
+      ],
+      "desc": "An ethereal floral and fruit pairing: culinary French lavender-infused sponge layered with mixed berry compote and whipped chantilly frosting.",
+      "long": "An ethereal floral and fruit pairing: culinary French lavender-infused sponge layered with mixed berry compote and whipped chantilly frosting. 100% Eggless and Gluten-Free. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, almond flour, organic culinary lavender, blueberries, blackberries, fresh dairy cream, natural plant sweetener.",
+      "allergens": [
+        "Milk / Dairy",
+        "Tree nuts (almond)"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/berry-chantilly-cake.jpg",
+      "images": [
+        "assets/img/products/berry-chantilly-cake.jpg"
+      ],
+      "tags": [
+        "cake",
+        "lavender",
+        "berry",
+        "eggless",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "pineapple-cake",
+      "name": "Pineapple Cake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 800,
+      "mrp": 920,
+      "rating": 4.9,
+      "reviews": 150,
+      "badges": [
+        "BESTSELLER",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
+      ],
+      "sizes": "poundCake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
+      ],
+      "desc": "Classic tropical celebration cake: tender vanilla sponge soaked in real pineapple nectar, layered with slow-simmered pineapple compote and fresh cream.",
+      "long": "Classic tropical celebration cake: tender vanilla sponge soaked in real pineapple nectar, layered with slow-simmered pineapple compote and fresh cream. 100% Eggless and Gluten-Free. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, almond flour, fresh Queen pineapple, dairy cream, Madagascar vanilla, natural erythritol blend.",
+      "allergens": [
+        "Milk / Dairy",
+        "Tree nuts (almond)"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/pineapple-cream-cake.jpg",
+      "images": [
+        "assets/img/products/pineapple-cream-cake.jpg"
+      ],
+      "tags": [
+        "cake",
+        "pineapple",
+        "eggless",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "mango-cake",
+      "name": "Mango Cake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 800,
+      "mrp": 920,
+      "rating": 4.9,
+      "reviews": 114,
+      "badges": [
+        "MENU-FEATURE",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
+      ],
+      "sizes": "poundCake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
+      ],
+      "desc": "Sun-ripened Alphonso mango pulp layered with light sponge and mango-infused mascarpone cream. Pure tropical delight with zero added sugar.",
+      "long": "Sun-ripened Alphonso mango pulp layered with light sponge and mango-infused mascarpone cream. Pure tropical delight with zero added sugar. 100% Eggless and Gluten-Free. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, almond flour, Alphonso mango puree, mascarpone cream, natural stevia sweetener, fresh cream.",
+      "allergens": [
+        "Milk / Dairy",
+        "Tree nuts (almond)"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/mango-cake.jpg",
+      "images": [
+        "assets/img/products/mango-cake.jpg"
+      ],
+      "tags": [
+        "cake",
+        "mango",
+        "eggless",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "strawberry-cake",
+      "name": "Strawberry Cake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 800,
+      "mrp": 920,
+      "rating": 4.9,
+      "reviews": 128,
+      "badges": [
+        "MENU-FEATURE",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
+      ],
+      "sizes": "poundCake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
+      ],
+      "desc": "Juicy handpicked strawberries cooked into a velvety compote between light sponge layers and whipped vanilla cream.",
+      "long": "Juicy handpicked strawberries cooked into a velvety compote between light sponge layers and whipped vanilla cream. 100% Eggless and Gluten-Free. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, almond flour, fresh strawberries, dairy cream, Madagascar vanilla, natural erythritol blend.",
+      "allergens": [
+        "Milk / Dairy",
+        "Tree nuts (almond)"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/strawberry-cake.jpg",
+      "images": [
+        "assets/img/products/strawberry-cake.jpg"
+      ],
+      "tags": [
+        "cake",
+        "strawberry",
+        "eggless",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "fresh-fruit-cake",
+      "name": "Fruit Cake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 800,
+      "mrp": 920,
+      "rating": 4.8,
+      "reviews": 102,
+      "badges": [
+        "MENU-FEATURE",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
+      ],
+      "sizes": "poundCake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
+      ],
+      "desc": "A colourful festival of fresh seasonal exotic fruits over a luscious cream-covered vanilla sponge.",
+      "long": "A colourful festival of fresh seasonal exotic fruits (kiwi, pomegranate, orange, berries) over a luscious cream-covered vanilla sponge. 100% Eggless and Gluten-Free. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, almond flour, fresh seasonal fruits, vanilla cream, natural plant sweetener, cold-pressed oils.",
+      "allergens": [
+        "Milk / Dairy",
+        "Tree nuts (almond)"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/tropical-delight-cake.jpg",
+      "images": [
+        "assets/img/products/tropical-delight-cake.jpg"
+      ],
+      "tags": [
+        "cake",
+        "fruit-cake",
+        "fresh-fruit",
+        "eggless",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "biscoff-cake",
+      "name": "Biscoff Cake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 900,
+      "mrp": 1035,
+      "rating": 5,
+      "reviews": 140,
+      "badges": [
+        "BESTSELLER",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
+      ],
+      "sizes": "poundCake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
+      ],
+      "desc": "Warmly spiced speculoos cookie butter folded into smooth cream frosting with spiced biscuit crumbs over tender cinnamon-infused sponge.",
+      "long": "Warmly spiced speculoos cookie butter folded into smooth cream frosting with spiced biscuit crumbs over tender cinnamon-infused sponge. 100% Eggless and Gluten-Free. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, almond flour, sugar-free spiced speculoos butter, cinnamon, dairy cream, natural erythritol blend.",
+      "allergens": [
+        "Milk / Dairy",
+        "Tree nuts (almond)"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/biscoff-cake.jpg",
+      "images": [
+        "assets/img/products/biscoff-cake.jpg"
+      ],
+      "tags": [
+        "cake",
+        "biscoff",
+        "speculoos",
+        "eggless",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "bee-cake-honey",
+      "name": "Bee Cake Honey",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 800,
+      "mrp": 920,
+      "rating": 4.9,
+      "reviews": 89,
+      "badges": [
+        "SIGNATURE",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA"
+      ],
+      "sizes": "poundCake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival"
+      ],
+      "diet": [
+        "gluten-free",
+        "eggless",
+        "no-maida"
+      ],
+      "desc": "Inspired by the classic Medovik: delicate multi-layered honey biscuits caramelized to perfection and filled with tangy sour cream honey frosting.",
+      "long": "Inspired by the classic Medovik: delicate multi-layered honey biscuits caramelized to perfection and filled with tangy sour cream honey frosting. 100% Eggless and Gluten-Free. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, almond flour, pure organic raw wild honey, sour cream, grass-fed butter, natural erythritol.",
+      "allergens": [
+        "Milk / Dairy",
+        "Tree nuts (almond)"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/bee-cake-honey.jpg",
+      "images": [
+        "assets/img/products/bee-cake-honey.jpg"
+      ],
+      "tags": [
+        "cake",
+        "honey-cake",
+        "medovik",
+        "eggless",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "toffee-caramel-cake",
+      "name": "Toffee Caramel Cake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 950,
+      "mrp": 1090,
+      "rating": 4.9,
+      "reviews": 118,
+      "badges": [
+        "MENU-FEATURE",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
+      ],
+      "sizes": "poundCake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
+      ],
+      "desc": "Deep golden English toffee sauce swirled into fluffy sponge with sea-salted caramel buttercream and sugar-free toffee brittle.",
+      "long": "Deep golden English toffee sauce swirled into fluffy sponge with sea-salted caramel buttercream and sugar-free toffee brittle. 100% Eggless and Gluten-Free. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, almond flour, browned grass-fed butter, handcrafted sugar-free toffee caramel, Himalayan pink salt, fresh cream.",
+      "allergens": [
+        "Milk / Dairy",
+        "Tree nuts (almond)"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/chocolate-caramel-noir-cake.jpg",
+      "images": [
+        "assets/img/products/chocolate-caramel-noir-cake.jpg"
+      ],
+      "tags": [
+        "cake",
+        "toffee",
+        "caramel",
+        "eggless",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "caramel-hazelnut-chocolate-cake",
+      "name": "Caramel Hazelnut Chocolate",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1200,
+      "mrp": 1380,
+      "rating": 5,
+      "reviews": 172,
+      "badges": [
+        "BESTSELLER",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
+      ],
+      "sizes": "poundCake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
+      ],
+      "desc": "The ultimate trio: rich chocolate sponge, slow-cooked caramel drizzle, and roasted hazelnut praline crunch draped in dark chocolate ganache.",
+      "long": "The ultimate trio: rich chocolate sponge, slow-cooked caramel drizzle, and roasted hazelnut praline crunch draped in dark chocolate ganache. Handcrafted fresh daily in our Dibrugarh kitchen using pure, premium ingredients with no artificial additives. 100% Vegetarian.",
+      "ingredients": "French T45 pastry flour, almond flour, roasted hazelnuts, dark chocolate 70%, sea salt caramel, natural plant sweetener, fresh cream.",
+      "allergens": [
+        "Milk / Dairy",
+        "Tree nuts (hazelnut, almond)"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/triple-chocolate-crunch-cake-1.jpg",
+      "images": [
+        "assets/img/products/triple-chocolate-crunch-cake-1.jpg"
+      ],
+      "tags": [
+        "cake",
+        "caramel",
+        "hazelnut",
+        "chocolate",
+        "eggless",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "nutella-hazelnut-cake",
+      "name": "Nutella Hazelnut Cake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1250,
+      "mrp": 1435,
+      "rating": 5,
+      "reviews": 230,
+      "badges": [
+        "SIGNATURE",
+        "BESTSELLER",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
+      ],
+      "sizes": "poundCake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
+      ],
+      "desc": "Our flagship celebration cake featured on the SAiPH Bakes menu: decadent chocolate hazelnut sponge crowned with hazelnut truffles and chocolate drip.",
+      "long": "Our flagship celebration cake featured on the official SAiPH Bakes menu: decadent chocolate hazelnut sponge crowned with hazelnut truffles and signature chocolate drip. Handcrafted with zero maida and zero refined sugar. 100% Eggless and Gluten-Free. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, almond flour, pure roasted hazelnuts, artisanal sugar-free Nutella, Belgian cacao, dairy cream, stevia.",
+      "allergens": [
+        "Milk / Dairy",
+        "Tree nuts (hazelnut, almond)"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/nutella-hazelnut-cake.jpg",
+      "images": [
+        "assets/img/products/nutella-hazelnut-cake.jpg"
+      ],
+      "tags": [
+        "cake",
+        "nutella",
+        "hazelnut",
+        "signature-menu",
+        "eggless",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "sugar-free-almond-butter",
+      "name": "Sugar Free Almond Butter",
+      "brand": "khowdy",
+      "cats": [
+        "healthy-snacks"
+      ],
+      "price": 750,
+      "mrp": 862,
+      "rating": 4.9,
+      "reviews": 160,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "jar",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "vegan"
+      ],
+      "desc": "Stone-ground slow-roasted California almonds crafted into a creamy, nutrient-rich spread with zero added sugars, oils, or preservatives.",
+      "long": "Crafted exclusively from 100% slow-roasted California almonds stone-ground into a silky, golden-brown butter. Naturally rich in vitamin E, plant protein, and healthy monounsaturated fats with zero added sugar, palm oil, or preservatives. Drizzle over warm sourdough toast, swirl into morning oatmeal, or enjoy straight from the spoon.",
+      "ingredients": "100% slow-roasted California almonds, touch of Himalayan pink salt.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/sugar-free-almond-butter.jpg",
+      "images": [
+        "assets/img/products/sugar-free-almond-butter.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "khowdy"
+      ]
+    },
+    {
+      "id": "sugar-free-tiramisu-spread",
+      "name": "Sugar Free Tiramisu Spread",
+      "brand": "khowdy",
+      "cats": [
+        "healthy-snacks"
+      ],
+      "price": 550,
+      "mrp": 632,
+      "rating": 4.9,
+      "reviews": 161,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "jar",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "vegan"
+      ],
+      "desc": "Luxurious sugar-free dessert spread blending rich Italian espresso, roasted cashew cream, and single-origin dark cocoa solids.",
+      "long": "Inspired by the timeless romance of Venetian tiramisu: slow-simmered roasted cashew butter infused with bold dark-roast espresso and single-origin cocoa. Naturally sweetened with organic stevia and erythritol for a velvety, aromatic spread. Perfect on warm brioche, crepes, or fresh fruit.",
+      "ingredients": "Roasted cashews, single-origin cocoa solids, dark espresso beans, natural stevia & erythritol blend, cold-pressed coconut oil.",
+      "allergens": [
+        "Processed in a facility handling tree nuts and dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/sugar-free-tiramisu-spread.jpg",
+      "images": [
+        "assets/img/products/sugar-free-tiramisu-spread.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "khowdy"
+      ]
+    },
+    {
+      "id": "sugar-free-hazelnut-spread",
+      "name": "Sugar Free Hazelnut Spread",
+      "brand": "khowdy",
+      "cats": [
+        "healthy-snacks"
+      ],
+      "price": 650,
+      "mrp": 747,
+      "rating": 4.8,
+      "reviews": 221,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "jar",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "vegan"
+      ],
+      "desc": "Velvety sugar-free chocolate hazelnut spread crafted with 100% roasted Turkish hazelnuts, dark cocoa, and zero palm oil.",
+      "long": "A mindful tribute to classic gianduja: slow-roasted Turkish hazelnuts stone-ground into a rich, velvety butter folded with 70% dark Belgian cocoa. Sweetened gently with stevia and completely free from palm oil, hydrogenated fats, and refined sugar. Decadent, glossy, and deeply satisfying.",
+      "ingredients": "Roasted Turkish hazelnuts (65%), single-origin cocoa solids, natural stevia extract, cocoa butter, sunflower lecithin.",
+      "allergens": [
+        "Tree nuts (hazelnut)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/sugar-free-hazelnut-spread.jpg",
+      "images": [
+        "assets/img/products/sugar-free-hazelnut-spread.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "khowdy"
+      ]
+    },
+    {
+      "id": "assorted-diwali-mithai-barks-hamper",
+      "name": "Assorted Diwali Mithai & Barks Hamper",
+      "brand": "signature",
+      "cats": [
+        "hampers",
+        "corporate-gifting"
+      ],
+      "price": 1800,
+      "mrp": 2070,
+      "rating": 4.9,
+      "reviews": 116,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "single",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "vegan"
+      ],
+      "desc": "Curated festive gift hamper featuring sugar-free motichoor laddoos, pistachio laddoos, rose kaju katlis, and chocolate barks.",
+      "long": "A thoughtfully curated festive assortment celebrating Indian culinary heritage with mindful luxury: features two pieces each of our signature sugar-free Motichoor Laddoos, Pistachio Praline Laddoos, and Rose Kaju Katlis, paired with handcrafted Dark Chocolate Praline Bark. Housed in an embossed royal gold keepsake gift box.",
+      "ingredients": "Almond flour, gram flour, cashew nuts, pistachios, dark chocolate 70%, saffron, rose water, ghee, natural plant sweetener.",
+      "allergens": [
+        "Tree nuts (pistachio)"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/assorted-diwali-mithai-barks-hamper.png",
+      "images": [
+        "assets/img/products/assorted-diwali-mithai-barks-hamper.png"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "basque-cheesecake-hamper",
+      "name": "Basque Cheesecake Hamper",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "desserts"
+      ],
+      "price": 1500,
+      "mrp": 1724,
+      "rating": 4.8,
+      "reviews": 270,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free"
+      ],
+      "desc": "Luxury dessert hamper featuring your choice of Pistachio Basque Cheesecake or Kesar Rabdi Basque Cheesecake.",
+      "long": "Celebrate with artisanal European flair: choose between our caramelized Pistachio Basque Cheesecake infused with pure pistachio butter or our regal Kesar Rabdi Basque Cheesecake crowned with saffron rabdi. Housed in a custom ribbon-tied hamper box. 100% Gluten-Free.",
+      "ingredients": "Cream cheese, fresh dairy cream, almond flour, pistachios, saffron, full-fat milk reduction, natural sweeteners.",
+      "allergens": [
+        "Tree nuts (pistachio)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/basque-cheesecake-hamper.png",
+      "images": [
+        "assets/img/products/basque-cheesecake-hamper.png"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "mini-diwali-gift-hamper",
+      "name": "Mini Diwali Gift Hamper",
+      "brand": "signature",
+      "cats": [
+        "hampers",
+        "corporate-gifting"
+      ],
+      "price": 3500,
+      "mrp": 4024,
+      "rating": 4.8,
+      "reviews": 58,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "single",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free"
+      ],
+      "desc": "Luxury festive hamper pairing your choice of Basque cheesecake with dark chocolate fudge bites and savoury crackers.",
+      "long": "A balanced festive celebration box: includes your choice of our signature Pistachio or Kesar Rabdi Basque Cheesecake, paired with 6 melt-in-mouth dark chocolate fudge bites and crispy paprika garlic crackers. Presented in a luxury ribboned box. 100% Refined sugar-free.",
+      "ingredients": "Cream cheese, dark chocolate, almond flour, pistachios, saffron, dairy cream, olive oil, natural sweeteners.",
+      "allergens": [
+        "Tree nuts (pistachio)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/mini-diwali-gift-hamper.jpg",
+      "images": [
+        "assets/img/products/mini-diwali-gift-hamper.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "assorted-mithai-box-of-6",
+      "name": "Assorted Mithai Box of 6",
+      "brand": "signature",
+      "cats": [
+        "hampers",
+        "corporate-gifting"
+      ],
+      "price": 800,
+      "mrp": 919,
+      "rating": 5,
+      "reviews": 228,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "box",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "vegan"
+      ],
+      "desc": "Handcrafted luxury mithai box featuring 6 artisanal sugar-free sweets: motichoor, pistachio praline, and rose kaju katli.",
+      "long": "Six handcrafted festive treasures: includes two each of our signature sugar-free motichoor laddoos, roasted pistachio praline sweets, and organic rose kaju katlis. Made with premium nuts and zero refined sugar. Presented in a luxury gift box. 100% Eggless.",
+      "ingredients": "Gram flour, roasted pistachios, cashew nuts, saffron, organic rose petals, ghee, natural stevia & erythritol blend.",
+      "allergens": [
+        "Tree nuts (pistachio)"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/assorted-mithai-box-of-6.jpg",
+      "images": [
+        "assets/img/products/assorted-mithai-box-of-6.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "assorted-vegan-mithai-box-of-15",
+      "name": "Assorted Vegan Mithai Box of 15",
+      "brand": "signature",
+      "cats": [
+        "hampers",
+        "corporate-gifting"
+      ],
+      "price": 1800,
+      "mrp": 2070,
+      "rating": 4.9,
+      "reviews": 223,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "box",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "vegan"
+      ],
+      "desc": "Grand 15-piece festive gift box of pure vegan, sugar-free Indian sweets: motichoor, pistachio praline, and rose kaju katlis.",
+      "long": "A majestic 15-piece festive assortment crafted entirely plant-based and refined sugar-free: five each of our signature motichoor laddoos, roasted pistachio praline sweets, and fragrant rose kaju katlis made with virgin coconut oil and premium nuts. 100% Vegan and gluten-free.",
+      "ingredients": "Cashew nuts, roasted pistachios, gram flour, cold-pressed coconut oil, saffron, rose water, natural plant sweetener.",
+      "allergens": [
+        "Tree nuts (pistachio)"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/assorted-vegan-mithai-box-of-15.jpg",
+      "images": [
+        "assets/img/products/assorted-vegan-mithai-box-of-15.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "assorted-mithai-box-of-15",
+      "name": "Assorted Mithai Box of 15",
+      "brand": "signature",
+      "cats": [
+        "hampers",
+        "corporate-gifting"
+      ],
+      "price": 1800,
+      "mrp": 2070,
+      "rating": 4.9,
+      "reviews": 99,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "box",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free"
+      ],
+      "desc": "Grand 15-piece luxury mithai selection: Mysore Pak, pistachio praline, motichoor, rose kaju katli, and malai peda.",
+      "long": "An opulent collection of 15 royal Indian sweets made with zero refined sugar: three each of melt-in-mouth Mysore Pak, pistachio praline laddoo, saffron motichoor, rose kaju katli, and dark chocolate malai peda. Housed in a signature keepsake gold box. 100% Eggless.",
+      "ingredients": "Gram flour, cashews, pistachios, full-cream milk solids, dark chocolate, saffron, cardamom, ghee, natural plant sweetener.",
+      "allergens": [
+        "Tree nuts (pistachio)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/assorted-mithai-box-of-15.jpg",
+      "images": [
+        "assets/img/products/assorted-mithai-box-of-15.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "paprika-and-garlic-crackers",
+      "name": "Paprika and Garlic Crackers",
+      "brand": "khowdy",
+      "cats": [
+        "healthy-snacks"
+      ],
+      "price": 400,
+      "mrp": 459,
+      "rating": 4.9,
+      "reviews": 157,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "jar",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "vegan"
+      ],
+      "desc": "Crispy golden artisan crackers infused with smoked Spanish paprika, slow-roasted garlic, and cold-pressed olive oil.",
+      "long": "Golden-baked artisan crackers rolled thin for a sharp, delicate snap: seasoned with fragrant smoked pimentón paprika, roasted garlic chips, and cold-pressed oils. Wholesome, gluten-free, and vegan. An essential accompaniment for artisanal cheese boards, hummus dips, and evening grazing.",
+      "ingredients": "Almond flour, tapioca starch, smoked paprika, roasted garlic, cold-pressed olive oil, flaxseeds, sea salt.",
+      "allergens": [
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/paprika-and-garlic-crackers.jpg",
+      "images": [
+        "assets/img/products/paprika-and-garlic-crackers.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "khowdy"
+      ]
+    },
+    {
+      "id": "herb-and-cheese-crackers",
+      "name": "Herb and Cheese Crackers",
+      "brand": "khowdy",
+      "cats": [
+        "healthy-snacks"
+      ],
+      "price": 450,
+      "mrp": 517,
+      "rating": 5,
+      "reviews": 116,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "jar",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "vegan"
+      ],
+      "desc": "Crisp savoury crackers baked with aged white cheddar, fragrant Mediterranean rosemary, oregano, and toasted seeds.",
+      "long": "Delicate, golden-baked savoury crackers packed with sharp aged cheddar, crushed dried oregano, wild thyme, and toasted sesame seeds. Delivers a robust savory crunch in every bite with zero refined flour or trans fats. Perfect for dips, wine pairings, and mindful snacking.",
+      "ingredients": "Almond flour, aged white cheddar, dried Mediterranean herbs (oregano, rosemary, thyme), olive oil, sea salt.",
+      "allergens": [
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/herb-and-cheese-crackers.jpg",
+      "images": [
+        "assets/img/products/herb-and-cheese-crackers.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "khowdy"
+      ]
+    },
+    {
+      "id": "chocolate-kaju-katli-tart",
+      "name": "Chocolate Kaju Katli Tart",
+      "brand": "doughremi",
+      "cats": [
+        "desserts",
+        "pastries"
+      ],
+      "price": 600,
+      "mrp": 690,
+      "rating": 4.9,
+      "reviews": 231,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "single",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "vegan"
+      ],
+      "desc": "Buttery almond tart shell filled with velvety dark Belgian chocolate ganache and crowned with traditional silver-foiled kaju katli.",
+      "long": "An exquisite fusion of French patisserie and royal Indian confection: a crisp almond flour tart shell filled with 70% dark chocolate ganache, crowned with hand-cut cashew marzipan katli and edible silver foil. 100% Eggless, gluten-free, and refined sugar-free.",
+      "ingredients": "French T45 pastry flour, almond flour, cashew nuts, dark chocolate 70%, dairy cream, natural plant sweeteners, edible silver leaf.",
+      "allergens": [
+        "Tree nuts (almond)"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/chocolate-kaju-katli-tart.jpg",
+      "images": [
+        "assets/img/products/chocolate-kaju-katli-tart.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "kesar-rabdi-basque-cheesecake",
+      "name": "Kesar Rabdi Basque Cheesecake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "desserts"
+      ],
+      "price": 1100,
+      "mrp": 1265,
+      "rating": 4.9,
+      "reviews": 175,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free"
+      ],
+      "desc": "Caramelized Basque cheesecake infused with royal Kashmiri saffron, layered with slow-simmered sugar-free rabdi and pistachios.",
+      "long": "A regal celebration dessert merging Spanish culinary craft with Awadhi heritage: slow-baked Basque cheesecake infused with fragrant saffron threads, finished with a rich layer of creamy sugar-free rabdi and toasted Iranian pistachios. 100% Gluten-free, eggless, and refined sugar-free.",
+      "ingredients": "Cream cheese, fresh dairy cream, almond flour, Kashmiri saffron, full-fat milk reduction (rabdi), erythritol & stevia blend, pistachios.",
+      "allergens": [
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/kesar-rabdi-basque-cheesecake.jpg",
+      "images": [
+        "assets/img/products/kesar-rabdi-basque-cheesecake.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "pistachio-basque-cheesecake",
+      "name": "Pistachio Basque Cheesecake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "desserts"
+      ],
+      "price": 1300,
+      "mrp": 1494,
+      "rating": 4.8,
+      "reviews": 229,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free"
+      ],
+      "desc": "Velvety Spanish Basque cheesecake infused with pure Sicilian pistachio paste, finished with a caramelized burnt top.",
+      "long": "Slow-baked at high temperature to achieve the iconic caramelized Basque exterior while keeping the center silken and molten. Infused throughout with 100% pure pistachio butter, whipped cream cheese, and natural sweeteners. 100% Eggless, gluten-free, and refined sugar-free.",
+      "ingredients": "Cream cheese, dairy cream, pure roasted pistachio butter, almond flour, natural erythritol blend, crushed pistachios.",
+      "allergens": [
+        "Tree nuts (pistachio)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/pistachio-basque-cheesecake.jpg",
+      "images": [
+        "assets/img/products/pistachio-basque-cheesecake.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "pistachio-chocolate-fudge-bites",
+      "name": "Pistachio Chocolate Fudge Bites",
+      "brand": "doughremi",
+      "cats": [
+        "chocolates",
+        "desserts"
+      ],
+      "price": 1100,
+      "mrp": 1265,
+      "rating": 4.8,
+      "reviews": 116,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "single",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "vegan"
+      ],
+      "desc": "Twelve melt-in-mouth dark chocolate fudge squares topped with roasted pistachio praline and crisp cocoa feuilletine.",
+      "long": "Intensely rich bite-sized squares of 70% dark Belgian chocolate fudge, blended with roasted pistachio butter and finished with a crunchy pistachio praline crown. Box of 12 pieces. 100% Eggless, gluten-free, and refined sugar-free.",
+      "ingredients": "Dark chocolate 70%, roasted pistachio butter, dairy cream, coconut oil, natural erythritol, roasted pistachios.",
+      "allergens": [
+        "Tree nuts (pistachio)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/pistachio-chocolate-fudge-bites.jpg",
+      "images": [
+        "assets/img/products/pistachio-chocolate-fudge-bites.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "rasmalai-fudge-bites",
+      "name": "Rasmalai Fudge Bites",
+      "brand": "doughremi",
+      "cats": [
+        "chocolates",
+        "desserts"
+      ],
+      "price": 1000,
+      "mrp": 1150,
+      "rating": 5,
+      "reviews": 216,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "single",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "vegan"
+      ],
+      "desc": "Delicate white chocolate fudge squares infused with saffron milk, green cardamom, and toasted almond slivers.",
+      "long": "A contemporary tribute to royal rasmalai: velvety white cocoa butter fudge infused with saffron threads, crushed cardamom, and rose water, studded with toasted almond flakes. 100% Eggless, gluten-free, and sweetened without refined sugar.",
+      "ingredients": "Cocoa butter, dairy milk solids, Kashmiri saffron, green cardamom, roasted almonds, erythritol blend.",
+      "allergens": [
+        "Processed in a facility handling tree nuts and dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/rasmalai-fudge-bites.jpg",
+      "images": [
+        "assets/img/products/rasmalai-fudge-bites.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "chocolate-praline-barks",
+      "name": "Chocolate Praline Barks",
+      "brand": "doughremi",
+      "cats": [
+        "healthy-snacks",
+        "desserts"
+      ],
+      "price": 550,
+      "mrp": 632,
+      "rating": 5,
+      "reviews": 98,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "single",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "vegan"
+      ],
+      "desc": "Crisp shards of dark chocolate bark layered with caramelized hazelnut praline and sprinkled with Maldon sea salt.",
+      "long": "Hand-poured artisan dark chocolate slabs generously studded with crunchy roasted hazelnut praline, almond crisps, and flaky sea salt. Broken into rustic shards for a sublime texture contrast. Sweetened with stevia. 100% Gluten-Free and vegan.",
+      "ingredients": "Dark chocolate 70%, roasted hazelnuts, almond flour, coconut oil, natural plant sweetener, sea salt.",
+      "allergens": [
+        "Processed in a facility handling tree nuts and dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/chocolate-praline-barks.jpg",
+      "images": [
+        "assets/img/products/chocolate-praline-barks.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "motichoor-barks",
+      "name": "Motichoor Barks",
+      "brand": "doughremi",
+      "cats": [
+        "healthy-snacks",
+        "desserts"
+      ],
+      "price": 500,
+      "mrp": 575,
+      "rating": 4.8,
+      "reviews": 212,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "single",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "vegan"
+      ],
+      "desc": "Festive dark chocolate bark embedded with golden sugar-free motichoor pearls and toasted pistachio crisps.",
+      "long": "A showstopping festive delicacy: glossy dark chocolate slabs embedded with delicate pearls of sugar-free saffron motichoor and crushed green pistachios. Offers an irresistible contrast of creamy chocolate and spiced besan pearls. 100% Gluten-Free.",
+      "ingredients": "Dark chocolate 70%, gram flour (besan), ghee, saffron, natural erythritol sweetener, roasted pistachios.",
+      "allergens": [
+        "Processed in a facility handling tree nuts and dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/motichoor-barks.jpg",
+      "images": [
+        "assets/img/products/motichoor-barks.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "hazelnut-mocha-opera-pastry",
+      "name": "Hazelnut Mocha Opera Pastry",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 540,
+      "mrp": 621,
+      "rating": 4.7,
+      "reviews": 248,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "single",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Refined French opera slice featuring almond sponge soaked in espresso, hazelnut buttercream, and dark chocolate ganache.",
+      "long": "Classic French pâtisserie artistry: thin layers of almond joconde sponge soaked in dark roast espresso syrup, layered with smooth hazelnut praline buttercream and dark chocolate ganache. Baked with French T45 flour and zero refined sugar. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, roasted hazelnuts, espresso reduction, dark chocolate 70%, dairy cream, erythritol.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Tree nuts (hazelnut)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/hazelnut-mocha-opera-pastry.jpg",
+      "images": [
+        "assets/img/products/hazelnut-mocha-opera-pastry.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "mocha-caramel-crunch-mini-cake",
+      "name": "Mocha Caramel Crunch Mini Cake",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 690,
+      "mrp": 793,
+      "rating": 4.8,
+      "reviews": 83,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Petite celebration cake with mocha-infused sponge, slow-cooked caramel buttercream, and crunchy cashew brittle.",
+      "long": "A rich dessert centerpiece: moist cocoa-espresso sponge layered with whipped mocha cream, slow-simmered sugar-free salted caramel, and roasted cashew brittle. Baked with French T45 flour with zero refined sugar. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, single-origin cacao, dark espresso, house-made salted caramel, dairy cream, cashews.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/mocha-caramel-crunch-mini-cake.jpg",
+      "images": [
+        "assets/img/products/mocha-caramel-crunch-mini-cake.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "vanilla-basque-cheesecake",
+      "name": "Vanilla Basque Cheesecake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "desserts"
+      ],
+      "price": 1700,
+      "mrp": 1954,
+      "rating": 5,
+      "reviews": 66,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto"
+      ],
+      "desc": "Classic burnt Basque cheesecake made with pure Madagascar Bourbon vanilla beans and rich whipped cream cheese.",
+      "long": "The purest expression of the Basque tradition: velvety cream cheese infused with aromatic Madagascar vanilla beans, baked to deep golden caramelized perfection. Intensely creamy at the center with gentle caramelized notes on the crust. 100% Gluten-Free and refined sugar-free.",
+      "ingredients": "Cream cheese, fresh dairy cream, almond flour, Madagascar Bourbon vanilla bean, natural stevia & erythritol blend.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/vanilla-basque-cheesecake.jpg",
+      "images": [
+        "assets/img/products/vanilla-basque-cheesecake.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "chocolate-basque-cheesecake",
+      "name": "Chocolate Basque Cheesecake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "desserts"
+      ],
+      "price": 1600,
+      "mrp": 1839,
+      "rating": 4.9,
+      "reviews": 52,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto"
+      ],
+      "desc": "Decadent dark chocolate Basque cheesecake featuring a crackled caramelized crust and molten 70% cocoa core.",
+      "long": "Rich 70% Belgian dark chocolate folded into creamy cream cheese and baked until deeply caramelized on top while retaining a soft, fudge-like interior. Crafted without maida or refined sugars. 100% Eggless and gluten-free.",
+      "ingredients": "Cream cheese, dark Belgian chocolate 70%, fresh cream, almond flour, single-origin cacao, natural plant sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/chocolate-basque-cheesecake.jpg",
+      "images": [
+        "assets/img/products/chocolate-basque-cheesecake.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "multi-grain-loaf",
+      "name": "Multi Grain Loaf",
+      "brand": "khowdy",
+      "cats": [
+        "breads"
+      ],
+      "price": 315,
+      "mrp": 362,
+      "rating": 5,
+      "reviews": 177,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "loaf",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto"
+      ],
+      "desc": "Nutrient-packed artisan sandwich loaf baked with whole wheat, oats, barley, millet, and roasted seeds.",
+      "long": "An everyday staple elevated to artisan standards: slow-fermented five-grain loaf packed with whole wheat, rolled oats, pearl barley, finger millet, and toasted seeds. Yields a tender, fragrant crumb with zero refined sugar. 100% Vegan.",
+      "ingredients": "Whole wheat flour, rolled oats, pearl barley, ragi, flaxseeds, sunflower seeds, olive oil, yeast, sea salt.",
+      "allergens": [
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/multi-grain-loaf.png",
+      "images": [
+        "assets/img/products/multi-grain-loaf.png"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "khowdy"
+      ]
+    },
+    {
+      "id": "triple-chocolate-crunch-mini-cake",
+      "name": "Triple Chocolate Crunch Mini Cake",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 765,
+      "mrp": 879,
+      "rating": 4.9,
+      "reviews": 237,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Three layers of dark, milk, and white chocolate mousse over cocoa sponge with a crisp praline crunch base.",
+      "long": "An architectural chocolate triumph: layers of airy dark, milk, and white chocolate cream resting upon a moist cocoa sponge and a feuilletine praline crunch base. Crafted with zero maida and zero refined sugar. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, dark chocolate 70%, milk chocolate, white chocolate, fresh cream, hazelnut praline.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/triple-chocolate-crunch-mini-cake.jpg",
+      "images": [
+        "assets/img/products/triple-chocolate-crunch-mini-cake.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "blueberry-cream-mini-cake",
+      "name": "Blueberry Cream Mini Cake",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 650,
+      "mrp": 747,
+      "rating": 4.8,
+      "reviews": 129,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Fluffy vanilla sponge layered with wild blueberry compote and light whipped chantilly cream.",
+      "long": "Delicate, golden vanilla sponge crafted with French T45 flour, layered with slow-simmered wild blueberry compote and clouds of whipped chantilly cream. Bright, fruity, and naturally sweetened with zero refined sugar. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, wild blueberries, dairy cream, Madagascar vanilla bean, natural stevia & erythritol blend.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/blueberry-cream-mini-cake.jpg",
+      "images": [
+        "assets/img/products/blueberry-cream-mini-cake.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "chocolate-blueberry-mini-cake",
+      "name": "Chocolate Blueberry Mini Cake",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 765,
+      "mrp": 879,
+      "rating": 4.8,
+      "reviews": 276,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Dark Belgian chocolate sponge layered with tart blueberry compote and rich 70% cocoa ganache.",
+      "long": "The harmonious balance of deep dark chocolate and tangy wild berries: moist cocoa sponge made with French T45 flour, enveloped in 70% dark Belgian chocolate ganache and tart blueberry reduction. 100% Eggless and refined sugar-free.",
+      "ingredients": "French T45 pastry flour, almond flour, dark chocolate 70%, blueberries, fresh cream, single-origin cocoa, natural plant sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/chocolate-blueberry-mini-cake.jpg",
+      "images": [
+        "assets/img/products/chocolate-blueberry-mini-cake.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "mix-fruit-mini-cake",
+      "name": "Mix Fruit Mini Cake",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 765,
+      "mrp": 879,
+      "rating": 4.8,
+      "reviews": 170,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Delicate vanilla sponge layered with whipped mascarpone cream and an abundance of fresh seasonal fruits.",
+      "long": "A vibrant celebration cake: tender vanilla sponge layered with light dairy cream and crowned with freshly sliced strawberries, kiwi, pomegranate, and seasonal fruit. Light, refreshing, and free from refined sugar. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, fresh seasonal fruits, dairy cream, Madagascar vanilla, natural erythritol.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/mix-fruit-mini-cake.jpg",
+      "images": [
+        "assets/img/products/mix-fruit-mini-cake.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "hazelnut-crunch-mini-cake",
+      "name": "Hazelnut Crunch Mini Cake",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 670,
+      "mrp": 770,
+      "rating": 5,
+      "reviews": 69,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Moist cocoa sponge layered with stone-ground roasted hazelnut praline butter and silky dark chocolate ganache.",
+      "long": "Layers of tender chocolate sponge filled with stone-ground sugar-free hazelnut butter, dark chocolate ganache, and caramelized hazelnut crunch. Baked fresh with French T45 flour and zero refined sugar. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, Turkish hazelnuts, dark chocolate 70%, dairy cream, natural plant sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Tree nuts (hazelnut)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/hazelnut-crunch-mini-cake.jpg",
+      "images": [
+        "assets/img/products/hazelnut-crunch-mini-cake.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "pineapple-cream-mini-cake",
+      "name": "Pineapple Cream Mini Cake",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 530,
+      "mrp": 609,
+      "rating": 4.7,
+      "reviews": 52,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Tender sponge soaked in real pineapple nectar, layered with slow-simmered pineapple compote and fresh cream.",
+      "long": "A nostalgic tropical favourite: light sponge crafted with French T45 flour, layered with juicy pineapple compote and velvety whipped dairy cream, topped with dehydrated pineapple blossoms. 100% Eggless and refined sugar-free.",
+      "ingredients": "French T45 pastry flour, almond flour, fresh pineapple compote, dairy cream, Madagascar vanilla, natural erythritol.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/pineapple-cream-mini-cake.jpg",
+      "images": [
+        "assets/img/products/pineapple-cream-mini-cake.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "belgian-chocolate-mini-cake",
+      "name": "Belgian Chocolate Mini Cake",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 620,
+      "mrp": 713,
+      "rating": 4.8,
+      "reviews": 244,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Intensely rich chocolate cake layered with 70% Callebaut dark chocolate mousse and mirror glaze.",
+      "long": "Pure unadulterated Belgian chocolate luxury: moist cocoa sponge made with French T45 flour, layered with airy dark chocolate mousse and draped in a glossy dark glaze. Decadent, silky, and free from refined sugar. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, Callebaut 70% dark chocolate, single-origin cacao, fresh cream, erythritol.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/belgian-chocolate-mini-cake.jpg",
+      "images": [
+        "assets/img/products/belgian-chocolate-mini-cake.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "tiramisu-brownies",
+      "name": "Tiramisu Brownies",
+      "brand": "doughremi",
+      "cats": [
+        "brownies",
+        "pastries"
+      ],
+      "price": 1530,
+      "mrp": 1759,
+      "rating": 4.8,
+      "reviews": 66,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "box",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "8 pcs of fudgy almond flour brownies loaded with dark chocolate and layered with delicate tiramisu biscuits, bold espres.",
+      "long": "8 pcs of fudgy almond flour brownies loaded with dark chocolate and layered with delicate tiramisu biscuits, bold espresso and sugar free tiramisu cream. Rich, gooey and irresistibly indulgent.",
+      "ingredients": "Almond flour, vegan butter, dark chocolate, cookie dough, chocolate chips, sweetened with stevia.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/tiramisu-brownies.jpg",
+      "images": [
+        "assets/img/products/tiramisu-brownies.jpg",
+        "assets/img/products/tiramisu-brownies-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "triple-chocolate-crunch-cake-1",
+      "name": "Triple Chocolate Crunch Cake",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1710,
+      "mrp": 1966,
+      "rating": 4.8,
+      "reviews": 231,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Decadent celebration cake featuring dark, milk, and white chocolate mousse layers over a crisp praline base.",
+      "long": "A breathtaking tiered chocolate masterpiece: layered with dark, milk, and white chocolate cream, cocoa sponge, and crunchy hazelnut praline. Baked fresh with French T45 flour with zero refined sugar. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, dark chocolate, milk chocolate, white chocolate, hazelnut praline, dairy cream.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/triple-chocolate-crunch-cake-1.jpg",
+      "images": [
+        "assets/img/products/triple-chocolate-crunch-cake-1.jpg",
+        "assets/img/products/triple-chocolate-crunch-cake-1-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "chocolate-caramel-noir-mini-cake",
+      "name": "Chocolate Caramel Noir Mini Cake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1200,
+      "mrp": 1380,
+      "rating": 4.9,
+      "reviews": 90,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Dark chocolate sponge layered with sea-salted caramel cream, dark ganache, and caramelized crunch.",
+      "long": "Deep cocoa sponge layered with rich dark chocolate ganache, house-made sea-salted caramel, and caramelized popcorn crisps. Sophisticated, bittersweet, and completely refined sugar-free. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, dark chocolate 70%, sea-salted caramel, dairy cream, natural plant sweetener.",
+      "allergens": [
+        "Tree nuts (almond)"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/chocolate-caramel-noir-mini-cake.jpg",
+      "images": [
+        "assets/img/products/chocolate-caramel-noir-mini-cake.jpg",
+        "assets/img/products/chocolate-caramel-noir-mini-cake-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "berry-chantilly-mini-cake",
+      "name": "Berry Chantilly Mini Cake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1500,
+      "mrp": 1724,
+      "rating": 4.9,
+      "reviews": 274,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Featherlight vanilla sponge layered with mixed forest berry compote and delicate French chantilly cream.",
+      "long": "Light vanilla bean sponge crafted with French T45 flour, layered with a ruby compote of raspberries, blackberries, and strawberries, finished with clouds of chantilly frosting. 100% Eggless and refined sugar-free.",
+      "ingredients": "French T45 pastry flour, almond flour, raspberries, blackberries, strawberries, dairy cream, Madagascar vanilla.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/berry-chantilly-mini-cake.jpg",
+      "images": [
+        "assets/img/products/berry-chantilly-mini-cake.jpg",
+        "assets/img/products/berry-chantilly-mini-cake-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "marble-opulence-mini-cake",
+      "name": "Marble Opulence Mini Cake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1350,
+      "mrp": 1552,
+      "rating": 4.7,
+      "reviews": 155,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto"
+      ],
+      "desc": "Swirled dark chocolate and vanilla sponge layered with baked cheesecake cream and marbled chocolate curls.",
+      "long": "An artistic fusion of two classics: tender swirls of dark cocoa and Bourbon vanilla sponge, filled with smooth baked cheesecake cream and draped in marbled chocolate ganache. 100% Eggless and refined sugar-free.",
+      "ingredients": "French T45 pastry flour, almond flour, cream cheese, dark chocolate, dairy cream, Madagascar vanilla, natural sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/marble-opulence-mini-cake.jpg",
+      "images": [
+        "assets/img/products/marble-opulence-mini-cake.jpg",
+        "assets/img/products/marble-opulence-mini-cake-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "chocolate-caramel-noir-cake",
+      "name": "Chocolate Caramel Noir Cake",
+      "brand": "signature",
+      "cats": [
+        "muffins"
+      ],
+      "price": 4000,
+      "mrp": 4600,
+      "rating": 4.7,
+      "reviews": 168,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto"
+      ],
+      "desc": "Grand celebration cake layered with single-origin dark chocolate, sea-salted caramel, and caramelized praline.",
+      "long": "An opulent dark chocolate showstopper: moist cocoa sponge crafted with French T45 flour, filled with dark ganache, slow-simmered sea-salted caramel, and crunchy hazelnut praline. 100% Eggless and refined sugar-free.",
+      "ingredients": "French T45 pastry flour, almond flour, single-origin cocoa, dark chocolate 70%, salted caramel, dairy cream, hazelnuts.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/chocolate-caramel-noir-cake.jpg",
+      "images": [
+        "assets/img/products/chocolate-caramel-noir-cake.jpg",
+        "assets/img/products/chocolate-caramel-noir-cake-2.jpg",
+        "assets/img/products/chocolate-caramel-noir-cake-3.jpg",
+        "assets/img/products/chocolate-caramel-noir-cake-4.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "berry-chantilly-cake",
+      "name": "Berry Chantilly Cake",
+      "brand": "signature",
+      "cats": [
+        "muffins"
+      ],
+      "price": 5000,
+      "mrp": 5750,
+      "rating": 4.7,
+      "reviews": 192,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Grand celebration cake layered with wild berry compote, whipped chantilly cream, and fresh forest berries.",
+      "long": "Elegant, refreshing, and celebration-ready: tender vanilla sponge layered with ruby forest berry reduction and clouds of French chantilly cream, crowned with fresh berries. Baked with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, forest berries, dairy cream, Madagascar vanilla bean, natural stevia & erythritol blend.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/berry-chantilly-cake.jpg",
+      "images": [
+        "assets/img/products/berry-chantilly-cake.jpg",
+        "assets/img/products/berry-chantilly-cake-2.jpg",
+        "assets/img/products/berry-chantilly-cake-3.jpg",
+        "assets/img/products/berry-chantilly-cake-4.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "marble-opulence-cake",
+      "name": "Marble Opulence Cake",
+      "brand": "signature",
+      "cats": [
+        "muffins"
+      ],
+      "price": 4500,
+      "mrp": 5175,
+      "rating": 5,
+      "reviews": 226,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto"
+      ],
+      "desc": "Artisan celebration cake featuring intricate swirls of Belgian cocoa and vanilla sponge with chocolate cheesecake frosting.",
+      "long": "A majestic cake combining rich Belgian chocolate and fragrant vanilla bean sponge, filled with velvety cheesecake mousse and glossy marbled ganache. Zero refined sugar, zero maida, 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, cream cheese, Belgian dark chocolate, dairy cream, natural erythritol.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/marble-opulence-cake.jpg",
+      "images": [
+        "assets/img/products/marble-opulence-cake.jpg",
+        "assets/img/products/marble-opulence-cake-2.jpg",
+        "assets/img/products/marble-opulence-cake-3.jpg",
+        "assets/img/products/marble-opulence-cake-4.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "brown-butter-cookie-box",
+      "name": "Brown Butter Cookie Box",
+      "brand": "khowdy",
+      "cats": [
+        "cookies"
+      ],
+      "price": 765,
+      "mrp": 879,
+      "rating": 4.9,
+      "reviews": 89,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "box",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Melt-in-mouth French shortbread cookies baked with nut-brown butter, almond flour, and a pinch of fleur de sel.",
+      "long": "Slowly browned grass-fed butter gives these delicate shortbread biscuits their intoxicating hazelnut aroma and rich golden crumb. Baked with almond flour and natural sweetness. Box of 8 artisan cookies. 100% Eggless and gluten-free.",
+      "ingredients": "Almond flour, grass-fed brown butter, natural erythritol blend, vanilla bean, sea salt.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/brown-butter-cookie-box.jpg",
+      "images": [
+        "assets/img/products/brown-butter-cookie-box.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "khowdy"
+      ]
+    },
+    {
+      "id": "gooey-chocolate-muffins",
+      "name": "Gooey Chocolate Muffins",
+      "brand": "doughremi",
+      "cats": [
+        "muffins"
+      ],
+      "price": 1260,
+      "mrp": 1449,
+      "rating": 4.7,
+      "reviews": 64,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "box",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Rich dark chocolate almond muffins with a molten chocolate fudge center and crisp chocolate chip crown.",
+      "long": "Baked with single-origin cocoa and stone-ground almond flour, these decadent muffins feature a rich, fudgy center that turns molten when warmed. Naturally sweetened with zero refined sugar. Box of 4 muffins. 100% Eggless.",
+      "ingredients": "Almond flour, dark chocolate 70%, single-origin cocoa, dairy butter, natural plant sweetener, cold-pressed oils.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/gooey-chocolate-muffins.jpg",
+      "images": [
+        "assets/img/products/gooey-chocolate-muffins.jpg",
+        "assets/img/products/gooey-chocolate-muffins-2.jpg",
+        "assets/img/products/gooey-chocolate-muffins-3.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "classic-cinnamon-roll",
+      "name": "Classic Cinnamon Roll",
+      "brand": "doughremi",
+      "cats": [
+        "healthy-snacks",
+        "desserts"
+      ],
+      "price": 270,
+      "mrp": 310,
+      "rating": 4.9,
+      "reviews": 62,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "single",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto"
+      ],
+      "desc": "Warm, pillowy brioche roll swirled with fragrant Ceylon cinnamon and topped with silky cream cheese glaze.",
+      "long": "Soft, slow-fermented enriched dough rolled with brown butter and Ceylon cinnamon, baked golden and drizzled with a decadent sugar-free vanilla cream cheese glaze. Baked with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, butter, Ceylon cinnamon, cream cheese, natural erythritol blend, milk.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/classic-cinnamon-roll.jpg",
+      "images": [
+        "assets/img/products/classic-cinnamon-roll.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "hazelnut-cinnamon-roll",
+      "name": "Hazelnut Cinnamon Roll",
+      "brand": "doughremi",
+      "cats": [
+        "healthy-snacks",
+        "desserts"
+      ],
+      "price": 315,
+      "mrp": 362,
+      "rating": 4.9,
+      "reviews": 243,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "single",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto"
+      ],
+      "desc": "Soft bakery cinnamon roll swirled with roasted Turkish hazelnut butter and dark chocolate drizzle.",
+      "long": "Pillowy brioche dough swirled with aromatic cinnamon and stone-ground hazelnut butter, finished with crushed roasted hazelnuts and dark chocolate glaze. Zero refined sugar. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, butter, Ceylon cinnamon, roasted hazelnuts, dark chocolate, cream cheese, natural sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Tree nuts (hazelnut)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/hazelnut-cinnamon-roll.jpg",
+      "images": [
+        "assets/img/products/hazelnut-cinnamon-roll.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "tiramisu-cinnamon-roll",
+      "name": "Tiramisu Cinnamon Roll",
+      "brand": "doughremi",
+      "cats": [
+        "healthy-snacks",
+        "desserts"
+      ],
+      "price": 360,
+      "mrp": 413,
+      "rating": 4.8,
+      "reviews": 200,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "single",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto"
+      ],
+      "desc": "Decadent bakery roll infused with dark roast espresso, cinnamon butter, and whipped mascarpone frosting.",
+      "long": "A brilliant coffeehouse marriage: cinnamon brioche dough soaked with dark espresso syrup, layered with sweet mascarpone frosting and dusted with dark cocoa. Baked with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, butter, espresso reduction, Ceylon cinnamon, mascarpone cream, dark cocoa, natural sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/tiramisu-cinnamon-roll.jpg",
+      "images": [
+        "assets/img/products/tiramisu-cinnamon-roll.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "pistachio-cinnamon-roll",
+      "name": "Pistachio Cinnamon Roll",
+      "brand": "doughremi",
+      "cats": [
+        "healthy-snacks",
+        "desserts"
+      ],
+      "price": 360,
+      "mrp": 413,
+      "rating": 4.8,
+      "reviews": 139,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "single",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto"
+      ],
+      "desc": "Artisan cinnamon swirl roll filled with pure pistachio cream and topped with crushed Iranian pistachios.",
+      "long": "Slow-fermented brioche dough rolled with fragrant cinnamon butter and luscious pure pistachio paste, finished with a smooth cream glaze and chopped green pistachios. 100% Eggless and refined sugar-free.",
+      "ingredients": "French T45 pastry flour, butter, pure pistachio paste, Ceylon cinnamon, cream cheese, pistachios, natural sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Tree nuts (pistachio)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/pistachio-cinnamon-roll.jpg",
+      "images": [
+        "assets/img/products/pistachio-cinnamon-roll.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "brookie-box",
+      "name": "Brookie Box",
+      "brand": "doughremi",
+      "cats": [
+        "brownies",
+        "pastries"
+      ],
+      "price": 1350,
+      "mrp": 1552,
+      "rating": 4.8,
+      "reviews": 104,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "box",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "The ultimate hybrid treat: chewy chocolate chip cookie dough baked together with fudgy dark chocolate brownie.",
+      "long": "Why choose between a cookie and a brownie? Enjoy the best of both worlds with our signature brookies: a golden chewy chocolate chip cookie crust fused with a dense, melt-in-the-mouth dark chocolate brownie core. Box of 8 pieces. 100% Gluten-Free.",
+      "ingredients": "Almond flour, dark chocolate 70%, vegan butter, chocolate chips, natural stevia & erythritol blend, flaxseeds.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/brookie-box.png",
+      "images": [
+        "assets/img/products/brookie-box.png"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "hazelnut-melt-cookie-box",
+      "name": "Hazelnut Melt Cookie Box",
+      "brand": "doughremi",
+      "cats": [
+        "cookies"
+      ],
+      "price": 855,
+      "mrp": 983,
+      "rating": 5,
+      "reviews": 246,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "box",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Decadent chocolate cookies filled with a molten sugar-free hazelnut center and studded with roasted hazelnuts.",
+      "long": "Thick, bakery-style dark chocolate cookies with a crisp exterior and a warm molten hazelnut core. Baked with almond flour, pure cocoa, and roasted Turkish hazelnuts with zero refined sugar. Box of 6 cookies. 100% Eggless.",
+      "ingredients": "Almond flour, roasted hazelnuts, dark chocolate, coconut oil, natural erythritol, sea salt.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Tree nuts (hazelnut)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/hazelnut-melt-cookie-box.png",
+      "images": [
+        "assets/img/products/hazelnut-melt-cookie-box.png",
+        "assets/img/products/hazelnut-melt-cookie-box-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "pistachio-chocolate-cookie-box",
+      "name": "Pistachio Chocolate Cookie Box",
+      "brand": "doughremi",
+      "cats": [
+        "cookies"
+      ],
+      "price": 810,
+      "mrp": 931,
+      "rating": 4.9,
+      "reviews": 250,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "box",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Chunky artisan cookies loaded with roasted pistachios, dark chocolate chunks, and stone-ground almond flour.",
+      "long": "Generously packed with roasted green pistachios and 70% dark chocolate chunks: a buttery, golden-baked cookie with a rich nutty aroma and tender center. 100% Eggless, gluten-free, and refined sugar-free. Box of 6 cookies.",
+      "ingredients": "Almond flour, roasted pistachios, dark chocolate 70%, butter, natural plant sweetener, sea salt.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Tree nuts (pistachio)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/pistachio-chocolate-cookie-box.jpg",
+      "images": [
+        "assets/img/products/pistachio-chocolate-cookie-box.jpg",
+        "assets/img/products/pistachio-chocolate-cookie-box-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "double-chocolate-cookie-box",
+      "name": "Double Chocolate Cookie Box",
+      "brand": "doughremi",
+      "cats": [
+        "cookies"
+      ],
+      "price": 765,
+      "mrp": 879,
+      "rating": 5,
+      "reviews": 185,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "box",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Deeply fudgy dark cocoa cookies loaded with molten dark chocolate chips and a sprinkle of sea salt.",
+      "long": "Double the chocolate, double the indulgence: rich cocoa dough baked to a chewy, fudge-like center and studded with dark chocolate chunks and sea salt flakes. Box of 6 cookies. 100% Eggless and gluten-free.",
+      "ingredients": "Almond flour, dark chocolate chips, single-origin cacao, grass-fed butter, natural erythritol blend.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/double-chocolate-cookie-box.jpg",
+      "images": [
+        "assets/img/products/double-chocolate-cookie-box.jpg",
+        "assets/img/products/double-chocolate-cookie-box-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "cacao-butter-cake",
+      "name": "Cacao Butter Cake",
+      "brand": "khowdy",
+      "cats": [
+        "muffins"
+      ],
+      "price": 1395,
+      "mrp": 1604,
+      "rating": 4.9,
+      "reviews": 278,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Rich, tender tea loaf baked with pure cocoa butter, dark chocolate chips, and aromatic vanilla bean.",
+      "long": "An exceptionally moist morning teacake: baked with pure cocoa butter, stone-ground almond flour, and dark chocolate chips. Delivers a deep chocolate aroma and velvety crumb. Perfect with afternoon tea. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, cocoa butter, dark chocolate chips, dairy milk, natural plant sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/cacao-butter-cake.jpg",
+      "images": [
+        "assets/img/products/cacao-butter-cake.jpg",
+        "assets/img/products/cacao-butter-cake-2.png"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "khowdy"
+      ]
+    },
+    {
+      "id": "filter-coffee-fudge-bites",
+      "name": "Filter Coffee Fudge Bites",
+      "brand": "khowdy",
+      "cats": [
+        "chocolates",
+        "desserts"
+      ],
+      "price": 900,
+      "mrp": 1035,
+      "rating": 5,
+      "reviews": 149,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "single",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "vegan"
+      ],
+      "desc": "Bite-sized squares of dark chocolate fudge infused with South Indian chicory-rich filter coffee.",
+      "long": "A celebration of South Indian coffee culture: rich dark chocolate fudge steeped with intensely aromatic filter coffee decoction. Smooth, bittersweet, and decadent. Box of 12 pieces. 100% Eggless and refined sugar-free.",
+      "ingredients": "Dark chocolate 70%, filter coffee decoction, dairy cream, coconut oil, natural erythritol, cocoa butter.",
+      "allergens": [
+        "Processed in a facility handling tree nuts and dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/filter-coffee-fudge-bites.jpg",
+      "images": [
+        "assets/img/products/filter-coffee-fudge-bites.jpg",
+        "assets/img/products/filter-coffee-fudge-bites-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "khowdy"
+      ]
+    },
+    {
+      "id": "dark-chocolate-praline-fudge-bites",
+      "name": "Dark Chocolate Praline Fudge Bites",
+      "brand": "khowdy",
+      "cats": [
+        "chocolates",
+        "desserts"
+      ],
+      "price": 1000,
+      "mrp": 1150,
+      "rating": 4.8,
+      "reviews": 187,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "single",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "vegan"
+      ],
+      "desc": "Velvety dark chocolate fudge squares studded with caramelized almond and cashew praline.",
+      "long": "Rich 70% Belgian chocolate fudge blended with golden caramelized nut praline for an exquisite contrast of silky fudge and crunchy nut crisps. Box of 12 pieces. 100% Eggless, gluten-free, and sugar-free.",
+      "ingredients": "Dark chocolate 70%, roasted almonds, cashews, dairy cream, cocoa butter, natural stevia & erythritol blend.",
+      "allergens": [
+        "Processed in a facility handling tree nuts and dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/dark-chocolate-praline-fudge-bites.jpg",
+      "images": [
+        "assets/img/products/dark-chocolate-praline-fudge-bites.jpg",
+        "assets/img/products/dark-chocolate-praline-fudge-bites-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "khowdy"
+      ]
+    },
+    {
+      "id": "dark-chocolate-babka",
+      "name": "Dark Chocolate Babka",
+      "brand": "khowdy",
+      "cats": [
+        "breads"
+      ],
+      "price": 1400,
+      "mrp": 1609,
+      "rating": 4.8,
+      "reviews": 164,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "loaf",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Artisan brioche babka loaf twisted with endless ribbons of 70% dark Belgian chocolate and roasted almonds.",
+      "long": "A traditional Jewish bakery masterpiece: slow-fermented enriched dough ribboned with dark chocolate ganache, rolled and twisted by hand before baking to a golden, glossy finish. Baked with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, butter, dark chocolate 70%, almond slivers, milk, natural plant sweetener, yeast.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/dark-chocolate-babka.png",
+      "images": [
+        "assets/img/products/dark-chocolate-babka.png",
+        "assets/img/products/dark-chocolate-babka-2.png"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "khowdy"
+      ]
+    },
+    {
+      "id": "pistachio-babka",
+      "name": "Pistachio Babka",
+      "brand": "khowdy",
+      "cats": [
+        "breads"
+      ],
+      "price": 1600,
+      "mrp": 1839,
+      "rating": 5,
+      "reviews": 264,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "loaf",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Golden twisted artisan babka loaf filled with house-made sugar-free pistachio butter and toasted pistachios.",
+      "long": "Slow-fermented bakery dough layered with creamy green pistachio butter and toasted pistachio slivers, braided into a stunning marbled loaf. Aromatic, buttery, and baked fresh with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, butter, pure pistachio butter, roasted pistachios, milk, natural sweetener, yeast.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Tree nuts (pistachio)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/pistachio-babka.png",
+      "images": [
+        "assets/img/products/pistachio-babka.png",
+        "assets/img/products/pistachio-babka-2.png"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "khowdy"
+      ]
+    },
+    {
+      "id": "ragi-loaf",
+      "name": "Ragi Loaf",
+      "brand": "khowdy",
+      "cats": [
+        "breads"
+      ],
+      "price": 350,
+      "mrp": 402,
+      "rating": 4.8,
+      "reviews": 208,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "loaf",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto"
+      ],
+      "desc": "Hearty, nutrient-dense daily loaf crafted with sprouted finger millet (ragi), whole grains, and flaxseeds.",
+      "long": "Packed with calcium, dietary fiber, and ancient grain goodness: slow-fermented sprouted ragi loaf with a tender, moist crumb and earthy nutty flavor. Ideal for wholesome morning toast and savoury sandwiches. Zero maida, zero sugar.",
+      "ingredients": "Sprouted ragi (finger millet) flour, whole wheat flour, golden flaxseed, olive oil, yeast, sea salt, water.",
+      "allergens": [
+        "Processed in a facility handling tree nuts and dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/ragi-loaf.png",
+      "images": [
+        "assets/img/products/ragi-loaf.png"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "khowdy"
+      ]
+    },
+    {
+      "id": "mixed-seed-loaf",
+      "name": "Mixed Seed Loaf",
+      "brand": "khowdy",
+      "cats": [
+        "breads"
+      ],
+      "price": 500,
+      "mrp": 575,
+      "rating": 5,
+      "reviews": 98,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "loaf",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto"
+      ],
+      "desc": "Crusty artisan loaf packed with roasted pumpkin, sunflower, sesame, and golden flaxseeds.",
+      "long": "A nutrient-rich everyday sandwich bread: studded inside and crust-coated with a roasted quartet of pumpkin, sunflower, flax, and sesame seeds. Baked with zero maida and no chemical dough conditioners. 100% Vegan.",
+      "ingredients": "Whole wheat flour, oat flour, roasted pumpkin seeds, sunflower seeds, flaxseeds, sesame seeds, olive oil, sea salt, yeast.",
+      "allergens": [
+        "Processed in a facility handling tree nuts and dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/mixed-seed-loaf.png",
+      "images": [
+        "assets/img/products/mixed-seed-loaf.png"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "khowdy"
+      ]
+    },
+    {
+      "id": "almond-loaf",
+      "name": "Almond Loaf",
+      "brand": "khowdy",
+      "cats": [
+        "breads"
+      ],
+      "price": 800,
+      "mrp": 919,
+      "rating": 4.8,
+      "reviews": 263,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "loaf",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto"
+      ],
+      "desc": "Wholesome, tender daily sandwich loaf crafted from 100% pure stone-ground almond flour and golden flaxseed.",
+      "long": "Our signature grain-free daily loaf: baked exclusively with premium blanched almond flour, cold-pressed oils, and golden flaxseeds. Naturally low in carbs, high in clean protein, and completely free from gluten, maida, and refined sugars. Ideal for toast and sandwiches.",
+      "ingredients": "100% blanched almond flour, cold-pressed oils, golden flaxseed, psyllium husk, baking powder, sea salt, water.",
+      "allergens": [
+        "Tree nuts (almond)"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/almond-loaf.png",
+      "images": [
+        "assets/img/products/almond-loaf.png"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "khowdy"
+      ]
+    },
+    {
+      "id": "brown-butter-cake",
+      "name": "Brown Butter Cake",
+      "brand": "khowdy",
+      "cats": [
+        "muffins"
+      ],
+      "price": 1395,
+      "mrp": 1604,
+      "rating": 4.7,
+      "reviews": 179,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Moist, fragrant afternoon tea loaf baked with slow-caramelized grass-fed brown butter and pure vanilla.",
+      "long": "The deep, nutty aroma of browned grass-fed butter infuses every crumb of this delicate loaf teacake. Baked with French T45 flour and almond flour with natural plant sweetness. Perfect with morning coffee or tea. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, grass-fed brown butter, dairy milk, Madagascar vanilla, natural erythritol.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/brown-butter-cake.png",
+      "images": [
+        "assets/img/products/brown-butter-cake.png"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "khowdy"
+      ]
+    },
+    {
+      "id": "triple-chocolate-cheesecake-brownie",
+      "name": "Triple Chocolate Cheesecake Brownie",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "desserts"
+      ],
+      "price": 1600,
+      "mrp": 1839,
+      "rating": 4.8,
+      "reviews": 132,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free"
+      ],
+      "desc": "Fudgy dark chocolate almond brownie swirled with rich New York-style baked cheesecake.",
+      "long": "The ultimate dessert collision: dense 70% dark Belgian chocolate brownie swirled with a creamy vanilla bean baked cheesecake layer. Rich, fudgy, and naturally sweetened with zero refined sugar. 100% Gluten-free and eggless.",
+      "ingredients": "Almond flour, cream cheese, dark chocolate 70%, butter, fresh dairy cream, natural erythritol & stevia blend.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/triple-chocolate-cheesecake-brownie.jpg",
+      "images": [
+        "assets/img/products/triple-chocolate-cheesecake-brownie.jpg",
+        "assets/img/products/triple-chocolate-cheesecake-brownie-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "chocolate-flourless-cake",
+      "name": "Chocolate Flourless Cake",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1530,
+      "mrp": 1759,
+      "rating": 4.8,
+      "reviews": 282,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Intensely rich molten dark chocolate cake baked with almond flour, cocoa butter, and zero grain flours.",
+      "long": "For pure chocolate purists: an intensely decadent flourless cake made with 70% Belgian chocolate, almond flour, and pure cocoa butter. Features a velvety crackled crust and a warm molten core. 100% Gluten-Free and eggless.",
+      "ingredients": "Dark chocolate 70%, almond flour, vegan butter, single-origin cacao, flaxseed, natural stevia & erythritol blend.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/chocolate-flourless-cake.jpg",
+      "images": [
+        "assets/img/products/chocolate-flourless-cake.jpg",
+        "assets/img/products/chocolate-flourless-cake-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "chocolate-banana-walnut-teacake",
+      "name": "Banana Walnut Teacake",
+      "brand": "doughremi",
+      "cats": [
+        "muffins"
+      ],
+      "price": 1500,
+      "mrp": 1724,
+      "rating": 4.8,
+      "reviews": 116,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Moist dark cocoa teacake packed with naturally sweet ripe bananas and toasted California walnuts.",
+      "long": "The unbeatable pairing of ripe bananas, rich cocoa, and crunchy toasted walnuts: a dense, comforting loaf teacake baked with French T45 flour and zero refined sugar. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, ripe bananas, dark cocoa, toasted walnuts, butter, natural sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/chocolate-banana-walnut-teacake.jpg",
+      "images": [
+        "assets/img/products/chocolate-banana-walnut-teacake.jpg",
+        "assets/img/products/chocolate-banana-walnut-teacake-2.jpg",
+        "assets/img/products/chocolate-banana-walnut-teacake-3.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "rakhi-cake",
+      "name": "Chocolate Mousse Cake",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1700,
+      "mrp": 1954,
+      "rating": 4.7,
+      "reviews": 245,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free"
+      ],
+      "desc": "Festive triple chocolate mousse cake featuring dark, milk, and white chocolate layers over a gluten-free sponge.",
+      "long": "An elegant celebration centerpiece: three airy layers of dark, milk, and white chocolate mousse resting upon a soft almond cocoa sponge, crowned with delicate chocolate filigree. Zero refined sugar and 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, dark chocolate, milk chocolate, white chocolate, fresh dairy cream, erythritol.",
+      "allergens": [
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/rakhi-cake.jpg",
+      "images": [
+        "assets/img/products/rakhi-cake.jpg",
+        "assets/img/products/rakhi-cake-2.jpg",
+        "assets/img/products/rakhi-cake-3.jpg",
+        "assets/img/products/rakhi-cake-4.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "opera-cake",
+      "name": "Hazelnut Mocha Opera Cake",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1530,
+      "mrp": 1759,
+      "rating": 5,
+      "reviews": 48,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Signature French Opera cake with espresso-soaked almond sponge, hazelnut buttercream, and dark ganache.",
+      "long": "Seven exquisite layers of almond joconde sponge soaked in bold espresso, layered with silky hazelnut praline buttercream and dark chocolate ganache, finished with dark mirror glaze. Baked with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, dark espresso, dark chocolate 70%, hazelnut butter, fresh cream, natural sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Tree nuts (hazelnut)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/opera-cake.jpg",
+      "images": [
+        "assets/img/products/opera-cake.jpg",
+        "assets/img/products/opera-cake-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "mocha-caramel-crunch-cake",
+      "name": "Mocha Caramel Crunch Cake",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1700,
+      "mrp": 1954,
+      "rating": 5,
+      "reviews": 198,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Rich dark chocolate sponge layered with espresso mocha cream, sea-salted caramel, and cashew praline.",
+      "long": "A symphony of bold coffee, dark chocolate, and golden caramel: tender cocoa sponge layered with whipped mocha mousse, house-made salted caramel drizzle, and crunchy cashew brittle. 100% Eggless and refined sugar-free.",
+      "ingredients": "French T45 pastry flour, almond flour, dark cocoa, dark espresso, salted caramel, cashew praline, dairy cream.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/mocha-caramel-crunch-cake.png",
+      "images": [
+        "assets/img/products/mocha-caramel-crunch-cake.png"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "apple-cinnamon-teacake",
+      "name": "Apple Cinnamon Teacake",
+      "brand": "doughremi",
+      "cats": [
+        "muffins"
+      ],
+      "price": 1500,
+      "mrp": 1724,
+      "rating": 5,
+      "reviews": 137,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Tender spiced loaf teacake studded with caramelized Granny Smith apples and Ceylon cinnamon.",
+      "long": "Slow-baked with caramelized spiced apple compote, warm Ceylon cinnamon, and French T45 flour: a tender, fragrant teacake that fills the bakery with warm autumn aromas. Zero refined sugar. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, Granny Smith apples, Ceylon cinnamon, butter, dairy milk, natural erythritol.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/apple-cinnamon-teacake.jpg",
+      "images": [
+        "assets/img/products/apple-cinnamon-teacake.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "dessert-table",
+      "name": "Grazing Table",
+      "brand": "doughremi",
+      "cats": [
+        "healthy-snacks",
+        "desserts"
+      ],
+      "price": 18000,
+      "mrp": 20700,
+      "rating": 4.7,
+      "reviews": 112,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "single",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free"
+      ],
+      "desc": "Bespoke luxury dessert grazing assortment curated for weddings, corporate galas, and intimate celebrations.",
+      "long": "A lavish dessert curation featuring an opulent array of artisanal mini entremets, chocolate bonbons, macaron towers, and tartlets. Fully customized for your event theme and dietary preferences with full GST corporate billing.",
+      "ingredients": "Assorted luxury bakery selection: dark Belgian chocolate, French T45 pastry flour, seasonal fruits, premium nuts.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Tree nuts (pistachio)",
+        "Tree nuts (hazelnut)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/dessert-table.jpg",
+      "images": [
+        "assets/img/products/dessert-table.jpg",
+        "assets/img/products/dessert-table-2.jpg",
+        "assets/img/products/dessert-table-3.png"
+      ],
+      "tags": [
+        "sugar-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "vanilla-roasted-almond-muffins",
+      "name": "Vanilla Roasted Almond Muffins",
+      "brand": "doughremi",
+      "cats": [
+        "muffins"
+      ],
+      "price": 1260,
+      "mrp": 1449,
+      "rating": 4.7,
+      "reviews": 184,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "box",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Fluffy Madagascar vanilla muffins packed with toasted sliced almonds and white chocolate chips.",
+      "long": "Golden-baked muffins infused with pure Bourbon vanilla and crowned with toasted sliced almonds and sugar-free white chocolate chips. Tender, moist, and baked fresh every morning. 100% Eggless. Box of 4.",
+      "ingredients": "French T45 pastry flour, almond flour, toasted almonds, white chocolate chips, butter, Madagascar vanilla, natural sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/vanilla-roasted-almond-muffins.jpg",
+      "images": [
+        "assets/img/products/vanilla-roasted-almond-muffins.jpg",
+        "assets/img/products/vanilla-roasted-almond-muffins-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "chocolate-sinner-cake",
+      "name": "Chocolate Sinner Cake",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1800,
+      "mrp": 2070,
+      "rating": 4.7,
+      "reviews": 112,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto"
+      ],
+      "desc": "Ultimate decadent cake: layers of dark chocolate mousse, hazelnut cheesecake, and caramelized praline crunch.",
+      "long": "For true chocolate devotees: rich cocoa sponge layered with 70% dark chocolate mousse, velvety hazelnut cheesecake, and crunchy hazelnut praline, draped in chocolate ganache. 100% Eggless and refined sugar-free.",
+      "ingredients": "French T45 pastry flour, almond flour, cream cheese, dark chocolate 70%, hazelnut praline, dairy cream, natural sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Tree nuts (hazelnut)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/chocolate-sinner-cake.jpg",
+      "images": [
+        "assets/img/products/chocolate-sinner-cake.jpg",
+        "assets/img/products/chocolate-sinner-cake-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "chocolate-blueberry-tart",
+      "name": "Chocolate Blueberry Tart",
+      "brand": "signature",
+      "cats": [
+        "desserts",
+        "pastries"
+      ],
+      "price": 2600,
+      "mrp": 2989,
+      "rating": 4.9,
+      "reviews": 67,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "single",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Crisp almond tart shell filled with dark Belgian chocolate ganache and slow-cooked wild blueberry compote.",
+      "long": "Buttery, crisp almond shortcrust tart filled with a layer of tart wild blueberry reduction and rich 70% dark chocolate ganache, topped with fresh blueberries. 100% Eggless, gluten-free, and refined sugar-free.",
+      "ingredients": "Almond flour, dark chocolate 70%, wild blueberries, dairy cream, butter, natural stevia & erythritol blend.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/chocolate-blueberry-tart.jpg",
+      "images": [
+        "assets/img/products/chocolate-blueberry-tart.jpg",
+        "assets/img/products/chocolate-blueberry-tart-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "dark-chocolate-hazelnut-tart",
+      "name": "Dark Chocolate Hazelnut Tart",
+      "brand": "signature",
+      "cats": [
+        "desserts",
+        "pastries"
+      ],
+      "price": 2300,
+      "mrp": 2645,
+      "rating": 4.8,
+      "reviews": 128,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "single",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Crisp pastry tart filled with silky dark chocolate ganache and roasted Turkish hazelnut praline.",
+      "long": "A timeless European classic: crisp almond shortcrust pastry filled with stone-ground roasted hazelnut butter, glossy dark chocolate ganache, and crowned with whole roasted hazelnuts. 100% Eggless and refined sugar-free.",
+      "ingredients": "Almond flour, Turkish hazelnuts, dark chocolate 70%, dairy cream, cocoa butter, natural plant sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Tree nuts (hazelnut)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/dark-chocolate-hazelnut-tart.jpg",
+      "images": [
+        "assets/img/products/dark-chocolate-hazelnut-tart.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "pistachio-raspberry-cake",
+      "name": "Pistachio Raspberry Cake",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1800,
+      "mrp": 2070,
+      "rating": 4.9,
+      "reviews": 217,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Tender pistachio sponge layered with tart wild raspberry compote and whipped pistachio chantilly cream.",
+      "long": "An elegant pairing of earthy Sicilian pistachios and vibrant red raspberries: moist pistachio sponge layered with ruby raspberry compote and whipped pistachio cream. Baked with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, pure pistachio paste, wild raspberries, dairy cream, almond flour, natural erythritol.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Tree nuts (pistachio)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/pistachio-raspberry-cake.jpg",
+      "images": [
+        "assets/img/products/pistachio-raspberry-cake.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "gooey-double-chocolate-cookies",
+      "name": "Gooey Chocolate Cookie Box",
+      "brand": "doughremi",
+      "cats": [
+        "cookies"
+      ],
+      "price": 810,
+      "mrp": 931,
+      "rating": 4.8,
+      "reviews": 106,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "box",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Thick, fudgy dark chocolate cookies baked with 70% Callebaut chocolate chunks and flaky sea salt.",
+      "long": "Baked to a crisp crinkled edge with a rich, gooey chocolate center: packed with dark chocolate chunks and finished with Maldon sea salt. Box of 6 cookies. 100% Eggless and gluten-free.",
+      "ingredients": "Almond flour, Callebaut 70% dark chocolate, butter, single-origin cacao, natural plant sweetener, sea salt.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/gooey-double-chocolate-cookies.png",
+      "images": [
+        "assets/img/products/gooey-double-chocolate-cookies.png",
+        "assets/img/products/gooey-double-chocolate-cookies-2.jpg",
+        "assets/img/products/gooey-double-chocolate-cookies-3.jpg",
+        "assets/img/products/gooey-double-chocolate-cookies-4.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "hazelnut-butter-brownies",
+      "name": "Hazelnut Butter Brownies",
+      "brand": "khowdy",
+      "cats": [
+        "brownies",
+        "pastries"
+      ],
+      "price": 1350,
+      "mrp": 1552,
+      "rating": 5,
+      "reviews": 85,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "box",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Fudgy dark chocolate brownies layered with stone-ground roasted hazelnut butter and crunchy hazelnut flakes.",
+      "long": "Box of 8 intensely rich, fudgy almond flour brownies swirled with creamy house-made hazelnut butter and topped with toasted hazelnut flakes. Naturally sweetened with stevia. 100% Gluten-free and eggless.",
+      "ingredients": "Almond flour, dark chocolate 70%, pure hazelnut butter, vegan butter, natural stevia & erythritol blend, hazelnuts.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/hazelnut-butter-brownies.jpg",
+      "images": [
+        "assets/img/products/hazelnut-butter-brownies.jpg",
+        "assets/img/products/hazelnut-butter-brownies-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "khowdy"
+      ]
+    },
+    {
+      "id": "choco-almond-crunch-brownies",
+      "name": "Choco Almond Crunch Brownies",
+      "brand": "doughremi",
+      "cats": [
+        "brownies",
+        "pastries"
+      ],
+      "price": 1300,
+      "mrp": 1494,
+      "rating": 4.8,
+      "reviews": 81,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "box",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Dense cocoa brownies loaded with dark chocolate chunks and crowned with crisp toasted almond flakes.",
+      "long": "Box of 8 deeply fudgy brownies baked with 70% dark chocolate and stone-ground almond flour, crowned with a generous blanket of toasted sliced almonds for a satisfying crunch. 100% Eggless and refined sugar-free.",
+      "ingredients": "Almond flour, dark chocolate 70%, toasted almond flakes, dairy butter, single-origin cocoa, natural plant sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/choco-almond-crunch-brownies.jpg",
+      "images": [
+        "assets/img/products/choco-almond-crunch-brownies.jpg",
+        "assets/img/products/choco-almond-crunch-brownies-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "dark-chocolate-orange-brownies",
+      "name": "Dark Chocolate Orange Brownies",
+      "brand": "doughremi",
+      "cats": [
+        "brownies",
+        "pastries"
+      ],
+      "price": 1400,
+      "mrp": 1609,
+      "rating": 4.8,
+      "reviews": 96,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "box",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Fudgy dark chocolate brownies infused with fresh organic orange zest and dark chocolate chips.",
+      "long": "The sophisticated pairing of bittersweet cocoa and vibrant citrus: dense almond flour brownies infused with cold-pressed orange oil and fresh zest, studded with dark chocolate chunks. Box of 8. 100% Gluten-Free.",
+      "ingredients": "Almond flour, dark chocolate 70%, fresh orange zest, orange oil, vegan butter, natural erythritol blend.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/dark-chocolate-orange-brownies.jpg",
+      "images": [
+        "assets/img/products/dark-chocolate-orange-brownies.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "fudgy-walnut-brownies",
+      "name": "Fudgy Walnut Brownies",
+      "brand": "doughremi",
+      "cats": [
+        "brownies",
+        "pastries"
+      ],
+      "price": 1400,
+      "mrp": 1609,
+      "rating": 4.9,
+      "reviews": 192,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "box",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Classic dense dark chocolate brownies loaded with toasted California walnuts for a rich, fudgy bite.",
+      "long": "Box of 8 classic American-style fudge brownies baked with 70% Belgian chocolate and generous handfuls of buttery toasted California walnuts. Delivers a crackly crust and gooey center. 100% Gluten-Free and eggless.",
+      "ingredients": "Almond flour, dark chocolate 70%, toasted California walnuts, dairy butter, natural stevia & erythritol blend.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/fudgy-walnut-brownies.jpg",
+      "images": [
+        "assets/img/products/fudgy-walnut-brownies.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "date-and-walnut-teacake",
+      "name": "Date and Walnut Teacake",
+      "brand": "doughremi",
+      "cats": [
+        "muffins"
+      ],
+      "price": 1450,
+      "mrp": 1667,
+      "rating": 4.9,
+      "reviews": 82,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Naturally sweet teacake packed with Medjool dates, toasted walnuts, and warm aromatic spices.",
+      "long": "Slow-baked with luscious Medjool date puree, toasted California walnuts, and warm winter spices: rich, moist, and naturally sweet with zero refined sugar. Baked with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, Medjool dates, toasted walnuts, butter, milk, cinnamon, natural plant sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/date-and-walnut-teacake.jpg",
+      "images": [
+        "assets/img/products/date-and-walnut-teacake.jpg",
+        "assets/img/products/date-and-walnut-teacake-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "carrot-teacake",
+      "name": "Carrot Teacake",
+      "brand": "doughremi",
+      "cats": [
+        "muffins"
+      ],
+      "price": 1400,
+      "mrp": 1609,
+      "rating": 4.9,
+      "reviews": 230,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Moist spiced carrot teacake loaded with freshly grated carrots, roasted walnuts, and cream cheese drizzle.",
+      "long": "Tender teacake packed with sweet grated carrots, roasted walnuts, and aromatic nutmeg, finished with a delicate cream cheese glaze. Baked fresh with French T45 flour and zero refined sugar. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, fresh carrots, walnuts, cream cheese, butter, cinnamon, nutmeg, natural erythritol.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/carrot-teacake.jpg",
+      "images": [
+        "assets/img/products/carrot-teacake.jpg",
+        "assets/img/products/carrot-teacake-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "drak-chocolate-orange-teacake",
+      "name": "Dark Chocolate Orange Teacake",
+      "brand": "doughremi",
+      "cats": [
+        "muffins"
+      ],
+      "price": 1400,
+      "mrp": 1609,
+      "rating": 4.7,
+      "reviews": 60,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Moist dark cocoa loaf teacake infused with fresh orange zest, citrus reduction, and dark chocolate chips.",
+      "long": "Deep Dutch cocoa teacake infused with aromatic orange zest and studded with dark chocolate chips. Moist, bittersweet, and baked fresh with French T45 flour with zero refined sugar. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, single-origin cocoa, fresh orange zest, dark chocolate chips, butter, natural sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/drak-chocolate-orange-teacake.jpg",
+      "images": [
+        "assets/img/products/drak-chocolate-orange-teacake.jpg",
+        "assets/img/products/drak-chocolate-orange-teacake-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "gooey-choco-chips-teacake",
+      "name": "Gooey Chocolate Teacake",
+      "brand": "doughremi",
+      "cats": [
+        "muffins"
+      ],
+      "price": 1450,
+      "mrp": 1667,
+      "rating": 4.9,
+      "reviews": 74,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Decadent golden vanilla teacake generously studded with gooey molten dark chocolate chips.",
+      "long": "A bakery favourite: moist golden teacake loaded with 70% dark chocolate chips that turn gooey when gently warmed. Baked with French T45 flour and Madagascar vanilla. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, dark chocolate chips, butter, milk, Madagascar vanilla, natural plant sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/gooey-choco-chips-teacake.jpg",
+      "images": [
+        "assets/img/products/gooey-choco-chips-teacake.jpg",
+        "assets/img/products/gooey-choco-chips-teacake-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "choco-nutty-tea-loaf",
+      "name": "Choco Nutty Tea Loaf",
+      "brand": "khowdy",
+      "cats": [
+        "muffins"
+      ],
+      "price": 1400,
+      "mrp": 1609,
+      "rating": 4.7,
+      "reviews": 155,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "loaf",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Wholesome chocolate almond loaf teacake packed with toasted almonds, walnuts, and dark chocolate chunks.",
+      "long": "A rich, nutrient-dense breakfast teacake: baked with almond flour, pure cocoa, and a generous mix of roasted almonds and walnuts. Naturally sweetened with zero refined sugar. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, dark cocoa, roasted almonds, walnuts, butter, natural erythritol.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/choco-nutty-tea-loaf.jpg",
+      "images": [
+        "assets/img/products/choco-nutty-tea-loaf.jpg",
+        "assets/img/products/choco-nutty-tea-loaf-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "khowdy"
+      ]
+    },
+    {
+      "id": "choco-latte-tea-loaf",
+      "name": "Choco Latte Tea Loaf",
+      "brand": "khowdy",
+      "cats": [
+        "muffins"
+      ],
+      "price": 1450,
+      "mrp": 1667,
+      "rating": 4.7,
+      "reviews": 191,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "loaf",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Tender cocoa teacake infused with dark roast espresso, dark chocolate chips, and almond flour.",
+      "long": "The harmonious union of chocolate and bold morning coffee: tender loaf cake baked with dark espresso, almond flour, and dark chocolate chips. Baked fresh with French T45 flour and zero refined sugar. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, dark espresso reduction, dark chocolate chips, butter, natural sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/choco-latte-tea-loaf.jpg",
+      "images": [
+        "assets/img/products/choco-latte-tea-loaf.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "khowdy"
+      ]
+    },
+    {
+      "id": "pineapple-coconut-tea-loaf",
+      "name": "Pineapple Coconut Tea Loaf",
+      "brand": "khowdy",
+      "cats": [
+        "muffins"
+      ],
+      "price": 1350,
+      "mrp": 1552,
+      "rating": 4.8,
+      "reviews": 248,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "loaf",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Tropical loaf teacake infused with desiccated coconut, juicy pineapple chunks, and pure Madagascar vanilla.",
+      "long": "Sun-drenched tropical flavours: moist teacake baked with toasted coconut flakes, juicy sweet pineapple chunks, and Bourbon vanilla. Wholesome, aromatic, and baked with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, toasted coconut, fresh pineapple compote, butter, milk, natural erythritol.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/pineapple-coconut-tea-loaf.jpg",
+      "images": [
+        "assets/img/products/pineapple-coconut-tea-loaf.jpg",
+        "assets/img/products/pineapple-coconut-tea-loaf-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "khowdy"
+      ]
+    },
+    {
+      "id": "lemon-blueberry-teaccake",
+      "name": "Lemon Blueberry Teacake",
+      "brand": "doughremi",
+      "cats": [
+        "muffins"
+      ],
+      "price": 1500,
+      "mrp": 1724,
+      "rating": 4.9,
+      "reviews": 245,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Bright, zesty lemon teacake studded with sweet wild blueberries and drizzled with lemon glaze.",
+      "long": "Zesty organic lemon oil and wild blueberries come together in this exceptionally moist loaf: finished with a tangy sugar-free lemon glaze. Baked fresh with French T45 flour and pure butter. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, wild blueberries, fresh lemon zest & juice, butter, milk, natural plant sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/lemon-blueberry-teaccake.jpg",
+      "images": [
+        "assets/img/products/lemon-blueberry-teaccake.jpg",
+        "assets/img/products/lemon-blueberry-teaccake-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "vanilla-roasted-almond-teacake",
+      "name": "Vanilla Roasted Almond Tea Loaf",
+      "brand": "khowdy",
+      "cats": [
+        "muffins"
+      ],
+      "price": 1350,
+      "mrp": 1552,
+      "rating": 4.8,
+      "reviews": 66,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "loaf",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Soft Madagascar vanilla loaf teacake crowned with toasted roasted almond flakes and chocolate chips.",
+      "long": "A beloved bakery staple: tender vanilla bean sponge baked with pure butter, studded with dark chocolate chips, and generously topped with toasted sliced almonds. Baked with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, toasted almonds, chocolate chips, butter, Madagascar vanilla, natural sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/vanilla-roasted-almond-teacake.jpg",
+      "images": [
+        "assets/img/products/vanilla-roasted-almond-teacake.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "khowdy"
+      ]
+    },
+    {
+      "id": "pistachio-nutella-cake",
+      "name": "Pistachio Nutella Melt Cake",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 3200,
+      "mrp": 3679,
+      "rating": 4.8,
+      "reviews": 122,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "vegan"
+      ],
+      "desc": "Decadent celebration cake layered with pistachio sponge, house-made sugar-free Nutella, and dark ganache.",
+      "long": "A showstopping centerpiece: moist pistachio brownie sponge soaked in almond milk, layered with velvety sugar-free hazelnut Nutella, dark chocolate ganache, and light pistachio mousse. 100% Eggless and refined sugar-free.",
+      "ingredients": "French T45 pastry flour, pure pistachio paste, hazelnut butter, dark chocolate 70%, dairy cream, natural sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Tree nuts (pistachio)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/pistachio-nutella-cake.jpg",
+      "images": [
+        "assets/img/products/pistachio-nutella-cake.jpg",
+        "assets/img/products/pistachio-nutella-cake-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "tropical-delight-cake",
+      "name": "Mix Fruit Cake",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1530,
+      "mrp": 1759,
+      "rating": 4.7,
+      "reviews": 290,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Delicate sponge layered with light dairy cream, fresh tropical fruits, and mango-passionfruit coulis.",
+      "long": "A bright celebration of fresh exotic fruits: airy vanilla sponge layered with whipped cream, freshly sliced kiwi, strawberries, pineapple, and passionfruit drizzle. Baked with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, fresh seasonal fruits, passionfruit reduction, dairy cream, natural erythritol.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/tropical-delight-cake.jpg",
+      "images": [
+        "assets/img/products/tropical-delight-cake.jpg",
+        "assets/img/products/tropical-delight-cake-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "classic-tiramisu-cake",
+      "name": "Classic Tiramisu Cake",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1440,
+      "mrp": 1655,
+      "rating": 4.9,
+      "reviews": 99,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Traditional Italian tiramisu celebration cake with espresso-soaked sponge and sugar-free mascarpone cream.",
+      "long": "Classic Venetian indulgence made mindful: delicate vanilla sponge soaked in dark roast espresso syrup, layered with whipped mascarpone cream and dusted with 70% dark cocoa. Baked with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, dark espresso, mascarpone cheese, fresh dairy cream, dark cocoa, natural sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/classic-tiramisu-cake.jpg",
+      "images": [
+        "assets/img/products/classic-tiramisu-cake.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "chocolate-tiramisu",
+      "name": "Hot Chocolate Tiramisu",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 2700,
+      "mrp": 3104,
+      "rating": 4.9,
+      "reviews": 245,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "single",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Decadent hot chocolate tiramisu cake layered with espresso-soaked cocoa sponge and silky mascarpone cream.",
+      "long": "Our customer-favourite signature: moist cocoa sponge soaked in hot chocolate and bold espresso, layered with cloud-like mascarpone cream and dark chocolate curls. Baked with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, dark cocoa, espresso, mascarpone cheese, dairy cream, natural plant sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/chocolate-tiramisu.jpg",
+      "images": [
+        "assets/img/products/chocolate-tiramisu.jpg",
+        "assets/img/products/chocolate-tiramisu-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "french-opera",
+      "name": "French Opera",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1650,
+      "mrp": 1897,
+      "rating": 4.9,
+      "reviews": 200,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "single",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Classic Parisian Opera gateau featuring seven delicate layers of espresso joconde, chocolate cream, and ganache.",
+      "long": "Handcrafted to strict French pâtisserie traditions: wafer-thin almond sponge soaked in dark coffee syrup, layered with mocha buttercream and 70% dark Belgian chocolate ganache, finished with mirror glaze. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, dark espresso, dark chocolate 70%, dairy cream, grass-fed butter, erythritol.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/french-opera.jpg",
+      "images": [
+        "assets/img/products/french-opera.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "mix-cream-cake",
+      "name": "Blueberry Cream Cake",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1530,
+      "mrp": 1759,
+      "rating": 4.9,
+      "reviews": 255,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Tender vanilla sponge layered with slow-simmered wild blueberry compote and light whipped cream.",
+      "long": "Delicate, golden vanilla bean sponge layered with luscious blueberry reduction and fluffy whipped dairy cream. Light, refreshing, and completely free from refined sugar. Baked with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, wild blueberries, dairy cream, Madagascar vanilla bean, natural plant sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/mix-cream-cake.jpg",
+      "images": [
+        "assets/img/products/mix-cream-cake.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "chocolate-mix-berry-cake",
+      "name": "Chocolate Blueberry Cake",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1800,
+      "mrp": 2070,
+      "rating": 4.8,
+      "reviews": 221,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Rich dark chocolate cake layered with Belgian ganache and tart wild blueberries and raspberries.",
+      "long": "The irresistible harmony of bittersweet cocoa and tart forest berries: moist cocoa sponge made with French T45 flour, filled with dark chocolate ganache and bursts of fresh blueberries. 100% Eggless and sugar-free.",
+      "ingredients": "French T45 pastry flour, almond flour, dark chocolate 70%, blueberries, raspberries, dairy cream, natural sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/chocolate-mix-berry-cake.jpg",
+      "images": [
+        "assets/img/products/chocolate-mix-berry-cake.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "salted-caramel-brownie",
+      "name": "Salted Caramel Brownie",
+      "brand": "doughremi",
+      "cats": [
+        "brownies",
+        "pastries"
+      ],
+      "price": 1600,
+      "mrp": 1839,
+      "rating": 5,
+      "reviews": 155,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "box",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Dense, fudgy dark chocolate brownies layered with slow-cooked sugar-free sea-salted caramel.",
+      "long": "Box of 8 rich almond flour brownies baked with 70% Callebaut chocolate, swirled with house-made golden sea-salted caramel. The perfect balance of sweet, salty, and deeply chocolatey. 100% Gluten-free and eggless.",
+      "ingredients": "Almond flour, dark chocolate 70%, house-made salted caramel, dairy butter, natural stevia & erythritol blend, sea salt.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/salted-caramel-brownie.jpg",
+      "images": [
+        "assets/img/products/salted-caramel-brownie.jpg",
+        "assets/img/products/salted-caramel-brownie-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "chocolate-overload-brownie",
+      "name": "Chocolate Overload Brownie",
+      "brand": "doughremi",
+      "cats": [
+        "brownies",
+        "pastries"
+      ],
+      "price": 1530,
+      "mrp": 1759,
+      "rating": 4.7,
+      "reviews": 192,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "box",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Ultra-fudgy double dark chocolate brownies packed with molten chocolate chunks and dark cocoa.",
+      "long": "Box of 8 intensely rich double chocolate brownies baked with single-origin cocoa and loaded with dark chocolate chunks for a gooey molten center. Naturally sweetened with zero refined sugar. 100% Gluten-free and eggless.",
+      "ingredients": "Almond flour, dark chocolate 70%, dark chocolate chunks, single-origin cacao, butter, natural plant sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": false,
+      "image": "assets/img/products/chocolate-overload-brownie.jpg",
+      "images": [
+        "assets/img/products/chocolate-overload-brownie.jpg",
+        "assets/img/products/chocolate-overload-brownie-2.jpg",
+        "assets/img/products/chocolate-overload-brownie-3.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "pineapple-cream-cake",
+      "name": "Pineapple Cream Cake",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1440,
+      "mrp": 1655,
+      "rating": 4.7,
+      "reviews": 108,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Nostalgic bakery celebration cake with pineapple nectar-soaked sponge, pineapple compote, and whipped cream.",
+      "long": "A timeless tropical celebration cake: tender vanilla sponge soaked in real pineapple nectar, layered with slow-cooked pineapple compote and fresh dairy cream. Baked fresh with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, fresh pineapple compote, dairy cream, Madagascar vanilla, natural erythritol.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/pineapple-cream-cake.jpg",
+      "images": [
+        "assets/img/products/pineapple-cream-cake.jpg",
+        "assets/img/products/pineapple-cream-cake-2.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "belgian-chocolate-cake-1",
+      "name": "Belgian Chocolate Cake",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1440,
+      "mrp": 1655,
+      "rating": 4.8,
+      "reviews": 165,
+      "badges": [
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Opulent celebration cake enveloped in silky 70% Callebaut Belgian dark chocolate ganache.",
+      "long": "Pure chocolate decadence: moist cocoa sponge made with French T45 flour, layered with velvety dark Belgian chocolate ganache and chocolate curls. Deep, bittersweet, and refined sugar-free. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, Callebaut 70% dark chocolate, single-origin cacao, dairy cream, natural sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/belgian-chocolate-cake-1.jpg",
+      "images": [
+        "assets/img/products/belgian-chocolate-cake-1.jpg",
+        "assets/img/products/belgian-chocolate-cake-1-2.png"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "belgian-chocolate-cake",
+      "name": "Hazelnut Crunch Cake",
+      "brand": "doughremi",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1660,
+      "mrp": 1908,
+      "rating": 4.9,
+      "reviews": 59,
+      "badges": [
+        "BESTSELLER",
+        "SUGAR-FREE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "keto",
+        "vegan"
+      ],
+      "desc": "Rich cocoa sponge cake layered with stone-ground roasted hazelnut praline butter and dark chocolate ganache.",
+      "long": "Layers of tender chocolate sponge filled with stone-ground sugar-free hazelnut butter, dark chocolate ganache, and caramelized hazelnut crunch. Baked fresh with French T45 flour and zero refined sugar. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, Turkish hazelnuts, dark chocolate 70%, dairy cream, natural plant sweetener.",
+      "allergens": [
+        "Tree nuts (almond)",
+        "Tree nuts (hazelnut)",
+        "Milk / Dairy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/belgian-chocolate-cake.jpg",
+      "images": [
+        "assets/img/products/belgian-chocolate-cake.jpg",
+        "assets/img/products/belgian-chocolate-cake-1.jpg",
+        "assets/img/products/belgian-chocolate-cake-2.jpg",
+        "assets/img/products/belgian-chocolate-cake-3.jpg"
+      ],
+      "tags": [
+        "sugar-free",
+        "gluten-free",
+        "doughremi"
+      ]
+    },
+    {
+      "id": "gold-leaf-saffron-cheesecake",
+      "name": "Gold Leaf Saffron Cheesecake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 3250,
+      "mrp": 3650,
+      "rating": 4.9,
+      "reviews": 214,
+      "badges": [
+        "SIGNATURE",
+        "BESTSELLER"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "anniversary",
+        "wedding",
+        "corporate",
+        "festival"
+      ],
+      "diet": [
+        "eggless"
+      ],
+      "desc": "Kashmiri saffron custard over a pistachio sablé base, finished with 24k edible gold leaf.",
+      "long": "A regal dessert masterpiece: rich baked cheesecake custard infused with aromatic Kashmiri saffron threads over a crisp pistachio sablé crust, finished with hand-applied 24k edible gold leaf. 100% Gluten-free and eggless.",
+      "ingredients": "Cream cheese, fresh dairy cream, almond flour, Kashmiri saffron, pistachios, 24k edible gold leaf, natural erythritol blend.",
+      "allergens": [
+        "Milk",
+        "Wheat",
+        "Eggs",
+        "Tree nuts (pistachio)"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/kesar-rabdi-basque-cheesecake.jpg",
+      "tags": [
+        "mirror glaze",
+        "gold leaf",
+        "saffron"
+      ]
+    },
+    {
+      "id": "assam-tea-opera",
+      "name": "Assam Tea Opera",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "pastries"
+      ],
+      "price": 2450,
+      "rating": 4.8,
+      "reviews": 168,
+      "badges": [
+        "SIGNATURE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "anniversary",
+        "corporate",
+        "festival"
+      ],
+      "desc": "Seven layers of joconde sponge soaked in second-flush orthodox Assam tea, tea buttercream, and dark ganache.",
+      "long": "A signature tribute to our Assam heritage: delicate almond joconde sponge soaked in fragrant single-estate second-flush black tea, layered with tea-infused buttercream and 70% dark chocolate ganache. Baked with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, single-estate Assam orthodox tea, dark chocolate 70%, butter, dairy cream, natural sweetener.",
+      "allergens": [
+        "Milk",
+        "Wheat",
+        "Eggs",
+        "Tree nuts (almond)"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/opera-cake.jpg",
+      "tags": [
+        "opera",
+        "assam tea",
+        "layered"
+      ]
+    },
+    {
+      "id": "pistachio-kunafa-croissant",
+      "name": "Pistachio Kunafa Croissant",
+      "brand": "signature",
+      "cats": [
+        "croissants",
+        "pastries"
+      ],
+      "price": 420,
+      "rating": 4.9,
+      "reviews": 402,
+      "badges": [
+        "BESTSELLER",
+        "LIMITED EDITION"
+      ],
+      "sizes": "box",
+      "occasions": [],
+      "desc": "Three-day laminated butter croissant filled with pure pistachio cream and topped with crispy toasted kunafa.",
+      "long": "Our iconic viral creation: three-day butter laminated croissant crafted with French T45 flour, filled with velvety 100% pure pistachio cream, and crowned with crisp golden toasted kunafa pastry and crushed pistachios. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, pure butter, pure pistachio paste, crispy kunafa pastry, milk, natural sweetener.",
+      "allergens": [
+        "Milk",
+        "Wheat",
+        "Tree nuts (pistachio)"
+      ],
+      "leadHours": 24,
+      "image": "assets/img/products/pistachio-kunafa-croissant.jpg",
+      "tags": [
+        "viral",
+        "kunafa",
+        "laminated"
+      ]
+    },
+    {
+      "id": "dark-chocolate-entremet",
+      "name": "Dark Chocolate Entremet",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "chocolates"
+      ],
+      "price": 2950,
+      "rating": 4.9,
+      "reviews": 141,
+      "badges": [
+        "SIGNATURE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "corporate"
+      ],
+      "desc": "Nine components of single-origin 70% Ghana chocolate under a hand-poured dark mirror glaze.",
+      "long": "A haute patisserie showpiece: single-origin 70% chocolate mousse, soft chocolate sponge made with French T45 flour, crunchy praline feuilletine base, and glossy mirror glaze. Intensely rich, refined, and 100% Eggless.",
+      "ingredients": "French T45 pastry flour, single-origin 70% Ghana chocolate, almond flour, dairy cream, hazelnut praline, cocoa glaze.",
+      "allergens": [
+        "Milk",
+        "Eggs",
+        "Soy"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/chocolate-cake.jpg",
+      "tags": [
+        "entremet",
+        "single origin",
+        "mirror glaze"
+      ]
+    },
+    {
+      "id": "raspberry-entremet",
+      "name": "Raspberry Entremet",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes"
+      ],
+      "price": 2850,
+      "rating": 4.8,
+      "reviews": 96,
+      "badges": [
+        "NEW",
+        "SIGNATURE"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "baby-shower",
+        "wedding"
+      ],
+      "diet": [
+        "eggless"
+      ],
+      "desc": "Raspberry confit, white chocolate rose mousse, and French T45 sponge with a velvet spray finish.",
+      "long": "A delicate, ethereal patisserie creation: vibrant raspberry fruit confit paired with silky white chocolate rose mousse over tender French T45 sponge, finished with an artisan velvet spray. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, wild raspberries, white chocolate, organic rose water, dairy cream, almond flour, natural sweetener.",
+      "allergens": [
+        "Milk",
+        "Tree nuts (almond)"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/pistachio-raspberry-cake.jpg",
+      "tags": [
+        "velvet finish",
+        "raspberry",
+        "eggless"
+      ]
+    },
+    {
+      "id": "signature-chocolate-bonbons",
+      "name": "Signature Chocolate Bonbons",
+      "brand": "signature",
+      "cats": [
+        "chocolates",
+        "hampers",
+        "corporate-gifting"
+      ],
+      "price": 1450,
+      "mrp": 1650,
+      "rating": 4.9,
+      "reviews": 287,
+      "badges": [
+        "BESTSELLER"
+      ],
+      "sizes": "box",
+      "occasions": [
+        "corporate",
+        "festival",
+        "anniversary"
+      ],
+      "desc": "Artisanal Signature Chocolate Bonbons handcrafted with pure butter, wholesome ingredients, and zero artificial preservatives.",
+      "long": "Twelve bonbons, twelve fillings — Assam tea ganache, salted jaggery caramel, passionfruit, hazelnut praline, black sesame and more. Each shell is airbrushed with coloured cocoa butter and tempered to a clean snap. Presented in a magnetic keepsake box.",
+      "ingredients": "Couverture chocolate (dark 64%, milk 38%, white 33%), fresh cream, butter, jaggery, fruit purées, hazelnut, sesame, Assam tea, cocoa butter colours.",
+      "allergens": [
+        "Milk",
+        "Soy",
+        "Tree nuts",
+        "Sesame"
+      ],
+      "tags": [
+        "gifting",
+        "bonbons",
+        "hand painted"
+      ],
+      "image": "assets/img/products/signature-chocolate-bonbons.jpg",
+      "images": [
+        "assets/img/products/signature-chocolate-bonbons.jpg"
+      ]
+    },
+    {
+      "id": "wedding-tier-couture",
+      "name": "Couture Wedding Tier",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "hampers"
+      ],
+      "price": 18500,
+      "rating": 5,
+      "reviews": 38,
+      "badges": [
+        "SIGNATURE",
+        "LIMITED EDITION"
+      ],
+      "sizes": "single",
+      "occasions": [
+        "wedding"
+      ],
+      "desc": "Three-tier bespoke couture wedding cake with hand-piped lace, sugar florals, and 24k gold leaf detailing.",
+      "long": "Our premier bespoke wedding commission: three towering tiers of French T45 sponge layered with your choice of gourmet fillings, draped in pristine white chocolate fondant with delicate hand-piped lace and edible 24k gold leaf. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, dark Belgian chocolate, Madagascar vanilla, fresh cream, edible 24k gold leaf.",
+      "allergens": [
+        "Milk",
+        "Wheat",
+        "Eggs",
+        "Tree nuts"
+      ],
+      "customisable": true,
+      "leadHours": 336,
+      "image": "assets/img/products/signature-chocolate-bonbons.jpg",
+      "tags": [
+        "wedding",
+        "commission",
+        "tiered"
+      ]
+    },
+    {
+      "id": "passionfruit-mango-tart",
+      "name": "Passionfruit Mango Tart",
+      "brand": "signature",
+      "cats": [
+        "pastries"
+      ],
+      "price": 380,
+      "rating": 4.7,
+      "reviews": 122,
+      "badges": [
+        "NEW"
+      ],
+      "sizes": "box",
+      "occasions": [],
+      "desc": "Crisp almond tart shell filled with tart passionfruit curd, Alphonso mango compote, and fresh fruit.",
+      "long": "Sun-drenched tropical flavours in a crisp French T45 pastry shell: filled with tangy passionfruit curd, sweet Alphonso mango reduction, and fresh seasonal fruit. Bright, refreshing, and 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, passionfruit pulp, Alphonso mango, pure butter, dairy cream, natural sweetener.",
+      "allergens": [
+        "Milk",
+        "Wheat",
+        "Eggs"
+      ],
+      "image": "assets/img/products/passionfruit-mango-tart.jpg",
+      "tags": [
+        "tart",
+        "seasonal",
+        "meringue"
+      ]
+    },
+    {
+      "id": "hazelnut-paris-brest",
+      "name": "Hazelnut Paris-Brest",
+      "brand": "signature",
+      "cats": [
+        "pastries"
+      ],
+      "price": 395,
+      "rating": 4.8,
+      "reviews": 88,
+      "badges": [],
+      "sizes": "box",
+      "occasions": [],
+      "desc": "Golden choux pastry ring filled with roasted hazelnut praline mousseline and toasted hazelnuts.",
+      "long": "The classic French bicycling tribute: crisp choux pastry ring baked with French T45 flour, generously piped with silky roasted hazelnut praline mousseline cream and dusted with toasted almonds. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, pure butter, roasted Turkish hazelnuts, hazelnut praline, dairy cream, milk, vanilla.",
+      "allergens": [
+        "Milk",
+        "Wheat",
+        "Eggs",
+        "Tree nuts (hazelnut)"
+      ],
+      "image": "assets/img/products/hazelnut-paris-brest.jpg",
+      "tags": [
+        "choux",
+        "praline"
+      ]
+    },
+    {
+      "id": "signature-tasting-hamper",
+      "name": "Signature Tasting Hamper",
+      "brand": "signature",
+      "cats": [
+        "hampers",
+        "corporate-gifting",
+        "chocolates"
+      ],
+      "price": 4850,
+      "mrp": 5400,
+      "rating": 4.9,
+      "reviews": 74,
+      "badges": [
+        "BESTSELLER"
+      ],
+      "sizes": "single",
+      "occasions": [
+        "corporate",
+        "festival",
+        "wedding",
+        "anniversary"
+      ],
+      "desc": "Bonbons, chocolate bars, tea and a Signature entremet in a keepsake presentation box.",
+      "long": "Our flagship gift: a 12-piece bonbon box, two single-origin bars, a tin of second-flush Assam, salted caramel spread and a 500g Signature entremet, nested in a linen-lined keepsake box with a hand-written card. Corporate branding available from 25 units.",
+      "ingredients": "See individual components; full declaration enclosed.",
+      "allergens": [
+        "Milk",
+        "Wheat",
+        "Eggs",
+        "Soy",
+        "Tree nuts",
+        "Sesame"
+      ],
+      "leadHours": 72,
+      "image": "assets/img/products/mini-diwali-gift-hamper.jpg",
+      "tags": [
+        "hamper",
+        "keepsake",
+        "corporate"
+      ]
+    },
+    {
+      "id": "fresh-croissant",
+      "name": "Fresh Croissant",
+      "brand": "doughremi",
+      "cats": [
+        "croissants",
+        "breads"
+      ],
+      "price": 145,
+      "rating": 4.7,
+      "reviews": 631,
+      "badges": [
+        "BESTSELLER"
+      ],
+      "sizes": "box",
+      "occasions": [],
+      "desc": "Three-day laminated French butter croissant with a crisp golden honeycomb shell and tender buttery interior.",
+      "long": "Crafted over three days to true European standards: laminated with French T45 flour and 84% Normandy-style butter to achieve hundreds of paper-thin flaky layers and a featherlight honeycomb interior. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, pure butter 84%, whole milk, yeast, raw cane sugar, sea salt.",
+      "allergens": [
+        "Milk",
+        "Wheat"
+      ],
+      "leadHours": 12,
+      "image": "assets/img/products/fresh-croissant.jpg",
+      "tags": [
+        "laminated",
+        "breakfast",
+        "butter"
+      ]
+    },
+    {
+      "id": "belgian-chocolate-brownie",
+      "name": "Belgian Chocolate Brownie",
+      "brand": "doughremi",
+      "cats": [
+        "brownies"
+      ],
+      "price": 165,
+      "mrp": 195,
+      "rating": 4.8,
+      "reviews": 918,
+      "badges": [
+        "BESTSELLER"
+      ],
+      "sizes": "box",
+      "occasions": [
+        "birthday"
+      ],
+      "desc": "Fudge center, crackled top crust, 54% Belgian couverture chocolate, and toasted California walnuts.",
+      "long": "Our flagship bakery brownie: crafted with French T45 flour, 54% Callebaut dark chocolate, and generous handfuls of toasted California walnuts. Intensely chocolatey with a delicate crackle top. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, 54% Belgian dark chocolate, butter, toasted walnuts, Dutch cocoa, raw cane sugar.",
+      "allergens": [
+        "Milk",
+        "Wheat",
+        "Eggs",
+        "Tree nuts (walnut)"
+      ],
+      "image": "assets/img/products/chocolate-overload-brownie.jpg",
+      "tags": [
+        "fudgy",
+        "walnut",
+        "teatime"
+      ]
+    },
+    {
+      "id": "red-velvet-cake",
+      "name": "Red Velvet Cake",
+      "brand": "signature",
+      "cats": [
+        "celebration-cakes",
+        "birthday-cakes"
+      ],
+      "price": 1000,
+      "mrp": 1150,
+      "rating": 5,
+      "reviews": 145,
+      "badges": [
+        "MENU-FEATURE",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
+      ],
+      "sizes": "poundCake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "festival"
+      ],
+      "diet": [
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
+      ],
+      "desc": "Crimson-hued cocoa sponge paired with tangy cream cheese frosting, baked with French T45 flour.",
+      "long": "Velvety cocoa sponge naturally colored and baked with French T45 flour and almond flour, layered with whipped Philadelphia-style cream cheese frosting. Elegant, tangy, and 100% Eggless with zero refined sugar.",
+      "ingredients": "French T45 pastry flour, almond flour, single-origin cacao, cream cheese, dairy butter, natural plant sweetener.",
+      "allergens": [
+        "Milk / Dairy",
+        "Tree nuts (almond)"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/red-velvet-cake.jpg",
+      "images": [
+        "assets/img/products/signature-chocolate-bonbons.jpg"
+      ],
+      "tags": [
+        "cake",
+        "red-velvet",
+        "eggless",
+        "gluten-free",
+        "signature"
+      ]
+    },
+    {
+      "id": "fresh-cream-pastry",
+      "name": "Fresh Cream Pastry",
+      "brand": "doughremi",
+      "cats": [
+        "pastries"
+      ],
+      "price": 95,
+      "rating": 4.6,
+      "reviews": 774,
+      "badges": [],
+      "sizes": "box",
+      "occasions": [],
+      "desc": "Airy vanilla sponge layered with fluffy dairy cream, tropical fruit coulis, and white chocolate curls.",
+      "long": "Delicate, golden sponge baked fresh with French T45 flour, layered with slow-whipped fresh dairy cream and sweet fruit compote. Light, airy, and baked fresh every morning. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, fresh dairy cream, Madagascar vanilla, fruit compote, white chocolate curls, raw cane sugar.",
+      "allergens": [
+        "Milk",
+        "Wheat",
+        "Eggs"
+      ],
+      "tags": [
+        "nostalgic",
+        "dairy cream"
+      ],
+      "image": "assets/img/products/mix-cream-cake.jpg",
+      "images": [
+        "assets/img/products/mix-cream-cake.jpg"
+      ]
+    },
+    {
+      "id": "artisan-sourdough",
+      "name": "Artisan Sourdough Loaf",
+      "brand": "doughremi",
+      "cats": [
+        "breads"
+      ],
+      "price": 285,
+      "rating": 4.8,
+      "reviews": 389,
+      "badges": [
+        "NEW"
+      ],
+      "sizes": "single",
+      "occasions": [],
+      "diet": [
+        "vegan"
+      ],
+      "desc": "Traditional 36-hour slow-fermented sourdough loaf with a blistered crust and open, chewy crumb.",
+      "long": "Crafted over 36 hours with our mature sourdough starter: blended with French T45 flour, stone-ground whole wheat, and spring water. Features a deeply caramelized blistered crust and a complex, tangy crumb. 100% Vegan.",
+      "ingredients": "French T45 flour, stone-ground whole wheat flour, wild sourdough culture, spring water, sea salt.",
+      "allergens": [
+        "Wheat"
+      ],
+      "image": "assets/img/products/mix-cream-cake.jpg",
+      "tags": [
+        "sourdough",
+        "vegan",
+        "stone baked"
+      ]
+    },
+    {
+      "id": "celebration-cupcakes",
+      "name": "Celebration Cupcakes",
+      "brand": "doughremi",
+      "cats": [
+        "cupcakes",
+        "birthday-cakes"
+      ],
+      "price": 480,
+      "rating": 4.7,
+      "reviews": 296,
+      "badges": [],
+      "sizes": "box",
+      "occasions": [
+        "birthday",
+        "baby-shower",
+        "graduation",
+        "corporate"
+      ],
+      "diet": [
+        "eggless"
+      ],
+      "desc": "Box of 6 artisan cupcakes with rich cocoa and Bourbon vanilla sponge topped with buttercream swirls.",
+      "long": "Assortment of 6 freshly baked celebration cupcakes crafted with French T45 flour: includes dark chocolate, vanilla bean, and red velvet bases crowned with silky buttercream swirls and edible pearls. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, dark cocoa, pure butter, fresh cream, Madagascar vanilla, raw cane sugar.",
+      "allergens": [
+        "Milk",
+        "Wheat",
+        "Eggs"
+      ],
+      "customisable": true,
+      "image": "assets/img/products/vanilla-roasted-almond-muffins-2.jpg",
+      "tags": [
+        "party",
+        "buttercream",
+        "mix flavours"
+      ]
+    },
+    {
+      "id": "butter-croissant-almond",
+      "name": "Almond Croissant",
+      "brand": "doughremi",
+      "cats": [
+        "croissants",
+        "pastries"
+      ],
+      "price": 175,
+      "rating": 4.8,
+      "reviews": 244,
+      "badges": [],
+      "sizes": "box",
+      "occasions": [],
+      "desc": "Twice-baked butter croissant filled with almond frangipane cream and topped with toasted almond flakes.",
+      "long": "A classic French bakery indulgence: our three-day laminated croissant filled with rich almond frangipane, baked a second time to crisp perfection and dusted with toasted sliced almonds. Baked with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, pure butter, almond flour, toasted sliced almonds, vanilla, milk, sugar.",
+      "allergens": [
+        "Milk",
+        "Wheat",
+        "Eggs",
+        "Tree nuts (almond)"
+      ],
+      "leadHours": 12,
+      "tags": [
+        "frangipane",
+        "breakfast"
+      ],
+      "image": "assets/img/products/butter-croissant-almond.jpg",
+      "images": [
+        "assets/img/products/butter-croissant-almond.jpg"
+      ]
+    },
+    {
+      "id": "chocolate-truffle-cake",
+      "name": "Chocolate Truffle Cake",
+      "brand": "doughremi",
+      "cats": [
+        "birthday-cakes",
+        "celebration-cakes"
+      ],
+      "price": 849,
+      "mrp": 999,
+      "rating": 4.8,
+      "reviews": 1102,
+      "badges": [
+        "BESTSELLER"
+      ],
+      "sizes": "cake",
+      "occasions": [
+        "birthday",
+        "anniversary",
+        "graduation"
+      ],
+      "diet": [
+        "eggless"
+      ],
+      "desc": "Artisan Chocolate Truffle Cake crafted with French T45 flour, layered with velvety whipped cream and zero refined sugar. 100% Eggless.",
+      "long": "Three layers of moist chocolate sponge, a generous 54% dark ganache between and around, finished with chocolate curls and a ganache drip. Your message piped by hand at no charge. Eggless on request. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, dark couverture 54%, fresh cream, butter, cane sugar, cocoa, pasteurised eggs (optional), milk.",
+      "allergens": [
+        "Milk",
+        "Wheat",
+        "Eggs"
+      ],
+      "customisable": true,
+      "tags": [
+        "ganache",
+        "most ordered",
+        "eggless option"
+      ],
+      "image": "assets/img/products/belgian-chocolate-cake.jpg",
+      "images": [
+        "assets/img/products/belgian-chocolate-cake.jpg"
+      ]
+    },
+    {
+      "id": "cinnamon-swirl-bun",
+      "name": "Cinnamon Swirl Bun",
+      "brand": "doughremi",
+      "cats": [
+        "breads",
+        "pastries"
+      ],
+      "price": 135,
+      "rating": 4.7,
+      "reviews": 318,
+      "badges": [],
+      "sizes": "box",
+      "occasions": [],
+      "desc": "Enriched brioche dough swirled with Ceylon cinnamon and finished with melted cream cheese glaze.",
+      "long": "Pillowy, slow-fermented brioche dough rolled with fragrant Ceylon cinnamon and brown butter, baked golden and topped with silky cream cheese frosting. Baked with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, butter, Ceylon cinnamon, cream cheese, milk, natural cane sugar, yeast.",
+      "allergens": [
+        "Milk",
+        "Wheat",
+        "Eggs"
+      ],
+      "leadHours": 12,
+      "tags": [
+        "breakfast",
+        "cinnamon"
+      ],
+      "image": "assets/img/products/classic-cinnamon-roll.jpg",
+      "images": [
+        "assets/img/products/classic-cinnamon-roll.jpg"
+      ]
+    },
+    {
+      "id": "multigrain-seed-loaf",
+      "name": "Multigrain Seed Loaf",
+      "brand": "doughremi",
+      "cats": [
+        "breads",
+        "healthy-snacks"
+      ],
+      "price": 245,
+      "rating": 4.6,
+      "reviews": 187,
+      "badges": [],
+      "sizes": "single",
+      "occasions": [],
+      "diet": [
+        "vegan",
+        "high-protein"
+      ],
+      "desc": "Five ancient grains, four toasted seeds, no bleached maida, and zero artificial improvers.",
+      "long": "A nutrient-rich everyday sandwich bread: slow-fermented with whole wheat, oats, barley, ragi, and amaranth, loaded with pumpkin, sunflower, flax, and sesame seeds. Baked with French T45 flour. 100% Vegan.",
+      "ingredients": "Whole wheat flour, French T45 flour, rolled oats, ragi, amaranth, pumpkin seeds, sunflower seeds, flaxseeds, olive oil, yeast, sea salt.",
+      "allergens": [
+        "Wheat",
+        "Sesame"
+      ],
+      "image": "assets/img/products/classic-cinnamon-roll.jpg",
+      "tags": [
+        "wholegrain",
+        "no maida",
+        "vegan"
+      ]
+    },
+    {
+      "id": "coffee-walnut-loaf",
+      "name": "Coffee Walnut Loaf",
+      "brand": "doughremi",
+      "cats": [
+        "pastries",
+        "coffee"
+      ],
+      "price": 425,
+      "rating": 4.6,
+      "reviews": 141,
+      "badges": [],
+      "sizes": "single",
+      "occasions": [],
+      "desc": "Rich espresso teacake loaf packed with toasted California walnuts and a bittersweet coffee glaze.",
+      "long": "Baked with French T45 flour, single-origin espresso reduction, and generous handfuls of crunchy toasted walnuts: finished with a delicate espresso-infused glaze. Incomparably aromatic with morning coffee. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, toasted California walnuts, dark espresso, butter, milk, raw cane sugar, vanilla.",
+      "allergens": [
+        "Milk",
+        "Wheat",
+        "Eggs",
+        "Tree nuts (walnut)"
+      ],
+      "image": "assets/img/products/date-and-walnut-teacake.jpg",
+      "tags": [
+        "loaf",
+        "coffee",
+        "keeps well"
+      ]
+    },
+    {
+      "id": "assam-tea-cookies",
+      "name": "Assam Tea Cookies",
+      "brand": "khowdy",
+      "cats": [
+        "cookies",
+        "assamese",
+        "healthy-snacks"
+      ],
+      "price": 395,
+      "mrp": 449,
+      "rating": 4.8,
+      "reviews": 512,
+      "badges": [
+        "BESTSELLER"
+      ],
+      "sizes": "jar",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "eggless",
+        "nut-free"
+      ],
+      "desc": "Crisp, buttery Assam Tea Cookies baked to a golden melt-in-the-mouth crumb with pure slow-churned butter and wholesome ingredients.",
+      "long": "We grind whole second-flush Assam leaf from partner estates in Jorhat into a cold-butter shortbread, so the tea is in the crumb rather than sprinkled on it. Malty, floral and just sweet enough. Eggless, no palm oil, no preservatives.",
+      "ingredients": "Wheat flour, butter, cane sugar, second-flush Assam tea leaf, milk solids, sea salt.",
+      "allergens": [
+        "Milk",
+        "Wheat"
+      ],
+      "tags": [
+        "assam",
+        "shortbread",
+        "eggless"
+      ],
+      "image": "assets/img/products/brown-butter-cookie-box.jpg",
+      "images": [
+        "assets/img/products/brown-butter-cookie-box.jpg"
+      ]
+    },
+    {
+      "id": "black-rice-cookies",
+      "name": "Black Rice Cookies",
+      "brand": "khowdy",
+      "cats": [
+        "cookies",
+        "assamese",
+        "healthy-snacks"
+      ],
+      "price": 425,
+      "rating": 4.7,
+      "reviews": 288,
+      "badges": [
+        "NEW"
+      ],
+      "sizes": "jar",
+      "occasions": [
+        "festival"
+      ],
+      "diet": [
+        "eggless",
+        "gluten-free"
+      ],
+      "desc": "Crisp, buttery Black Rice Cookies baked to a golden melt-in-the-mouth crumb with pure slow-churned butter and wholesome ingredients.",
+      "long": "Chakhao — the aromatic black rice of the Northeast — stone-milled and baked with jaggery and cold-pressed coconut oil. Naturally gluten free, deep purple, faintly nutty, and rich in anthocyanins. Sourced directly from growers in Majuli.",
+      "ingredients": "Chakhao black rice flour, jaggery, cold-pressed coconut oil, coconut milk, cardamom, sea salt.",
+      "allergens": [],
+      "image": "assets/img/products/double-chocolate-cookie-box.jpg",
+      "tags": [
+        "gluten free",
+        "heirloom rice",
+        "majuli"
+      ]
+    },
+    {
+      "id": "millet-cookies",
+      "name": "Millet Cookies",
+      "brand": "khowdy",
+      "cats": [
+        "cookies",
+        "healthy-snacks"
+      ],
+      "price": 375,
+      "rating": 4.6,
+      "reviews": 341,
+      "badges": [],
+      "sizes": "jar",
+      "occasions": [],
+      "diet": [
+        "eggless",
+        "high-protein",
+        "sugar-free"
+      ],
+      "desc": "Crisp, buttery Millet Cookies baked to a golden melt-in-the-mouth crumb with pure slow-churned butter and wholesome ingredients.",
+      "long": "Built for the 4pm slump: three millets, date paste instead of sugar, a little ghee for shortness and roasted sesame for crunch. Nine grams of protein per serving and genuinely good with tea.",
+      "ingredients": "Ragi flour, jowar flour, bajra flour, date paste, ghee, sesame seed, cardamom, sea salt.",
+      "allergens": [
+        "Milk",
+        "Sesame"
+      ],
+      "image": "assets/img/products/pistachio-chocolate-cookie-box.jpg",
+      "tags": [
+        "no refined sugar",
+        "millet",
+        "protein"
+      ]
+    },
+    {
+      "id": "premium-tea-time-box",
+      "name": "Premium Tea-Time Box",
+      "brand": "khowdy",
+      "cats": [
+        "hampers",
+        "corporate-gifting",
+        "cookies"
+      ],
+      "price": 1250,
+      "mrp": 1450,
+      "rating": 4.8,
+      "reviews": 176,
+      "badges": [
+        "BESTSELLER"
+      ],
+      "sizes": "single",
+      "occasions": [
+        "festival",
+        "corporate",
+        "custom"
+      ],
+      "diet": [
+        "eggless"
+      ],
+      "desc": "Single-estate premium Premium Tea-Time Box boasting delicate aromatic notes, golden liquor, and authentic regional terroir.",
+      "long": "Assam tea cookies, black rice cookies and millet cookies with a 100g tin of single-estate second-flush Assam, presented in a jute-bound box with a hand-stamped card. Our most-gifted Khowdy box for Bihu and Diwali.",
+      "ingredients": "See individual components; full declaration enclosed.",
+      "allergens": [
+        "Milk",
+        "Wheat",
+        "Sesame"
+      ],
+      "image": "assets/img/products/brookie-box.png",
+      "tags": [
+        "gifting",
+        "assam tea",
+        "jute box"
+      ]
+    },
+    {
+      "id": "assamese-snack-box",
+      "name": "Assamese Snack Box",
+      "brand": "khowdy",
+      "cats": [
+        "assamese",
+        "healthy-snacks",
+        "hampers"
+      ],
+      "price": 1450,
+      "rating": 4.7,
+      "reviews": 132,
+      "badges": [],
+      "sizes": "single",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "eggless"
+      ],
+      "desc": "Artisanal Assamese Snack Box handcrafted with pure butter, wholesome ingredients, and zero artificial preservatives.",
+      "long": "A guided tour of the Assamese pantry: coconut til pitha, sesame-jaggery laru, komal chira granola clusters and cashews tossed in a controlled amount of bhoot jolokia. Regional recipes, cleaner methods, no palm oil.",
+      "ingredients": "Rice flour, coconut, jaggery, sesame, komal chira (soft flattened rice), cashew, bhoot jolokia, mustard oil, sea salt.",
+      "allergens": [
+        "Sesame",
+        "Tree nuts (cashew)",
+        "Mustard"
+      ],
+      "image": "assets/img/products/herb-and-cheese-crackers.jpg",
+      "tags": [
+        "regional",
+        "bihu",
+        "pitha"
+      ]
+    },
+    {
+      "id": "single-estate-assam-tea",
+      "name": "Single-Estate Assam Tea",
+      "brand": "khowdy",
+      "cats": [
+        "coffee",
+        "assamese",
+        "hampers"
+      ],
+      "price": 550,
+      "rating": 4.9,
+      "reviews": 264,
+      "badges": [],
+      "sizes": "jar",
+      "occasions": [
+        "corporate",
+        "festival"
+      ],
+      "diet": [
+        "vegan"
+      ],
+      "desc": "Single-estate premium Single-Estate Assam Tea boasting delicate aromatic notes, golden liquor, and authentic regional terroir.",
+      "long": "One garden, one flush, one picking window. Golden-tipped orthodox leaf with the malt and honey character second-flush Assam is famous for. Whole leaf, never dust, packed within ten days of plucking in a nitrogen-flushed tin.",
+      "ingredients": "100% orthodox second-flush Assam tea leaf.",
+      "allergens": [],
+      "image": "assets/img/products/single-estate-assam-tea.jpg",
+      "tags": [
+        "single estate",
+        "orthodox",
+        "second flush"
+      ]
+    },
+    {
+      "id": "jaggery-granola",
+      "name": "Komal Chira Granola",
+      "brand": "khowdy",
+      "cats": [
+        "healthy-snacks",
+        "assamese"
+      ],
+      "price": 465,
+      "rating": 4.6,
+      "reviews": 158,
+      "badges": [
+        "NEW"
+      ],
+      "sizes": "jar",
+      "occasions": [],
+      "diet": [
+        "vegan",
+        "high-protein"
+      ],
+      "desc": "Artisanal Komal Chira Granola handcrafted with pure butter, wholesome ingredients, and zero artificial preservatives.",
+      "long": "Komal chira — Assam's soft flattened rice — clustered with rolled oats, jaggery syrup, cold-pressed coconut oil and four seeds. Baked low and slow for clusters that survive the milk. Vegan, no palm oil, no refined sugar.",
+      "ingredients": "Komal chira, rolled oats, jaggery, cold-pressed coconut oil, pumpkin seed, sunflower seed, flaxseed, coconut flakes, cinnamon.",
+      "allergens": [],
+      "image": "assets/img/products/jaggery-granola.jpg",
+      "tags": [
+        "breakfast",
+        "vegan",
+        "clusters"
+      ]
+    },
+    {
+      "id": "bhoot-jolokia-cashews",
+      "name": "Bhoot Jolokia Cashews",
+      "brand": "khowdy",
+      "cats": [
+        "healthy-snacks",
+        "assamese"
+      ],
+      "price": 495,
+      "rating": 4.7,
+      "reviews": 203,
+      "badges": [],
+      "sizes": "jar",
+      "occasions": [
+        "corporate"
+      ],
+      "diet": [
+        "vegan",
+        "gluten-free"
+      ],
+      "desc": "Artisanal Bhoot Jolokia Cashews handcrafted with pure butter, wholesome ingredients, and zero artificial preservatives.",
+      "long": "Artisanal Bhoot Jolokia Cashews handcrafted with pure butter, wholesome ingredients, and zero artificial preservatives. Handcrafted fresh daily in our Dibrugarh kitchen using pure, premium ingredients with no artificial additives. 100% Vegetarian.",
+      "ingredients": "Cashew W240, cold-pressed mustard oil, bhoot jolokia, black salt, curry leaf, turmeric.",
+      "allergens": [
+        "Tree nuts (cashew)",
+        "Mustard"
+      ],
+      "image": "assets/img/products/paprika-and-garlic-crackers.jpg",
+      "tags": [
+        "spicy",
+        "roasted",
+        "bar snack"
+      ]
+    },
+    {
+      "id": "til-pitha-box",
+      "name": "Til Pitha Box",
+      "brand": "khowdy",
+      "cats": [
+        "assamese",
+        "hampers"
+      ],
+      "price": 385,
+      "rating": 4.8,
+      "reviews": 149,
+      "badges": [],
+      "sizes": "box",
+      "occasions": [
+        "festival"
+      ],
+      "diet": [
+        "vegan",
+        "gluten-free"
+      ],
+      "desc": "Artisanal Til Pitha Box handcrafted with pure butter, wholesome ingredients, and zero artificial preservatives.",
+      "long": "Sticky bora rice, ground and griddled thin, rolled around roasted black sesame and jaggery while still warm. The Bihu classic, made by hand in small batches by the same three women who taught us the recipe.",
+      "ingredients": "Bora sticky rice, black sesame, jaggery, coconut, sea salt.",
+      "allergens": [
+        "Sesame"
+      ],
+      "tags": [
+        "bihu",
+        "handmade",
+        "gluten free"
+      ],
+      "image": "assets/img/products/motichoor-barks.jpg",
+      "images": [
+        "assets/img/products/motichoor-barks.jpg"
+      ]
+    },
+    {
+      "id": "birthday-celebration-hamper",
+      "name": "Birthday Celebration Hamper",
+      "brand": "doughremi",
+      "cats": [
+        "hampers",
+        "birthday-cakes"
+      ],
+      "price": 2250,
+      "mrp": 2600,
+      "rating": 4.8,
+      "reviews": 187,
+      "badges": [
+        "BESTSELLER"
+      ],
+      "sizes": "single",
+      "occasions": [
+        "birthday"
+      ],
+      "desc": "Artisanal Birthday Celebration Hamper handcrafted with pure butter, wholesome ingredients, and zero artificial preservatives.",
+      "long": "Everything a doorstep birthday needs: a 500g chocolate truffle cake, four brownies, six cupcakes, candles, a party knife and a hand-written card in your words. Choose a delivery slot and we handle the surprise.",
+      "ingredients": "See individual components; full declaration enclosed.",
+      "allergens": [
+        "Milk",
+        "Wheat",
+        "Eggs",
+        "Tree nuts"
+      ],
+      "leadHours": 24,
+      "image": "assets/img/products/motichoor-barks.jpg",
+      "tags": [
+        "surprise",
+        "hamper",
+        "birthday"
+      ]
+    },
+    {
+      "id": "corporate-diwali-hamper",
+      "name": "Corporate Festival Hamper",
+      "brand": "khowdy",
+      "cats": [
+        "hampers",
+        "corporate-gifting"
+      ],
+      "price": 1850,
+      "rating": 4.8,
+      "reviews": 214,
+      "badges": [],
+      "sizes": "single",
+      "occasions": [
+        "festival",
+        "corporate"
+      ],
+      "diet": [
+        "eggless"
+      ],
+      "desc": "Artisanal Corporate Festival Hamper handcrafted with pure butter, wholesome ingredients, and zero artificial preservatives.",
+      "long": "Built for gifting at scale: Khowdy cookies, Assam tea, laru, dry fruit and a Signature chocolate bar in a co-branded box with your logo foiled on the lid. Minimum 25 units, GST invoice, pan-India dispatch with per-address delivery.",
+      "ingredients": "See individual components; full declaration enclosed.",
+      "allergens": [
+        "Milk",
+        "Wheat",
+        "Sesame",
+        "Tree nuts"
+      ],
+      "leadHours": 168,
+      "image": "assets/img/products/assorted-mithai-box-of-15.jpg",
+      "tags": [
+        "b2b",
+        "co-branded",
+        "bulk"
+      ]
+    },
+    {
+      "id": "wedding-favour-box",
+      "name": "Wedding Favour Box",
+      "brand": "signature",
+      "cats": [
+        "hampers",
+        "corporate-gifting",
+        "chocolates"
+      ],
+      "price": 650,
+      "rating": 4.9,
+      "reviews": 96,
+      "badges": [
+        "SIGNATURE"
+      ],
+      "sizes": "single",
+      "occasions": [
+        "wedding",
+        "custom"
+      ],
+      "desc": "Artisanal Wedding Favour Box handcrafted with pure butter, wholesome ingredients, and zero artificial preservatives.",
+      "long": "Four hand-painted bonbons in a rigid box foiled with your monogram, names and wedding date, tied with silk ribbon in your palette. Minimum 50 boxes, three weeks' notice, tasting box sent before you commit.",
+      "ingredients": "Couverture chocolate, fresh cream, butter, fruit purées, nuts, cocoa butter colours.",
+      "allergens": [
+        "Milk",
+        "Soy",
+        "Tree nuts"
+      ],
+      "leadHours": 504,
+      "image": "assets/img/products/assorted-mithai-box-of-6.jpg",
+      "tags": [
+        "favours",
+        "monogram",
+        "wedding"
+      ]
+    },
+    {
+      "id": "saiph-gift-card",
+      "name": "SAiPH Gift Card",
+      "brand": "saiph",
+      "cats": [
+        "gift-cards",
+        "hampers",
+        "corporate-gifting"
+      ],
+      "price": 1000,
+      "rating": 4.9,
+      "reviews": 421,
+      "badges": [],
+      "sizes": "single",
+      "occasions": [
+        "birthday",
+        "corporate",
+        "festival",
+        "custom"
+      ],
+      "desc": "Artisanal SAiPH Gift Card handcrafted with pure butter, wholesome ingredients, and zero artificial preservatives.",
+      "long": "Redeemable across DoughReMi, SAiPH Signature and Khowdy — online and in every store. Choose an amount, add a message, schedule the send. Valid twelve months, never expires mid-order, and the balance carries across visits.",
+      "ingredients": "Not applicable.",
+      "allergens": [],
+      "leadHours": 0,
+      "tags": [
+        "instant",
+        "digital",
+        "flexible"
+      ],
+      "image": "assets/img/products/saiph-gift-card.jpg",
+      "images": [
+        "assets/img/products/saiph-gift-card.jpg"
+      ]
+    },
+    {
       "id": "classic-vanilla-cake",
       "name": "Vanilla Cake",
       "brand": "doughremi",
       "cats": [
-            "birthday-cakes",
-            "celebration-cakes"
+        "birthday-cakes",
+        "celebration-cakes"
       ],
       "price": 650,
       "mrp": 750,
       "rating": 4.8,
       "reviews": 142,
       "badges": [
-            "BESTSELLER"
+        "BESTSELLER"
       ],
       "sizes": "cake",
       "occasions": [
-            "birthday",
-            "anniversary",
-            "custom"
+        "birthday",
+        "anniversary",
+        "custom"
       ],
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Delicate golden sponge infused with Bourbon vanilla, finished with fluffy whipped cream.",
-      "long": "Our classic birthday centerpiece. Baked with premium Madagascar vanilla beans, layered with slow-whipped dairy cream and masked with crisp white chocolate pearls.",
-      "ingredients": "French T45 pastry flour, condensed milk, butter, fresh cream, Madagascar vanilla extract, white chocolate pearls.",
+      "desc": "Delicate golden sponge infused with Bourbon vanilla beans, finished with fluffy whipped dairy cream.",
+      "long": "Our classic celebration centerpiece: tender golden sponge baked fresh with French T45 flour, infused with slow-steeped Madagascar Bourbon vanilla, and layered with light whipped dairy cream. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, Madagascar vanilla beans, fresh dairy cream, butter, milk, raw cane sugar.",
       "allergens": [
-            "Milk",
-            "Wheat"
+        "Milk",
+        "Wheat"
       ],
       "customisable": true,
       "image": "assets/img/products/saiph-gift-card.jpg",
       "tags": [
-            "vanilla",
-            "birthday cake",
-            "eggless cake"
+        "vanilla",
+        "birthday cake",
+        "eggless cake"
       ]
-
     },
     {
-     
       "id": "rich-chocolate-cake",
       "name": "Chocolate Cake",
       "brand": "doughremi",
       "cats": [
-            "birthday-cakes",
-            "celebration-cakes"
+        "birthday-cakes",
+        "celebration-cakes"
       ],
       "price": 750,
       "mrp": 850,
       "rating": 4.9,
       "reviews": 218,
       "badges": [
-            "BESTSELLER",
-            "POPULAR"
+        "BESTSELLER",
+        "POPULAR"
       ],
       "sizes": "cake",
       "occasions": [
-            "birthday",
-            "anniversary",
-            "celebration"
+        "birthday",
+        "anniversary",
+        "celebration"
       ],
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Deep moist chocolate sponge layered with 55% Belgian chocolate ganache and chocolate cream.",
-      "long": "The ultimate indulgence for chocolate lovers. Layer upon layer of dense dark cocoa sponge drenched in cocoa syrup and smothered in silky couverture chocolate ganache.",
-      "ingredients": "French T45 pastry flour, Dutch cocoa powder, dark couverture chocolate 55%, butter, fresh dairy cream, cane sugar.",
+      "desc": "Deep, moist chocolate sponge layered with 55% Belgian chocolate ganache and fluffy cocoa cream.",
+      "long": "A classic birthday favourite: rich chocolate sponge baked with French T45 flour and Dutch cocoa, generously frosted with silky Belgian chocolate ganache and chocolate curls. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, Belgian dark chocolate, Dutch cocoa, fresh cream, butter, milk, raw cane sugar.",
       "allergens": [
-            "Milk",
-            "Wheat",
-            "Soy"
+        "Milk",
+        "Wheat",
+        "Soy"
       ],
       "customisable": true,
       "image": "assets/img/products/chocolate-cake.jpg",
       "tags": [
-            "chocolate",
-            "ganache",
-            "birthday cake"
+        "chocolate",
+        "ganache",
+        "birthday cake"
       ]
-
     },
     {
-     
       "id": "golden-butterscotch-cake",
       "name": "Butter scotch Cake",
       "brand": "doughremi",
       "cats": [
-            "birthday-cakes",
-            "celebration-cakes"
+        "birthday-cakes",
+        "celebration-cakes"
       ],
       "price": 700,
       "mrp": 800,
       "rating": 4.8,
       "reviews": 116,
       "badges": [
-            "FAVOURITE"
+        "FAVOURITE"
       ],
       "sizes": "cake",
       "occasions": [
-            "birthday",
-            "anniversary"
+        "birthday",
+        "anniversary"
       ],
       "diet": [
-            "eggless"
+        "eggless"
       ],
       "desc": "Moist sponge layered with rich butterscotch cream and crunchy golden cashew praline.",
-      "long": "Golden vanilla sponge soaked in butterscotch syrup, filled with hand-whipped cream and generously studded with our signature house-made cashew-praline crunch.",
-      "ingredients": "French T45 pastry flour, brown sugar, dairy cream, butterscotch crunch, cashews, dairy butter, caramel glaze.",
+      "long": "A nostalgic crowd favourite: tender golden sponge baked with French T45 flour, filled with slow-cooked butterscotch caramel and topped with crisp caramelized cashew praline. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, butterscotch caramel, roasted cashews, fresh dairy cream, butter, milk, raw cane sugar.",
       "allergens": [
-            "Milk",
-            "Wheat",
-            "Tree nuts (cashew)"
+        "Milk",
+        "Wheat",
+        "Tree nuts (cashew)"
       ],
       "customisable": true,
       "image": "assets/img/products/butterscotch-cake.jpg",
       "tags": [
-            "butterscotch",
-            "praline",
-            "crunch"
+        "butterscotch",
+        "praline",
+        "crunch"
       ]
-
     },
     {
-     
       "id": "tea-cake-vanilla",
       "name": "Tea cake - Vanilla",
       "brand": "doughremi",
       "cats": [
-            "birthday-cakes",
-            "muffins"
+        "birthday-cakes",
+        "muffins"
       ],
       "price": 280,
       "mrp": 320,
       "rating": 4.7,
       "reviews": 64,
       "badges": [
-            "FRESH BAKE"
+        "FRESH BAKE"
       ],
       "sizes": "teacake",
       "occasions": [
-            "custom"
+        "custom"
       ],
       "diet": [
-            "eggless"
+        "eggless"
       ],
       "desc": "Tender, buttery breakfast loaf infused with Madagascar vanilla bean and dusted with icing sugar.",
-      "long": "A traditional morning accompaniment. Moist, tender crumb scented with warm vanilla bean, baked daily at dawn to pair with Assam tea.",
-      "ingredients": "French T45 pastry flour, butter, cane sugar, milk, vanilla extract, sea salt.",
+      "long": "Classic English morning teacake: baked with French T45 flour and slow-churned dairy butter, scented with aromatic Bourbon vanilla. Moist, tender, and perfect with tea. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, pure dairy butter, Madagascar vanilla extract, milk, raw cane sugar.",
       "allergens": [
-            "Milk",
-            "Wheat"
+        "Milk",
+        "Wheat"
       ],
       "image": "assets/img/products/vanilla-roasted-almond-teacake.jpg",
       "tags": [
-            "tea cake",
-            "vanilla loaf",
-            "breakfast"
+        "tea cake",
+        "vanilla loaf",
+        "breakfast"
       ]
-
     },
     {
-     
       "id": "tea-cake-chocolate",
       "name": "Tea cake - Chocolate",
       "brand": "doughremi",
       "cats": [
-            "birthday-cakes",
-            "muffins"
+        "birthday-cakes",
+        "muffins"
       ],
       "price": 320,
       "mrp": 360,
       "rating": 4.8,
       "reviews": 82,
       "badges": [
-            "POPULAR"
+        "POPULAR"
       ],
       "sizes": "teacake",
       "occasions": [
-            "custom"
+        "custom"
       ],
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Decadent cocoa loaf cake baked with Dutch cocoa and dark chocolate chips.",
-      "long": "Rich, dense chocolate loaf baked to perfection with Dutch processed cocoa powder and studded with Callebaut dark chocolate chips.",
-      "ingredients": "French T45 pastry flour, Dutch cocoa, dark chocolate chips, dairy butter, cane sugar, milk.",
+      "desc": "Decadent cocoa loaf teacake baked with Dutch cocoa, dark chocolate chips, and pure butter.",
+      "long": "Rich and deeply chocolatey: moist loaf teacake baked with French T45 flour, rich Dutch cocoa, and studded throughout with dark chocolate chips. Baked fresh daily. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, Dutch cocoa, dark chocolate chips, dairy butter, milk, raw cane sugar.",
       "allergens": [
-            "Milk",
-            "Wheat",
-            "Soy"
+        "Milk",
+        "Wheat",
+        "Soy"
       ],
       "image": "assets/img/products/chocolate-banana-walnut-teacake.jpg",
       "tags": [
-            "tea cake",
-            "chocolate loaf",
-            "choco chip"
+        "tea cake",
+        "chocolate loaf",
+        "choco chip"
       ]
-
     },
     {
-     
       "id": "tea-cake-butterscotch",
       "name": "Tea cake - Butterscotch",
       "brand": "doughremi",
       "cats": [
-            "birthday-cakes",
-            "muffins"
+        "birthday-cakes",
+        "muffins"
       ],
       "price": 310,
       "mrp": 350,
@@ -2270,34 +7068,32 @@
       "reviews": 58,
       "sizes": "teacake",
       "occasions": [
-            "custom"
+        "custom"
       ],
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Rich brown sugar tea cake studded with caramelized butterscotch chips.",
-      "long": "Warm caramelized aroma with every slice. Baked with muscovado sugar and golden butterscotch bits that melt into the crumb.",
-      "ingredients": "French T45 pastry flour, butter, brown sugar, butterscotch chips, milk, vanilla.",
+      "desc": "Rich brown butter teacake studded with caramelized butterscotch chips and roasted nuts.",
+      "long": "A golden, comforting morning teacake: baked with French T45 flour and browned butter, studded with sweet caramelized butterscotch chips. Warm, aromatic, and 100% Eggless.",
+      "ingredients": "French T45 pastry flour, dairy butter, butterscotch chips, milk, raw cane sugar, vanilla extract.",
       "allergens": [
-            "Milk",
-            "Wheat"
+        "Milk",
+        "Wheat"
       ],
       "image": "assets/img/products/butterscotch-cake.jpg",
       "tags": [
-            "tea cake",
-            "butterscotch",
-            "snack"
+        "tea cake",
+        "butterscotch",
+        "snack"
       ]
-
     },
     {
-     
       "id": "tea-cake-plain",
       "name": "Tea cake - Plain",
       "brand": "doughremi",
       "cats": [
-            "birthday-cakes",
-            "muffins"
+        "birthday-cakes",
+        "muffins"
       ],
       "price": 250,
       "mrp": 290,
@@ -2305,155 +7101,147 @@
       "reviews": 43,
       "sizes": "teacake",
       "occasions": [
-            "custom"
+        "custom"
       ],
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Traditional golden English-style tea cake with a delicate crumb and warm aroma.",
-      "long": "The unadorned classic. Simple, wholesome and baked with pure table butter for pure tea-time nostalgia.",
-      "ingredients": "French T45 pastry flour, butter, cane sugar, milk, baking powder.",
+      "desc": "Traditional golden English-style teacake with a delicate crumb and warm vanilla aroma.",
+      "long": "An everyday luxury: golden teacake baked to a fine, tender crumb using French T45 flour and pure slow-churned butter. Simple, comforting, and baked fresh every morning. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, pure dairy butter, milk, raw cane sugar, Madagascar vanilla.",
       "allergens": [
-            "Milk",
-            "Wheat"
+        "Milk",
+        "Wheat"
       ],
       "image": "assets/img/products/cacao-butter-cake.jpg",
       "tags": [
-            "tea cake",
-            "plain",
-            "classic"
+        "tea cake",
+        "plain",
+        "classic"
       ]
-
     },
     {
-     
       "id": "tea-cake-butter",
       "name": "Tea cake - Butter",
       "brand": "doughremi",
       "cats": [
-            "birthday-cakes",
-            "muffins"
+        "birthday-cakes",
+        "muffins"
       ],
       "price": 300,
       "mrp": 340,
       "rating": 4.8,
       "reviews": 76,
       "badges": [
-            "CHEF PICK"
+        "CHEF PICK"
       ],
       "sizes": "teacake",
       "occasions": [
-            "custom"
+        "custom"
       ],
       "diet": [
-            "eggless"
+        "eggless"
       ],
       "desc": "Crafted with pure slow-churned dairy butter for an incomparably rich, melt-in-mouth texture.",
-      "long": "Our richest loaf bake. Made with 100% slow-churned dairy butter, giving a golden crumb and unmatched aroma.",
-      "ingredients": "Slow-churned butter, French T45 pastry flour, cane sugar, whole milk, sea salt.",
+      "long": "The purest celebration of dairy butter: slow-baked loaf teacake made with generous lashings of farm butter and French T45 flour. Melts softly on the palate with a rich golden crumb. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, slow-churned dairy butter, whole milk, raw cane sugar, vanilla bean.",
       "allergens": [
-            "Milk",
-            "Wheat"
+        "Milk",
+        "Wheat"
       ],
       "image": "assets/img/products/brown-butter-cake.png",
       "tags": [
-            "tea cake",
-            "butter",
-            "rich"
+        "tea cake",
+        "butter",
+        "rich"
       ]
-
     },
     {
-     
       "id": "artisan-fruit-cake",
       "name": "Fruit cake (All/Any fruit)",
       "brand": "doughremi",
       "cats": [
-            "celebration-cakes",
-            "birthday-cakes"
+        "celebration-cakes",
+        "birthday-cakes"
       ],
       "price": 420,
       "mrp": 480,
       "rating": 4.9,
       "reviews": 95,
       "badges": [
-            "SIGNATURE"
+        "SIGNATURE"
       ],
       "sizes": "cake",
       "occasions": [
-            "festival",
-            "custom",
-            "birthday"
+        "festival",
+        "custom",
+        "birthday"
       ],
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Golden pound cake studded with candied citrus peels, cherries, golden sultanas and black currants.",
-      "long": "Packed with hand-soaked candied orange peel, glazed red cherries, golden sultanas and tutti frutti for a celebratory jewel-studded slice.",
-      "ingredients": "French T45 pastry flour, candied cherries, orange peel, black currants, golden sultanas, butter, cane sugar.",
+      "desc": "Golden pound cake studded with candied citrus peels, cherries, golden sultanas, and currants.",
+      "long": "A colourful festival of fruits: traditional golden pound cake baked with French T45 flour, loaded with soaked cherries, golden sultanas, candied orange peel, and black currants. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, candied fruits, golden sultanas, black currants, dairy butter, spices, raw cane sugar.",
       "allergens": [
-            "Milk",
-            "Wheat"
+        "Milk",
+        "Wheat"
       ],
       "image": "assets/img/products/tropical-delight-cake.jpg",
       "tags": [
-            "fruit cake",
-            "candied fruit",
-            "tutti frutti"
+        "fruit cake",
+        "candied fruit",
+        "tutti frutti"
       ]
-
     },
     {
-     
       "id": "traditional-plum-cake",
       "name": "Plum cake (Non-alcoholic)",
       "brand": "doughremi",
       "cats": [
-            "celebration-cakes",
-            "birthday-cakes"
+        "celebration-cakes",
+        "birthday-cakes"
       ],
       "price": 480,
       "mrp": 550,
       "rating": 4.9,
       "reviews": 134,
       "badges": [
-            "SEASONAL",
-            "BESTSELLER"
+        "SEASONAL",
+        "BESTSELLER"
       ],
       "sizes": "cake",
       "occasions": [
-            "festival",
-            "anniversary",
-            "custom"
+        "festival",
+        "anniversary",
+        "custom"
       ],
       "diet": [
-            "eggless"
+        "eggless"
       ],
       "desc": "Spiced festive dark cake infused with fruit juice-soaked raisins, prunes, dates, and aromatic winter spices.",
-      "long": "A heritage recipe made without alcohol. Premium dry fruits, California prunes, and Arabian dates steeped in spiced fruit reduction and folded into a dark cinnamon-nutmeg batter.",
-      "ingredients": "French T45 pastry flour, prunes, dates, raisins, orange zest, cinnamon, nutmeg, cloves, butter, brown sugar.",
+      "long": "Traditional festive fruit cake: dark, rich, and fragrant with Ceylon cinnamon, nutmeg, and cloves, packed with dates, raisins, and prunes soaked in spiced fruit reduction. 100% Non-alcoholic and eggless.",
+      "ingredients": "French T45 pastry flour, soaked raisins, prunes, dates, fruit juice reduction, butter, winter spices, molasses.",
       "allergens": [
-            "Milk",
-            "Wheat",
-            "Tree nuts (almond)"
+        "Milk",
+        "Wheat",
+        "Tree nuts (almond)"
       ],
       "image": "assets/img/products/plum-cake-non-alcoholic.jpg",
       "tags": [
-            "plum cake",
-            "festive",
-            "non alcoholic",
-            "christmas"
+        "plum cake",
+        "festive",
+        "non alcoholic",
+        "christmas"
       ]
-
     },
     {
-     
       "id": "butter-plain-cake",
       "name": "Butter Plain Cake",
       "brand": "doughremi",
       "cats": [
-            "birthday-cakes",
-            "celebration-cakes"
+        "birthday-cakes",
+        "celebration-cakes"
       ],
       "price": 350,
       "mrp": 400,
@@ -2461,26 +7249,25 @@
       "reviews": 52,
       "sizes": "cake",
       "occasions": [
-            "birthday",
-            "custom"
+        "birthday",
+        "custom"
       ],
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Old-fashioned round butter cake baked to a golden crust with a soft velvety crumb.",
-      "long": "Simple perfection. A round golden tea-cake round made with pure churned butter, ready to slice or frost at home.",
-      "ingredients": "French T45 pastry flour, pure butter, cane sugar, milk, vanilla.",
+      "desc": "Old-fashioned round butter cake baked to a golden crust with a soft, velvety crumb.",
+      "long": "A bakery heritage recipe: round butter pound cake baked with French T45 flour and cultured dairy butter. Scented with warm vanilla with a tender golden crumb. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, cultured dairy butter, milk, raw cane sugar, pure vanilla extract.",
       "allergens": [
-            "Milk",
-            "Wheat"
+        "Milk",
+        "Wheat"
       ],
       "image": "assets/img/products/brown-butter-cake.png",
       "tags": [
-            "butter cake",
-            "sponge",
-            "round cake"
+        "butter cake",
+        "sponge",
+        "round cake"
       ]
-
     },
     {
       "id": "no-bake-cheese-cream-cake",
@@ -2493,7 +7280,7 @@
       ],
       "price": 1550,
       "mrp": 1780,
-      "rating": 5.0,
+      "rating": 5,
       "reviews": 182,
       "badges": [
         "SIGNATURE",
@@ -2514,15 +7301,17 @@
         "eggless",
         "no-maida"
       ],
-      "desc": "Ultra-silky Philadelphia cream cheese mousse over a buttery almond crust, chilled to creamy perfection with fragrant Madagascar vanilla.",
-      "long": "Ultra-silky Philadelphia cream cheese mousse over a buttery almond crust, chilled to creamy perfection with fragrant Madagascar vanilla. 100% Eggless and Gluten-Free.",
-      "ingredients": "Almond crust, Philadelphia-style cream cheese, heavy dairy cream, pure Madagascar vanilla bean, natural erythritol.",
+      "desc": "Ultra-silky cream cheese mousse over a buttery almond crust, infused with fragrant Madagascar vanilla.",
+      "long": "A cloud-like chilled cheesecake: whipped Philadelphia cream cheese layered over a crisp, buttery almond crust, finished with fragrant Bourbon vanilla bean. Light, velvety, and completely refined sugar-free. 100% Eggless.",
+      "ingredients": "Cream cheese, fresh dairy cream, almond flour, butter, Madagascar vanilla, natural stevia & erythritol blend.",
       "allergens": [
         "Milk / Dairy",
         "Tree nuts (almond)"
       ],
       "image": "assets/img/products/vanilla-basque-cheesecake.jpg",
-      "images": ["assets/img/products/saiph-gift-card.jpg"],
+      "images": [
+        "assets/img/products/saiph-gift-card.jpg"
+      ],
       "tags": [
         "cake",
         "cheesecake",
@@ -2533,47 +7322,44 @@
       ]
     },
     {
-     
       "id": "sweet-burger-tea-cake-buns",
       "name": "Sweet Burger (Tea Cake Buns)",
       "brand": "doughremi",
       "cats": [
-            "burgers",
-            "desserts"
+        "burgers",
+        "desserts"
       ],
       "price": 120,
       "mrp": 140,
       "rating": 4.7,
       "reviews": 38,
       "badges": [
-            "NEW"
+        "NEW"
       ],
       "sizes": "single",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Sweet vanilla teacake buns filled with light whipped cream and berry fruit compote.",
-      "long": "A delightful sweet twist! Soft golden teacake brioche buns halved and filled with chantilly cream, strawberry compote and chocolate drizzle.",
-      "ingredients": "Teacake brioche, whipped cream, berry compote, chocolate ganache.",
+      "desc": "Artisan Sweet Burger (Tea Cake Buns) crafted with French T45 flour, layered with velvety whipped cream and zero refined sugar. 100% Eggless.",
+      "long": "A delightful sweet twist! Soft golden teacake brioche buns halved and filled with chantilly cream, strawberry compote and chocolate drizzle. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, Teacake brioche, whipped cream, berry compote, chocolate ganache.",
       "allergens": [
-            "Milk",
-            "Wheat"
+        "Milk",
+        "Wheat"
       ],
       "image": "assets/img/products/sweet-burger-tea-cake-buns.jpg",
       "tags": [
-            "sweet burger",
-            "teacake bun",
-            "dessert burger"
+        "sweet burger",
+        "teacake bun",
+        "dessert burger"
       ]
-
     },
     {
-     
       "id": "classic-plain-burger",
       "name": "Plain burger",
       "brand": "doughremi",
       "cats": [
-            "burgers"
+        "burgers"
       ],
       "price": 90,
       "mrp": 110,
@@ -2581,275 +7367,259 @@
       "reviews": 29,
       "sizes": "single",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Soft toasted sesame brioche bun with house herb butter and spiced relish spread.",
-      "long": "Simple and warm. Fresh bakery-baked sesame bun lightly griddled with garlic-herb butter and our savoury house tomato-onion relish.",
+      "desc": "Toasted artisan brioche bun filled with savory gourmet patty, crisp garden greens, and spiced house sauce.",
+      "long": "Toasted artisan brioche bun filled with savory gourmet patty, crisp garden greens, and spiced house sauce. Handcrafted fresh daily in our Dibrugarh kitchen using pure, premium ingredients with no artificial additives. 100% Vegetarian.",
       "ingredients": "Brioche bun, sesame seeds, herb butter, house relish.",
       "allergens": [
-            "Milk",
-            "Wheat",
-            "Sesame"
+        "Milk",
+        "Wheat",
+        "Sesame"
       ],
       "image": "assets/img/products/classic-plain-burger.jpg",
       "tags": [
-            "burger",
-            "plain burger",
-            "sesame bun"
+        "burger",
+        "plain burger",
+        "sesame bun"
       ]
-
     },
     {
-     
       "id": "crispy-veg-burger",
       "name": "Veg Burger",
       "brand": "doughremi",
       "cats": [
-            "burgers"
+        "burgers"
       ],
       "price": 130,
       "mrp": 150,
       "rating": 4.8,
       "reviews": 84,
       "badges": [
-            "BESTSELLER"
+        "BESTSELLER"
       ],
       "sizes": "single",
       "diet": [
-            "eggless"
+        "eggless"
       ],
       "desc": "Crispy golden vegetable patty, crisp lettuce, garden tomato, red onion and creamy house sauce.",
-      "long": "Freshly assembled bakery burger. Crisp potato-pea-carrot patty fried golden, loaded with lettuce, tomato, onions and smoky mayonnaise in a soft brioche bun.",
+      "long": "Crispy golden vegetable patty, crisp lettuce, garden tomato, red onion and creamy house sauce. Handcrafted fresh daily in our Dibrugarh kitchen using pure, premium ingredients with no artificial additives. 100% Vegetarian.",
       "ingredients": "Sesame bun, potato-herb patty, iceberg lettuce, tomato, onion, eggless burger mayo.",
       "allergens": [
-            "Milk",
-            "Wheat",
-            "Sesame"
+        "Milk",
+        "Wheat",
+        "Sesame"
       ],
       "image": "assets/img/products/crispy-veg-burger.jpg",
       "tags": [
-            "veg burger",
-            "crispy patty",
-            "burger"
+        "veg burger",
+        "crispy patty",
+        "burger"
       ]
-
     },
     {
-     
       "id": "spiced-paneer-burger",
       "name": "Paneer Burger",
       "brand": "doughremi",
       "cats": [
-            "burgers"
+        "burgers"
       ],
       "price": 160,
       "mrp": 180,
       "rating": 4.9,
       "reviews": 92,
       "badges": [
-            "POPULAR"
+        "POPULAR"
       ],
       "sizes": "single",
       "diet": [
-            "eggless"
+        "eggless"
       ],
       "desc": "Grilled malai paneer steak marinated in tandoori spices with crisp greens and mint mayo.",
-      "long": "Generous thick slab of malai cottage cheese griddled with aromatic tandoori masala, accompanied by crunchy onion rings, pickled jalapeños and mint-coriander mayonnaise.",
+      "long": "Grilled malai paneer steak marinated in tandoori spices with crisp greens and mint mayo. Handcrafted fresh daily in our Dibrugarh kitchen using pure, premium ingredients with no artificial additives. 100% Vegetarian.",
       "ingredients": "Sesame brioche, fresh paneer, tandoori spices, mint mayo, lettuce, tomato.",
       "allergens": [
-            "Milk",
-            "Wheat",
-            "Sesame"
+        "Milk",
+        "Wheat",
+        "Sesame"
       ],
       "image": "assets/img/products/spiced-paneer-burger.jpg",
       "tags": [
-            "paneer burger",
-            "tandoori",
-            "cottage cheese"
+        "paneer burger",
+        "tandoori",
+        "cottage cheese"
       ]
-
     },
     {
-     
       "id": "loaded-cheese-burger",
       "name": "Cheese Burger",
       "brand": "doughremi",
       "cats": [
-            "burgers"
+        "burgers"
       ],
       "price": 150,
       "mrp": 175,
       "rating": 4.8,
       "reviews": 77,
       "badges": [
-            "CHEESY"
+        "CHEESY"
       ],
       "sizes": "single",
       "diet": [
-            "eggless"
+        "eggless"
       ],
       "desc": "Crisp vegetable patty topped with a double layer of melted cheddar and cream cheese sauce.",
-      "long": "For serious cheese enthusiasts. Golden veggie patty crowned with sharp cheddar slice and warm melted cheese sauce in our signature toasted bun.",
+      "long": "Crisp vegetable patty topped with a double layer of melted cheddar and cream cheese sauce. Handcrafted fresh daily in our Dibrugarh kitchen using pure, premium ingredients with no artificial additives. 100% Vegetarian.",
       "ingredients": "Brioche bun, cheddar cheese slice, cheese sauce, vegetable patty, lettuce.",
       "allergens": [
-            "Milk",
-            "Wheat",
-            "Sesame"
+        "Milk",
+        "Wheat",
+        "Sesame"
       ],
       "image": "assets/img/products/loaded-cheese-burger.jpg",
       "tags": [
-            "cheese burger",
-            "cheddar",
-            "double cheese"
+        "cheese burger",
+        "cheddar",
+        "double cheese"
       ]
-
     },
     {
-     
       "id": "bakhar-khani-plain",
       "name": "Bakhar Khani - Plain",
       "brand": "doughremi",
       "cats": [
-            "bakhar-khani"
+        "bakhar-khani"
       ],
       "price": 80,
       "mrp": 95,
       "rating": 4.8,
       "reviews": 62,
       "badges": [
-            "TRADITIONAL"
+        "TRADITIONAL"
       ],
       "sizes": "pack2",
       "diet": [
-            "eggless"
+        "eggless"
       ],
       "desc": "Traditional multi-layered flaky flatbread baked crisp with clarified butter and sesame seeds.",
-      "long": "Authentic bakery craftsmanship. Hundred-layered laminated pastry disc baked golden in high heat, crisp on the edges and delicately flaky within.",
+      "long": "Traditional multi-layered flaky flatbread baked crisp with clarified butter and sesame seeds. Handcrafted fresh daily in our Dibrugarh kitchen using pure, premium ingredients with no artificial additives. 100% Vegetarian.",
       "ingredients": "Refined wheat flour, clarified butter (ghee), milk, sesame seeds, sea salt.",
       "allergens": [
-            "Milk",
-            "Wheat",
-            "Sesame"
+        "Milk",
+        "Wheat",
+        "Sesame"
       ],
       "image": "assets/img/products/bakhar-khani-plain.jpg",
       "tags": [
-            "bakhar khani",
-            "flaky",
-            "traditional"
+        "bakhar khani",
+        "flaky",
+        "traditional"
       ]
-
     },
     {
-     
       "id": "bakhar-khani-cheese",
       "name": "Bakhar Khani - Cheese",
       "brand": "doughremi",
       "cats": [
-            "bakhar-khani"
+        "bakhar-khani"
       ],
       "price": 110,
       "mrp": 130,
       "rating": 4.8,
       "reviews": 49,
       "badges": [
-            "CHEF PICK"
+        "CHEF PICK"
       ],
       "sizes": "pack2",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Flaky laminated layers baked with an aged sharp cheese blend and dried oregano.",
-      "long": "A modern savoury evolution. Laminated with clarified butter and aged cheese, crisp and golden with melted cheese crisps baked into the surface.",
+      "desc": "Artisanal Bakhar Khani - Cheese handcrafted with pure butter, wholesome ingredients, and zero artificial preservatives.",
+      "long": "Artisanal Bakhar Khani - Cheese handcrafted with pure butter, wholesome ingredients, and zero artificial preservatives. Handcrafted fresh daily in our Dibrugarh kitchen using pure, premium ingredients with no artificial additives. 100% Vegetarian.",
       "ingredients": "Wheat flour, ghee, blended cheddar cheese, oregano, sea salt.",
       "allergens": [
-            "Milk",
-            "Wheat",
-            "Sesame"
+        "Milk",
+        "Wheat",
+        "Sesame"
       ],
       "image": "assets/img/products/bakhar-khani-cheese.jpg",
       "tags": [
-            "bakhar khani",
-            "cheese",
-            "savoury"
+        "bakhar khani",
+        "cheese",
+        "savoury"
       ]
-
     },
     {
-     
       "id": "bakhar-khani-chocolate",
       "name": "Bakhar Khani - Chocolate",
       "brand": "doughremi",
       "cats": [
-            "bakhar-khani"
+        "bakhar-khani"
       ],
       "price": 120,
       "mrp": 140,
       "rating": 4.9,
       "reviews": 55,
       "badges": [
-            "NEW"
+        "NEW"
       ],
       "sizes": "pack2",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Crisp laminated bakery pastry rolled with Belgian dark cocoa and chocolate chips.",
-      "long": "Decadent sweet variety. Layered with Dutch cocoa and dark chocolate chips that melt during the bake, producing caramelized crispy chocolate pastry.",
+      "desc": "Artisanal Bakhar Khani - Chocolate handcrafted with pure butter, wholesome ingredients, and zero artificial preservatives.",
+      "long": "Artisanal Bakhar Khani - Chocolate handcrafted with pure butter, wholesome ingredients, and zero artificial preservatives. Handcrafted fresh daily in our Dibrugarh kitchen using pure, premium ingredients with no artificial additives. 100% Vegetarian.",
       "ingredients": "Wheat flour, dark cocoa, chocolate chips, ghee, cane sugar.",
       "allergens": [
-            "Milk",
-            "Wheat",
-            "Soy"
+        "Milk",
+        "Wheat",
+        "Soy"
       ],
       "image": "assets/img/products/bakhar-khani-chocolate.jpg",
       "tags": [
-            "bakhar khani",
-            "chocolate",
-            "sweet"
+        "bakhar khani",
+        "chocolate",
+        "sweet"
       ]
-
     },
     {
-     
       "id": "paneer-artisan-pizza",
       "name": "Pizza - Paneer",
       "brand": "doughremi",
       "cats": [
-            "pizza"
+        "pizza"
       ],
       "price": 260,
       "mrp": 300,
       "rating": 4.9,
       "reviews": 104,
       "badges": [
-            "BESTSELLER"
+        "BESTSELLER"
       ],
       "sizes": "pizza",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Stone-baked pizza with tomato sauce, spiced paneer tikka chunks, bell peppers and molten mozzarella.",
-      "long": "Hand-stretched artisan sourdough pizza base topped with slow-cooked herb tomato sauce, fresh spiced paneer cubes, crisp capsicum, onions and 100% dairy mozzarella.",
-      "ingredients": "Sourdough crust, mozzarella cheese, spiced paneer tikka, tomato passata, capsicum, oregano.",
+      "desc": "Thin-crust artisan pizza topped with spiced marinated malai paneer tikka, crunchy peppers, and melted cheese.",
+      "long": "Slow-fermented artisan crust baked with French T45 flour, topped with tandoori-marinated malai paneer cubes, roasted bell peppers, red onions, and melted mozzarella over spiced herb marinara. 100% Vegetarian.",
+      "ingredients": "French T45 pastry flour, malai paneer, mozzarella, capsicum, red onion, tandoori spices, olive oil, tomato sauce.",
       "allergens": [
-            "Milk",
-            "Wheat"
+        "Milk",
+        "Wheat"
       ],
       "image": "assets/img/products/paneer-artisan-pizza.jpg",
       "tags": [
-            "pizza",
-            "paneer pizza",
-            "tandoori"
+        "pizza",
+        "paneer pizza",
+        "tandoori"
       ]
-
     },
     {
-     
       "id": "garden-fresh-veg-pizza",
       "name": "Pizza - Veg",
       "brand": "doughremi",
       "cats": [
-            "pizza"
+        "pizza"
       ],
       "price": 240,
       "mrp": 280,
@@ -2857,134 +7627,126 @@
       "reviews": 88,
       "sizes": "pizza",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Loaded with black olives, sweet corn, crisp capsicum, onions, mushrooms and herb-infused mozzarella.",
-      "long": "Vibrant garden harvest on a blistered crust. Abundantly loaded with sweet American corn, Spanish black olives, button mushrooms, capsicum and melted mozzarella.",
-      "ingredients": "Artisan pizza base, mozzarella, black olives, sweet corn, capsicum, mushrooms, tomato sauce.",
+      "desc": "Crisp artisan pizza loaded with crunchy bell peppers, sweet corn, red onions, mushrooms, and melted mozzarella.",
+      "long": "Hand-stretched thin-crust pizza baked with French T45 flour: loaded with farm-fresh capsicum, sweet golden corn, red onions, button mushrooms, and creamy mozzarella over herb tomato sauce. Fresh, wholesome, and delicious.",
+      "ingredients": "French T45 pastry flour, mozzarella, tomato marinara, capsicum, sweet corn, button mushrooms, red onions, olive oil, oregano.",
       "allergens": [
-            "Milk",
-            "Wheat"
+        "Milk",
+        "Wheat"
       ],
       "image": "assets/img/products/garden-fresh-veg-pizza.jpg",
       "tags": [
-            "pizza",
-            "veg pizza",
-            "mozzarella"
+        "pizza",
+        "veg pizza",
+        "mozzarella"
       ]
-
     },
     {
-     
       "id": "classic-margherita-pizza",
       "name": "Pizza - Cheese",
       "brand": "doughremi",
       "cats": [
-            "pizza"
+        "pizza"
       ],
       "price": 220,
       "mrp": 260,
       "rating": 4.8,
       "reviews": 73,
       "badges": [
-            "CLASSIC"
+        "CLASSIC"
       ],
       "sizes": "pizza",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Hand-stretched sourdough base, slow-simmered herb tomato passata, double mozzarella and fresh basil.",
-      "long": "The authentic Italian simplicity. Double layer of creamy Fior di Latte mozzarella over our 24-hour slow-fermented crust and seasoned tomato sauce.",
-      "ingredients": "Fermented pizza base, double mozzarella cheese, San Marzano tomato sauce, basil, extra virgin olive oil.",
+      "desc": "Artisan thin-crust pizza topped with slow-simmered San Marzano tomato sauce, fresh mozzarella, and dried basil.",
+      "long": "Slow-fermented thin-crust artisan pizza baked with French T45 flour: topped with aromatic garlic herb tomato sauce, melted mozzarella, and fragrant dried basil. Baked to a blistered crust with zero chemical dough conditioners. 100% Vegetarian.",
+      "ingredients": "French T45 pastry flour, whole wheat flour, mozzarella cheese, San Marzano tomato sauce, extra virgin olive oil, basil, yeast.",
       "allergens": [
-            "Milk",
-            "Wheat"
+        "Milk",
+        "Wheat"
       ],
       "image": "assets/img/products/classic-margherita-pizza.jpg",
       "tags": [
-            "pizza",
-            "margherita",
-            "cheese pizza"
+        "pizza",
+        "margherita",
+        "cheese pizza"
       ]
-
     },
     {
-     
       "id": "flaky-veg-patties",
       "name": "Veg Patties",
       "brand": "doughremi",
       "cats": [
-            "patties-rolls",
-            "savouries"
+        "patties-rolls",
+        "savouries"
       ],
       "price": 45,
       "mrp": 55,
       "rating": 4.8,
       "reviews": 130,
       "badges": [
-            "POPULAR"
+        "POPULAR"
       ],
       "sizes": "patties",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Golden-baked layered puff pastry pocket filled with spiced potato, carrots and green peas.",
-      "long": "The quintessential Indian bakery treat. Super-flaky puff pastry made with pure vegetable shortening, encasing a savoury potato-pea-carrot filling seasoned with cumin, coriander and garam masala.",
-      "ingredients": "Wheat flour, potato, green peas, carrots, vegetable shortening, cumin, garam masala, salt.",
+      "desc": "Traditional Indian bakery puff pastry loaded with spiced green peas, diced potatoes, and fresh coriander.",
+      "long": "A timeless teatime classic: ultra-flaky, multi-layered puff pastry baked to golden perfection with French T45 flour and pure butter, filled with aromatic spiced potatoes, sweet green peas, and fresh herbs. 100% Vegetarian.",
+      "ingredients": "French T45 pastry flour, potatoes, green peas, butter, cumin, garam masala, fresh coriander, sea salt.",
       "allergens": [
-            "Wheat"
+        "Wheat"
       ],
       "image": "assets/img/products/flaky-veg-patties.jpg",
       "tags": [
-            "patties",
-            "veg patties",
-            "puff pastry"
+        "patties",
+        "veg patties",
+        "puff pastry"
       ]
-
     },
     {
-     
       "id": "flaky-paneer-patties",
       "name": "Paneer Patties",
       "brand": "doughremi",
       "cats": [
-            "patties-rolls",
-            "savouries"
+        "patties-rolls",
+        "savouries"
       ],
       "price": 60,
       "mrp": 70,
       "rating": 4.9,
       "reviews": 146,
       "badges": [
-            "BESTSELLER"
+        "BESTSELLER"
       ],
       "sizes": "patties",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Buttery puff pastry shell encasing fresh cottage cheese cubes seasoned with cumin and garam masala.",
-      "long": "Fresh malai paneer seasoned with aromatic roasted spices, tucked inside golden, paper-thin laminated puff pastry and baked crisp every hour.",
-      "ingredients": "Wheat flour, fresh paneer, shortening, cumin, turmeric, garam masala, sea salt.",
+      "desc": "Crisp multi-layered golden puff pastry packed with tandoori-spiced malai paneer cubes and sweet peppers.",
+      "long": "Featherlight, flaky puff pastry shell encasing a flavorful filling of crumbled malai paneer, roasted cumin, ginger, and aromatic spices. Golden, crispy, and baked fresh every morning with French T45 flour. 100% Vegetarian.",
+      "ingredients": "French T45 pastry flour, malai paneer, butter, ginger, green chilies, roasted cumin, fresh herbs, sea salt.",
       "allergens": [
-            "Milk",
-            "Wheat"
+        "Milk",
+        "Wheat"
       ],
       "image": "assets/img/products/flaky-paneer-patties.jpg",
       "tags": [
-            "patties",
-            "paneer patties",
-            "puff"
+        "patties",
+        "paneer patties",
+        "puff"
       ]
-
     },
     {
-     
       "id": "spiced-paneer-roll",
       "name": "Paneer Roll",
       "brand": "doughremi",
       "cats": [
-            "patties-rolls",
-            "savouries"
+        "patties-rolls",
+        "savouries"
       ],
       "price": 70,
       "mrp": 80,
@@ -2992,31 +7754,29 @@
       "reviews": 88,
       "sizes": "single",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Golden bakery pastry roll wrapped around a spicy crumbled paneer and roasted bell pepper core.",
-      "long": "Crispy cylindrical pastry roll packed with spiced crumbled paneer, sautéed onions and diced capsicum.",
-      "ingredients": "Wheat flour, cottage cheese, capsicum, onion, aromatic spices, butter.",
+      "desc": "Crispy golden bakery pastry roll wrapped around a savory core of spiced crumbled malai paneer and roasted bell peppers.",
+      "long": "Handcrafted bakery puff roll: flaky multi-layered pastry baked with French T45 flour and pure butter, wrapped around a rich filling of spiced malai paneer, sautéed red onions, and sweet bell peppers. Baked fresh daily with zero artificial colors. 100% Vegetarian.",
+      "ingredients": "French T45 pastry flour, fresh malai paneer, butter, red bell peppers, onions, aromatic Indian spices, sea salt.",
       "allergens": [
-            "Milk",
-            "Wheat"
+        "Milk",
+        "Wheat"
       ],
       "image": "assets/img/products/spiced-paneer-roll.jpg",
       "tags": [
-            "paneer roll",
-            "roll",
-            "bakery roll"
+        "paneer roll",
+        "roll",
+        "bakery roll"
       ]
-
     },
     {
-     
       "id": "caramelized-onion-roll",
       "name": "Onion Roll",
       "brand": "doughremi",
       "cats": [
-            "patties-rolls",
-            "savouries"
+        "patties-rolls",
+        "savouries"
       ],
       "price": 60,
       "mrp": 70,
@@ -3024,31 +7784,29 @@
       "reviews": 54,
       "sizes": "single",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Soft baked roll rolled with slow-caramelized onions, cracked black pepper and melted cheese.",
-      "long": "Sweet and savoury comfort. Sautéed pink onions slow-caramelized with black pepper, rolled in soft enriched dough and baked to a deep golden glaze.",
-      "ingredients": "Wheat flour, caramelized onions, black pepper, butter, cheese, salt.",
+      "desc": "Flaky golden bakery roll stuffed with slow-caramelized sweet onions, herbs, and mild melted cheese.",
+      "long": "Delicate puff pastry rolled around slow-simmered caramelized brown onions, fragrant thyme, and mild melting cheese. Crispy, golden, and deeply comforting warm out of the bakery oven. Baked fresh with French T45 flour. 100% Vegetarian.",
+      "ingredients": "French T45 pastry flour, sweet onions, butter, white cheddar, thyme, cracked black pepper, sea salt.",
       "allergens": [
-            "Milk",
-            "Wheat"
+        "Milk",
+        "Wheat"
       ],
       "image": "assets/img/products/caramelized-onion-roll.jpg",
       "tags": [
-            "onion roll",
-            "roll",
-            "savoury"
+        "onion roll",
+        "roll",
+        "savoury"
       ]
-
     },
     {
-     
       "id": "sweet-coconut-pop",
       "name": "Sweet Coconut Pop",
       "brand": "doughremi",
       "cats": [
-            "patties-rolls",
-            "desserts"
+        "patties-rolls",
+        "desserts"
       ],
       "price": 50,
       "mrp": 60,
@@ -3056,30 +7814,28 @@
       "reviews": 67,
       "sizes": "pack2",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Crunchy puffed bite glazed with aromatic jaggery and freshly grated roasted coconut.",
-      "long": "Delightful tea-time pastry puff coated with caramelised organic jaggery glaze and rolled in toasted desiccated coconut.",
-      "ingredients": "Wheat flour, desiccated coconut, jaggery, vegetable oil, cardamom.",
+      "desc": "Crisp golden puff pastry turnover filled with sweet desiccated coconut, green cardamom, and golden raisins.",
+      "long": "A nostalgic bakery sweet: flaky golden puff pastry baked with French T45 flour, stuffed with sweet toasted coconut, fragrant green cardamom, and plump golden sultanas. Gently glazed for a delicate crunch. 100% Vegetarian.",
+      "ingredients": "French T45 pastry flour, desiccated coconut, butter, green cardamom, golden raisins, raw cane sugar, milk.",
       "allergens": [
-            "Wheat"
+        "Wheat"
       ],
       "image": "assets/img/products/sweet-coconut-pop.jpg",
       "tags": [
-            "coconut pop",
-            "sweet pop",
-            "coconut"
+        "coconut pop",
+        "sweet pop",
+        "coconut"
       ]
-
     },
     {
-     
       "id": "round-pop-sweet",
       "name": "Round Pop Sweet",
       "brand": "doughremi",
       "cats": [
-            "patties-rolls",
-            "desserts"
+        "patties-rolls",
+        "desserts"
       ],
       "price": 50,
       "mrp": 60,
@@ -3087,64 +7843,60 @@
       "reviews": 48,
       "sizes": "pack2",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Traditional sweetened bakery puff dumplings with a crisp caramelized golden shell.",
-      "long": "Bite-sized spherical puff pastries with a hollow flaky shell and light sugar crystal glaze.",
-      "ingredients": "Wheat flour, shortening, cane sugar, cardamom.",
+      "desc": "Delicate spherical puff pastry bun filled with sweetened cardamom mawa, toasted coconut, and almonds.",
+      "long": "Crispy layered puff pastry sphere filled with rich sweetened khoya mawa, toasted coconut shreds, and slivered almonds. Baked golden and fragrant with green cardamom. Baked fresh with French T45 flour. 100% Vegetarian.",
+      "ingredients": "French T45 pastry flour, khoya (mawa), desiccated coconut, almond slivers, green cardamom, butter, raw cane sugar.",
       "allergens": [
-            "Wheat"
+        "Wheat"
       ],
       "image": "assets/img/products/round-pop-sweet.jpg",
       "tags": [
-            "round pop",
-            "sweet puff",
-            "pastry pop"
+        "round pop",
+        "sweet puff",
+        "pastry pop"
       ]
-
     },
     {
-     
       "id": "belgian-chocolate-pastry",
       "name": "Pastry - Chocolate",
       "brand": "doughremi",
       "cats": [
-            "pastries"
+        "pastries"
       ],
       "price": 110,
       "mrp": 130,
       "rating": 4.9,
       "reviews": 154,
       "badges": [
-            "BESTSELLER"
+        "BESTSELLER"
       ],
       "sizes": "single",
       "diet": [
-            "eggless"
+        "eggless"
       ],
       "desc": "Rich chocolate sponge layered with smooth 55% couverture chocolate mousse and dark ganache.",
-      "long": "Our top-selling single-portion indulgence. Dark cocoa sponge soaked in cocoa syrup and stacked with velvety Belgian chocolate mousse.",
-      "ingredients": "Dark chocolate 55%, dairy cream, cocoa powder, wheat flour, cane sugar.",
+      "long": "Our top-selling single-portion indulgence. Dark cocoa sponge soaked in cocoa syrup and stacked with velvety Belgian chocolate mousse. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "Dark chocolate 55%, dairy cream, cocoa powder, French T45 pastry flour, cane sugar.",
       "allergens": [
-            "Milk",
-            "Wheat",
-            "Soy"
+        "Milk",
+        "Wheat",
+        "Soy"
       ],
       "image": "assets/img/products/chocolate-caramel-noir-mini-cake.jpg",
       "tags": [
-            "pastry",
-            "chocolate pastry",
-            "belgian chocolate"
+        "pastry",
+        "chocolate pastry",
+        "belgian chocolate"
       ]
-
     },
     {
-     
       "id": "classic-black-forest-pastry",
       "name": "Pastry - Black Forest",
       "brand": "doughremi",
       "cats": [
-            "pastries"
+        "pastries"
       ],
       "price": 120,
       "mrp": 140,
@@ -3152,66 +7904,62 @@
       "reviews": 112,
       "sizes": "single",
       "diet": [
-            "eggless"
+        "eggless"
       ],
       "desc": "Chocolate sponge layered with Madagascar whipped cream, tart cherry compote and chocolate shavings.",
-      "long": "The timeless German classic. Light chocolate sponge, layers of vanilla cream, sour cherry reduction and dark chocolate curls.",
-      "ingredients": "Wheat flour, cream, cherries, chocolate curls, cocoa, sugar.",
+      "long": "The timeless German classic. Light chocolate sponge, layers of vanilla cream, sour cherry reduction and dark chocolate curls. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, cream, cherries, chocolate curls, cocoa, sugar.",
       "allergens": [
-            "Milk",
-            "Wheat"
+        "Milk",
+        "Wheat"
       ],
       "image": "assets/img/products/black-forest-cake.jpg",
       "tags": [
-            "pastry",
-            "black forest",
-            "cherry"
+        "pastry",
+        "black forest",
+        "cherry"
       ]
-
     },
     {
-     
       "id": "nutella-hazelnut-pastry",
       "name": "Pastry - Nutella",
       "brand": "doughremi",
       "cats": [
-            "pastries"
+        "pastries"
       ],
       "price": 140,
       "mrp": 160,
       "rating": 4.9,
       "reviews": 138,
       "badges": [
-            "POPULAR"
+        "POPULAR"
       ],
       "sizes": "single",
       "diet": [
-            "eggless"
+        "eggless"
       ],
       "desc": "Velvety Nutella hazelnut mousse sandwiched between dark cocoa sponge and roasted hazelnut praline.",
-      "long": "Irresistible Italian hazelnut cocoa spread blended with fresh whipped cream and layered with chocolate sponge and roasted hazelnut crunch.",
-      "ingredients": "Nutella spread, hazelnuts, cocoa sponge, dairy cream, dark chocolate.",
+      "long": "Irresistible Italian hazelnut cocoa spread blended with fresh whipped cream and layered with chocolate sponge and roasted hazelnut crunch. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, Nutella spread, hazelnuts, cocoa sponge, dairy cream, dark chocolate.",
       "allergens": [
-            "Milk",
-            "Wheat",
-            "Tree nuts (hazelnut)",
-            "Soy"
+        "Milk",
+        "Wheat",
+        "Tree nuts (hazelnut)",
+        "Soy"
       ],
       "image": "assets/img/products/nutella-hazelnut-cake.jpg",
       "tags": [
-            "pastry",
-            "nutella",
-            "hazelnut"
+        "pastry",
+        "nutella",
+        "hazelnut"
       ]
-
     },
     {
-     
       "id": "marble-sponge-pastry",
       "name": "Pastry - Marble Pastry",
       "brand": "doughremi",
       "cats": [
-            "pastries"
+        "pastries"
       ],
       "price": 115,
       "mrp": 130,
@@ -3219,65 +7967,61 @@
       "reviews": 58,
       "sizes": "single",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Artisan vanilla-chocolate swirl sponge layered with duo-tone Chantilly cream.",
-      "long": "Swirled ribbons of dark chocolate and golden vanilla sponge layered with two-tone cream and chocolate marble disc on top.",
-      "ingredients": "Wheat flour, cocoa, vanilla, dairy cream, butter, sugar.",
+      "desc": "Artisanal Pastry - Marble Pastry handcrafted with pure butter, wholesome ingredients, and zero artificial preservatives.",
+      "long": "Swirled ribbons of dark chocolate and golden vanilla sponge layered with two-tone cream and chocolate marble disc on top. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, cocoa, vanilla, dairy cream, butter, sugar.",
       "allergens": [
-            "Milk",
-            "Wheat"
+        "Milk",
+        "Wheat"
       ],
       "image": "assets/img/products/marble-opulence-mini-cake.jpg",
       "tags": [
-            "pastry",
-            "marble",
-            "swirl"
+        "pastry",
+        "marble",
+        "swirl"
       ]
-
     },
     {
-     
       "id": "cookies-cream-oreo-pastry",
       "name": "Pastry - Oreo Pastry",
       "brand": "doughremi",
       "cats": [
-            "pastries"
+        "pastries"
       ],
       "price": 125,
       "mrp": 145,
       "rating": 4.8,
       "reviews": 94,
       "badges": [
-            "KIDS FAVOURITE"
+        "KIDS FAVOURITE"
       ],
       "sizes": "single",
       "diet": [
-            "eggless"
+        "eggless"
       ],
       "desc": "Crushed Oreo cookie buttercream layered with dark cocoa sponge, topped with a whole mini Oreo.",
-      "long": "Generous chunks of real Oreo cookies folded into airy whipped cream, layered between dark cocoa sponge layers.",
-      "ingredients": "Oreo biscuits, dark cocoa sponge, dairy cream, white chocolate.",
+      "long": "Crushed Oreo cookie buttercream layered with dark cocoa sponge, topped with a whole mini Oreo. Handcrafted fresh daily in our Dibrugarh kitchen using pure, premium ingredients with no artificial additives. 100% Vegetarian.",
+      "ingredients": "French T45 pastry flour, Oreo biscuits, dark cocoa sponge, dairy cream, white chocolate.",
       "allergens": [
-            "Milk",
-            "Wheat",
-            "Soy"
+        "Milk",
+        "Wheat",
+        "Soy"
       ],
       "image": "assets/img/products/oreo-cake.jpg",
       "tags": [
-            "pastry",
-            "oreo",
-            "cookies and cream"
+        "pastry",
+        "oreo",
+        "cookies and cream"
       ]
-
     },
     {
-     
       "id": "butterscotch-crunch-pastry",
       "name": "Pastry - Butterscotch",
       "brand": "doughremi",
       "cats": [
-            "pastries"
+        "pastries"
       ],
       "price": 110,
       "mrp": 130,
@@ -3285,102 +8029,96 @@
       "reviews": 82,
       "sizes": "single",
       "diet": [
-            "eggless"
+        "eggless"
       ],
       "desc": "Fluffy vanilla sponge layered with butterscotch cream and generous golden praline crunch.",
-      "long": "Tender vanilla cake slice loaded with caramel butterscotch mousse and hand-crushed roasted cashew praline.",
-      "ingredients": "Wheat flour, cream, butterscotch praline, cashews, brown sugar.",
+      "long": "Fluffy vanilla sponge layered with butterscotch cream and generous golden praline crunch. Handcrafted fresh daily in our Dibrugarh kitchen using pure, premium ingredients with no artificial additives. 100% Vegetarian.",
+      "ingredients": "French T45 pastry flour, cream, butterscotch praline, cashews, brown sugar.",
       "allergens": [
-            "Milk",
-            "Wheat",
-            "Tree nuts (cashew)"
+        "Milk",
+        "Wheat",
+        "Tree nuts (cashew)"
       ],
       "image": "assets/img/products/butterscotch-cake.jpg",
       "tags": [
-            "pastry",
-            "butterscotch",
-            "crunch"
+        "pastry",
+        "butterscotch",
+        "crunch"
       ]
-
     },
     {
-     
       "id": "red-velvet-pastry",
       "name": "Pastry - Red Velvet",
       "brand": "doughremi",
       "cats": [
-            "pastries"
+        "pastries"
       ],
       "price": 135,
       "mrp": 155,
       "rating": 4.9,
       "reviews": 148,
       "badges": [
-            "SIGNATURE"
+        "SIGNATURE"
       ],
       "sizes": "single",
       "diet": [
-            "eggless"
+        "eggless"
       ],
       "desc": "Crimson cocoa sponge layered with tangy Philadelphia cream cheese frosting and velvet crumb dust.",
-      "long": "Velvety crimson cocoa sponge with buttermilk tang, layered with genuine cream cheese frosting and dusted with red velvet crumbs.",
-      "ingredients": "Wheat flour, cream cheese, dairy cream, cocoa, buttermilk, vanilla.",
+      "long": "Velvety crimson cocoa sponge with buttermilk tang, layered with genuine cream cheese frosting and dusted with red velvet crumbs. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, cream cheese, dairy cream, cocoa, buttermilk, vanilla.",
       "allergens": [
-            "Milk",
-            "Wheat"
+        "Milk",
+        "Wheat"
       ],
       "image": "assets/img/products/red-velvet-cake.jpg",
       "tags": [
-            "pastry",
-            "red velvet",
-            "cream cheese"
+        "pastry",
+        "red velvet",
+        "cream cheese"
       ]
-
     },
     {
-     
       "id": "lotus-biscoff-pastry",
       "name": "Pastry - Biscoff Pastry",
       "brand": "signature",
       "cats": [
-            "pastries"
+        "pastries"
       ],
       "price": 160,
       "mrp": 180,
       "rating": 4.9,
       "reviews": 166,
       "badges": [
-            "SIGNATURE",
-            "POPULAR"
+        "SIGNATURE",
+        "POPULAR"
       ],
       "sizes": "single",
       "diet": [
-            "eggless"
+        "eggless"
       ],
       "desc": "Caramelised speculoos cookie butter mousse layered with spiced sponge and crunchy Biscoff biscuit crust.",
-      "long": "Luxury pâtisserie slice. Made with original Belgian Lotus Biscoff spread, speculoos crumb base and whipped cinnamon cookie butter cream.",
-      "ingredients": "Lotus Biscoff spread, Biscoff biscuits, cream cheese, dairy cream, cinnamon sponge.",
+      "long": "Luxury pâtisserie slice. Made with original Belgian Lotus Biscoff spread, speculoos crumb base and whipped cinnamon cookie butter cream. Baked fresh with French T45 pastry flour and zero refined sugar.",
+      "ingredients": "French T45 pastry flour, Lotus Biscoff spread, Biscoff biscuits, cream cheese, dairy cream, cinnamon sponge.",
       "allergens": [
-            "Milk",
-            "Wheat",
-            "Soy"
+        "Milk",
+        "Wheat",
+        "Soy"
       ],
       "image": "assets/img/products/biscoff-cake.jpg",
       "tags": [
-            "pastry",
-            "biscoff",
-            "speculoos",
-            "lotus"
+        "pastry",
+        "biscoff",
+        "speculoos",
+        "lotus"
       ]
-
     },
     {
-     
       "id": "artisan-brown-bread",
       "name": "Brown Bread",
       "brand": "doughremi",
       "cats": [
-            "breads"
+        "breads"
       ],
       "price": 65,
       "mrp": 75,
@@ -3388,29 +8126,27 @@
       "reviews": 89,
       "sizes": "loaf",
       "diet": [
-            "eggless"
+        "eggless"
       ],
       "desc": "Slow-fermented 100% whole wheat loaf with malted grains and honeyed warmth. No artificial preservatives.",
-      "long": "Baked daily at dawn. Sourced from single-origin stoneground whole wheat flour with natural wheat bran for healthy fiber and honest flavor.",
-      "ingredients": "Stoneground whole wheat flour, water, yeast, malt extract, sea salt.",
+      "long": "Slow-fermented whole wheat bread crafted with stone-ground grains, malted barley, and a touch of French T45 flour for structural elegance. Baked daily with zero artificial improvers or preservatives. 100% Vegan.",
+      "ingredients": "100% whole wheat flour, French T45 flour, malted barley, olive oil, yeast, sea salt, water.",
       "allergens": [
-            "Wheat"
+        "Wheat"
       ],
       "image": "assets/img/products/multi-grain-loaf.png",
       "tags": [
-            "bread",
-            "brown bread",
-            "whole wheat"
+        "bread",
+        "brown bread",
+        "whole wheat"
       ]
-
     },
     {
-     
       "id": "golden-butter-bread",
       "name": "Butter Bread",
       "brand": "doughremi",
       "cats": [
-            "breads"
+        "breads"
       ],
       "price": 75,
       "mrp": 85,
@@ -3418,30 +8154,28 @@
       "reviews": 74,
       "sizes": "loaf",
       "diet": [
-            "eggless"
+        "eggless"
       ],
       "desc": "Enriched Japanese shokupan-style pullman loaf made with pure dairy butter for a cloud-like texture.",
-      "long": "Featherlight and golden. Enriched with slow-melted dairy butter, giving an ultra-tender crumb that toasts to golden perfection.",
-      "ingredients": "Wheat flour, pure butter, milk, yeast, cane sugar, sea salt.",
+      "long": "An exceptionally soft, featherlight milk-and-butter loaf inspired by Japanese shokupan baking methods: made with French T45 flour and slow-churned butter. Melts in the mouth and toasts to a golden glow. 100% Vegetarian.",
+      "ingredients": "French T45 pastry flour, pure dairy butter, whole milk, yeast, raw cane sugar, sea salt.",
       "allergens": [
-            "Milk",
-            "Wheat"
+        "Milk",
+        "Wheat"
       ],
       "image": "assets/img/products/almond-loaf.png",
       "tags": [
-            "bread",
-            "butter bread",
-            "shokupan"
+        "bread",
+        "butter bread",
+        "shokupan"
       ]
-
     },
     {
-     
       "id": "soft-milk-bread",
       "name": "Milk Bread",
       "brand": "doughremi",
       "cats": [
-            "breads"
+        "breads"
       ],
       "price": 60,
       "mrp": 70,
@@ -3449,30 +8183,28 @@
       "reviews": 95,
       "sizes": "loaf",
       "diet": [
-            "eggless"
+        "eggless"
       ],
       "desc": "Classic bakery white loaf prepared with fresh dairy milk for natural tenderness and gentle sweetness.",
-      "long": "Everyday breakfast favourite. Kneaded with full-fat dairy milk instead of water, creating an extraordinarily soft and fluffy sandwich bread.",
-      "ingredients": "Wheat flour, fresh dairy milk, yeast, butter, cane sugar, salt.",
+      "long": "Everyday bakery excellence: soft, fluffy pullman sandwich loaf prepared with whole milk, French T45 flour, and pure butter. Naturally tender with an even crumb. 100% Vegetarian.",
+      "ingredients": "French T45 pastry flour, fresh dairy milk, butter, yeast, raw cane sugar, sea salt.",
       "allergens": [
-            "Milk",
-            "Wheat"
+        "Milk",
+        "Wheat"
       ],
       "image": "assets/img/products/almond-loaf.png",
       "tags": [
-            "bread",
-            "milk bread",
-            "soft loaf"
+        "bread",
+        "milk bread",
+        "soft loaf"
       ]
-
     },
     {
-     
       "id": "classic-white-bread",
       "name": "White Bread",
       "brand": "doughremi",
       "cats": [
-            "breads"
+        "breads"
       ],
       "price": 50,
       "mrp": 60,
@@ -3480,97 +8212,91 @@
       "reviews": 62,
       "sizes": "loaf",
       "diet": [
-            "eggless"
+        "eggless"
       ],
       "desc": "Everyday sandwich loaf with a thin golden crust and even crumb, baked fresh each dawn.",
-      "long": "The kitchen staple. Perfect for morning toast or tea sandwiches with an even crumb and clean, unbleached flour base.",
-      "ingredients": "Unbleached wheat flour, water, yeast, vegetable oil, salt, cane sugar.",
+      "long": "The ideal everyday sandwich loaf: baked fresh each morning with French T45 flour and a touch of cold-pressed oil for a golden crust and soft, sliceable interior. Free from chemical softeners. 100% Vegan.",
+      "ingredients": "French T45 pastry flour, filtered water, cold-pressed sunflower oil, yeast, pinch of sugar, sea salt.",
       "allergens": [
-            "Wheat"
+        "Wheat"
       ],
       "image": "assets/img/products/ragi-loaf.png",
       "tags": [
-            "bread",
-            "white bread",
-            "sandwich loaf"
+        "bread",
+        "white bread",
+        "sandwich loaf"
       ]
-
     },
     {
-     
       "id": "hearty-multigrain-bread",
       "name": "Multigrain Bread",
       "brand": "doughremi",
       "cats": [
-            "breads"
+        "breads"
       ],
       "price": 85,
       "mrp": 95,
       "rating": 4.9,
       "reviews": 108,
       "badges": [
-            "HEALTHY"
+        "HEALTHY"
       ],
       "sizes": "loaf",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Nutrient-dense loaf packed with oats, barley, millet, whole wheat and cracked rye.",
-      "long": "Slow-fermented five-grain artisan loaf. Infused with rolled oats, malted barley, barnyard millet and cracked rye for sustained energy.",
-      "ingredients": "Whole wheat flour, rolled oats, barley, millet, cracked rye, yeast, sea salt.",
+      "desc": "Nutrient-dense loaf packed with oats, barley, millet, whole wheat, and cracked rye.",
+      "long": "A robust, wholesome artisan bread: slow-fermented with whole wheat, rolled oats, pearl barley, and finger millet with French T45 flour. Nutty, satisfying, and high in natural dietary fiber. 100% Vegan.",
+      "ingredients": "Whole wheat flour, French T45 flour, rolled oats, pearl barley, ragi, olive oil, yeast, sea salt.",
       "allergens": [
-            "Wheat",
-            "Oats"
+        "Wheat",
+        "Oats"
       ],
       "image": "assets/img/products/multi-grain-loaf.png",
       "tags": [
-            "bread",
-            "multigrain",
-            "healthy bread"
+        "bread",
+        "multigrain",
+        "healthy bread"
       ]
-
     },
     {
-     
       "id": "roasted-multiseeds-bread",
       "name": "Multiseeds Bread",
       "brand": "doughremi",
       "cats": [
-            "breads"
+        "breads"
       ],
       "price": 95,
       "mrp": 110,
       "rating": 4.9,
       "reviews": 122,
       "badges": [
-            "CHEF PICK"
+        "CHEF PICK"
       ],
       "sizes": "loaf",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Crusty loaf coated inside and out with toasted pumpkin seeds, sunflower seeds, flaxseeds and white sesame.",
-      "long": "Crunchy roasted seeds in every bite. Coated with roasted pumpkin seeds, sunflower kernels, golden flaxseeds and white sesame seeds.",
-      "ingredients": "Whole wheat, pumpkin seeds, sunflower seeds, flaxseeds, sesame, yeast, salt.",
+      "desc": "Crusty loaf coated inside and out with toasted pumpkin seeds, sunflower seeds, flaxseeds, and white sesame.",
+      "long": "An aromatic seed-crusted artisan loaf: studded throughout with toasted pumpkin, sunflower, flax, and sesame seeds. Baked with French T45 flour and whole grains for a nutritious, crunchy bite. 100% Vegan.",
+      "ingredients": "French T45 pastry flour, whole wheat flour, roasted pumpkin seeds, sunflower seeds, flaxseeds, sesame, olive oil, yeast, sea salt.",
       "allergens": [
-            "Wheat",
-            "Sesame"
+        "Wheat",
+        "Sesame"
       ],
       "image": "assets/img/products/mixed-seed-loaf.png",
       "tags": [
-            "bread",
-            "multiseeds",
-            "seeds loaf"
+        "bread",
+        "multiseeds",
+        "seeds loaf"
       ]
-
     },
     {
-     
       "id": "peri-peri-veg-hotdog",
       "name": "Hot Dog - Peri Peri - Veg",
       "brand": "doughremi",
       "cats": [
-            "hot-dogs"
+        "hot-dogs"
       ],
       "price": 130,
       "mrp": 150,
@@ -3578,64 +8304,60 @@
       "reviews": 64,
       "sizes": "single",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Warm brioche hot dog bun loaded with grilled spiced vegetable roll and smoky fiery peri-peri drizzle.",
-      "long": "Toasted elongated brioche bun filled with a grilled potato-corn-pea sausage, drizzled with fiery African peri-peri mayonnaise and jalapeños.",
-      "ingredients": "Brioche roll, vegetable sausage, peri-peri sauce, eggless mayo, pickled jalapeño.",
+      "desc": "Soft bakery brioche hotdog roll filled with a spicy peri-peri vegetable sausage, crisp slaw, and herb mayo.",
+      "long": "Freshly baked golden brioche hot dog bun made with French T45 flour: loaded with a spiced vegetable sausage, zesty peri-peri glaze, crunchy pickled cabbage, and creamy herb mayonnaise. 100% Vegetarian.",
+      "ingredients": "French T45 pastry flour, butter, vegetable sausage, peri-peri spice blend, cabbage, cucumber, mayonnaise, milk.",
       "allergens": [
-            "Milk",
-            "Wheat"
+        "Milk",
+        "Wheat"
       ],
       "image": "assets/img/products/peri-peri-veg-hotdog.jpg",
       "tags": [
-            "hot dog",
-            "peri peri",
-            "veg hot dog"
+        "hot dog",
+        "peri peri",
+        "veg hot dog"
       ]
-
     },
     {
-     
       "id": "peri-peri-paneer-hotdog",
       "name": "Hot Dog - Peri Peri - Paneer",
       "brand": "doughremi",
       "cats": [
-            "hot-dogs"
+        "hot-dogs"
       ],
       "price": 155,
       "mrp": 175,
       "rating": 4.9,
       "reviews": 89,
       "badges": [
-            "BESTSELLER"
+        "BESTSELLER"
       ],
       "sizes": "single",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Grilled malai paneer sausage nestled in a toasted brioche bun with pickled jalapeños and spicy peri-peri mayo.",
-      "long": "Generous cottage cheese seekh roll grilled with tandoori spices, stuffed into a butter-toasted brioche bun with peri-peri glaze and crisp onions.",
-      "ingredients": "Brioche roll, paneer sausage, peri-peri glaze, butter, jalapeños, onions.",
+      "desc": "Toasted brioche hotdog roll stuffed with grilled peri-peri malai paneer fingers, fresh greens, and spicy mayo.",
+      "long": "Artisan brioche roll baked with French T45 flour and pure butter: stuffed with tender fingers of malai paneer tossed in fiery African peri-peri spices, topped with crisp lettuce, pickled onions, and garlic aioli. 100% Vegetarian.",
+      "ingredients": "French T45 pastry flour, malai paneer, butter, peri-peri spices, lettuce, onions, garlic mayonnaise, milk.",
       "allergens": [
-            "Milk",
-            "Wheat"
+        "Milk",
+        "Wheat"
       ],
       "image": "assets/img/products/peri-peri-paneer-hotdog.jpg",
       "tags": [
-            "hot dog",
-            "peri peri paneer",
-            "paneer hotdog"
+        "hot dog",
+        "peri peri paneer",
+        "paneer hotdog"
       ]
-
     },
     {
-     
       "id": "flaky-aloo-paratha",
       "name": "Savouries - Aloo Paratha",
       "brand": "doughremi",
       "cats": [
-            "savouries"
+        "savouries"
       ],
       "price": 70,
       "mrp": 85,
@@ -3643,203 +8365,191 @@
       "reviews": 78,
       "sizes": "single",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Pan-roasted flaky layered flatbread stuffed with spiced potato mash, coriander, green chilies and amchur.",
-      "long": "Freshly roasted in pure ghee. Multi-layered flaky dough filled with mashed potatoes tempered with cumin, carom seeds (ajwain), and mango powder.",
-      "ingredients": "Whole wheat flour, potato, ghee, green chillies, coriander, spices.",
+      "desc": "Flaky multi-layered bakery paratha stuffed with spiced mashed potatoes, fresh green chilies, and roasted cumin.",
+      "long": "Traditional North Indian comfort with bakery lamination: crisp, flaky flatbread prepared with whole wheat and French T45 flour, stuffed with spiced potato mash, roasted cumin, and fresh herbs. Baked golden on the griddle with pure butter. 100% Vegetarian.",
+      "ingredients": "Whole wheat flour, French T45 flour, potatoes, butter, green chilies, cumin, coriander, sea salt.",
       "allergens": [
-            "Milk",
-            "Wheat"
+        "Milk",
+        "Wheat"
       ],
       "image": "assets/img/products/flaky-aloo-paratha.jpg",
       "tags": [
-            "paratha",
-            "aloo paratha",
-            "savoury"
+        "paratha",
+        "aloo paratha",
+        "savoury"
       ]
-
     },
     {
-     
       "id": "golden-baked-samosa",
       "name": "Savouries - Baked Samosa",
       "brand": "doughremi",
       "cats": [
-            "savouries"
+        "savouries"
       ],
       "price": 40,
       "mrp": 50,
       "rating": 4.8,
       "reviews": 142,
       "badges": [
-            "BESTSELLER"
+        "BESTSELLER"
       ],
       "sizes": "patties",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Oven-baked crisp triangle pastry stuffed with cumin-spiced potatoes, cashew nuts and peas. Less oil, maximum crunch.",
-      "long": "Healthy baked version of India's favourite snack. Crisp, flaky pastry baked in our convection ovens rather than deep fried, filled with aromatic spiced potatoes and peas.",
-      "ingredients": "Wheat flour, potato, green peas, cashews, cumin, ginger, spices.",
+      "desc": "Golden-baked flaky pastry cone stuffed with aromatic spiced potatoes, green peas, and toasted cashews.",
+      "long": "A lighter, guilt-free bakery version of India's favourite snack: baked to crisp golden perfection with French T45 flour instead of deep-frying. Stuffed with diced spiced potatoes, sweet peas, and toasted cashews. 100% Vegetarian.",
+      "ingredients": "French T45 pastry flour, potatoes, green peas, cashews, ajwain seeds, butter, Indian spices, sea salt.",
       "allergens": [
-            "Wheat",
-            "Tree nuts (cashew)"
+        "Wheat",
+        "Tree nuts (cashew)"
       ],
       "image": "assets/img/products/golden-baked-samosa.jpg",
       "tags": [
-            "samosa",
-            "baked samosa",
-            "snack"
+        "samosa",
+        "baked samosa",
+        "snack"
       ]
-
     },
     {
-     
       "id": "traditional-lattice-apple-pie",
       "name": "Apple Pie",
       "brand": "doughremi",
       "cats": [
-            "desserts"
+        "desserts"
       ],
       "price": 380,
       "mrp": 440,
       "rating": 4.9,
       "reviews": 97,
       "badges": [
-            "SIGNATURE"
+        "SIGNATURE"
       ],
       "sizes": "pie",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Flaky hand-crimped butter pastry crust loaded with cinnamon-spiced Himalayan apples and brown sugar reduction.",
-      "long": "Classic American pâtisserie. Golden flaky lattice butter crust baked with caramelized tart green apples, Sri Lankan cinnamon, nutmeg and a glistening sugar glaze.",
-      "ingredients": "Himalayan apples, wheat flour, dairy butter, brown sugar, cinnamon, nutmeg, lemon juice.",
+      "desc": "Classic buttery shortcrust pie filled with slow-cooked spiced Granny Smith apples and a woven lattice top.",
+      "long": "A timeless patisserie centerpiece: buttery French T45 shortcrust pastry filled with tender Granny Smith apples simmered in Ceylon cinnamon, brown sugar, and nutmeg, finished with an artisan woven lattice crust. Baked fresh daily. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, Granny Smith apples, pure dairy butter, Ceylon cinnamon, nutmeg, raw cane sugar, lemon juice.",
       "allergens": [
-            "Milk",
-            "Wheat"
+        "Milk",
+        "Wheat"
       ],
       "image": "assets/img/products/traditional-lattice-apple-pie.jpg",
       "tags": [
-            "apple pie",
-            "pie",
-            "cinnamon apple",
-            "dessert"
+        "apple pie",
+        "pie",
+        "cinnamon apple",
+        "dessert"
       ]
-
     },
     {
-     
       "id": "french-macaron-box-veg",
       "name": "Macaron - Veg",
       "brand": "signature",
       "cats": [
-            "macarons"
+        "macarons"
       ],
       "price": 450,
       "mrp": 520,
       "rating": 4.8,
       "reviews": 79,
       "badges": [
-            "EGGLESS",
-            "SIGNATURE"
+        "EGGLESS",
+        "SIGNATURE"
       ],
       "sizes": "box",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Delicate eggless almond meringue shells filled with dark chocolate ganache, raspberry and pistachio buttercreams.",
-      "long": "Crafted in our temperature-controlled pastry laboratory using aquafaba meringue and French almond flour. Filled with 64% Madagascar ganache, raspberry coulis and pistachio cream.",
-      "ingredients": "Almond flour, icing sugar, aquafaba, dark chocolate ganache, pistachio paste, raspberry compote.",
+      "desc": "Six delicate French almond macarons filled with chocolate ganache, pistachio cream, and fruit compotes.",
+      "long": "Authentic French confectionery crafted 100% eggless: featherlight almond flour shells with delicate ruffled feet, filled with decadent Belgian chocolate ganache, pure pistachio cream, and wild raspberry coulis. Box of 6 macarons. 100% Vegetarian.",
+      "ingredients": "Finely ground almond flour, aquafaba, dark chocolate 70%, pistachio paste, raspberry reduction, natural sweetener.",
       "allergens": [
-            "Milk",
-            "Tree nuts (almond, pistachio)"
+        "Milk",
+        "Tree nuts (almond, pistachio)"
       ],
       "image": "assets/img/products/french-macaron-box-veg.jpg",
       "tags": [
-            "macaron",
-            "eggless macaron",
-            "french patisserie"
+        "macaron",
+        "eggless macaron",
+        "french patisserie"
       ]
-
     },
     {
-     
       "id": "classic-french-macaron-egg",
       "name": "Macaron - Egg",
       "brand": "signature",
       "cats": [
-            "macarons"
+        "macarons"
       ],
       "price": 480,
       "mrp": 550,
       "rating": 4.9,
       "reviews": 115,
       "badges": [
-            "LUXURY",
-            "PARISIAN"
+        "LUXURY",
+        "PARISIAN"
       ],
       "sizes": "box",
       "diet": [],
-      "desc": "Authentic French patisserie macarons with delicate ruffled pied, smooth shells and velvety fruit and chocolate ganaches.",
-      "long": "Authentic Parisian macarons made with whipped egg-white meringue and California almond meal. Features salted caramel, lavender blackcurrant and dark chocolate ganaches.",
-      "ingredients": "Almond flour, pasteurised egg whites, sugar, cream, dark chocolate, fruit ganache.",
+      "desc": "Authentic Parisian macarons with crisp meringue shells and luxurious ganache centers in assorted flavours.",
+      "long": "Handcrafted to Parisian pâtisserie standards: smooth, crisp meringue shells made with finely ground California almond flour, filled with single-origin chocolate ganache, Madagascar vanilla buttercream, and salted caramel. Box of 6 macarons.",
+      "ingredients": "Almond flour, egg whites, single-origin chocolate, dairy cream, butter, Madagascar vanilla, natural fruit purees.",
       "allergens": [
-            "Milk",
-            "Eggs",
-            "Tree nuts (almond)"
+        "Milk",
+        "Eggs",
+        "Tree nuts (almond)"
       ],
       "image": "assets/img/products/classic-french-macaron-egg.jpg",
       "tags": [
-            "macaron",
-            "parisian macaron",
-            "french macaron"
+        "macaron",
+        "parisian macaron",
+        "french macaron"
       ]
-
     },
     {
-     
       "id": "fudge-chocolate-brownie",
       "name": "Brownie - Chocolate",
       "brand": "doughremi",
       "cats": [
-            "brownies"
+        "brownies"
       ],
       "price": 120,
       "mrp": 140,
       "rating": 4.9,
       "reviews": 168,
       "badges": [
-            "BESTSELLER"
+        "BESTSELLER"
       ],
       "sizes": "single",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Dense fudgy dark chocolate brownie with a shiny crinkly top crust, baked with 70% Callebaut chocolate.",
-      "long": "Intensely fudgy center with paper-thin crackly crust. Baked with pure Callebaut 70% dark Belgian couverture chocolate and a pinch of Maldon sea salt.",
-      "ingredients": "Callebaut dark chocolate 70%, dairy butter, cocoa powder, wheat flour, cane sugar, sea salt.",
+      "desc": "Dense, fudgy dark chocolate brownie with a shiny crinkly top crust, baked with 70% Callebaut chocolate.",
+      "long": "Intensely fudgy center with a paper-thin crackly crust: baked with pure Callebaut 70% dark Belgian couverture chocolate, French T45 flour, and a pinch of Maldon sea salt. Decadent, rich, and 100% Eggless.",
+      "ingredients": "French T45 pastry flour, Callebaut 70% dark chocolate, pure butter, Dutch cocoa, raw cane sugar, sea salt.",
       "allergens": [
-            "Milk",
-            "Wheat",
-            "Soy"
+        "Milk",
+        "Wheat",
+        "Soy"
       ],
       "image": "assets/img/products/fudgy-walnut-brownies.jpg",
       "tags": [
-            "brownie",
-            "fudge brownie",
-            "chocolate brownie"
+        "brownie",
+        "fudge brownie",
+        "chocolate brownie"
       ]
-
     },
     {
-     
       "id": "classic-plain-brownie",
       "name": "Brownie - Plain",
       "brand": "doughremi",
       "cats": [
-            "brownies"
+        "brownies"
       ],
       "price": 100,
       "mrp": 120,
@@ -3847,65 +8557,61 @@
       "reviews": 62,
       "sizes": "single",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Chewy, rich cocoa brownie with a light flake crust and tender chocolate center.",
-      "long": "Wholesome bakery brownie made with Dutch cocoa powder, delivering a balanced cocoa sweetness and chewy cake-fudge texture.",
-      "ingredients": "Wheat flour, Dutch cocoa, dairy butter, sugar, milk, vanilla.",
+      "desc": "Chewy, rich cocoa brownie with a light flake crust and tender, melt-in-mouth chocolate center.",
+      "long": "A pure chocolate classic: baked with French T45 flour, Dutch cocoa, and farm butter for a chewy edge and dense, fudgy center with zero artificial flavourings. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, dark cocoa powder, pure butter, milk, raw cane sugar, vanilla extract, sea salt.",
       "allergens": [
-            "Milk",
-            "Wheat"
+        "Milk",
+        "Wheat"
       ],
       "image": "assets/img/products/choco-almond-crunch-brownies.jpg",
       "tags": [
-            "brownie",
-            "plain brownie",
-            "chewy"
+        "brownie",
+        "plain brownie",
+        "chewy"
       ]
-
     },
     {
-     
       "id": "crushed-oreo-brownie",
       "name": "Brownie - Oreo",
       "brand": "doughremi",
       "cats": [
-            "brownies"
+        "brownies"
       ],
       "price": 135,
       "mrp": 155,
       "rating": 4.9,
       "reviews": 126,
       "badges": [
-            "POPULAR"
+        "POPULAR"
       ],
       "sizes": "single",
       "diet": [
-            "eggless"
+        "eggless"
       ],
       "desc": "Fudge chocolate brownie baked over a bed of whole Oreo cookies and topped with crunchy Oreo chunks.",
-      "long": "The ultimate combination. Double chocolate fudge brownie batter poured over Oreo cookies and finished with crushed cookies-and-cream topping.",
-      "ingredients": "Oreo biscuits, dark chocolate 60%, dairy butter, wheat flour, cane sugar.",
+      "long": "Decadent dark chocolate brownie baked over a layer of whole chocolate sandwich cookies, topped with extra crunchy cookie crumbs. Fudgy, crunchy, and baked with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, Callebaut dark chocolate, Oreo cookies, butter, cocoa powder, raw cane sugar.",
       "allergens": [
-            "Milk",
-            "Wheat",
-            "Soy"
+        "Milk",
+        "Wheat",
+        "Soy"
       ],
       "image": "assets/img/products/triple-chocolate-cheesecake-brownie.jpg",
       "tags": [
-            "brownie",
-            "oreo brownie",
-            "cookies and cream"
+        "brownie",
+        "oreo brownie",
+        "cookies and cream"
       ]
-
     },
     {
-     
       "id": "classic-golden-muffin",
       "name": "Muffin - Plain",
       "brand": "doughremi",
       "cats": [
-            "muffins"
+        "muffins"
       ],
       "price": 70,
       "mrp": 85,
@@ -3913,1003 +8619,995 @@
       "reviews": 48,
       "sizes": "single",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Light and moist breakfast muffin baked to a high golden dome with a sprinkle of crystal sugar.",
-      "long": "Baked fresh every morning. High-domed vanilla bakery muffin with a tender, moist crumb and crunchy sugar crown.",
-      "ingredients": "Wheat flour, butter, milk, sugar, vanilla, coarse sugar crystals.",
+      "desc": "Tender golden breakfast muffin infused with Bourbon vanilla bean and baked with pure slow-churned butter.",
+      "long": "A timeless bakery staple: fluffy, moist breakfast muffin baked to a high domed crown with French T45 flour, whole milk, and fragrant Bourbon vanilla. Baked fresh every morning. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, pure dairy butter, whole milk, Madagascar vanilla, raw cane sugar, baking powder.",
       "allergens": [
-            "Milk",
-            "Wheat"
+        "Milk",
+        "Wheat"
       ],
       "image": "assets/img/products/vanilla-roasted-almond-muffins.jpg",
       "tags": [
-            "muffin",
-            "plain muffin",
-            "breakfast muffin"
+        "muffin",
+        "plain muffin",
+        "breakfast muffin"
       ]
-
     },
     {
-     
       "id": "double-chocolate-muffin",
       "name": "Muffin - Chocolate",
       "brand": "doughremi",
       "cats": [
-            "muffins"
+        "muffins"
       ],
       "price": 85,
       "mrp": 100,
       "rating": 4.9,
       "reviews": 114,
       "badges": [
-            "BESTSELLER"
+        "BESTSELLER"
       ],
       "sizes": "single",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Decadent Dutch cocoa muffin with a moist cakey crumb and rich molten chocolate core.",
-      "long": "Deep chocolate flavor in every bite. Prepared with dark Dutch cocoa and a gooey chocolate center that warms up deliciously.",
-      "ingredients": "Wheat flour, dark cocoa, chocolate ganache, milk, butter, sugar.",
+      "desc": "Deep dark cocoa muffin studded with molten Belgian dark chocolate chips and a craggy top.",
+      "long": "Rich and deeply indulgent: dark cocoa batter baked with French T45 flour and generous handfuls of 70% dark Belgian chocolate chips that melt when warmed. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, Dutch cocoa, dark chocolate chips, dairy butter, whole milk, raw cane sugar.",
       "allergens": [
-            "Milk",
-            "Wheat",
-            "Soy"
+        "Milk",
+        "Wheat",
+        "Soy"
       ],
       "image": "assets/img/products/gooey-chocolate-muffins.jpg",
       "tags": [
-            "muffin",
-            "chocolate muffin",
-            "double chocolate"
+        "muffin",
+        "chocolate muffin",
+        "double chocolate"
       ]
-
     },
     {
-     
       "id": "choco-chips-muffin",
       "name": "Muffin - Choco Chips",
       "brand": "doughremi",
       "cats": [
-            "muffins"
+        "muffins"
       ],
       "price": 80,
       "mrp": 95,
       "rating": 4.8,
       "reviews": 98,
       "badges": [
-            "POPULAR"
+        "POPULAR"
       ],
       "sizes": "single",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Vanilla-infused bakery muffin studded throughout with semi-sweet dark chocolate chips.",
-      "long": "Generously packed with semi-sweet chocolate chips that stay studded throughout the fluffy vanilla muffin sponge.",
-      "ingredients": "Wheat flour, semi-sweet chocolate chips, butter, milk, cane sugar, vanilla.",
+      "desc": "Fluffy golden vanilla muffin loaded with dark chocolate chips and a delicate caramelized crust.",
+      "long": "Tender golden muffin batter baked with French T45 flour and Bourbon vanilla, bursting with pockets of dark chocolate chips throughout. Perfect for school tiffins and teatime snacks. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, dark chocolate chips, butter, whole milk, Madagascar vanilla, raw cane sugar.",
       "allergens": [
-            "Milk",
-            "Wheat",
-            "Soy"
+        "Milk",
+        "Wheat",
+        "Soy"
       ],
       "image": "assets/img/products/gooey-chocolate-muffins-2.jpg",
       "tags": [
-            "muffin",
-            "choco chips",
-            "chocolate chip muffin"
+        "muffin",
+        "choco chips",
+        "chocolate chip muffin"
       ]
-
     },
     {
-     
       "id": "oreo-crunch-muffin",
       "name": "Muffin - Oreo",
       "brand": "doughremi",
       "cats": [
-            "muffins"
+        "muffins"
       ],
       "price": 95,
       "mrp": 110,
       "rating": 4.8,
       "reviews": 86,
       "badges": [
-            "NEW"
+        "NEW"
       ],
       "sizes": "single",
       "diet": [
-            "eggless"
+        "eggless"
       ],
-      "desc": "Cookies-and-cream muffin loaded with crushed dark Oreo biscuits and white chocolate chips.",
-      "long": "Vanilla muffin batter marbled with Oreo cookie crumbs and studded with chunks of chocolate sandwich cookies and white chocolate drops.",
-      "ingredients": "Oreo biscuits, wheat flour, white chocolate chips, milk, butter, sugar.",
+      "desc": "Airy vanilla and cocoa muffin packed with crushed Oreo cookies and creamy vanilla cream pockets.",
+      "long": "The ultimate cookies-and-cream treat: fluffy vanilla muffin batter swirled with crushed Oreo biscuits and dark cocoa, crowned with crunchy Oreo chunks. Baked fresh with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, crushed Oreo cookies, dark cocoa, butter, milk, vanilla extract, raw cane sugar.",
       "allergens": [
-            "Milk",
-            "Wheat",
-            "Soy"
+        "Milk",
+        "Wheat",
+        "Soy"
       ],
       "image": "assets/img/products/gooey-chocolate-muffins-3.jpg",
       "tags": [
-            "muffin",
-            "oreo muffin",
-            "cookies and cream"
+        "muffin",
+        "oreo muffin",
+        "cookies and cream"
       ]
-
-    }
-,
+    },
     {
       "id": "butter-sesame-mix",
       "name": "Butter Sesame Mix",
       "brand": "doughremi",
       "cats": [
-            "cookies",
-            "healthy-snacks",
-            "assamese"
+        "cookies",
+        "healthy-snacks",
+        "assamese"
       ],
       "price": 800,
       "mrp": 920,
       "rating": 4.9,
       "reviews": 112,
       "badges": [
-            "NEW",
-            "EGGLESS",
-            "GLUTEN-FREE",
-            "NO-MAIDA",
-            "SUGAR-FREE"
+        "NEW",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
       ],
       "sizes": "perKg",
       "occasions": [
-            "teatime",
-            "festival",
-            "corporate"
+        "teatime",
+        "festival",
+        "corporate"
       ],
       "diet": [
-            "sugar-free",
-            "gluten-free",
-            "eggless",
-            "no-maida"
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
       ],
-      "desc": "Crisp artisanal golden butter cookies loaded with fragrant roasted white and black sesame seeds. Rich, nutty, and completely guilt-free.",
-      "long": "Handcrafted using traditional slow-baking techniques, our Butter Sesame Mix pairs pure grass-fed dairy butter with toasted black and white sesame seeds. Crafted with French T45 flour and almond flour, zero refined sugar, and no artificial preservatives. 100% Eggless and Gluten-Free indulgence.",
-      "ingredients": "French T45 pastry flour, almond flour, pure grass-fed butter, roasted white & black sesame seeds, natural erythritol & stevia blend, cold-pressed vegetable oils, sea salt.",
+      "desc": "Melt-in-mouth golden butter cookies coated with toasted white and black sesame seeds.",
+      "long": "Rich bakery shortbread cookies baked with slow-churned butter and rolled in fragrant toasted sesame seeds: crisp on the edges with a tender, buttery melt-in-the-mouth center. Baked with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, dairy butter, toasted white & black sesame seeds, milk, natural cane sugar, vanilla.",
       "allergens": [
-            "Milk / Dairy",
-            "Sesame",
-            "Tree nuts (almond)"
+        "Milk / Dairy",
+        "Sesame",
+        "Tree nuts (almond)"
       ],
       "customisable": false,
       "image": "assets/img/products/butter-sesame-mix.jpg",
       "images": [
-            "assets/img/products/butter-sesame-mix.jpg"
+        "assets/img/products/butter-sesame-mix.jpg"
       ],
       "tags": [
-            "cookies",
-            "sesame",
-            "butter",
-            "eggless",
-            "healthy-snack"
+        "cookies",
+        "sesame",
+        "butter",
+        "eggless",
+        "healthy-snack"
       ]
-},
+    },
     {
       "id": "butterscotch-cookies",
       "name": "Butterscotch Cookies",
       "brand": "doughremi",
       "cats": [
-            "cookies",
-            "healthy-snacks"
+        "cookies",
+        "healthy-snacks"
       ],
       "price": 800,
       "mrp": 920,
       "rating": 4.9,
       "reviews": 88,
       "badges": [
-            "NEW",
-            "EGGLESS",
-            "GLUTEN-FREE",
-            "NO-MAIDA",
-            "SUGAR-FREE"
+        "NEW",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
       ],
       "sizes": "perKg",
       "occasions": [
-            "teatime",
-            "birthday",
-            "festival"
+        "teatime",
+        "birthday",
+        "festival"
       ],
       "diet": [
-            "sugar-free",
-            "gluten-free",
-            "eggless",
-            "no-maida"
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
       ],
-      "desc": "Melt-in-the-mouth golden butter cookies embedded with crunchy handcrafted sugar-free butterscotch bits and browned butter praline.",
-      "long": "Infused with rich caramelized butter notes and crunchy handcrafted sugar-free butterscotch crisps. Baked using French T45 pastry flour and nutrient-rich almond flour with zero refined sugar. 100% Egg-Free and guilt-free tea-time bliss.",
-      "ingredients": "French T45 pastry flour, almond flour, brown butter, handcrafted sugar-free butterscotch praline, natural plant sweetener blend, pure vanilla extract.",
+      "desc": "Golden butter cookies studded with crunchy caramelized butterscotch chips and roasted cashew praline.",
+      "long": "Crispy golden cookies packed with rich butterscotch bits and toasted cashew praline: infused with brown butter and natural Bourbon vanilla. Baked fresh with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, butter, handcrafted butterscotch chips, roasted cashews, milk, Madagascar vanilla.",
       "allergens": [
-            "Milk / Dairy",
-            "Tree nuts (almond)"
+        "Milk / Dairy",
+        "Tree nuts (almond)"
       ],
       "customisable": false,
       "image": "assets/img/products/butterscotch-cookies.jpg",
       "images": [
-            "assets/img/products/butterscotch-cookies.jpg"
+        "assets/img/products/butterscotch-cookies.jpg"
       ],
       "tags": [
-            "cookies",
-            "butterscotch",
-            "crunch",
-            "eggless",
-            "snack"
+        "cookies",
+        "butterscotch",
+        "crunch",
+        "eggless",
+        "snack"
       ]
-},
+    },
     {
       "id": "choco-mix-cookies",
       "name": "Choco Mix Cookies",
       "brand": "doughremi",
       "cats": [
-            "cookies",
-            "chocolates"
+        "cookies",
+        "chocolates"
       ],
       "price": 800,
       "mrp": 920,
-      "rating": 5.0,
+      "rating": 5,
       "reviews": 146,
       "badges": [
-            "NEW",
-            "BESTSELLER",
-            "EGGLESS",
-            "GLUTEN-FREE",
-            "NO-MAIDA",
-            "SUGAR-FREE"
+        "NEW",
+        "BESTSELLER",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
       ],
       "sizes": "perKg",
       "occasions": [
-            "teatime",
-            "festival",
-            "corporate"
+        "teatime",
+        "festival",
+        "corporate"
       ],
       "diet": [
-            "sugar-free",
-            "gluten-free",
-            "eggless",
-            "no-maida"
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
       ],
-      "desc": "Marbled artisan cocoa cookies swirled with dark chocolate ganache ribbons and crunchy Belgian chocolate chunks.",
-      "long": "An irresistible swirl of deep dark chocolate and golden vanilla butter dough baked into tender, crumbly cookies. Made with single-origin cocoa, French T45 flour, and almond flour with zero refined sugar. 100% Eggless.",
-      "ingredients": "French T45 pastry flour, almond flour, single-origin dark cocoa, dark chocolate chunks 70%, pure dairy butter, natural erythritol & stevia blend.",
+      "desc": "Crunchy dark cocoa cookies studded with a decadent mix of dark, milk, and white chocolate chips.",
+      "long": "A triple-chocolate celebration: rich Dutch cocoa cookie dough baked with French T45 flour, generously loaded with dark, milk, and white chocolate chips for a rich, textured bite. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, dark chocolate chips, milk chocolate chips, white chocolate chips, cocoa powder, butter, milk.",
       "allergens": [
-            "Milk / Dairy",
-            "Tree nuts (almond)"
+        "Milk / Dairy",
+        "Tree nuts (almond)"
       ],
       "customisable": false,
       "image": "assets/img/products/choco-mix-cookies.jpg",
       "images": [
-            "assets/img/products/choco-mix-cookies.jpg"
+        "assets/img/products/choco-mix-cookies.jpg"
       ],
       "tags": [
-            "cookies",
-            "chocolate",
-            "marble",
-            "eggless",
-            "bestseller"
+        "cookies",
+        "chocolate",
+        "marble",
+        "eggless",
+        "bestseller"
       ]
-},
+    },
     {
       "id": "chocochips-pastry",
       "name": "Chocochips Pastry",
       "brand": "signature",
       "cats": [
-            "pastries",
-            "desserts"
+        "pastries",
+        "desserts"
       ],
       "price": 80,
       "mrp": 95,
       "rating": 4.9,
       "reviews": 194,
       "badges": [
-            "NEW",
-            "BESTSELLER",
-            "EGGLESS",
-            "GLUTEN-FREE",
-            "NO-MAIDA",
-            "SUGAR-FREE"
+        "NEW",
+        "BESTSELLER",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
       ],
       "sizes": "piece",
       "occasions": [
-            "birthday",
-            "celebration",
-            "teatime"
+        "birthday",
+        "celebration",
+        "teatime"
       ],
       "diet": [
-            "sugar-free",
-            "gluten-free",
-            "eggless",
-            "no-maida"
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
       ],
-      "desc": "Decadent dark chocolate sponge layered with velvety Belgian chocolate mousse and loaded with crisp dark chocolate chips.",
-      "long": "A signature patisserie slice featuring airy cocoa sponge crafted with French T45 flour, single-origin cacao, and almond flour, coated in dark chocolate ganache and studded with crunchy chocolate chips. 100% Eggless, gluten-free, and refined sugar-free.",
-      "ingredients": "French T45 pastry flour, almond flour, single-origin cacao 70%, dark chocolate chips, dairy cream, natural erythritol & stevia blend, cold-pressed oils.",
+      "desc": "Decadent dark chocolate sponge layered with velvety Belgian chocolate mousse and loaded with crisp chocolate chips.",
+      "long": "A signature patisserie slice featuring airy cocoa sponge crafted with French T45 flour, single-origin cacao, and almond flour, coated in dark chocolate ganache and studded with crunchy chocolate chips. 100% Eggless and refined sugar-free.",
+      "ingredients": "French T45 pastry flour, almond flour, single-origin cacao 70%, dark chocolate chips, dairy cream, natural erythritol & stevia blend.",
       "allergens": [
-            "Milk / Dairy",
-            "Tree nuts (almond)"
+        "Milk / Dairy",
+        "Tree nuts (almond)"
       ],
       "customisable": false,
       "image": "assets/img/products/chocochips-pastry.jpg",
       "images": [
-            "assets/img/products/chocochips-pastry.jpg"
+        "assets/img/products/chocochips-pastry.jpg"
       ],
       "tags": [
-            "pastry",
-            "chocochips",
-            "chocolate",
-            "eggless",
-            "signature"
+        "pastry",
+        "chocochips",
+        "chocolate",
+        "eggless",
+        "signature"
       ]
-},
+    },
     {
       "id": "chocolate-choco-mix",
       "name": "Chocolate Choco Mix",
       "brand": "doughremi",
       "cats": [
-            "cookies",
-            "chocolates"
+        "cookies",
+        "chocolates"
       ],
       "price": 800,
       "mrp": 920,
-      "rating": 5.0,
+      "rating": 5,
       "reviews": 132,
       "badges": [
-            "NEW",
-            "EGGLESS",
-            "GLUTEN-FREE",
-            "NO-MAIDA",
-            "SUGAR-FREE"
+        "NEW",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
       ],
       "sizes": "perKg",
       "occasions": [
-            "teatime",
-            "festival",
-            "corporate"
+        "teatime",
+        "festival",
+        "corporate"
       ],
       "diet": [
-            "sugar-free",
-            "gluten-free",
-            "eggless",
-            "no-maida"
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
       ],
-      "desc": "Double chocolate artisan cookies baked with rich Dutch cocoa and packed with molten chocolate chips in every bite.",
-      "long": "For intense chocolate lovers: a deeply decadent dark cocoa biscuit dough packed with crunchy and melty sugar-free chocolate chips. Baked to perfection with French T45 flour and zero refined sugar.",
-      "ingredients": "French T45 pastry flour, almond flour, Dutch cocoa powder, dark chocolate morsels, pure grass-fed butter, natural plant sweetener.",
+      "desc": "Intense double chocolate artisan cookies loaded with dark cocoa and chunky chocolate drops.",
+      "long": "For serious chocolate lovers: deep cocoa cookies baked to a crisp edge and chewy center, packed with dark chocolate drops and pure cocoa butter. Baked with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, dark cocoa, chocolate drops, pure butter, milk, natural cane sugar, vanilla.",
       "allergens": [
-            "Milk / Dairy",
-            "Tree nuts (almond)"
+        "Milk / Dairy",
+        "Tree nuts (almond)"
       ],
       "customisable": false,
       "image": "assets/img/products/chocolate-choco-mix.jpg",
       "images": [
-            "assets/img/products/chocolate-choco-mix.jpg"
+        "assets/img/products/chocolate-choco-mix.jpg"
       ],
       "tags": [
-            "cookies",
-            "double-chocolate",
-            "cocoa",
-            "eggless"
+        "cookies",
+        "double-chocolate",
+        "cocoa",
+        "eggless"
       ]
-},
+    },
     {
       "id": "artisan-chocolate-cookies",
       "name": "Chocolate Cookies",
       "brand": "doughremi",
       "cats": [
-            "cookies",
-            "chocolates"
+        "cookies",
+        "chocolates"
       ],
       "price": 800,
       "mrp": 920,
       "rating": 4.8,
       "reviews": 76,
       "badges": [
-            "NEW",
-            "EGGLESS",
-            "GLUTEN-FREE",
-            "NO-MAIDA",
-            "SUGAR-FREE"
+        "NEW",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
       ],
       "sizes": "perKg",
       "occasions": [
-            "teatime",
-            "snack"
+        "teatime",
+        "snack"
       ],
       "diet": [
-            "sugar-free",
-            "gluten-free",
-            "eggless",
-            "no-maida"
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
       ],
-      "desc": "Classic crumbly dark chocolate butter cookies crafted with fine cocoa and pure dairy butter. Pure nostalgic crunch.",
-      "long": "A timeless bakery favourite reinvented: rich cocoa butter cookies baked with French T45 flour and zero refined sugar. Crisp edges, delicate crumbly center, and subtle Madagascar vanilla finish.",
-      "ingredients": "French T45 pastry flour, almond flour, single-origin cacao, pure dairy butter, natural erythritol & stevia blend, vanilla bean.",
+      "desc": "Classic crispy chocolate biscuits baked with pure Dutch cocoa, grass-fed butter, and chocolate chips.",
+      "long": "Timeless bakery-style chocolate cookies with an irresistible snap: crafted with rich Dutch cocoa, pure dairy butter, and dark chocolate chips. Perfect alongside morning espresso or milk. Baked with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, Dutch cocoa, butter, dark chocolate chips, milk, raw cane sugar, sea salt.",
       "allergens": [
-            "Milk / Dairy",
-            "Tree nuts (almond)"
+        "Milk / Dairy",
+        "Tree nuts (almond)"
       ],
       "customisable": false,
       "image": "assets/img/products/artisan-chocolate-cookies.jpg",
       "images": [
-            "assets/img/products/artisan-chocolate-cookies.jpg"
+        "assets/img/products/artisan-chocolate-cookies.jpg"
       ],
       "tags": [
-            "cookies",
-            "chocolate",
-            "classic",
-            "eggless"
+        "cookies",
+        "chocolate",
+        "classic",
+        "eggless"
       ]
-},
+    },
     {
       "id": "coconut-butter-mix",
       "name": "Coconut Butter Mix",
       "brand": "doughremi",
       "cats": [
-            "cookies",
-            "healthy-snacks"
+        "cookies",
+        "healthy-snacks"
       ],
       "price": 800,
       "mrp": 920,
       "rating": 4.9,
       "reviews": 98,
       "badges": [
-            "NEW",
-            "EGGLESS",
-            "GLUTEN-FREE",
-            "NO-MAIDA",
-            "SUGAR-FREE"
+        "NEW",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
       ],
       "sizes": "perKg",
       "occasions": [
-            "teatime",
-            "festival"
+        "teatime",
+        "festival"
       ],
       "diet": [
-            "sugar-free",
-            "gluten-free",
-            "eggless",
-            "no-maida"
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
       ],
-      "desc": "Fragrant toasted coconut flakes blended into golden grass-fed butter cookies. Sweet, tropical, and delightfully crumbly.",
-      "long": "Slow-roasted coconut flakes folded into rich cultured butter dough made with French T45 pastry flour and almond flour. Every bite delivers a satisfying tropical aroma and delicate crumb.",
-      "ingredients": "French T45 pastry flour, almond flour, roasted desiccated coconut, pure butter, cold-pressed coconut oil, natural plant sweetener.",
+      "desc": "Golden butter cookies enriched with toasted desiccated coconut and aromatic vanilla bean.",
+      "long": "Delicate, crumbly butter cookies loaded with aromatic toasted coconut shreds: delivers a tropical warmth and golden crunch in every bite. Baked fresh with French T45 flour and slow-churned butter. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, toasted desiccated coconut, pure dairy butter, milk, Madagascar vanilla, raw cane sugar.",
       "allergens": [
-            "Milk / Dairy",
-            "Tree nuts (almond)"
+        "Milk / Dairy",
+        "Tree nuts (almond)"
       ],
       "customisable": false,
       "image": "assets/img/products/coconut-butter-mix.jpg",
       "images": [
-            "assets/img/products/coconut-butter-mix.jpg"
+        "assets/img/products/coconut-butter-mix.jpg"
       ],
       "tags": [
-            "cookies",
-            "coconut",
-            "butter",
-            "eggless",
-            "healthy-snack"
+        "cookies",
+        "coconut",
+        "butter",
+        "eggless",
+        "healthy-snack"
       ]
-},
+    },
     {
       "id": "artisan-coconut-cookies",
       "name": "Coconut Cookies",
       "brand": "doughremi",
       "cats": [
-            "cookies",
-            "healthy-snacks"
+        "cookies",
+        "healthy-snacks"
       ],
       "price": 800,
       "mrp": 920,
       "rating": 4.9,
       "reviews": 115,
       "badges": [
-            "NEW",
-            "EGGLESS",
-            "GLUTEN-FREE",
-            "NO-MAIDA",
-            "SUGAR-FREE"
+        "NEW",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
       ],
       "sizes": "perKg",
       "occasions": [
-            "teatime",
-            "festival"
+        "teatime",
+        "festival"
       ],
       "diet": [
-            "sugar-free",
-            "gluten-free",
-            "eggless",
-            "no-maida"
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
       ],
-      "desc": "Golden baked artisanal coconut biscuits rolled in fresh coconut shreds with a whisper of cardamom. Pure homestyle warmth.",
-      "long": "An authentic Indian bakery classic made healthy: fresh grated coconut mixed with almond flour and French T45 flour, sweetened naturally with zero refined sugar. 100% Eggless.",
-      "ingredients": "French T45 pastry flour, almond flour, freshly grated coconut, pure dairy butter, green cardamom, natural erythritol & stevia blend.",
+      "desc": "Crispy traditional bakery coconut biscuits with a golden caramelized crust and rich coconut aroma.",
+      "long": "A classic Indian bakery favourite: crisp golden biscuits packed with grated coconut, pure butter, and a touch of cardamom. Incomparably crunchy and fragrant. Baked fresh with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, desiccated coconut, dairy butter, milk, green cardamom, raw cane sugar.",
       "allergens": [
-            "Milk / Dairy",
-            "Tree nuts (almond)"
+        "Milk / Dairy",
+        "Tree nuts (almond)"
       ],
       "customisable": false,
       "image": "assets/img/products/artisan-coconut-cookies.jpg",
       "images": [
-            "assets/img/products/artisan-coconut-cookies.jpg"
+        "assets/img/products/artisan-coconut-cookies.jpg"
       ],
       "tags": [
-            "cookies",
-            "coconut",
-            "traditional",
-            "eggless"
+        "cookies",
+        "coconut",
+        "traditional",
+        "eggless"
       ]
-},
+    },
     {
       "id": "coconut-laccha",
       "name": "Coconut Laccha",
       "brand": "doughremi",
       "cats": [
-            "cookies",
-            "healthy-snacks",
-            "assamese"
+        "cookies",
+        "healthy-snacks",
+        "assamese"
       ],
       "price": 800,
       "mrp": 920,
-      "rating": 5.0,
+      "rating": 5,
       "reviews": 128,
       "badges": [
-            "NEW",
-            "SIGNATURE",
-            "EGGLESS",
-            "GLUTEN-FREE",
-            "NO-MAIDA",
-            "SUGAR-FREE"
+        "NEW",
+        "SIGNATURE",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
       ],
       "sizes": "perKg",
       "occasions": [
-            "teatime",
-            "festival",
-            "corporate"
+        "teatime",
+        "festival",
+        "corporate"
       ],
       "diet": [
-            "sugar-free",
-            "gluten-free",
-            "eggless",
-            "no-maida"
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
       ],
-      "desc": "Long hand-shredded coconut strands (laccha) baked into crunchy golden caramelized biscuit clusters.",
-      "long": "A regional artisanal masterpiece: long shreds of tender coconut slowly roasted and baked with French T45 flour and almond flour. Crispy, chewy, caramelized coconut texture without any refined sugar.",
-      "ingredients": "Hand-shredded coconut laccha strands, French T45 pastry flour, almond flour, pure grass-fed butter, natural erythritol & stevia blend.",
+      "desc": "Crisp ribbon-cut coconut pastry biscuits caramelized to a golden brown with aromatic spices.",
+      "long": "Traditional bakery laccha biscuits rolled with ribboned coconut shreds, butter, and fragrant cardamom: baked crisp with delicate caramelized edges and a flaky, crumbly bite. Baked with French T45 flour. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, shredded coconut, pure butter, milk, cardamom, raw cane sugar.",
       "allergens": [
-            "Milk / Dairy",
-            "Tree nuts (almond)"
+        "Milk / Dairy",
+        "Tree nuts (almond)"
       ],
       "customisable": false,
       "image": "assets/img/products/coconut-laccha.jpg",
       "images": [
-            "assets/img/products/coconut-laccha.jpg"
+        "assets/img/products/coconut-laccha.jpg"
       ],
       "tags": [
-            "cookies",
-            "coconut-laccha",
-            "assamese",
-            "signature",
-            "eggless"
+        "cookies",
+        "coconut-laccha",
+        "assamese",
+        "signature",
+        "eggless"
       ]
-},
+    },
     {
       "id": "artisanal-glazed-donut",
       "name": "Artisanal Glazed Donut",
       "brand": "signature",
       "cats": [
-            "desserts",
-            "pastries"
+        "desserts",
+        "pastries"
       ],
       "price": 50,
       "mrp": 60,
       "rating": 4.9,
       "reviews": 165,
       "badges": [
-            "NEW",
-            "BESTSELLER",
-            "EGGLESS",
-            "GLUTEN-FREE",
-            "NO-MAIDA",
-            "SUGAR-FREE"
+        "NEW",
+        "BESTSELLER",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
       ],
       "sizes": "donut",
       "occasions": [
-            "birthday",
-            "celebration",
-            "teatime",
-            "snack"
+        "birthday",
+        "celebration",
+        "teatime",
+        "snack"
       ],
       "diet": [
-            "sugar-free",
-            "gluten-free",
-            "eggless",
-            "no-maida"
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
       ],
-      "desc": "Soft oven-baked artisanal donut coated in rich dark Belgian chocolate glaze with delicate roasted sprinkles. Baked, never fried.",
-      "long": "Fluffy, tender, and oven-baked to golden perfection with zero deep-frying. Crafted using French T45 pastry flour and almond flour, dipped in warm dark chocolate glaze and sweetened with zero refined sugar. 100% Eggless.",
-      "ingredients": "French T45 pastry flour, almond flour, oat flour, single-origin dark cocoa glaze, fresh milk, pure butter, natural plant sweetener.",
+      "desc": "Fluffy brioche donut baked to golden perfection with a glossy Madagascar vanilla bean and dark chocolate glaze.",
+      "long": "Cloud-like, airy brioche donut baked with French T45 flour and grass-fed butter, finished with your choice of silky dark chocolate ganache or Bourbon vanilla bean glaze. Baked rather than fried for pure, clean indulgence. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, butter, whole milk, Madagascar vanilla, dark chocolate 70%, natural cane sugar, yeast.",
       "allergens": [
-            "Milk / Dairy",
-            "Tree nuts (almond)"
+        "Milk / Dairy",
+        "Tree nuts (almond)"
       ],
       "customisable": false,
       "image": "assets/img/products/artisanal-glazed-donut.jpg",
       "images": [
-            "assets/img/products/artisanal-glazed-donut.jpg"
+        "assets/img/products/artisanal-glazed-donut.jpg"
       ],
       "tags": [
-            "donut",
-            "dessert",
-            "chocolate-glaze",
-            "baked",
-            "eggless"
+        "donut",
+        "dessert",
+        "chocolate-glaze",
+        "baked",
+        "eggless"
       ]
-},
+    },
     {
       "id": "glass-cake",
       "name": "Glass Cake",
       "brand": "signature",
       "cats": [
-            "desserts",
-            "pastries",
-            "celebration-cakes"
+        "desserts",
+        "pastries",
+        "celebration-cakes"
       ],
       "price": 100,
       "mrp": 120,
-      "rating": 5.0,
+      "rating": 5,
       "reviews": 210,
       "badges": [
-            "NEW",
-            "SIGNATURE",
-            "EGGLESS",
-            "GLUTEN-FREE",
-            "NO-MAIDA",
-            "SUGAR-FREE"
+        "NEW",
+        "SIGNATURE",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
       ],
       "sizes": "glass",
       "occasions": [
-            "birthday",
-            "celebration",
-            "corporate",
-            "gifting"
+        "birthday",
+        "celebration",
+        "corporate",
+        "gifting"
       ],
       "diet": [
-            "sugar-free",
-            "gluten-free",
-            "eggless",
-            "no-maida"
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
       ],
-      "desc": "Gourmet layered dessert served in a crystal glass jar: moist vanilla-chocolate sponge, dark chocolate ganache, and velvety cream.",
-      "long": "An exquisite single-serve dessert in an elegant glass jar. Alternating layers of moist cocoa sponge, airy whipped cream, rich Belgian chocolate ganache, and roasted hazelnut praline. Made with French T45 flour and zero refined sugar.",
-      "ingredients": "French T45 pastry flour, almond flour, dairy cream, Belgian dark chocolate 70%, roasted hazelnuts, natural erythritol & stevia blend.",
+      "desc": "Stunning individual dessert cup featuring layers of French T45 vanilla sponge, fresh fruit coulis, and whipped cream.",
+      "long": "An elegant modern dessert presentation: layers of delicate vanilla sponge baked with French T45 flour, alternating with tart wild berry compote, Belgian chocolate mousse, and clouds of whipped chantilly cream in an artisanal dessert glass. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, dairy cream, wild berries, dark chocolate, Madagascar vanilla, natural sweetener.",
       "allergens": [
-            "Milk / Dairy",
-            "Tree nuts (hazelnut, almond)"
+        "Milk / Dairy",
+        "Tree nuts (hazelnut, almond)"
       ],
       "customisable": false,
       "image": "assets/img/products/glass-cake.jpg",
       "images": [
-            "assets/img/products/glass-cake.jpg"
+        "assets/img/products/glass-cake.jpg"
       ],
       "tags": [
-            "glass-cake",
-            "jar-cake",
-            "dessert",
-            "chocolate",
-            "signature"
+        "glass-cake",
+        "jar-cake",
+        "dessert",
+        "chocolate",
+        "signature"
       ]
-},
+    },
     {
       "id": "jeera-biscuits",
       "name": "Jeera Biscuits",
       "brand": "doughremi",
       "cats": [
-            "cookies",
-            "savouries",
-            "healthy-snacks"
+        "cookies",
+        "savouries",
+        "healthy-snacks"
       ],
       "price": 800,
       "mrp": 920,
       "rating": 4.9,
       "reviews": 142,
       "badges": [
-            "NEW",
-            "EGGLESS",
-            "GLUTEN-FREE",
-            "NO-MAIDA",
-            "SUGAR-FREE"
+        "NEW",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
       ],
       "sizes": "perKg",
       "occasions": [
-            "teatime",
-            "snack"
+        "teatime",
+        "snack"
       ],
       "diet": [
-            "sugar-free",
-            "gluten-free",
-            "eggless",
-            "no-maida"
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
       ],
-      "desc": "Savory-sweet Indian tea biscuits loaded with freshly roasted whole cumin seeds and a hint of pink rock salt.",
-      "long": "The quintessential chai partner baked the healthy way: aromatic roasted cumin (jeera) blended into flaky butter biscuit dough with French T45 flour and almond flour. Melt-in-the-mouth crumb with crisp spiced edges. 100% Eggless.",
-      "ingredients": "French T45 pastry flour, almond flour, pure grass-fed butter, roasted whole cumin seeds (jeera), Himalayan pink salt, natural stevia touch.",
+      "desc": "Crisp, melt-in-mouth savoury butter cookies studded with toasted whole cumin seeds and flaky sea salt.",
+      "long": "A quintessential Indian teatime biscuit: golden-baked with French T45 flour and pure slow-churned dairy butter, generously studded with fragrant roasted cumin seeds and a hint of rock salt. Delivers a delicate savoury crunch with hot tea. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, pure dairy butter, roasted cumin seeds (jeera), rock salt, milk, touch of raw cane sugar.",
       "allergens": [
-            "Milk / Dairy",
-            "Tree nuts (almond)"
+        "Milk / Dairy",
+        "Tree nuts (almond)"
       ],
       "customisable": false,
       "image": "assets/img/products/jeera-biscuits.jpg",
       "images": [
-            "assets/img/products/jeera-biscuits.jpg"
+        "assets/img/products/jeera-biscuits.jpg"
       ],
       "tags": [
-            "biscuits",
-            "jeera",
-            "cumin",
-            "savory",
-            "eggless",
-            "chai"
+        "biscuits",
+        "jeera",
+        "cumin",
+        "savory",
+        "eggless",
+        "chai"
       ]
-},
+    },
     {
       "id": "peanut-cookies",
       "name": "Peanut Cookies",
       "brand": "doughremi",
       "cats": [
-            "cookies",
-            "healthy-snacks"
+        "cookies",
+        "healthy-snacks"
       ],
       "price": 800,
       "mrp": 920,
       "rating": 4.8,
       "reviews": 84,
       "badges": [
-            "NEW",
-            "EGGLESS",
-            "GLUTEN-FREE",
-            "NO-MAIDA",
-            "SUGAR-FREE"
+        "NEW",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
       ],
       "sizes": "perKg",
       "occasions": [
-            "teatime",
-            "snack"
+        "teatime",
+        "snack"
       ],
       "diet": [
-            "sugar-free",
-            "gluten-free",
-            "eggless",
-            "no-maida"
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
       ],
-      "desc": "Crunchy roasted peanut cookies crafted with pure peanut butter and toasted peanut chunks. High protein and nutrient-packed.",
-      "long": "Packed with real roasted peanuts and stone-ground peanut butter, these hearty cookies provide wholesome energy without refined sugar. Baked with French T45 pastry flour and almond flour for a rich, crumbly texture.",
-      "ingredients": "Roasted peanuts, stone-ground peanut butter, French T45 pastry flour, almond flour, pure butter, natural plant sweetener, sea salt.",
+      "desc": "Chunky artisan cookies packed with slow-roasted peanuts, natural peanut butter, and stone-ground flour.",
+      "long": "Wholesome, protein-packed cookies loaded with roasted golden peanut chunks and stone-ground peanut butter: delivers a deeply satisfying nutty crunch with every bite. Baked fresh with French T45 flour and zero refined sugar. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, roasted peanuts, natural peanut butter, butter, natural erythritol blend, sea salt.",
       "allergens": [
-            "Milk / Dairy",
-            "Peanuts",
-            "Tree nuts (almond)"
+        "Milk / Dairy",
+        "Peanuts",
+        "Tree nuts (almond)"
       ],
       "customisable": false,
       "image": "assets/img/products/peanut-cookies.jpg",
       "images": [
-            "assets/img/products/peanut-cookies.jpg"
+        "assets/img/products/peanut-cookies.jpg"
       ],
       "tags": [
-            "cookies",
-            "peanut",
-            "nutty",
-            "protein",
-            "eggless"
+        "cookies",
+        "peanut",
+        "nutty",
+        "protein",
+        "eggless"
       ]
-},
+    },
     {
       "id": "seeds-butter-mix",
       "name": "Seeds Butter Mix",
       "brand": "doughremi",
       "cats": [
-            "cookies",
-            "healthy-snacks"
+        "cookies",
+        "healthy-snacks"
       ],
       "price": 800,
       "mrp": 920,
-      "rating": 5.0,
+      "rating": 5,
       "reviews": 118,
       "badges": [
-            "NEW",
-            "BESTSELLER",
-            "EGGLESS",
-            "GLUTEN-FREE",
-            "NO-MAIDA",
-            "SUGAR-FREE"
+        "NEW",
+        "BESTSELLER",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
       ],
       "sizes": "perKg",
       "occasions": [
-            "teatime",
-            "healthy-snack"
+        "teatime",
+        "healthy-snack"
       ],
       "diet": [
-            "sugar-free",
-            "gluten-free",
-            "eggless",
-            "no-maida"
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
       ],
-      "desc": "Power-packed artisan butter cookies loaded with roasted pumpkin, sunflower, flax, and chia seeds for satisfying superfood crunch.",
-      "long": "A nutritional powerhouse: golden butter cookies loaded with an artisanal quartet of roasted pumpkin, sunflower, flax, and chia seeds. Baked with French T45 flour and almond flour with zero refined sugar. 100% Eggless.",
-      "ingredients": "French T45 pastry flour, almond flour, roasted pumpkin seeds, sunflower seeds, chia seeds, flax seeds, grass-fed butter, natural erythritol.",
+      "desc": "Nutrient-packed artisan butter cookies loaded with roasted pumpkin, sunflower, flax, and chia seeds.",
+      "long": "A powerhouse of wholesome crunch: golden butter cookies baked with French T45 flour and packed with a nutrient-rich quartet of roasted pumpkin, sunflower, golden flax, and chia seeds. Wholesome, rich in omega-3s, and 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, roasted pumpkin seeds, sunflower seeds, chia seeds, flaxseeds, butter, erythritol.",
       "allergens": [
-            "Milk / Dairy",
-            "Tree nuts (almond)"
+        "Milk / Dairy",
+        "Tree nuts (almond)"
       ],
       "customisable": false,
       "image": "assets/img/products/seeds-butter-mix.jpg",
       "images": [
-            "assets/img/products/seeds-butter-mix.jpg"
+        "assets/img/products/seeds-butter-mix.jpg"
       ],
       "tags": [
-            "cookies",
-            "seeds",
-            "superfood",
-            "crunch",
-            "eggless"
+        "cookies",
+        "seeds",
+        "superfood",
+        "crunch",
+        "eggless"
       ]
-},
+    },
     {
       "id": "stick-jeera-biscuit",
       "name": "Stick Jeera Biscuits",
       "brand": "doughremi",
       "cats": [
-            "cookies",
-            "savouries",
-            "healthy-snacks"
+        "cookies",
+        "savouries",
+        "healthy-snacks"
       ],
       "price": 800,
       "mrp": 920,
       "rating": 4.9,
       "reviews": 105,
       "badges": [
-            "NEW",
-            "EGGLESS",
-            "GLUTEN-FREE",
-            "NO-MAIDA",
-            "SUGAR-FREE"
+        "NEW",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
       ],
       "sizes": "perKg",
       "occasions": [
-            "teatime",
-            "snack"
+        "teatime",
+        "snack"
       ],
       "diet": [
-            "sugar-free",
-            "gluten-free",
-            "eggless",
-            "no-maida"
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
       ],
-      "desc": "Slender, crispy cumin-spiced finger biscuits with a delicate butter crunch. Perfect for dipping into morning Assam tea.",
-      "long": "A beloved bakery tradition in finger-biscuit form: slender roasted cumin biscuits baked to golden snap with French T45 flour, pure butter, and sea salt. 100% Eggless, gluten-free, and sugar-free.",
-      "ingredients": "French T45 pastry flour, almond flour, roasted whole cumin seeds, pure dairy butter, Himalayan rock salt, natural stevia touch.",
+      "desc": "Crispy cumin-spiced finger biscuits baked golden with French T45 flour, pure butter, and roasted cumin.",
+      "long": "Slender, crunchy bakery finger biscuits infused with aromatic whole roasted cumin and pure butter: baked to a crisp golden brown, perfect for dipping into morning Assam milk tea. Zero trans fats. 100% Eggless.",
+      "ingredients": "French T45 pastry flour, dairy butter, roasted cumin seeds, Himalayan pink salt, cold-pressed vegetable oil.",
       "allergens": [
-            "Milk / Dairy",
-            "Tree nuts (almond)"
+        "Milk / Dairy",
+        "Tree nuts (almond)"
       ],
       "customisable": false,
       "image": "assets/img/products/stick-jeera-biscuit.jpg",
       "images": [
-            "assets/img/products/stick-jeera-biscuit.jpg"
+        "assets/img/products/stick-jeera-biscuit.jpg"
       ],
       "tags": [
-            "biscuits",
-            "jeera-sticks",
-            "savory",
-            "snack",
-            "eggless"
+        "biscuits",
+        "jeera-sticks",
+        "savory",
+        "snack",
+        "eggless"
       ]
-},
+    },
     {
       "id": "strawberry-pastry",
       "name": "Strawberry Pastry",
       "brand": "signature",
       "cats": [
-            "pastries",
-            "desserts"
+        "pastries",
+        "desserts"
       ],
       "price": 80,
       "mrp": 95,
       "rating": 4.9,
       "reviews": 158,
       "badges": [
-            "NEW",
-            "EGGLESS",
-            "GLUTEN-FREE",
-            "NO-MAIDA",
-            "SUGAR-FREE"
+        "NEW",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
       ],
       "sizes": "piece",
       "occasions": [
-            "birthday",
-            "celebration",
-            "teatime"
+        "birthday",
+        "celebration",
+        "teatime"
       ],
       "diet": [
-            "sugar-free",
-            "gluten-free",
-            "eggless",
-            "no-maida"
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
       ],
-      "desc": "Light, fluffy vanilla sponge layered with luscious real strawberry compote and whipped dairy cream, crowned with strawberry glaze.",
-      "long": "A delicate berry delight: light-as-air vanilla sponge baked with French T45 flour and almond flour, layered with handmade sugar-free strawberry compote and silky whipped cream. 100% Egg-Free and guilt-free.",
-      "ingredients": "French T45 pastry flour, almond flour, real strawberry puree, dairy cream, natural erythritol & stevia blend, Madagascar vanilla.",
+      "desc": "Light, fluffy vanilla sponge layered with luscious real strawberry compote and whipped dairy cream.",
+      "long": "An elegant patisserie slice: tender vanilla sponge crafted with French T45 flour, layered with slow-simmered strawberry coulis, whipped dairy chantilly, and finished with a ruby strawberry glaze. 100% Eggless and freshly baked daily.",
+      "ingredients": "French T45 pastry flour, almond flour, fresh strawberries, dairy cream, Madagascar vanilla bean, natural plant sweetener.",
       "allergens": [
-            "Milk / Dairy",
-            "Tree nuts (almond)"
+        "Milk / Dairy",
+        "Tree nuts (almond)"
       ],
       "customisable": false,
       "image": "assets/img/products/strawberry-pastry.jpg",
       "images": [
-            "assets/img/products/strawberry-pastry.jpg"
+        "assets/img/products/strawberry-pastry.jpg"
       ],
       "tags": [
-            "pastry",
-            "strawberry",
-            "fresh-cream",
-            "eggless",
-            "signature"
+        "pastry",
+        "strawberry",
+        "fresh-cream",
+        "eggless",
+        "signature"
       ]
-},
+    },
     {
       "id": "vanilla-pastry",
       "name": "Vanilla Pastry",
       "brand": "signature",
       "cats": [
-            "pastries",
-            "desserts"
+        "pastries",
+        "desserts"
       ],
       "price": 80,
       "mrp": 95,
       "rating": 4.8,
       "reviews": 126,
       "badges": [
-            "NEW",
-            "EGGLESS",
-            "GLUTEN-FREE",
-            "NO-MAIDA",
-            "SUGAR-FREE"
+        "NEW",
+        "EGGLESS",
+        "GLUTEN-FREE",
+        "NO-MAIDA",
+        "SUGAR-FREE"
       ],
       "sizes": "piece",
       "occasions": [
-            "birthday",
-            "celebration",
-            "teatime"
+        "birthday",
+        "celebration",
+        "teatime"
       ],
       "diet": [
-            "sugar-free",
-            "gluten-free",
-            "eggless",
-            "no-maida"
+        "sugar-free",
+        "gluten-free",
+        "eggless",
+        "no-maida"
       ],
-      "desc": "Classic delicate vanilla sponge infused with pure Madagascar vanilla bean, layered with velvety whipped cream and white chocolate.",
-      "long": "Elegance in simplicity: moist vanilla sponge crafted with French T45 flour, real Madagascar vanilla beans, and almond flour, filled with whipped dairy cream and sugar-free white chocolate curls. 100% Eggless.",
-      "ingredients": "French T45 pastry flour, almond flour, pure Madagascar vanilla bean, fresh dairy cream, sugar-free white chocolate shavings, natural plant sweetener.",
+      "desc": "Classic delicate vanilla sponge infused with pure Madagascar vanilla bean and velvety whipped cream.",
+      "long": "A timeless French patisserie classic: airy vanilla bean sponge baked with French T45 flour, layered with clouds of whipped chantilly cream and delicate white chocolate shavings. Pure, refined, and 100% Eggless.",
+      "ingredients": "French T45 pastry flour, almond flour, pure Madagascar vanilla bean, dairy cream, white chocolate curls, natural sweetener.",
       "allergens": [
-            "Milk / Dairy",
-            "Tree nuts (almond)"
+        "Milk / Dairy",
+        "Tree nuts (almond)"
       ],
       "customisable": false,
       "image": "assets/img/products/vanilla-pastry.jpg",
       "images": [
-            "assets/img/products/vanilla-pastry.jpg"
+        "assets/img/products/vanilla-pastry.jpg"
       ],
       "tags": [
-            "pastry",
-            "vanilla",
-            "classic",
-            "eggless",
-            "signature"
+        "pastry",
+        "vanilla",
+        "classic",
+        "eggless",
+        "signature"
       ]
-}
-    ];
+    }
+  ];
 
   /* ------------------------- Product normaliser ------------------------- */
   function money(n) { return Math.round(n / 5) * 5; }
