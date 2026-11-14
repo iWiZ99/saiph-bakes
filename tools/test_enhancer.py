@@ -81,3 +81,4 @@ test_src = r'C:\Users\wazid\Downloads\Saiph Products\Chocochips pastry 80 per pc
 enhanced = enhance_bakery_photo(test_src)
 enhanced.save('tools/preview_enhanced/chocochips_pastry_enhanced.jpg', quality=95)
 print('Test enhancement saved successfully!')
+

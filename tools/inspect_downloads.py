@@ -13,3 +13,4 @@ for f in files:
     std_rgb = arr.std(axis=(0,1))
     orient = "portrait" if im.size[0] < im.size[1] else "landscape"
     print(f"{f:38s} | size: {im.size[0]}x{im.size[1]} ({orient:9s}) | mean: {mean_rgb.round(1)} | std: {std_rgb.round(1)}")
+

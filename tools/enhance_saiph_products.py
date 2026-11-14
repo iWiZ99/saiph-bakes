@@ -120,3 +120,4 @@ for orig_name, target_name in PRODUCT_IMAGE_MAP.items():
     print(f"  [OK] {orig_name} -> {target_name} ({os.path.getsize(out_path):,} bytes, 1200x896)")
 
 print("All product images enhanced and deployed to assets/img/products/ successfully!")
+

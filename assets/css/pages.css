@@ -53,6 +53,16 @@
   font-weight: 300;
 }
 .hero__cta { display: flex; flex-wrap: wrap; gap: 0.75rem; padding-top: 0.5rem; }
+@media (max-width: 480px) {
+  .hero__cta {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero__cta .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
 .hero__meta {
   display: flex;
   flex-wrap: wrap;
@@ -765,10 +775,8 @@
   scrollbar-width: thin;
 }
 @media (max-width: 1000px) {
-  .filters {
-    position: static;
-    max-height: none;
-    overflow: visible;
+  .filters:not(.filters--drawer) {
+    display: none;
   }
   .filters--drawer {
     padding: 0;
@@ -844,6 +852,22 @@
 }
 .product-grid--dense { grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr)); }
 .product-grid--list { grid-template-columns: 1fr; }
+
+@media (max-width: 680px) {
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem 0.65rem;
+  }
+  .product-grid--dense {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem 0.5rem;
+  }
+}
+@media (max-width: 330px) {
+  .product-grid, .product-grid--dense {
+    grid-template-columns: 1fr;
+  }
+}
 
 .empty-state {
   display: grid;
@@ -1028,6 +1052,12 @@
   font-size: var(--fs-sm);
   padding-bottom: 0.6rem;
   border-bottom: 1px solid var(--line);
+}
+@media (max-width: 520px) {
+  .pdp__meta-list div {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
 }
 .pdp__meta-list dt { color: var(--text-faint); letter-spacing: 0.06em; text-transform: uppercase; font-size: var(--fs-xs); padding-top: 0.15rem; }
 .pdp__meta-list dd { margin: 0; color: var(--text); }
@@ -1584,7 +1614,14 @@
 .contact-block__row svg { width: 1.05rem; height: 1.05rem; color: var(--accent); flex: none; margin-top: 0.15rem; }
 
 /* Franchise formats table */
-.compare-table { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--surface); }
+.compare-table {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background: var(--surface);
+}
 .compare-table table { min-width: 42rem; }
 .compare-table th, .compare-table td {
   padding: 1rem 1.15rem;
