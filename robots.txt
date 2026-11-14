@@ -6,4 +6,4 @@ Disallow: /checkout.html
 Disallow: /order-confirmation.html
 Disallow: /account.html
 
-Sitemap: https://www.saiphbakes.com/sitemap.xml
+Sitemap: https://saiph-bakes.vercel.app/sitemap.xml
